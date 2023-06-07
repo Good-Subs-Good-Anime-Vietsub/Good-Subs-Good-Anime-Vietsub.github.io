@@ -1,0 +1,25 @@
+[book]
+authors = ["KiOZ"]
+language = "vi"
+multilingual = false
+src = "src"
+title = "Good Subs Good Anime"
+
+[output.html]
+default-theme = "ayu"
+curly-quotes = true
+mathjax-support = true
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]
+git-repository-url = "https://github.com/realKiOZ/good-subs-good-anime"
+
+[output.html.print]
+enable = false
+
+[preprocessor.theme]
+pagetoc = true
+sidebar-width = "250px"
+
+[output.html.fold]
+enable = false
+level = 1
