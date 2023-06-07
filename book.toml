@@ -17,8 +17,8 @@ git-repository-url = "https://github.com/realKiOZ/good-subs-good-anime"
 enable = false
 
 [preprocessor.theme]
-pagetoc = true
-sidebar-width = "250px"
+pagetoc = true 
+turn-off = true
 
 [output.html.fold]
 enable = false

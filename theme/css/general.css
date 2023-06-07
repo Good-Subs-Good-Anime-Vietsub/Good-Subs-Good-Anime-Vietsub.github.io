@@ -4,7 +4,7 @@
 
 :root {
     /* Browser default font-size is 16px, this way 1 rem = 10px */
-    font-size: 62.5%;
+    font-size: 70%;
 }
 
 html {
@@ -16,13 +16,13 @@ html {
 
 body {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     overflow-x: hidden;
 }
 
 code {
     font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+    font-size: 0.9em; /* please adjust the ace font size accordingly in editor.js */
 }
 
 /* Don't change font size in headers. */
@@ -76,12 +76,12 @@ h4 a.header:target {
 
 .content {
     overflow-y: auto;
-    padding: 0 15px;
+    padding: 0 10px;
     padding-bottom: 50px;
 }
 .content main {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2%;
+    margin-right: 2%;
     max-width: var(--content-max-width);
 }
 .content p { line-height: 1.45em; }

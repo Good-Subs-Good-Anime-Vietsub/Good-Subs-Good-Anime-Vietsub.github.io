@@ -135,8 +135,8 @@ a > .hljs {
     top: 0;
     bottom: 0;
     margin: 0;
-    max-width: 150px;
-    min-width: 90px;
+    max-width: auto;
+    min-width: auto;
 
     display: flex;
     justify-content: center;
@@ -316,7 +316,7 @@ ul#searchresults span.teaser em {
     top: 0;
     bottom: 0;
     width: var(--sidebar-width);
-    font-size: 0.875em;
+    font-size: 1em;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
@@ -379,7 +379,7 @@ ul#searchresults span.teaser em {
 .chapter {
     list-style: none outside none;
     padding-left: 0;
-    line-height: 2.2em;
+    line-height: 2em;
 }
 
 .chapter ol {
@@ -449,7 +449,7 @@ ul#searchresults span.teaser em {
 .section {
     list-style: none outside none;
     padding-left: 20px;
-    line-height: 1.9em;
+    line-height: 1.5em;
 }
 
 /* Theme Menu Popup */
