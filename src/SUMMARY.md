@@ -1,6 +1,6 @@
 # Summary
 
-[Miếng trầu là đầu câu chuyện](loi-tua.md)
+[Good Subs Good Anime](loi-tua.md)
 [Hướng dẫn xem](huong-dan-xem.md)
 
 --------
