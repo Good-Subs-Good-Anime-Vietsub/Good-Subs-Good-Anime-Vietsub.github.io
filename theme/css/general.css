@@ -80,8 +80,8 @@ h4 a.header:target {
     padding-bottom: 50px;
 }
 .content main {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
     max-width: var(--content-max-width);
 }
 .content p { line-height: 1.45em; }
