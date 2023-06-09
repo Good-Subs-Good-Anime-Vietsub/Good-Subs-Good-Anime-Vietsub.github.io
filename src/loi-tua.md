@@ -1,4 +1,4 @@
-![Good Subs Good Anime](image/GSGA-banner-animated.gif)
+<div><img align="center" src="image/GSGA-banner-animated.gif" width="100%"></div>
 
 # **Giới Thiệu**
 

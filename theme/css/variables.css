@@ -3,10 +3,10 @@
 
 :root {
     --sidebar-width: 400px;
-    --page-padding: 15px;
-    --content-max-width: 78%;
+    --page-padding: 90px;
+    --content-max-width: 72%;
     --menu-bar-height: 50px;
-    --pagetoc-width: 12%;
+    --pagetoc-width: 16%;
     --pagetoc-fontsize: 14px;
 }
 

@@ -10,9 +10,11 @@
 - [Ghibli](ghibli-studio.md)
 
     - [(1986) Tenkuu no Shiro Laputa](ghibli/1986-laputa.md)
+    - [(1988) Hotaru no Haka](ghibli/1988-hotarunohaka.md)
     - [(1989) Majo no Takkyuubin](ghibli/1989-kiki.md)
     - [(1995) Mimi o Sumaseba](ghibli/1995-mimi.md)
     - [(1997) Mononoke Hime](ghibli/1997-mononoke.md)
+    - [(2001) Sen to Chihiro no Kamikakushi](ghibli/2001-chihiro.md)
     - [(2010) Karigurashi no Arrietty](ghibli/2010-karigurashi.md)
     - [(2011) Kokuriko-zaka Kara](ghibli/2011-kokurikozaka.md)
     - [(2014) Omoide no Marnie](ghibli/2014-marnie.md)

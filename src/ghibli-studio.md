@@ -1,7 +1,20 @@
+<style>
+#bg-color {
+  background-color: #198CFF;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+</style>
+
+<div id="bg-color">
+  <img align="center" src="ghibli/img/totoro.png" width="100%">
+</div>
+
 ## Thông tin chung
 
-Về dịch thuật, riêng với các movie của Ghibli, tùy vào chất lượng mà nhóm sẽ chỉnh sửa lại từ phụ đề của Netflix. Bởi có vài bộ Netflix dịch tốt, nhưng cũng có bộ rất chi là ảo.
+Về dịch thuật, riêng với các bộ movie của Ghibli, tùy vào chất lượng mà nhóm sẽ **chỉnh sửa lại từ phụ đề của Netflix**. Bởi có vài bộ Netflix dịch tốt, nhưng cũng có bộ rất chi là ảo.
 
+**Github**: <https://github.com/Good-Subs-Good-Anime-Vietsub/anime-subs/tree/main/Ghibli-Subtudio>
 
 ## Danh sách phim
 
