@@ -16,17 +16,24 @@
         {{> head}}
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name='description' content="{{ description }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
+        <meta name="keywords" content="vietsub, anime vietsub, fansub, fansub vietsub, anime fansub, {{ title }} vietsub">
 
         <!-- Open Graph Tags -->  
-        <meta name="og:title" content="{{ title }}">
-        <meta name="og:description" content="">
-        <meta name="og:image" content="https://good-subs-good-anime-vietsub.github.io/image/GSGA-banner-animated.gif">
-        <meta name="og:image:width" content="1200">
-        <meta name="og:image:height" content="630">
+        <meta property="og:title" content="{{ title }}">
+        <meta property="twitter:title" content="{{ title }}">
         
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:description" content="{{ description }}">
 
+        <meta property="og:site_name" content="Good Subs Good Anime">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:image" content="">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:heigh" content="630">
+        
         <link rel="icon" href="{{ path_to_root }}favicon.svg">
         <link rel="shortcut icon" href="{{ path_to_root }}favicon.png">
         <link rel="stylesheet" href="{{ path_to_root }}css/variables.css">
@@ -233,6 +240,16 @@
             }
         </script>
         {{/if}}
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-02CCGN6P1Z"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-02CCGN6P1Z');
+        </script>
 
         {{#if google_analytics}}
         <!-- Google Analytics Tag -->
