@@ -6,7 +6,7 @@
 **<p style="text-align: center">Director: Miyazaki Hayao</p>**
 **<p style="text-align: center">▼ Download ▼</p>**
 
-<a href="../error/error-in-progress.html" target="_blank"><img width="190" height="30" border="0" align="center"  src="https://img.shields.io/badge/bluray-in%20progress-green?style=flat&logo=appveyor"/></a>
+<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-in-progress.gif" target="_blank"><img width="190" height="30" border="0" align="center"  src="https://img.shields.io/badge/bluray-in%20progress-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
