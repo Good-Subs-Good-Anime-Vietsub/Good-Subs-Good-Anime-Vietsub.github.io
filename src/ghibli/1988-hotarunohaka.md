@@ -31,7 +31,7 @@
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
 - **Typsetting**: [KiOZ]
-- **Encode**: [GOA](https://nyaa.si/view/1392874)
+- **Encode**: [GOA](https://nyaa.si/view/1457761)
 - **QC**: [KiOZ]
 
 [KiOZ]: https://github.com/realKiOZ

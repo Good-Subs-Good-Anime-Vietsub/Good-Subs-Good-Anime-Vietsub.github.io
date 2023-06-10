@@ -21,7 +21,7 @@
 
 - [Movies](movies.md)
 
-    - [Akira (1988)](movies/akira-1988.md)
+    - [AKIRA (1988)](movies/akira-1988.md)
     - [Ghost in the Shell 01 (1995)](movies/ghost-in-the-shell-01-1995.md)
     - [Ghost in the Shell 02 - Innocence (2004)](movies/ghost-in-the-shell-02-2004.md)
     - [Toki wo Kakeru Shoujo (2006)](movies/tokikake-2006.md)
