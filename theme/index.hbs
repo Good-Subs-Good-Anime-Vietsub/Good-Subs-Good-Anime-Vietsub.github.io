@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>{{ title }}</title>
         {{#if is_print }}
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="all">
         {{/if}}
         {{#if base_url}}
         <base href="{{ base_url }}">
@@ -16,14 +16,16 @@
         {{> head}}
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="{{ description }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- Facebook Meta Tags -->  
-        <meta property="og:title" content="{{ title }}">
-        <meta property="og:description" content="{{ description }}">
-        <meta property="og:image" content="https://good-subs-good-anime-vietsub.github.io/image/GSGA-banner-animated.gif">
+        <!-- Open Graph Tags -->  
+        <meta name="og:title" content="{{ title }}">
+        <meta name="og:description" content="">
+        <meta name="og:image" content="https://good-subs-good-anime-vietsub.github.io/image/GSGA-banner-animated.gif">
+        <meta name="og:image:width" content="1200">
+        <meta name="og:image:height" content="630">
+        
 
         <link rel="icon" href="{{ path_to_root }}favicon.svg">
         <link rel="shortcut icon" href="{{ path_to_root }}favicon.png">
@@ -52,8 +54,12 @@
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         {{/if}}
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     </head>
     <body>
+        
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "{{ path_to_root }}";

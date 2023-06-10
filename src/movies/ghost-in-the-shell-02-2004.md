@@ -1,3 +1,10 @@
+<script>
+     $('meta[name=og\\:description]').remove();
+     $('head').append( '<meta name="og:description" content="Studio: Production I.G \n Director: Oshii Mamoru">' );
+
+     $('meta[name=og\\:image]').remove();
+     $('head').append( '<meta name="og:image" content="/gits02-2004/gits2-cover.jpg">' );
+</script>
 
 ## GHOST IN THE SHELL 2: Innocence (Vỏ bọc ma 2: Vô tội)
 
