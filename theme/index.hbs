@@ -4,9 +4,7 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>{{ title }}</title>
-        {{#if is_print }}
         <meta name="robots" content="all">
-        {{/if}}
         {{#if base_url}}
         <base href="{{ base_url }}">
         {{/if}}
@@ -30,7 +28,7 @@
 
         <meta property="og:site_name" content="Good Subs Good Anime">
         <meta property="og:description" content="Anime hay - Phụ đề cũng phải tốt">
-        <meta property="og:image" content="~/cover.jpg">
+        <meta property="og:image" content="https://good-subs-good-anime-vietsub.github.io/cover-image/{{ title }}.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:heigh" content="630">
         
