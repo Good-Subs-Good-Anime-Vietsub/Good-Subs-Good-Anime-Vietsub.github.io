@@ -1,6 +1,6 @@
 # Summary
 
-[Good Subs Good Anime](good-subs-good-anime.md)
+[LỜI TỰA](good-subs-good-anime.md)
 
 [Hướng dẫn xem](huong-dan-xem/huong-dan-xem.md)
 

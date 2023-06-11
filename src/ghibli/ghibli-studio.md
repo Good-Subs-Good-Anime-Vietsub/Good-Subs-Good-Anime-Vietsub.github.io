@@ -20,24 +20,24 @@ Về dịch thuật, riêng với các bộ movie của Ghibli, tùy vào chất
 
 - [ ] (1979) Rupan Sansei: Kariosutoro no Shir (Pre-Ghibli)
 - [ ] (1984) Kaze no Tani no Naushika
-- [x] (1986) [Tenkuu no Shiro Laputa](ghibli/1986-laputa.md)
+- [x] [(1986) Tenkuu no Shiro Laputa](1986-laputa/1986-laputa.md)
 - [ ] (1988) Hotaru no Haka
 - [ ] (1988) Tonari no Totoro
-- [x] (1989) [Majo no Takkyuubin](ghibli/1989-kiki.md)
+- [x] [(1989) Majo no Takkyuubin](1989-kiki/1989-kiki.md)
 - [ ] (1991) Omoide Poro Poro
 - [ ] (1992) Kurenai no Buta
 - [ ] (1993) Umi ga Kikoeru
 - [ ] (1994) Heisei Tanuki Gassen Ponpoko
-- [x] (1995) [Mimi o Sumaseba](ghibli/1995-mimi.md)
-- [x] (1997) [Mononoke Hime](ghibli/1997-mononoke.md)
+- [x] [(1995) Mimi o Sumaseba](1995-mimi/1995-mimi.md)
+- [x] [(1997) Mononoke Hime](1997-mononoke/1997-mononoke.md)
 - [ ] (1999) Hōhokekyo Tonari no Yamada-kun
 - [ ] (2001) Sen to Chihiro no Kamikakushi
 - [ ] (2002) Neko no Ongaeshi
 - [ ] (2004) Hauru no Ugoku Shiro
 - [ ] (2006) Gedo Senki
 - [ ] (2008) Gake no Ue no Ponyo
-- [x] (2010) [Karigurashi no Arrietty](ghibli/2010-karigurashi.md)
-- [x] (2011) [Kokuriko-zaka Kara](ghibli/2011-kokurikozaka.md)
+- [x] [(2010) Karigurashi no Arrietty](2010-karigurashi/2010-karigurashi.md)
+- [x] [(2011) Kokuriko-zaka Kara](2011-kokurikozaka/2011-kokurikozaka.md)
 - [ ] (2013) Kaze Tachinu
 - [ ] (2013) Kaguya-hime no Monogatari
-- [x] (2014) [Omoide no Marnie](ghibli/2014-marnie.md)
+- [x] [(2014) Omoide no Marnie](2014-marnie/2014-marnie.md)
