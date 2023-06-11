@@ -1,3 +1,22 @@
+<script>
+
+     $('meta[name=og\\:title]').remove();
+     $('head').append( '<meta name="og:title" content="Mononoke Hime Vietsub - Good Subs Good Anime">' )
+
+     $('meta[name=description]').remove();
+     $('head').append( '<meta name="description" content="Công Chúa Mononoke (Vietsub) \n Studio: Studio Ghibli \n Director: Miyazaki Hayao">' )
+
+     $('meta[property=og\\:description]').remove();
+     $('head').append( '<meta property="og:description" content="Công Chúa Mononoke (Vietsub) \n Studio: Studio Ghibli \n Director: Miyazaki Hayao">' )
+
+     $('meta[property=twitter\\:description]').remove();
+     $('head').append( '<meta property="twitter:description" content="Công Chúa Mononoke (Vietsub) \n Studio: Studio Ghibli \n Director: Miyazaki Hayao">' )
+
+     $('meta[property=og\\:image]').remove();
+     $('head').append( '<meta property="og:image" content="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/ghibli/1997-mononoke/cover.jpg">' )
+
+</script>
+
 ## Mononoke Hime (Công chúa Mononoke)
 
 <div><img align="center" src="banner.jpg" width="100%"></div>
