@@ -1,0 +1,17 @@
+.sidebyside-box{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sidebyside-align{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;    
+}
+.sidebyside-width{
+    width: 90%;
+}
+.sidebyside-width img{
+    margin-right: 16px;
+    float: left;
+}
