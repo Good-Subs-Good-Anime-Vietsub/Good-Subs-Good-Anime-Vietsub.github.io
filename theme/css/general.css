@@ -16,7 +16,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     overflow-x: hidden;
 }
 
@@ -223,11 +223,7 @@ img:hover {
     transition-duration: 300ms;
     transition-timing-function: ease-in-out
 }
-.content img{
-    border-radius: 6px;
-}
-.content code.hljs{
-    padding: 12px;
+img{
     border-radius: 6px;
 }
 
