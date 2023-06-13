@@ -1,12 +1,12 @@
 ## GHOST IN THE SHELL 2: Innocence (Vỏ bọc ma 2: Vô tội)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center;">Studio: [Production I.G]</p>**
 **<p style="text-align: center;">Director: Oshii Mamoru</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Ghost%20in%20the%20Shell/" target="_blank"><img width="160" height="30" border="0" align="center"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Ghost%20in%20the%20Shell/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -46,7 +46,7 @@ Phần này vô cùng, vô cùng nặng về thoại, khi dịch mình đã ph�
 
  Cả thảy đâu đấy có **hơn 40 note** được mình đưa vào phụ đề, bao gồm nhiều trích dẫn và chú thích dịch, nên phần nào đó sẽ gây khó chịu khi xem, chính vì thế mà chúng ta có 2 bản phụ đề:
 
-- Inc.Note: kèm chú tích
+- Inc.Note: kèm chú thích
 - No.Note: không kèm chú thích
 
 ![inc-no-note](gits2-2sub.png)

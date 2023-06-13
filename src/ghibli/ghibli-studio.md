@@ -7,7 +7,7 @@
 </style>
 
 <div id="bg-color">
-  <img align="center" src="totoro.png" width="100%">
+  <img src="totoro.png" width="100%">
 </div>
 
 ## Thông tin chung

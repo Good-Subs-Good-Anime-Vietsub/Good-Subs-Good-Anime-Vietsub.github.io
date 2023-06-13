@@ -224,7 +224,10 @@ img:hover {
     transition-timing-function: ease-in-out
 }
 img{
-    border-radius: 6px;
+    border-radius: 8px;
+}
+.content{
+    text-align: justify;
 }
 
 @media (max-width:1240px) {

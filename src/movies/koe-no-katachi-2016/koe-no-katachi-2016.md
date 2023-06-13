@@ -1,12 +1,12 @@
 ## Koe no Katachi (Dáng hình thanh âm)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center;">Studio: [Kyoto Animation]</p>**
 **<p style="text-align: center;">Director: Yamada Naoko</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Koe%20no%20Katachi/" target="_blank"><img width="160" height="30" border="0" align="center;"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Koe%20no%20Katachi/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -56,7 +56,7 @@ Nhưng nếu bạn là một fan, có lẽ bạn cũng như mình, muốn biết
 
 Video Essay của [KiOZ] về một điểm hay trong cinematography của Koe no Katachi:
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/pjnUOx2eOoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="border-radius: 8px" width="960" height="540" src="https://www.youtube.com/embed/pjnUOx2eOoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Notes
 

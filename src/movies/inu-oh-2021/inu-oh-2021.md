@@ -1,12 +1,12 @@
 ## Inu-Oh (Inu-Ou) (Khuyển Vương)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center;">Studio: [Science SARU]</p>**
 **<p style="text-align: center;">Director: Yuasa Masaaki</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Inu-Oh/" target="_blank"><img width="160" height="30" border="0" align="center;"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Inu-Oh/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -47,7 +47,7 @@ Kha khá, nhưng đã ghi cụ thể trong phụ đề.
 
 Inu-Oh (Annecy Festival Feature), chỉ là phỏng vấn đôi chút với đội ngũ làm phim thôi, nhưng video này làm hay nên phải share.
 
-<iframe src="https://player.vimeo.com/video/835158787?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inu-Oh (Annecy Festival Feature)"></iframe>
+<iframe style="border-radius: 8px" src="https://player.vimeo.com/video/835158787?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inu-Oh (Annecy Festival Feature)"></iframe>
 
 ## Notes
 

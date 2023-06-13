@@ -1,4 +1,4 @@
-<div><img align="center" src="image/GSGA-banner-animated.gif" width="100%"></div>
+<div><img src="image/GSGA-banner-animated.gif" width="100%"></div>
 
 # **Giới Thiệu**
 

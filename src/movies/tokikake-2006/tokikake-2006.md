@@ -1,12 +1,12 @@
 ## Toki o Kakeru Shōjo (Cô gái vượt thời gian)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center;">Studio: [Studio Chizu]</p>**
 **<p style="text-align: center;">Director: Hosoda Mamoru</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Toki%20wo%20Kakeru%20Shoujo/" target="_blank"><img width="160" height="30" border="0" align="center;"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Toki%20wo%20Kakeru%20Shoujo/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

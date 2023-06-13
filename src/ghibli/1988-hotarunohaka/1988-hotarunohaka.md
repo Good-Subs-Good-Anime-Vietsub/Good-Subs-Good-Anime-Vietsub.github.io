@@ -1,12 +1,12 @@
 ## Hotaru no Haka (Mộ đom đóm)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center">Studio: [Studio Ghibli]</p>**
 **<p style="text-align: center">Director: Takahata Isao</p>**
 **<p style="text-align: center">▼ Download ▼</p>**
 
-<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="210" height="30" border="0" align="center"  src="https://img.shields.io/badge/bluray-not%20yet%20started-red?style=flat&logo=appveyor"/></a>
+<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/bluray-not%20yet%20started-red?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

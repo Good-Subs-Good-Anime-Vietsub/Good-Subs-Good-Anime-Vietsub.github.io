@@ -1,12 +1,12 @@
 ## Ōkami Kodomo no Ame to Yuki (Hai đứa con của sói)
 
-<div><img align="center" src="banner.jpg" width="100%"></div>
+<div><img src="banner.jpg" width="100%"></div>
 
 **<p style="text-align: center;">Studio: [Studio Chizu]</p>**
 **<p style="text-align: center;">Director: Hosoda Mamoru</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Ookami%20Kodomo%20no%20Ame%20to%20Yuki%20(Wolf%20Children)/" target="_blank"><img width="160" height="30" border="0" align="center;"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Ookami%20Kodomo%20no%20Ame%20to%20Yuki%20(Wolf%20Children)/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -66,9 +66,9 @@ Tùy bạn hiểu, nhưng thực sự thì cái cảm giác bài hát mang lại
 ~ Quà lưu niệm 3 món, hình phát ra âm thanh 3 tấm ~
 
 <div>
-<img align="center" src="mittsu01.webp" width="30%">
-<img align="center" src="mittsu02.webp" width="30%">
-<img align="center" src="mittsu03.webp" width="30%">
+<img src="mittsu01.webp" width="30%">
+<img src="mittsu02.webp" width="30%">
+<img src="mittsu03.webp" width="30%">
 </div>
 
 
