@@ -50,17 +50,18 @@
 
     - [Kaguya-sama](tv-anime/kaguya-sama/kaguya-sama.md)
 
-        - [Season 01](tv-anime/kaguya-sama/s01/s01.md)
-        - [Season 02](tv-anime/kaguya-sama/s02/s02.md)
-        - [Season 03](tv-anime/kaguya-sama/s03/s03.md)
-        - [OVA / PV](tv-anime/kaguya-sama/ova-pv/ova-pv.md)
-        - [Movie 01](tv-anime/kaguya-sama/movie01/movie01.md)
+        - [Kaguya-sama - Season 01](tv-anime/kaguya-sama/s01/s01.md)
+        - [Kaguya-sama - Season 02](tv-anime/kaguya-sama/s02/s02.md)
+        - [Kaguya-sama - Season 03](tv-anime/kaguya-sama/s03/s03.md)
+        - [Kaguya-sama - OVA-PV](tv-anime/kaguya-sama/ova-pv/ova-pv.md)
+        - [Kaguya-sama - Movie 01](tv-anime/kaguya-sama/movie01/movie01.md)
+        
 
 # Hướng dẫn Typesetting
 
 - [Typesetting là gì](typesetting/typesetting.md)
-    - [Cơ bản](typesetting/coban/coban.md)
-    - [Nâng cao](typesetting/nangcao/nangcao.md)
+    - [Typesetting - Cơ bản](typesetting/coban/coban.md)
+    - [Typesetting - Nâng cao](typesetting/nangcao/nangcao.md)
 
 --------
 
