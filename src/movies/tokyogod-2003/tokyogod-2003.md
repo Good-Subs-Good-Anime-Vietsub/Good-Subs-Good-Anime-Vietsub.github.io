@@ -28,11 +28,11 @@
 
 ## Nhân Lực
 
-- **Dịch**: 
-- **Timing**: 
-- **Typsetting**: 
-- **Encode**: 
-- **QC**: 
+- **Dịch**: KiOZ
+- **Timing**: KiOZ, [Commie](https://nyaa.si/user/Commie)
+- **Typsetting**: KiOZ
+- **Encode**: [Commie](https://nyaa.si/user/Commie)
+- **QC**: KiOZ
 
 [KiOZ]: https://github.com/realKiOZ
 [moch1oka]: https://github.com/moch1oka

@@ -32,7 +32,7 @@
 - **Dịch**: Tifa, [KiOZ]
 - **Timing**: [KiOZ]
 - **Typsetting**: [KiOZ]
-- **Encode**: Còn chưa ra BD
+- **Encode**: ...
 - **QC**: [KiOZ]
 
 [KiOZ]: https://github.com/realKiOZ
@@ -44,7 +44,8 @@
 
 ## Chú thích dịch
 
-Dịch xong cả rồi, cơ mà TS nhiều vãi cả linh hồn, cộng thêm chưa ra BD.
+Dịch xong cả rồi, cơ mà TS nhiều vãi cả linh hồn...
+
 
 ## Tham khảo thêm
 
