@@ -14,7 +14,7 @@ Phụ đề Tiếng Việt cho ``một vài`` bộ Anime được cho là ``hay`
 
 Cái gọi là ``thiếu hụt hàm ý`` này, chính là tôn chỉ của nhóm khi dịch một bộ phim, hay ở đây là anime, nhóm sẽ cố dịch để làm sao ``sát ý`` nhất có thể dựa theo khả năng của mình. 
 
-Vậy có những ``tiêu chí`` nào để đảm bảo được ``sát ý``, xin mời xuống mục tiêu theo.
+Vậy có những ``tiêu chí`` nào để đảm bảo được ``sát ý``, xin mời xuống mục tiếp theo.
 
 # **Tiêu Chí**
 
