@@ -226,9 +226,6 @@ img:hover {
 img{
     border-radius: 8px;
 }
-.content{
-    text-align: justify;
-}
 
 @media (max-width:1240px) {
     .content img {
