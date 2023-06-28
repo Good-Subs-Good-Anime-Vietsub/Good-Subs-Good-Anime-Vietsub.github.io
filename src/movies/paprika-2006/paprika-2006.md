@@ -30,7 +30,7 @@
 
 - **Dịch**: 
 - **Timing**: 
-- **Typsetting**: 
+- **Typesetting**: 
 - **Encode**: 
 - **QC**: 
 

@@ -32,7 +32,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: 
-- **Typsetting**: 
+- **Typesetting**: 
 - **Encode**: 
 - **QC**: 
 

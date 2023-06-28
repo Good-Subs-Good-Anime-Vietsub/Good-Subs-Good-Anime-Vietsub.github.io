@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: [UDF](https://nyaa.si/view/1276043)
 - **QC**: [KiOZ]
 

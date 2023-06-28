@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: [Anime Land](https://nyaa.si/view/1506216)
 - **QC**: [KiOZ]
 

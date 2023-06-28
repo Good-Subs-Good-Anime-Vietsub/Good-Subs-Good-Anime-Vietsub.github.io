@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ] (ko nhiều TS, có kèm \an8)
+- **Typesetting**: [KiOZ] (ko nhiều TS, có kèm \an8)
 - **Encode**: [tuilakhanh]
 - **QC**: [KiOZ], [moch1oka]
 

@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: [Yousei-raws](https://nyaa.si/view/1290592)
 - **QC**: [KiOZ]
 

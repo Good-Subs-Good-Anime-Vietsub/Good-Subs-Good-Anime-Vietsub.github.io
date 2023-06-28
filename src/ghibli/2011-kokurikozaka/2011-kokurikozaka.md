@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ], [THORA](https://thoranime.nyaarchive.moe/?p=2265)
-- **Typsetting**: [KiOZ], [Eagle]
+- **Typesetting**: [KiOZ], [Eagle]
 - **Encode**: [THORA](https://thoranime.nyaarchive.moe/?p=2265)
 - **QC**: [KiOZ]
 

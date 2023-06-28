@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ] (Chỉnh sửa từ Netflix)
 - **Timing**: [KiOZ], [nedragrevev](https://github.com/nedragrevev)
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: [GOA](https://nyaa.si/view/1392874)
 - **QC**: [KiOZ], [moch1oka]
 

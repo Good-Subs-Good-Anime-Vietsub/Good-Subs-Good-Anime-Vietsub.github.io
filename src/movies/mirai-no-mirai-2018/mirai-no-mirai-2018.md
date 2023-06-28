@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: [Kawaiika-Raws](https://nyaa.si/view/1117106)
 - **QC**: [KiOZ]
 

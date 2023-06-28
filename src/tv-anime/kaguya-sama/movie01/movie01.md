@@ -31,7 +31,7 @@
 
 - **Dịch**: Tifa, [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: [KiOZ]
+- **Typesetting**: [KiOZ]
 - **Encode**: ...
 - **QC**: [KiOZ]
 

@@ -30,7 +30,7 @@
 
 - **Dịch**: KiOZ
 - **Timing**: KiOZ, [Commie](https://nyaa.si/user/Commie)
-- **Typsetting**: KiOZ
+- **Typesetting**: KiOZ
 - **Encode**: [Commie](https://nyaa.si/user/Commie)
 - **QC**: KiOZ
 

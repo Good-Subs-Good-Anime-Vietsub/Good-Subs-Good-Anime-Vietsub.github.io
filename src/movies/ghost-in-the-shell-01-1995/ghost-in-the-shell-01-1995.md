@@ -31,7 +31,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ] (có vài lỗi timing cấn thoại😞)
-- **Typsetting**: Không có TS, chỉ \an8
+- **Typesetting**: Không có TS, chỉ \an8
 - **Encode**: [Judgment](https://nyaa.si/view/1227680)
 - **QC**: [KiOZ]
 

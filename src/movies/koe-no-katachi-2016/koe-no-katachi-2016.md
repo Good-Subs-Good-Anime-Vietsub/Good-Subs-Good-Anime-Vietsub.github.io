@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ], [nedragrevev]
-- **Typsetting**: [KiOZ], [nedragrevev]
+- **Typesetting**: [KiOZ], [nedragrevev]
 - **Encode**: [Kametsu](https://nyaa.si/view/983165)
 - **QC**: [KiOZ]
 

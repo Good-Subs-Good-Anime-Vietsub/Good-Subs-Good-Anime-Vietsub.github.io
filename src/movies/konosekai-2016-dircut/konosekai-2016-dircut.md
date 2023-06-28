@@ -30,7 +30,7 @@
 
 - **Dịch**: [KiOZ] (Có tham khảo từ bản dịch manga của NXB Hồng Đức)
 - **Timing**: [KiOZ], [nedragrevev]
-- **Typsetting**: [KiOZ], [nedragrevev]
+- **Typesetting**: [KiOZ], [nedragrevev]
 - **Encode**: [Beatrice-Raws](https://nyaa.si/view/1498268)
 - **QC**: [KiOZ]
 

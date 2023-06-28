@@ -31,7 +31,7 @@
 
 - **Dịch**: [KiOZ]
 - **Timing**: [KiOZ]
-- **Typsetting**: gần như không có TS
+- **Typesetting**: gần như không có TS
 - **Encode**: [Beatrice-Raws](https://nyaa.si/view/899360)
 - **QC**: [KiOZ]
 
