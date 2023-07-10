@@ -41,12 +41,14 @@
 [Eagle]: https://github.com/MasterEagle2909
 
 ## Chú thích dịch
-
+https://youtu.be/wB7kTBJaV3Q
 
 
 ## Tham khảo thêm
 
+Teaser vietsub:
 
+<iframe style="border-radius: 8px" width="560" height="315" src="https://www.youtube.com/embed/0KgvR7kJvIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Notes
 

@@ -56,7 +56,7 @@ Nhưng nếu bạn là một fan, có lẽ bạn cũng như mình, muốn biết
 
 Video Essay của [KiOZ] về một điểm hay trong cinematography của Koe no Katachi:
 
-<iframe style="border-radius: 8px" width="960" height="540" src="https://www.youtube.com/embed/pjnUOx2eOoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="border-radius: 8px" width="560" height="315" src="https://www.youtube.com/embed/pjnUOx2eOoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Notes
 

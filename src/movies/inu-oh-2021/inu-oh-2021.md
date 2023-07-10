@@ -47,7 +47,7 @@ Kha khá, nhưng đã ghi cụ thể trong phụ đề.
 
 Inu-Oh (Annecy Festival Feature), chỉ là phỏng vấn đôi chút với đội ngũ làm phim thôi, nhưng video này làm hay nên phải share.
 
-<iframe style="border-radius: 8px" src="https://player.vimeo.com/video/835158787?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inu-Oh (Annecy Festival Feature)"></iframe>
+<iframe style="border-radius: 8px" src="https://player.vimeo.com/video/835158787?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Inu-Oh (Annecy Festival Feature)"></iframe>
 
 ## Notes
 
