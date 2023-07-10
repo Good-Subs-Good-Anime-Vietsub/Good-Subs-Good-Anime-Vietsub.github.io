@@ -1,12 +1,12 @@
-## Tokyo Godfathers
+## Kotonoha no Niwa (Khu vườn ngôn từ)
 
 <div><img src="banner.jpg" width="100%"></div>
 
-**<p style="text-align: center;">Studio: [Madhouse]</p>**
-**<p style="text-align: center;">Director: Kon Satoshi</p>**
+**<p style="text-align: center;">Studio: [CoMix Wave Films]</p>**
+**<p style="text-align: center;">Director: Shinkai Makoto</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Tokyo%20Godfathers/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/bluray-not%20yet%20started-red?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -25,14 +25,17 @@
 [OLM]: https://myanimelist.net/anime/producer/28/OLM
 [Studio Chizu]: https://myanimelist.net/anime/producer/555/Studio_Chizu
 [Toei Animation]: https://myanimelist.net/anime/producer/18/Toei_Animation
+[Studio Rikka]: https://myanimelist.net/anime/producer/84/Studio_Rikka
+[Purple Cow Studio Japan]: https://myanimelist.net/anime/producer/559/Purple_Cow_Studio_Japan
+[CoMix Wave Films]: https://myanimelist.net/anime/producer/291/CoMix_Wave_Films
 
 ## Nhân Lực
 
-- **Dịch**: [KiOZ]
-- **Timing**: [KiOZ], [Commie](https://nyaa.si/user/Commie)
-- **Typesetting**: [KiOZ]
-- **Encode**: [Commie](https://nyaa.si/user/Commie)
-- **QC**: [KiOZ]
+- **Dịch**: 
+- **Timing**: 
+- **Typesetting**: 
+- **Encode**: 
+- **QC**: 
 
 [KiOZ]: https://github.com/realKiOZ
 [moch1oka]: https://github.com/moch1oka

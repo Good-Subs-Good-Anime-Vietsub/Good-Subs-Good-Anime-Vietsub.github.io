@@ -1,12 +1,12 @@
-## Tokyo Godfathers
+## Kusuriya No Hitorigoto (Dược Sư Tự Sự)
 
 <div><img src="banner.jpg" width="100%"></div>
 
-**<p style="text-align: center;">Studio: [Madhouse]</p>**
-**<p style="text-align: center;">Director: Kon Satoshi</p>**
+**<p style="text-align: center;">Studio: [OLM], [TOHO animation STUDIO Anime]</p>**
+**<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27141)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Tokyo%20Godfathers/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/webdl-not%20yet%20started-red?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -25,21 +25,20 @@
 [OLM]: https://myanimelist.net/anime/producer/28/OLM
 [Studio Chizu]: https://myanimelist.net/anime/producer/555/Studio_Chizu
 [Toei Animation]: https://myanimelist.net/anime/producer/18/Toei_Animation
+[TOHO animation STUDIO Anime]: https://myanimelist.net/anime/producer/2705/TOHO_animation_STUDIO
 
 ## Nhân Lực
 
 - **Dịch**: [KiOZ]
-- **Timing**: [KiOZ], [Commie](https://nyaa.si/user/Commie)
-- **Typesetting**: [KiOZ]
-- **Encode**: [Commie](https://nyaa.si/user/Commie)
-- **QC**: [KiOZ]
+- **Timing**: 
+- **Typesetting**:
+- **Encode**: 
+- **QC**: 
 
 [KiOZ]: https://github.com/realKiOZ
 [moch1oka]: https://github.com/moch1oka
 [tuilakhanh]: https://github.com/tuilakhanh
 [Eagle]: https://github.com/MasterEagle2909
-
-[nedragrevev]: https://github.com/nedragrevev
 
 ## Chú thích dịch
 

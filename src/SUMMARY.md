@@ -39,6 +39,7 @@
     - [Sakasama no Patema (2013)](movies/patema-2013/patema-2013.md)
     - [Kono Sekai no Katasumi ni (2016 - Director Cut)](movies/konosekai-2016-dircut/konosekai-2016-dircut.md)
     - [Inu-Oh (2021)](movies/inu-oh-2021/inu-oh-2021.md)
+    - [Kotonoha no Niwa (2013)](movies/kotonoha-no-niwa-2013/kotonoha-no-niwa-2013.md)
 
 - [TV-Anime](tv-anime/tv-anime.md)
 
@@ -55,6 +56,8 @@
         - [Kaguya-sama - Season 03](tv-anime/kaguya-sama/s03/s03.md)
         - [Kaguya-sama - OVA-PV](tv-anime/kaguya-sama/ova-pv/ova-pv.md)
         - [Kaguya-sama - Movie 01](tv-anime/kaguya-sama/movie01/movie01.md)
+    
+    - [Kusuriya no Hitorigoto](tv-anime/kusuriya-no-hitorigoto/kusuriya-no-hitorigoto.md)
         
 
 # Hướng dẫn Typesetting
