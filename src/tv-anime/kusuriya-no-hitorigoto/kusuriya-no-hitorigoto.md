@@ -41,7 +41,7 @@
 [Eagle]: https://github.com/MasterEagle2909
 
 ## Chú thích dịch
-https://youtu.be/wB7kTBJaV3Q
+
 
 
 ## Tham khảo thêm
