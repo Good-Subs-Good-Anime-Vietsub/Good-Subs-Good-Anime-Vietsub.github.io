@@ -1,4 +1,4 @@
-## Kusuriya No Hitorigoto (Dược Sư Tự Sự)
+## Kusuriya no Hitorigoto (Dược Sư Tự Sự)
 
 <div><img src="banner.jpg" width="100%"></div>
 
