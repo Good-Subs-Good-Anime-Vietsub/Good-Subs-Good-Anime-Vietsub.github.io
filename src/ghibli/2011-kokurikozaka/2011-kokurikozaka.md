@@ -45,7 +45,7 @@
 
 Tương đối nhiều chú thích, nhưng đều đã ghi cụ thể trong phim.
 
-Bộ phim khá nặng về văn hóa, lấy bối cảnh vào những năm 60 tại Nhật Bản, liên quan tới khắc phục hậu quả sau chiến tranh, một cái nhìn khá nhẹ nhàng chứ không trực diện như [Hotaru no Haka](1988-hotarunohaka.md). 
+Bộ phim khá nặng về văn hóa, lấy bối cảnh vào những năm 60 tại Nhật Bản, liên quan tới khắc phục hậu quả sau chiến tranh, một cái nhìn khá nhẹ nhàng chứ không trực diện như [Hotaru no Haka](../1988-hotarunohaka/1988-hotarunohaka.md). 
 
 Cũng vì thế, câu chuyện được kể trong phim khá phổ biến ở Nhật thời kỳ đó, nên cuối phim ta có dòng này. 
 

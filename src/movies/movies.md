@@ -36,7 +36,7 @@ Cuối cùng, nếu bạn thấy bộ anime film nào hay mà hiện tại phụ
 - [x] [Inu-Oh (2021)](inu-oh-2021/inu-oh-2021.md)
 - [x] [Koe no Katachi (2016)](koe-no-katachi-2016/koe-no-katachi-2016.md)
 - [ ] [Kono Sekai no Katasumi ni (2016 - Director Cut)](konosekai-2016-dircut/konosekai-2016-dircut.md)
-- [ ] [Kotonoha no Niwa (2013)](/kotonoha-no-niwa-2013/kotonoha-no-niwa-2013.md)
+- [ ] [Kotonoha no Niwa (2013)](kotonoha-no-niwa-2013/kotonoha-no-niwa-2013.md)
 - [x] [Mirai no Mirai (2018)](mirai-no-mirai-2018/mirai-no-mirai-2018.md)
 - [x] [Ookami Kodomo no Ame to Yuki (2012)](ookamikodomo-2012/ookamikodomo-2012.md)
 - [ ] [Paprika (2006)](paprika-2006/paprika-2006.md)
