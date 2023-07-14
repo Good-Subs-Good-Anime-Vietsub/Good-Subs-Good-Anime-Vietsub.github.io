@@ -57,7 +57,7 @@ Vậy có những ``tiêu chí`` nào để đảm bảo được ``sát ý``, x
 
 ## **Typesetting**
 
-Xét ở cộng đồng VN, không thiếu những nhóm hay cá nhân dịch tốt, đảm bảo được những tiêu chí ở trên, thậm chí còn hơn. Và cũng không thiếu những bên dịch cẩu thả. Nhưng điểm chung là đều ít quan tâm tới Typesetting.
+Xét ở cộng đồng VN, không thiếu những nhóm hay cá nhân dịch tốt, đảm bảo được những tiêu chí ở trên, thậm chí còn hơn. Và cũng không thiếu những bên dịch cẩu thả. Nhưng điểm chung là đều ít quan tâm tới [Typesetting](./typesetting/typesetting.md) (ai chưa biết Typesetting trong làm sub là gì thì ấn vô).
 
 Một phần bởi Typesetting là công việc đã khó còn cực, thậm chí có phần buồn chán đối với nhiều người, đã vậy khi làm xong người xem phổ thông còn chẳng thèm để ý tới.
 
