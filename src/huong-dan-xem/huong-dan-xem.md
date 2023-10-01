@@ -5,7 +5,7 @@ Phụ đề của nhóm được làm và test dựa trên [libass](https://gith
 
 [mpv](https://mpv.io/), là trình phát mã nguồn mở, gọn, nhẹ, linh hoạt, đã nền tảng. mpv hỗ trợ hầu hết các định dạng video, audio và subtitle, có thể tuỳ biến cực kỳ sâu và nhiều tính năng hữu ích cho Advanced User. Đây sẽ là trình phát được chúng khuyến nghị sử dụng. Tuy nhiên mpv được thiết kế để điều khiển bằng command line nên UI chỉ có những chức năng cơ bản kèm theo với việc khó cài đặt đối với người dùng không chuyên. 
 
-Nhưng không sao chúng mình đã có hương dẫn cài mpv chi tiết kèm theo đó là config tối ưu cho việc xem anime và nhiều tính năng hữu ích nhưng vẫn đảm bảo định tính gọn, nhẹ của player. Các bạn có thể xem [tại đây]((huong-dan-xem/mpv.md)).
+Nhưng không sao chúng mình đã có hương dẫn cài mpv chi tiết kèm theo đó là config tối ưu cho việc xem anime và nhiều tính năng hữu ích nhưng vẫn đảm bảo định tính gọn, nhẹ của player. Các bạn có thể xem [tại đây](mpv.md).
 
 Còn ai lười hơn nữa thì dưới đây là list các phần mềm dựa trên mpv và có GUI:
 
