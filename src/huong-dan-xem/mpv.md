@@ -41,7 +41,7 @@ Nếu bạn muốn sử dụng mpv, yt-dlp và ffmpeg từ command line bạn ph
 ## Cài đặt config cho mpv.
 
 1. Tải file portable_config [tại đây](https://github.com/tuilakhanh/mpv-config/releases/).
-2. Giái nén với lựa chọn **Extract To portable_config**
+2. Giải nén với lựa chọn **Extract To portable_config**
 3. Copy folder **portable_config** vào folder chứa **mpv.exe**, **yt-dlp.exe**.
 
 Xong các bước trên là bạn đã hoàn thành cài đặt config cho mpv. Tiếp theo bạn cần chỉnh profile tương thích với máy của bạn.
@@ -57,7 +57,7 @@ Dưới đây là demo một số chức năng:
 - Xem trực tiếp từ DDL không cần phải tải về.
 ![Alt text](mpv-06.webp)
 
-- Xem yotube qua mpv có thể bắt đc 1080p Premium và có thêm filter deband để xoá banding.
+- Xem Youtube qua mpv có thể bắt đc 1080p Premium và có thêm filter deband để xoá banding.
 ![mpv-05](mpv-05.webp)
 
 Và còn rất nhiều tính năng hữu ích khác như cut video, crop black bar...
