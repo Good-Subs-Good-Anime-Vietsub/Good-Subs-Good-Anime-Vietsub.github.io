@@ -46,7 +46,7 @@ Nếu bạn muốn sử dụng mpv, yt-dlp và ffmpeg từ command line bạn ph
 
 Xong các bước trên là bạn đã hoàn thành cài đặt config cho mpv. Tiếp theo bạn cần chỉnh profile tương thích với máy của bạn.
 
-Truy cập vào folder portable_config tại dòng **profile=**, sẽ có 3 mức **profile** tương ứng chất lượng hình ảnh và sức mạnh GPU của bạn. Nếu máy sử dụng iGPU từ đời Napoleon thì hãy chỉnh thành **Fast**, nếu máy bạn từ iGPU đời mới thì giữ nguyên mức **Balanced**, nếu bạn sử dụng máy bàn và GPU rời thì hãy chỉnh thành **HighQuality** đề tối ưu hết sức mạnh của GPU.
+Mở tệp `profiles.conf` trong folder `portable_config` vừa xong, tại dòng **profile=**, sẽ có 3 mức **profile** tương ứng chất lượng hình ảnh và sức mạnh GPU của bạn. Nếu máy sử dụng iGPU từ đời Napoleon thì hãy chỉnh thành **Fast**, nếu máy bạn từ iGPU đời mới thì giữ nguyên mức **Balanced**, nếu bạn sử dụng máy bàn và GPU rời thì hãy chỉnh thành **HighQuality** đề tối ưu hết sức mạnh của GPU.
 
 ![mpv-04](mpv-04.webp)
 
