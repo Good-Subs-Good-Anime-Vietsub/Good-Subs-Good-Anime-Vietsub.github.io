@@ -4,9 +4,10 @@
 
 **<p style="text-align: center;">Studio: [OLM], [TOHO animation STUDIO Anime]</p>**
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27141)</p>**
+**<p style="text-align: center;">Tiến độ: 01/??</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/webdl-not%20yet%20started-red?style=flat&logo=appveyor"/></a>
+<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -29,11 +30,11 @@
 
 ## Nhân Lực
 
-- **Dịch**: [KiOZ]
-- **Timing**: 
-- **Typesetting**:
-- **Encode**: 
-- **QC**: 
+- **Dịch**: [KiOZ] (Chỉnh sửa từ Netflix)
+- **Timing**: [KiOZ]
+- **Typesetting**: [KiOZ]
+- **Encode**: WEB-DL CR
+- **QC**: [moch1oka]
 
 [KiOZ]: https://github.com/realKiOZ
 [moch1oka]: https://github.com/moch1oka
@@ -42,7 +43,10 @@
 
 ## Chú thích dịch
 
+### Danh xưng
 
+- **Nhà ta**: Cách xưng của thái giám với một vài đối tượng, ví dụ như quan lại ngang hàng, bề dưới,... Ngoài ra, còn có thể là **ta/nô tài/thần**.
+- **Đông cung**: Hay **Đông cung Thái tử**, hoàng tử được sinh ở Đông cung thì làm Thái tử (nối ngôi Vua), trong phim sử dụng **cùng một từ** Đông cung cho cả nơi chốn là Đông cung và Thái tử.
 
 ## Tham khảo thêm
 
