@@ -7,7 +7,7 @@
 **<p style="text-align: center;">Tiến độ: 01/??</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
