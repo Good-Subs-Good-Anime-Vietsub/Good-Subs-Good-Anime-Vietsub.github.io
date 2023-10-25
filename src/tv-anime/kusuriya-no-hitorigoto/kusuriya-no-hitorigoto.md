@@ -50,7 +50,7 @@
 
 ### Tập 02
 
-- **Xuân dược**: Nôm na là **thuốc kích dục**, làm tăng khả năng sinh lý, đặc biệt là cho nam giới (khác nhau và sắc thái).
+- **Xuân dược**: Nôm na là **thuốc kích dục**, làm tăng khả năng sinh lý, đặc biệt là cho nam giới (khác nhau ở sắc thái).
 
 ## Tham khảo thêm
 
