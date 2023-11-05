@@ -3,7 +3,7 @@ authors = ["KiOZ"]
 language = "vi"
 multilingual = false
 src = "src"
-title = "Good Subs Good Anime"
+title = "Good Subs Good Anime Vietsub"
 
 [output.html]
 default-theme = "navy"
