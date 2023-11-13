@@ -54,7 +54,7 @@
 
 ### Tập 06
 
-- **Daijin** (大臣 - Đại Thần): Từ này được dùng cho vị quan còn nghi ngờ về việc thử độc nên đã thử và ngất đi. Trong phim mình dịch là **Thượng thư**, nhưng chưa chắc chắn cho lắm. Rất khó để xác nhận chính xác thời gian trong phim là thuộc triều đại nào của Trung Quốc phong kiến, hoặc có lẽ đây là sự kết hợp từ nhiều triều đại. Chỉ có một điều mình có thể chắc chắn đó là **không phải nhà Thanh**, và **gần chắc chắn không phải nhà Hán**. Mình khá chắc là từ khoảng **nhà Tống đến nhà Minh**, tức từ khoảng **những năm 900-1500**. Đấy là còn chưa kể đến việc có sự khác nhau nhỏ về bộ máy cầm quyền giữa các triều đại. Tóm lại... đây là vị quan to ở mức trung ương, mình thiên vê
+- **Daijin** (大臣 - Đại Thần): Từ này được dùng cho vị quan còn nghi ngờ về việc thử độc nên đã thử và ngất đi. Trong phim mình dịch là **Thượng thư**, nhưng chưa chắc chắn cho lắm. Rất khó để xác nhận chính xác thời gian trong phim là thuộc triều đại nào của Trung Quốc phong kiến, hoặc có lẽ đây là sự kết hợp từ nhiều triều đại. Chỉ có một điều mình có thể chắc chắn đó là **không phải nhà Thanh**, và **gần chắc chắn không phải nhà Hán**. Mình khá chắc là từ khoảng **nhà Tống đến nhà Minh**, tức từ khoảng **những năm 900-1500**, khả năng là Nhà Minh do có giao thương. Tóm lại... đây là vị quan to ở mức trung ương, mình thiên về bên **Bộ Lại** nên dịch là **Thượng thư**, tuy nhiên vẫn có khả năng thuộc hàng **Tam Công**, **Tam Thiếu**, **Lục Thái**, **Ngũ Tư**...
 
 
 
