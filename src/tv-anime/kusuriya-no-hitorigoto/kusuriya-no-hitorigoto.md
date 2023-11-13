@@ -4,7 +4,7 @@
 
 **<p style="text-align: center;">Studio: [OLM], [TOHO animation STUDIO Anime]</p>**
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27141)</p>**
-**<p style="text-align: center;">Tiến độ: 05/24 (hiện tại chưa dịch ED)</p>**
+**<p style="text-align: center;">Tiến độ: 06/24 (hiện tại chưa dịch ED)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
 <a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
@@ -51,6 +51,12 @@
 ### Tập 02
 
 - **Xuân dược**: Nôm na là **thuốc kích dục**, làm tăng khả năng sinh lý, đặc biệt là cho nam giới (khác nhau ở sắc thái).
+
+### Tập 06
+
+- **Daijin** (大臣 - Đại Thần): Từ này được dùng cho vị quan còn nghi ngờ về việc thử độc nên đã thử và ngất đi. Trong phim mình dịch là **Thượng thư**, nhưng chưa chắc chắn cho lắm. Rất khó để xác nhận chính xác thời gian trong phim là thuộc triều đại nào của Trung Quốc phong kiến, hoặc có lẽ đây là sự kết hợp từ nhiều triều đại. Chỉ có một điều mình có thể chắc chắn đó là **không phải nhà Thanh**, và **gần chắc chắn không phải nhà Hán**. Mình khá chắc là từ khoảng **nhà Tống đến nhà Minh**, tức từ khoảng **những năm 900-1500**. Đấy là còn chưa kể đến việc có sự khác nhau nhỏ về bộ máy cầm quyền giữa các triều đại. Tóm lại... đây là vị quan to ở mức trung ương, mình thiên vê
+
+
 
 ## Tham khảo thêm
 
