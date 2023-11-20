@@ -11,7 +11,7 @@ curly-quotes = true
 mathjax-support = true
 additional-css = ["theme/pagetoc.css", "theme/sidebyside.css"]
 additional-js  = ["theme/pagetoc.js"]
-git-repository-url = "https://github.com/Good-Subs-Good-Anime-Vietsub/anime-subs"
+git-repository-url = "https://github.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io"
 
 [output.html.print]
 enable = false
