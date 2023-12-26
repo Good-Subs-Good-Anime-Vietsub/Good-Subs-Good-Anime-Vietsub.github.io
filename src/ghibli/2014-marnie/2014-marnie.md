@@ -4,9 +4,10 @@
 
 **<p style="text-align: center">Studio: [Studio Ghibli]</p>**
 **<p style="text-align: center">Director: Yonebayashi Hiromasa</p>**
-**<p style="text-align: center">▼ Download ▼</p>**
-
+**<p style="text-align: center">▼ Download ▼ </p>**
+<p style="text-align: center">26/12/2023 (fix lỗi dịch ED) </p>
 <a href="https://anime.kioz.workers.dev/0:/The%20Ghibli%20Collection%20(presented%20by%20KiOZ)/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
