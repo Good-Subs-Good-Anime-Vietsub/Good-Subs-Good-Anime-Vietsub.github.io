@@ -33,7 +33,7 @@
 - **Dịch**: [KiOZ] (Chỉnh sửa từ Bilibili, chủ yếu sửa lại câu để giảm CPS, và chỉnh một vài lỗi nhỏ)
 - **Timing**: [KiOZ] (retime lại toàn bộ)
 - **Typesetting**: [KiOZ], [Dae-P9](https://nyaa.si/view/1648965)
-- **Encode**: [Zagzad](https://nyaa.si/view/1453852)
+- **Encode**: [Zagzad](https://nyaa.si/view/1648965)
 - **QC**: [KiOZ]
 
 [KiOZ]: https://github.com/realKiOZ
