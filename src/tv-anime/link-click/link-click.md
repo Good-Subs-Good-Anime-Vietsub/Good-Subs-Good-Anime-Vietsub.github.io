@@ -7,7 +7,7 @@
 **<p style="text-align: center;">Tiến độ: Season 01 - 04/11</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/BD&WEB-ongoing-green?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Link%20Click%20(Dien%20Gia%20Thoi%20Gian)/" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/BD&WEB-ongoing-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
