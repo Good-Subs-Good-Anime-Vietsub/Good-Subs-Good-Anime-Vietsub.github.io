@@ -13,10 +13,12 @@ Không như mục [Movies] là sân chơi chính, mục [TV-Anime] này chỉ l�
 - [Monogatari Series]
 - Tengoku daimakyō (delay ở khâu dịch)
 - [Kusuriya no Hitorigoto]
+- [Link Click]
 
 [Monogatari Series]: monogatari-series/monogatari-series.md
 [Kaguya-sama]: kaguya-sama/kaguya-sama.md
 [Kusuriya no Hitorigoto]: kusuriya-no-hitorigoto/kusuriya-no-hitorigoto.md
+[Link Click]: link-click/link-click.md
 
 [Movies]: ../movies/movies.md
 [TV-Anime]: tv-anime.md

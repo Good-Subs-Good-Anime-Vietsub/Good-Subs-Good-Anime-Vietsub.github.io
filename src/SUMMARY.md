@@ -59,6 +59,7 @@
         - [Kaguya-sama - Movie 01](tv-anime/kaguya-sama/movie01/movie01.md)
     
     - [Kusuriya no Hitorigoto](tv-anime/kusuriya-no-hitorigoto/kusuriya-no-hitorigoto.md)
+    - [Link Click](tv-anime/link-click/link-click.md)
         
 
 # Hướng dẫn Typesetting
