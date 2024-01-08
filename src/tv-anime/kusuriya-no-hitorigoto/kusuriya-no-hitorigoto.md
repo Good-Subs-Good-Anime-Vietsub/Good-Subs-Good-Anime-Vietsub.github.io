@@ -4,7 +4,7 @@
 
 **<p style="text-align: center;">Studio: [OLM], [TOHO animation STUDIO Anime]</p>**
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27141)</p>**
-**<p style="text-align: center;">Tiến độ: 12/24 (hiện tại chưa dịch ED)</p>**
+**<p style="text-align: center;">Tiến độ: 13/24 (vẫn chưa dịch ED1 dù đã dịch ED2)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
 <a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
