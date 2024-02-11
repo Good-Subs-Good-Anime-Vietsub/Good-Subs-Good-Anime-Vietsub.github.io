@@ -4,10 +4,10 @@
 
 **<p style="text-align: center;">Studio: [LAN Studio](https://anidb.net/perl-bin/animedb.pl?show=anime&aid=16290)</p>**
 **<p style="text-align: center;">💯 BỘ NÀY CỦA TRUNG QUỐC, HAY! 💯</p>**
-**<p style="text-align: center;">Tiến độ: Season 01 - 04/11</p>**
+**<p style="text-align: center;">Tiến độ: Xong S01 và S02</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Link%20Click%20(Dien%20Gia%20Thoi%20Gian)/" target="_blank"><img width="210" height="30" border="0"  src="https://img.shields.io/badge/BD&WEB-ongoing-green?style=flat&logo=appveyor"/></a>
+<a href="https://anime.kioz.workers.dev/0:/Link%20Click%20(Dien%20Gia%20Thoi%20Gian)/" target="_blank"><img width="210" height="30" border="0" src="https://img.shields.io/badge/bluray/web-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -30,7 +30,7 @@
 
 ## Nhân Lực
 
-- **Dịch**: [KiOZ] (Chỉnh sửa từ Bilibili, chủ yếu sửa lại câu để giảm CPS, và chỉnh một vài lỗi nhỏ)
+- **Dịch**: [KiOZ] (Chỉnh sửa từ Bilibili, chủ yếu sửa lại câu để giảm CPS, và chỉnh một vài lỗi nhỏ. Riêng phần 2 ko sửa và ko typesetting)
 - **Timing**: [KiOZ] (retime lại toàn bộ)
 - **Typesetting**: [KiOZ], [Dae-P9](https://nyaa.si/view/1648965)
 - **Encode**: [Zagzad](https://nyaa.si/view/1648965)
