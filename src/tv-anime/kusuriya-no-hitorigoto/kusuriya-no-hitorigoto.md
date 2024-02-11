@@ -4,7 +4,7 @@
 
 **<p style="text-align: center;">Studio: [OLM], [TOHO animation STUDIO Anime]</p>**
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27141)</p>**
-**<p style="text-align: center;">Tiến độ: 17/24 (vẫn chưa dịch ED1 dù đã dịch ED2)</p>**
+**<p style="text-align: center;">Tiến độ: 18/24 (vẫn chưa dịch ED1 dù đã dịch ED2)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
 <a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="170" height="30" border="0"  src="https://img.shields.io/badge/webdl-ongoing-green?style=flat&logo=appveyor"/></a>
@@ -65,3 +65,5 @@
 ## Notes
 
 - Từ tập 5: Theo như credit bên Netflix thì vẫn là cùng một người dịch, nhưng có vẻ như là nhờ người khác dịch hộ hay sao ấy, dịch tệ đi trông thấy, dịch bám theo eng, cảm giác không biết tiếng nhật. Hơn nữa, còn không nhất quán chức danh so với những tập trước.
+
+- Từ tập 18: GSGA gần như chỉ còn timing, giữ lại 96% bản dịch của Netflix, và không còn try hard Typesetting.
