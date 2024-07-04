@@ -49,6 +49,7 @@
         - [Bakemonogatari (2009)](tv-anime/monogatari-series/01-bake-2009/01-bake-2009.md)
         - [Kizumonogatari (2016)](tv-anime/monogatari-series/02-kizu-2016/02-kizu-2016.md)
         - [Nisemonogatari (2012)](tv-anime/monogatari-series/03-nise-2012/03-nise-2012.md)
+        - [Nekomonogatari-Kuro (2012)](tv-anime/monogatari-series/04-nekokuro-2012/04-nekokuro-2012.md)
 
     - [Kaguya-sama](tv-anime/kaguya-sama/kaguya-sama.md)
 
