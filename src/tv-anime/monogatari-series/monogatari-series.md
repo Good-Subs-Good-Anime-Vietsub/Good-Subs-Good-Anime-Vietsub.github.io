@@ -150,8 +150,7 @@ Tóm lại, **Monogatari Series** đã tạo ra một phong cách "Cực Dễ nh
 1. [Bakemonogatari (2009)](01-bake-2009/01-bake-2009.md)
 2. [Kizumonogatari (2016)](02-kizu-2016/02-kizu-2016.md)
 3. [Nisemonogatari (2012)](03-nise-2012/03-nise-2012.md)
-4. ...
-5. ...
+4. [Nekomonogatari-Kuro (2012)](04-nekokuro-2012/04-nekokuro-2012.md)
 
 
 
