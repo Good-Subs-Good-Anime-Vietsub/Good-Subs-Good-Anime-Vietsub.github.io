@@ -5,9 +5,9 @@
 ## Cài đặt mpv
 
 1. Download bản build mới nhất dành cho Windows tại [zhongfly/mpv-winbuild](https://github.com/zhongfly/mpv-winbuild/releases). Tên file có dạng 
-**mpv-x86_64-*.7z**, đối với file có thêm hậu tố **v3** thì sẽ dành cho máy có CPU từ đời **Haswell** (Intel) và **Excavator** (AMD) trở lên, nếu máy bạn đáp ứng đủ điều kiện trên thì nên sử dụng file này để có hiệu năng tối ưu nhất.
-2. Sau khi Download các bạn giải nén toàn bộ dữ liệu trong file nén đến folder tuỳ theo ý bạn chỉ định. 
-3. Tại folder chứa dữ liệu mà bạn đã giải nén, di chuyển vào có folder **installer** sau đó chạy file **mpv-install.bat** dưới quyền Admin. Sau một lúc thì mpv đã được cài đặt thành công vào máy của bạn, nếu muốn gỡ cài đặt hãy chạy file **mpv-uninstall.bat**.
+**mpv-x86_64-*.7z**, đối với file có thêm hậu tố **v3** thì sẽ dành cho máy có CPU từ đời **Haswell** (Intel) và **Excavator** (AMD) trở lên, nếu máy bạn đáp ứng đủ điều kiện trên thì nên sử dụng file này để có hiệu năng tối ưu nhất. (Cái này các bạn Google hoặc hỏi AI đời CPU đang dùng là biết ngay nó thuộc "vi kiến trúc" nào)
+2. Sau khi Download, giải nén toàn bộ dữ liệu trong file nén đến folder tuỳ theo ý bạn chỉ định. (quan trọng)
+3. Mở folder chứa dữ liệu mà bạn đã giải nén, có folder **installer** sau đó chạy file **mpv-install.bat** dưới quyền Admin. Sau một lúc thì mpv đã được cài đặt thành công vào máy của bạn, nếu muốn gỡ cài đặt hãy chạy file **mpv-uninstall.bat**.
 > **Lưu ý vị trí cũng như tên folder không được thay đổi sau khi đã cài đặt. Nếu bạn muốn di chuyển hay đổi tên thì hãy gỡ cài đặt trước**
 
 ![mpv-01](mpv-01.webp)
@@ -17,7 +17,7 @@
 yt-dlp và ffmpeg là hai phần mềm bổ trợ giúp mpv có thể stream video trực tiếp từ Direct Download Link (VD như DDL từ index mà nhóm sử dụng) hoặc xem Video từ YouTube và một số site yt-dlp hỗ trợ thông qua mpv.
 
 1. Tại folder chứa dữ liệu mà bạn đã giải nén, chạy file **updater.bat**. Và ấn phím theo hướng dẫn của script.
-1. Tại bước đầu tiên chọn **2** nếu CPU bạn có hỗ trợ v3 như giải thích ở phần cài đặt ngược lại chọn **1**.
+1. Tại bước đầu tiên chọn **2** nếu CPU bạn có hỗ trợ v3 như giải thích ở trên, ngược lại chọn **1**.
 1. Tại bước tiếp theo chọn **Y** để xoá file nén sau khi đã giải nén.
 1. Tại bước tiếp theo script sẽ tự động tải yt-dlp.
 1. Tại bước cuối script sẽ hỏi bạn tài ffmpeg không, chọn **Y** để script cài đặt ffmpeg.
@@ -40,13 +40,13 @@ Nếu bạn muốn sử dụng mpv, yt-dlp và ffmpeg từ command line bạn ph
 
 ## Cài đặt config cho mpv.
 
-1. Tải file portable_config [tại đây](https://github.com/tuilakhanh/mpv-config/releases/).
+1. Tải file portable_config [tại đây](https://github.com/tuilakhanh/mpv-config/archive/refs/heads/master.zip).
 2. Giải nén với lựa chọn **Extract To portable_config**
 3. Copy folder **portable_config** vào folder chứa **mpv.exe**, **yt-dlp.exe**.
 
 Xong các bước trên là bạn đã hoàn thành cài đặt config cho mpv. Tiếp theo bạn cần chỉnh profile tương thích với máy của bạn.
 
-Mở tệp `profiles.conf` trong folder `portable_config` vừa xong, tại dòng **profile=**, sẽ có 3 mức **profile** tương ứng chất lượng hình ảnh và sức mạnh GPU của bạn. Nếu máy sử dụng iGPU từ đời Napoleon thì hãy chỉnh thành **Fast**, nếu máy bạn từ iGPU đời mới thì giữ nguyên mức **Balanced**, nếu bạn sử dụng máy bàn và GPU rời thì hãy chỉnh thành **HighQuality** đề tối ưu hết sức mạnh của GPU.
+Mở tệp `mpv.conf` trong folder `portable_config` vừa xong, tại dòng **profile=**, sẽ có 3 mức **profile** tương ứng chất lượng hình ảnh và sức mạnh GPU của bạn. Nếu máy sử dụng iGPU từ đời Napoleon thì hãy chỉnh thành **Fast**, nếu máy bạn từ iGPU đời mới thì giữ nguyên mức **Balanced**, nếu bạn sử dụng máy bàn và GPU rời thì hãy chỉnh thành **HighQuality** đề tối ưu hết sức mạnh của GPU.
 
 ![mpv-04](mpv-04.webp)
 
