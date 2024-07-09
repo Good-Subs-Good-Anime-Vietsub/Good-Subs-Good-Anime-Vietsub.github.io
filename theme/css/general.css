@@ -226,6 +226,10 @@ img:hover {
 img{
     border-radius: 8px;
 }
+video {
+    max-width: 85%;
+    border-radius: 8px;
+}
 
 @media (max-width:1240px) {
     .content img {
