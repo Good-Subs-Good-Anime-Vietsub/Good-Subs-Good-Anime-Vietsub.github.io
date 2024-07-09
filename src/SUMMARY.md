@@ -3,7 +3,9 @@
 [LỜI TỰA](good-subs-good-anime.md)
 
 [Hướng dẫn xem](huong-dan-xem/huong-dan-xem.md)
-[Cài đặt mpv cho Windows](huong-dan-xem/mpv.md)
+[Cài đặt mpv cho Windows](huong-dan-xem/mpv-windows.md)
+[Cài đặt mpv cho MacOS](huong-dan-xem/mpv-mac.md)
+[Cài đặt config cho mpv](huong-dan-xem/mpv-config.md)
 
 --------
 
