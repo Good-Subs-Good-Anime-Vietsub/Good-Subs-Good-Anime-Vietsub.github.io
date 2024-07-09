@@ -2,3 +2,4 @@ book
 exs
 *.html
 *.mp4
+!mpv-*
