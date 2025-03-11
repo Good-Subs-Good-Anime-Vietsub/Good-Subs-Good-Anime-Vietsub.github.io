@@ -2,6 +2,8 @@
 
 # **Giới Thiệu**
 
+TẠM THỜI TOÀN BỘ HẠ TOÀN BỘ LINK TẢI VÌ VÀI LÝ DO NGOÀI Ý MUỐN
+
 Good Subs Good Anime (GSGA Vietsub) - Anime hay, phụ đề cũng phải tốt.
 
 Phụ đề Tiếng Việt cho ``một vài`` bộ Anime được cho là ``hay``.
