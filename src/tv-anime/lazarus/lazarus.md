@@ -7,8 +7,11 @@
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=29112)</p>**
 **<p style="text-align: center;">Tiến độ: 01/13</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
+**<p style="text-align: center;">Khuyến khích tải torrent và giữ torrent</p>**
 
-<a href="???" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-ongoing-green?style=flat&logo=appveyor"/></a>
+<a href="https://drive.google.com/file/d/1gd0WVOBk87q07OI652083xVUgSsFYcaQ/view?usp=sharing" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-ggdrive-green?style=flat&logo=appveyor"/></a>
+
+<a href="https://nyaa.si/view/1957793" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-torrent-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
@@ -41,7 +44,7 @@
 [moch1oka]: https://github.com/moch1oka
 [tuilakhanh]: https://github.com/tuilakhanh
 [Eagle]: https://github.com/MasterEagle2909
-[Hunn]: (https://github.com/Hunndayne)
+[Hunn]: https://github.com/Hunndayne
 
 ## Chú thích dịch
 
