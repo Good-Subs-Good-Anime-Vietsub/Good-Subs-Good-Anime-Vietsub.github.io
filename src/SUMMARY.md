@@ -63,6 +63,7 @@
     
     - [Kusuriya no Hitorigoto](tv-anime/kusuriya-no-hitorigoto/kusuriya-no-hitorigoto.md)
     - [Link Click](tv-anime/link-click/link-click.md)
+    - [Lazarus](tv-anime/lazarus/lazarus.md)
         
 
 # Hướng dẫn Typesetting
