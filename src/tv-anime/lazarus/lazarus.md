@@ -11,7 +11,7 @@
 
 <a href="https://drive.google.com/drive/folders/1o7Jq9eOVGq1nSCxDitULnapTufhpsVGX?usp=sharing" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-ggdrive-green?style=flat&logo=appveyor"/></a>
 
-<a href="https://nyaa.si/view/1957793" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-torrent-green?style=flat&logo=appveyor"/></a>
+<a href="https://nyaa.si/?f=0&c=0_0&q=%5BGSGA%5D+Lazarus" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/WEBDL-torrent-green?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
