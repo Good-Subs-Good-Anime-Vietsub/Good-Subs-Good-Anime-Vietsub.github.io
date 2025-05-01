@@ -5,7 +5,7 @@
 **<p style="text-align: center;">Studio: [MAPPA] </p>**
 **<p style="text-align: center;">Bộ này của thánh [Shinichirō Watanabe](https://www.animenewsnetwork.com/encyclopedia/people.php?id=774), nổi danh với [Cowboy Bebop](https://myanimelist.net/anime/1/Cowboy_Bebop), yên tâm mà xem</p>**
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=29112)</p>**
-**<p style="text-align: center;">Tiến độ: 03/13</p>**
+**<p style="text-align: center;">Tiến độ: 04/13</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 **<p style="text-align: center;">Khuyến khích tải torrent và giữ torrent</p>**
 
