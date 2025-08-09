@@ -7,7 +7,7 @@
 **<p style="text-align: center">▼ Download ▼ </p>**
 <p style="text-align: center">26/12/2023 (fix lỗi dịch ED) </p>
 
-<a href="https://anime.kioz.workers.dev/0:/The%20Ghibli%20Collection%20(presented%20by%20KiOZ)/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://nyaa.si/view/2003829" target="_blank"><img width="200" height="30" src="https://img.shields.io/badge/bluray/tor-finished-blue?style=flat&logo=appveyor"/></a>
 
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
