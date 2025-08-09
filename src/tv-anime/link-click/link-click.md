@@ -7,7 +7,7 @@
 **<p style="text-align: center;">Tiến độ: Xong S01 và S02</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Link%20Click%20(Dien%20Gia%20Thoi%20Gian)/" target="_blank"><img width="210" height="30" border="0" src="https://img.shields.io/badge/bluray/web-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="" target="_blank"><img width="240" height="30" src="https://img.shields.io/badge/S1+S2+Specials-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

@@ -7,7 +7,7 @@
 **<p style="text-align: center;">Tiến độ: 24/24 (vẫn chưa dịch ED1 dù đã dịch ED2)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Kusuriya%20no%20Hitorigoto/" target="_blank"><img width="166" height="30" border="0" src="https://img.shields.io/badge/WEBDL-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="" target="_blank"><img width="190" height="30" src="https://img.shields.io/badge/webdl/tor-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

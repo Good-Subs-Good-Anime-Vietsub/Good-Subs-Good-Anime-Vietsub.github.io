@@ -6,7 +6,7 @@
 **<p style="text-align: center;">Director: Oshii Mamoru</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Ghost%20in%20the%20Shell/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://nyaa.si/view/2003831" target="_blank"><img width="200" height="30" src="https://img.shields.io/badge/encode/tor-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

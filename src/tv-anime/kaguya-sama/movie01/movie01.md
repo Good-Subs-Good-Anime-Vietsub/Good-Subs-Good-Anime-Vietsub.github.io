@@ -6,7 +6,8 @@
 **<p style="text-align: center;">[Staffs](https://www.animenewsnetwork.com/encyclopedia/anime.php?id=26033)</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Kaguya-sama/OVA%20-%20PV/" target="_blank"><img width="190" height="30" border="0" src="https://img.shields.io/badge/bluray-in%20progress-green?style=flat&logo=appveyor"/></a>
+<a href="" target="_blank"><img width="200" height="30" src="https://img.shields.io/badge/bluray/tor-in%20progress-green?style=flat&logo=appveyor"/></a>
+
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation

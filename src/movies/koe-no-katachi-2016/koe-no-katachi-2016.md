@@ -6,7 +6,7 @@
 **<p style="text-align: center;">Director: Yamada Naoko</p>**
 **<p style="text-align: center;">▼ Download ▼</p>**
 
-<a href="https://anime.kioz.workers.dev/0:/Koe%20no%20Katachi/" target="_blank"><img width="160" height="30" border="0"  src="https://img.shields.io/badge/bluray-finished-blue?style=flat&logo=appveyor"/></a>
+<a href="https://nyaa.si/view/2003868" target="_blank"><img width="200" height="30" src="https://img.shields.io/badge/bluray/tor-finished-blue?style=flat&logo=appveyor"/></a>
 
 [Studio Ghibli]: https://myanimelist.net/anime/producer/21/Studio_Ghibli
 [Kyoto Animation]: https://myanimelist.net/anime/producer/2/Kyoto_Animation
