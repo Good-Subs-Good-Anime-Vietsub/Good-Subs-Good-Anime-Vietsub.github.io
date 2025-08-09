@@ -2,7 +2,9 @@
 
 # **Giới Thiệu**
 
-TẠM THỜI HẠ TOÀN BỘ LINK TẢI VÌ VÀI LÝ DO NGOÀI Ý MUỐN
+**ĐÃ REUP TOÀN BỘ LINK DƯỚI DẠNG TOR**
+
+**TỪ THÁNG 8/2025, GSGA SẼ KHÔNG CÒN CÀY CUỐC LÀM TYPESET NHƯ TRƯỚC NỮA. ĐÂY LÀ TIN BUỒN NHƯNG THỜI THẾ THẾ THỜI, MỘT CÁNH ÉN NHỎ CHẲNG NGĂN NỔI DÔNG TỐ, MỘT MÁI CHÈO MỘC CHẲNG CẢN NỔI LŨ VỀ, VÀ GSGA CŨNG CHẲNG THỂ NẰM NGOÀI DÒNG CHẢY THỜI ĐẠI.**
 
 Good Subs Good Anime (GSGA Vietsub) - Anime hay, phụ đề cũng phải tốt.
 
@@ -57,7 +59,7 @@ Vậy có những ``tiêu chí`` nào để đảm bảo được ``sát ý``, x
 - Dùng font [san-serif](https://fonts.google.com/knowledge/glossary/sans_serif), nét đậm vừa đủ, màu trắng viền đen, viền đủ nhìn.
 - Cuối cùng, không có nguyên tắc nào là bất di bất dịch, sẽ có những ngoại lệ.
 
-## **Typesetting**
+## **Typesetting** (cân nhắc từ 8/2025)
 
 Xét ở cộng đồng VN, không thiếu những nhóm hay cá nhân dịch tốt, đảm bảo được những tiêu chí ở trên, thậm chí còn hơn. Và cũng không thiếu những bên dịch cẩu thả. Nhưng điểm chung là đều ít quan tâm tới [Typesetting](./typesetting/typesetting.md) (ai chưa biết Typesetting trong làm sub là gì thì ấn vô).
 
