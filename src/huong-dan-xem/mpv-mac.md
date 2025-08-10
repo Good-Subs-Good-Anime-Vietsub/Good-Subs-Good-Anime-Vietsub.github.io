@@ -1,5 +1,0 @@
-# TODO
-
-## HomeBrew
-
-## PreBuilt
