@@ -1,33 +1,35 @@
-// File: src/content/config.ts (đã cập nhật)
+// src/content/config.ts
 import { defineCollection, z } from 'astro:content';
 
-const staffCollection = defineCollection({
+const projectsCollection = defineCollection({
   type: 'content',
   schema: z.object({
-    name: z.string(),
-    github_url: z.string().url(),
-    role: z.string(), 
+    // ID từ AniList, đây là trường quan trọng nhất
+    anilistId: z.number(),
+
+    // Tùy chọn: Đánh dấu dự án nổi bật
+    featured: z.boolean().optional().default(false),
+
+    // Tùy chọn: Tựa tiếng Việt
+    title_vietnamese: z.string().optional(),
+
+    // Bắt buộc: Trạng thái của dự án
+    status: z.enum(['Đang làm', 'Hoàn thành', 'Dự kiến', 'Tạm ngưng']),
+
+    // Bắt buộc: Danh sách đội ngũ, là một mảng các object
+    staffs: z.array(z.object({
+      role: z.string(),
+      name: z.string(),
+    })),
+
+    // Bắt buộc: Danh sách link tải
+    downloads: z.array(z.object({
+      type: z.string(),
+      url: z.string().url(), // Đảm bảo đây là một URL hợp lệ
+    })),
   }),
 });
 
-const animeCollection = defineCollection({
-  type: 'content',
-  schema: z.object({
-    mal_id: z.number(),
-    viet_title: z.string().optional(),
-    synopsis_vi: z.string().optional(),
-    status: z.enum(["Hoàn thành", "Đang tiến hành", "Tạm ngưng", "Dự kiến"]),
-    download_links: z.array(z.object({ label: z.string(), url: z.string() })),
-    project_staff: z.array(z.object({
-      role: z.string(),
-      members: z.array(z.string())
-    })).optional(),
-    featured: z.boolean().optional(),
-    banner_image: z.string().optional(), // Thêm trường banner_image
-  }),
-});;
-
 export const collections = {
-  'anime': animeCollection,
-  'staff': staffCollection,
+  'projects': projectsCollection,
 };

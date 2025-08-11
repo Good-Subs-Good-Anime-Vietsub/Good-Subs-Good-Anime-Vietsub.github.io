@@ -11,6 +11,14 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.9",
-    "tailwindcss": "^4.1.11"
+    "simple-git": "^3.28.0",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.17"
   }
 }

@@ -1,0 +1,168 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+interface Props {
+  entry: CollectionEntry<'projects'>;
+}
+
+// =========================================================================
+// == HÀM BỊ LỖI TRƯỚC ĐÂY - GIỜ ĐÃ ĐƯỢC SỬA ĐÚNG VÀ ĐẦY ĐỦ ==
+// =========================================================================
+export async function getStaticPaths() {
+  const allProjects = await getCollection('projects');
+  return allProjects.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// =========================================================================
+
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const query = `
+  query ($id: Int) {
+    Media(id: $id, type: ANIME) {
+      id
+      title { romaji native }
+      coverImage { extraLarge }
+      seasonYear
+      format
+      episodes
+      duration
+      averageScore
+      studios(isMain: true) { nodes { name } }
+      staff(sort: RELEVANCE, perPage: 5) {
+        edges {
+          role
+          node { name { full } }
+        }
+      }
+    }
+  }
+`;
+const response = await fetch('https://graphql.anilist.co', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+  body: JSON.stringify({ query, variables: { id: entry.data.anilistId } })
+});
+const anilist = (await response.json()).data.Media;
+const director = anilist.staff.edges.find(e => e.role === 'Director')?.node.name.full;
+const studio = anilist.studios.nodes[0]?.name;
+
+const { title_vietnamese, staffs, downloads } = entry.data;
+---
+<style is:global>
+  /* Quy tắc cho video, giữ nguyên */
+  .prose iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: theme('borderRadius.lg');
+  }
+
+  /* --- HỆ THỐNG GALLERY TỰ ĐỘNG --- */
+  
+  /* 1. Biến một nhóm các ảnh liền kề thành một grid container */
+  /* Nhắm đến thẻ <p> chứa ảnh, mà ngay sau nó là một <p> khác cũng chứa ảnh */
+  .prose p:has(> img) + p:has(> img) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: theme('spacing.4');
+  }
+
+  /* 2. Style cho các ảnh bên trong grid đó */
+  .prose p:has(> img) + p:has(> img) > img {
+    margin: 0; /* Xóa margin mặc định của prose */
+  }
+
+  /* 3. Phải áp dụng grid cho cả thẻ <p> đầu tiên của nhóm */
+  .prose p:has(> img):has(+ p:has(> img)) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: theme('spacing.4');
+  }
+  .prose p:has(> img):has(+ p:has(> img)) > img {
+    margin: 0;
+  }
+</style>
+
+<Layout title={`${anilist.title.romaji} | GSGA`}>
+  <div class="grid grid-cols-12 gap-8">
+    
+    <!-- CỘT TRÁI (NỘI DUNG CHÍNH) - ĐÃ ĐƯỢC THU NHỎ -->
+    <main class="col-span-8">
+      <!-- TIÊU ĐỀ - Giảm kích thước -->
+      <div class="mb-10">
+        <h1 class="text-4xl font-extrabold text-white">{anilist.title.romaji}</h1>
+        <h2 class="text-xl text-gray-400 mt-1">{anilist.title.native}</h2>
+        {title_vietnamese && <h3 class="text-lg text-cyan-400 mt-1">{title_vietnamese}</h3>}
+      </div>
+
+      <!-- LINK TẢI - Giảm kích thước tiêu đề -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold mb-5 border-l-4 border-cyan-400 pl-3">Tải về</h2>
+        <div class="flex flex-wrap gap-4">
+          {downloads.map(link => (
+            <a href={link.url} target="_blank" class="group relative inline-block p-[2px] rounded-lg font-bold text-cyan-400 bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-300 transform hover:-translate-y-1 active:scale-95">
+              <span class="flex items-center gap-3 bg-gray-900 rounded-[7px] px-6 py-3 transition-colors duration-300 group-hover:bg-transparent group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                <span>{link.type}</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- BÀI VIẾT MARKDOWN - Giảm từ `prose-lg` xuống `prose` (tiêu chuẩn) -->
+      <article class="
+        prose prose-invert max-w-none 
+        prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-5 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-3 
+        prose-img:rounded-lg 
+        prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400
+      ">
+        <Content />
+      </article>
+    </main>
+
+    <aside class="col-span-4 space-y-6">
+      <img src={anilist.coverImage.extraLarge} alt={`Cover for ${anilist.title.romaji}`} class="rounded-lg shadow-lg w-full" />
+      
+      <!-- Box 1: Thông tin cơ bản -->
+      <div class="bg-gray-800/50 p-4 rounded-lg">
+        <h3 class="text-lg font-bold text-cyan-400 mb-3 border-b border-gray-700 pb-2">Thông tin cơ bản</h3>
+        <div class="space-y-1 text-sm">
+          <!-- Thêm mr-2 vào strong -->
+          <p><strong class="mr-2">Năm:</strong> {anilist.seasonYear}</p>
+          {studio && <p><strong class="mr-2">Studio:</strong> {studio}</p>}
+          {director && <p><strong class="mr-2">Đạo diễn:</strong> {director}</p>}
+          {anilist.format && <p><strong class="mr-2">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
+          {anilist.episodes && <p><strong class="mr-2">Số tập:</strong> {anilist.episodes}</p>}
+        </div>
+      </div>
+
+      <!-- Box 2: Nhân lực -->
+      <div class="bg-gray-800/50 p-4 rounded-lg">
+        <h3 class="text-lg font-bold text-cyan-400 mb-3 border-b border-gray-700 pb-2">Nhân lực</h3>
+        <ul class="space-y-1 text-sm text-gray-300">
+          {staffs.map(staff => (
+            <!-- Thêm mr-2 vào strong -->
+            <li><strong class="text-white mr-2">{staff.role}:</strong> {staff.name}</li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Box 3: Thông tin thêm -->
+      <div class="bg-gray-800/50 p-4 rounded-lg">
+        <h3 class="text-lg font-bold text-cyan-400 mb-3 border-b border-gray-700 pb-2">Thông tin thêm</h3>
+        <div class="space-y-1 text-sm">
+          <!-- Thêm mr-2 vào strong -->
+          {anilist.duration && <p><strong class="mr-2">Thời lượng:</strong> {anilist.format === 'MOVIE' ? `${anilist.duration} phút` : `${anilist.duration} phút/tập`}</p>}
+          {anilist.averageScore && <p><strong class="mr-2">Điểm:</strong> {anilist.averageScore}</p>}
+        </div>
+      </div>
+    </aside>
+  </div>
+</Layout>
