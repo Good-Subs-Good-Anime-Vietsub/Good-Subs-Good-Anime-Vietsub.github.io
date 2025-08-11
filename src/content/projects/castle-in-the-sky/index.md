@@ -1,6 +1,6 @@
 ---
 anilistId: 513
-featured: false
+featured: true
 title_vietnamese: 'Laputa: Lâu đài trên không'
 status: 'Hoàn thành'
 staffs:
@@ -55,10 +55,7 @@ Dịch là "bàn tính" thay vì "máy tính Phương Đông" đơn giản là b
 
 Có điều, khi đem so với "vụ làm cỏ cuối cùng" ở trên, thì tình tiết này chưa rõ ràng lắm, vì có vẻ "vụ làm cỏ cuối cùng" là Hayao lấy từ Nhật (một quốc gia Phương Đông). Tuy nhiên, không loại trừ khả năng Phương Tây cũng có "vụ làm cỏ cuối cùng". Just for fun😄
 
-
 ## Tham khảo thêm
-
-
 
 ## Notes
 

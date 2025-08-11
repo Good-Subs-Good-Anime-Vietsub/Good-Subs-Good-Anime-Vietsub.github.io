@@ -1,15 +1,22 @@
 ---
 const { project } = Astro.props;
 const title = project.anilist.title.romaji;
-// Lấy ảnh banner, nếu không có thì fallback về ảnh cover
 const image = project.anilist.bannerImage || project.anilist.coverImage.extraLarge;
 const url = `/projects/${project.slug}`;
 ---
-<a href={url} class="group relative block bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:shadow-cyan-500/40 hover:scale-[1.02]">
-  <img src={image} alt={`Banner for ${title}`} loading="lazy" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" />
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-  <div class="absolute bottom-0 left-0 p-4">
-    <h3 class="text-xl font-bold text-white drop-shadow-lg">{title}</h3>
-    <p class="text-sm text-cyan-300">{project.data.status}</p>
+<a href={url} class="group relative block w-full aspect-[21/6] rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-[1.03]">
+  <div class="absolute inset-0 w-full h-full rounded-lg overflow-hidden">
+    <img 
+      src={image} 
+      alt={`Banner for ${title}`} 
+      loading="lazy" 
+      class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+    />
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end text-center p-4">
+    <div>
+      <h3 class="text-lg font-bold text-white drop-shadow-lg">{title}</h3>
+      <p class="text-sm text-cyan-300">{project.data.status}</p>
+    </div>
   </div>
 </a>

@@ -1,0 +1,45 @@
+// src/components/ProjectCard.tsx
+import type { FunctionalComponent } from 'preact';
+
+// Định nghĩa kiểu dữ liệu cho một dự án, có thể tái sử dụng
+export interface Project {
+  slug: string;
+  data: {
+    status: string;
+  };
+  anilist: {
+    title: { romaji: string };
+    coverImage: { extraLarge: string };
+    seasonYear: number;
+  };
+}
+
+interface ProjectCardProps {
+  project: Project;
+  colorName: string;
+}
+
+const ProjectCard: FunctionalComponent<ProjectCardProps> = ({ project, colorName }) => {
+  const { title, coverImage, seasonYear } = project.anilist;
+  const tagBgClass = `bg-${colorName}-500`;
+
+  return (
+    <div class="w-full max-w-[200px] mx-auto">
+      <div class="aspect-[3/4] w-full">
+        <a href={`/projects/${project.slug}`} class="group relative block w-full h-full overflow-hidden rounded-lg shadow-lg bg-gray-800 transform transition-all duration-300 hover:shadow-cyan-500/30 hover:scale-105">
+          <img src={coverImage.extraLarge} alt={`Cover for ${title.romaji}`} loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+          <div class="absolute top-2 right-2">
+            <span class={`text-xs font-bold text-white px-2 py-1 rounded-md shadow-lg ${tagBgClass}`}>{project.data.status}</span>
+          </div>
+          <div class="absolute bottom-0 left-0 p-3 w-full">
+            <h3 class="font-semibold text-base text-white leading-tight drop-shadow-lg">{title.romaji}</h3>
+            {seasonYear && <p class="text-xs text-gray-300 mt-1">{seasonYear}</p>}
+          </div>
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;

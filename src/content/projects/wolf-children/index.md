@@ -25,7 +25,7 @@ staffs:
   - role: '[nedragrevev]'
     name: 'https://github.com/nedragrevev'
 downloads:
-  - type: 'Download'
+  - type: 'Download (Tor/BD)'
     url: 'https://nyaa.si/view/2003856'
 ---
 ## Chú thích dịch

@@ -3,25 +3,22 @@ import { getCollection } from 'astro:content';
 import simpleGit from 'simple-git';
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
-import ProjectCard from '../components/ProjectCard.astro';
+import InteractiveHome from '../components/InteractiveHome.tsx';
 
-// --- 1. TỰ ĐỘNG LẤY NGÀY ĐĂNG BẰNG GIT ---
+// --- Code lấy dữ liệu (giữ nguyên) ---
 const git = simpleGit();
 async function getFirstCommitDate(filePath: string): Promise<Date> {
   try {
-    const logs = await git.log({ file: filePath });
-    // Lấy log cuối cùng trong lịch sử, tức là commit đầu tiên
+    const logs = await git.log({ file: filePath, '--no-pager': null });
     const firstCommit = logs.latest;
     return firstCommit ? new Date(firstCommit.date) : new Date();
   } catch (error) {
-    // Nếu có lỗi (ví dụ file chưa được commit), trả về ngày hiện tại
+    console.warn(`[Thông tin] File "${filePath}" chưa được commit. Sử dụng ngày hiện tại để hiển thị tạm thời.`);
     return new Date();
   }
 }
 
-// --- 2. LẤY DỮ LIỆU TỪ FILE MD VÀ API ---
 const localProjects = await getCollection('projects');
-
 const projectsWithDatePromises = localProjects.map(async (project) => {
   const filePath = `src/content/projects/${project.id}`;
   const publishDate = await getFirstCommitDate(filePath);
@@ -29,89 +26,68 @@ const projectsWithDatePromises = localProjects.map(async (project) => {
 });
 const projectsWithDate = await Promise.all(projectsWithDatePromises);
 
-const allAniListIds = projectsWithDate.map(p => p.data.anilistId);
+const allAniListIds = projectsWithDate
+  .map(p => p.data.anilistId)
+  .filter(id => typeof id === 'number' && !isNaN(id)); 
 
-const query = `
-  query ($ids: [Int]) {
-    Page(page: 1, perPage: 50) {
-      media(id_in: $ids, type: ANIME, sort: SEARCH_MATCH) {
-        id
-        title { romaji native }
-        coverImage { extraLarge color }
-        bannerImage
+let anilistDataMap = new Map();
+
+if (allAniListIds.length > 0) {
+  const query = `
+    query ($ids: [Int]) {
+      Page(page: 1, perPage: 100) { # Tăng perPage để lấy hết
+        media(id_in: $ids, type: ANIME, sort: SEARCH_MATCH) {
+          id
+          title { romaji }
+          coverImage { extraLarge }
+          bannerImage
+          seasonYear
+        }
       }
     }
+  `;
+  const response = await fetch('https://graphql.anilist.co', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ query, variables: { ids: allAniListIds } })
+  });
+  const anilistResult = await response.json();
+
+  if (anilistResult.errors || !anilistResult.data) {
+    console.error("Lỗi từ API AniList:", anilistResult.errors);
+  } else {
+    anilistDataMap = new Map(anilistResult.data.Page.media.map(item => [item.id, item]));
   }
-`;
-const response = await fetch('https://graphql.anilist.co', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-  body: JSON.stringify({ query, variables: { ids: allAniListIds } })
-});
-const anilistResult = await response.json();
-const anilistDataMap = new Map(anilistResult.data.Page.media.map(item => [item.id, item]));
+}
 
-// Kết hợp dữ liệu từ file MD, ngày đăng tự động, và API, sau đó sắp xếp theo ngày đăng mới nhất
-const allCombinedData = projectsWithDate.map(p => ({
-  ...p,
-  anilist: anilistDataMap.get(p.data.anilistId)
-})).sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+const allCombinedData = projectsWithDate
+  .map(p => ({
+    slug: p.slug,
+    data: p.data,
+    anilist: anilistDataMap.get(p.data.anilistId)
+  }))
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
-
-// --- 3. PHÂN LOẠI VÀ SẮP XẾP ĐỂ HIỂN THỊ (LOGIC MỚI) ---
-
-// Lấy ra danh sách các dự án nổi bật để hiển thị trong slider
-const featuredProjects = allCombinedData.filter(p => p.data.featured);
-
-// Gom nhóm TẤT CẢ các dự án (bao gồm cả dự án nổi bật) theo trạng thái
-const statusOrder = ['Đang làm', 'Hoàn thành', 'Dự kiến', 'Tạm ngưng'];
-const groupedByStatus = allCombinedData.reduce((acc, project) => {
-  const status = project.data.status;
-  if (!acc[status]) {
-    acc[status] = [];
-  }
-  acc[status].push(project);
-  return acc;
-}, {} as Record<string, typeof allCombinedData>);
-
-// --- BẢN ĐỒ MÀU MỚI: Chỉ chứa tên màu ---
-const statusColors = {
-  'Đang làm': 'green',
-  'Hoàn thành': 'cyan',
-  'Dự kiến': 'yellow',
-  'Tạm ngưng': 'red'
-};
+const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilist);
 ---
-<!-- Import CSS cần thiết của Swiper -->
 <style is:global>
   @import 'swiper/css';
   @import 'swiper/css/navigation';
-
-  /* Tùy chỉnh nút điều hướng của Swiper */
-  .featured-slider .swiper-button-next,
-  .featured-slider .swiper-button-prev {
-    color: theme('colors.cyan.400');
-    width: 28px;
-    height: 28px;
-    background-color: rgba(18, 24, 39, 0.6);
-    border-radius: 50%;
-    backdrop-filter: blur(4px);
-    transition: all 0.2s ease-in-out;
+  .swiper-slide { -webkit-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); }
+  .featured-slider .swiper-button-next, .featured-slider .swiper-button-prev {
+    color: theme('colors.cyan.400'); width: 28px; height: 28px; background-color: rgba(18, 24, 39, 0.6);
+    border-radius: 50%; backdrop-filter: blur(4px); transition: all 0.2s ease-in-out;
   }
-  .featured-slider .swiper-button-next:hover,
-  .featured-slider .swiper-button-prev:hover {
-    background-color: rgba(30, 41, 59, 0.8);
-    color: theme('colors.white');
+  .featured-slider .swiper-button-next:hover, .featured-slider .swiper-button-prev:hover {
+    background-color: rgba(30, 41, 59, 0.8); color: theme('colors.white');
   }
-  .featured-slider .swiper-button-next::after,
-  .featured-slider .swiper-button-prev::after {
-    font-size: 14px;
-    font-weight: bold;
+  .featured-slider .swiper-button-next::after, .featured-slider .swiper-button-prev::after {
+    font-size: 14px; font-weight: bold;
   }
 </style>
 
 <Layout title="Trang chủ | GSGA Fansub">
-  <!-- Khu vực Nổi bật - Slider -->
+  <!-- Slider Featured vẫn là của Astro -->
   {featuredProjects.length > 0 && (
     <section class="mb-16 relative">
       <div class="swiper featured-slider">
@@ -128,40 +104,17 @@ const statusColors = {
     </section>
   )}
 
-  <!-- Các khu vực theo trạng thái -->
-  {statusOrder.map(status => {
-    const colorName = statusColors[status] || 'gray';
-    return groupedByStatus[status] && groupedByStatus[status].length > 0 && (
-      <section class="mb-12">
-        <h2 class={`text-2xl font-bold mb-6 pl-4 border-l-4 text-${colorName}-400 border-${colorName}-500`}>
-          {status}
-        </h2>
-        <!-- GIẢM KHOẢNG CÁCH (GAP) XUỐNG NỮA -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-3">
-          {groupedByStatus[status].map(project => <ProjectCard project={project} colorName={colorName} />)}
-        </div>
-      </section>
-    )
-  })}
+  <!-- Gọi component Preact và truyền toàn bộ dữ liệu vào -->
+  <InteractiveHome projects={allCombinedData} client:load />
+
 </Layout>
 
-<!-- JavaScript để khởi tạo Swiper -->
 <script>
   import Swiper from 'swiper';
   import { Navigation } from 'swiper/modules';
-
   const swiper = new Swiper('.featured-slider', {
-    modules: [Navigation],
-    loop: true,
-    // THAY ĐỔI: Bỏ breakpoints và slidesPerView: 1.5
-    // Giờ đây nó sẽ luôn là 1 slide chiếm 100%
-    slidesPerView: 1, 
-    spaceBetween: 30, // Tăng spaceBetween để có khoảng trống khi chuyển slide
-    centeredSlides: true, // Giữ centeredSlides để slide luôn ở giữa
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    modules: [Navigation], loop: true, slidesPerView: 1, 
+    spaceBetween: 30, centeredSlides: true,
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
 </script>
