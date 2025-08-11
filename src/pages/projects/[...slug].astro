@@ -1,7 +1,39 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import ProjectCard from '../../components/ProjectCard.tsx';
+import ProjectCard, { type Project } from '../../components/ProjectCard.tsx'; // Import Project
+import anilistCache from '../../data/anilist-cache.json';
+import type { AnilistCache } from '../../types/anilist-cache'; // Import kiểu dữ liệu cache
+import simpleGit from 'simple-git'; // Import simple-git
+
+// Định nghĩa kiểu Status trực tiếp tại đây
+type Status = 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
+
+// Hàm slugify để chuyển đổi chuỗi tiếng Việt có dấu thành slug không dấu
+function slugify(text: string) {
+  return text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-');
+}
+
+// Hàm lấy ngày commit đầu tiên (từ index.astro)
+async function getFirstCommitDate(filePath: string): Promise<Date> {
+  try {
+    const git = simpleGit();
+    const logs = await git.log({ file: filePath, '--no-pager': null });
+    const firstCommit = logs.latest;
+    return firstCommit ? new Date(firstCommit.date) : new Date();
+  } catch (error) {
+    console.warn(`[Thông tin] File "${filePath}" chưa được commit. Sử dụng ngày hiện tại để hiển thị tạm thời.`);
+    return new Date();
+  }
+}
 
 // --- ĐỊNH NGHĨA PROPS ---
 interface Props {
@@ -11,51 +43,38 @@ interface Props {
 // --- LOGIC LẤY TẤT CẢ CÁC ĐƯỜNG DẪN ---
 export async function getStaticPaths() {
   const allProjects = await getCollection('projects');
-  return allProjects.map(entry => ({
+  const paths = allProjects.map(entry => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
+  return paths;
 }
 
 // --- LOGIC LẤY DỮ LIỆU CHO TRANG HIỆN TẠI ---
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const query = `
-  query ($id: Int) {
-    Media(id: $id, type: ANIME) {
-      id
-      title { romaji native }
-      bannerImage
-      coverImage { extraLarge }
-      seasonYear
-      format
-      episodes
-      duration
-      averageScore
-      studios(isMain: true) { nodes { name } }
-      staff(sort: RELEVANCE, perPage: 5) {
-        edges {
-          role
-          node { name { full } }
-        }
-      }
-    }
-  }
-`;
-const response = await fetch('https://graphql.anilist.co', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-  body: JSON.stringify({ query, variables: { id: entry.data.anilistId } })
-});
-const anilist = (await response.json()).data.Media;
+// Sử dụng dữ liệu từ cache thay vì gọi API
+const anilist = (anilistCache as AnilistCache)[String(entry.data.anilistId)] || {
+  title: { romaji: 'Không tìm thấy', native: '', english: '' },
+  bannerImage: '',
+  coverImage: { extraLarge: '' },
+  seasonYear: null,
+  format: null,
+  episodes: null,
+  duration: null,
+  source: null,
+  genres: [],
+  studios: { nodes: [] },
+  staff: { edges: [] }
+};
 
 interface StaffEdge {
   role: string;
   node: { name: { full: string } };
 }
-const director = anilist.staff.edges.find((e: StaffEdge) => e.role === 'Director')?.node.name.full;
-const studio = anilist.studios.nodes[0]?.name;
+const director = anilist.staff?.edges.find((e: StaffEdge) => e.role === 'Director')?.node.name.full;
+const studio = anilist.studios?.nodes[0]?.name;
 const { title_vietnamese, staffs, downloads, status } = entry.data;
 
 
@@ -65,40 +84,63 @@ const relatedProjects = allProjects
   // Lấy các dự án có status là 'Đang làm' HOẶC 'Hoàn thành'
   .filter(p => (p.data.status === 'Đang làm' || p.data.status === 'Hoàn thành') && p.slug !== entry.slug)
   .sort(() => 0.5 - Math.random()) 
-  .slice(0, 5);  
+  .slice(0, 8);  
 
 const relatedProjectsDataPromises = relatedProjects.map(async (p) => {
-  const relQuery = `query ($id: Int) { Media(id: $id, type: ANIME) { id, title { romaji }, coverImage { extraLarge }, seasonYear } }`;
-  const relResponse = await fetch('https://graphql.anilist.co', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: relQuery, variables: { id: p.data.anilistId } }) });
-  if (!relResponse.ok) return null;
-  const json = await relResponse.json();
-  if(!json.data) return null;
-  const relAnilist = json.data.Media;
-  if (!relAnilist) return null;
-  return { slug: p.slug, data: p.data, anilist: relAnilist };
+  const filePath = `src/content/projects/${p.id}`; // Sử dụng p.id để lấy đường dẫn
+  const publishDate = await getFirstCommitDate(filePath);
+  return {
+    slug: p.slug,
+    data: { ...p.data, publishDate }, // Thêm publishDate vào data
+    anilist: (anilistCache as AnilistCache)[String(p.data.anilistId)] || {
+      title: { romaji: 'Không tìm thấy', native: '', english: '' },
+      coverImage: { extraLarge: '' },
+      seasonYear: null,
+    }
+  };
 });
-const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).filter(p => p !== null);
+const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).filter(p => p.anilist) as Project[]; // Ép kiểu thành Project[]
 
-const statusColors = {
+const statusColors: { [key in Status]: string } = {
   'Đang làm': 'green', 'Hoàn thành': 'cyan', 'Dự kiến': 'yellow', 'Tạm ngưng': 'red'
 };
 ---
 <style is:global>
   @import 'swiper/css';
   .prose iframe { width: 100%; aspect-ratio: 16 / 9; border-radius: theme('borderRadius.lg'); }
-  .related-slider .swiper-slide { height: auto; display: flex; }
+  .related-slider .swiper-slide { height: auto; overflow: hidden; padding-top: 1rem; padding-bottom: 1rem; position: relative; z-index: 1; }
   .related-slider .swiper-slide > * { width: 100%; }
+
+  /* Quy tắc mới để vô hiệu hóa hiệu ứng hover cho ProjectCard trong slider này */
+  .related-slider .swiper-slide .group:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
 </style>
 
 <Layout 
   title={`${anilist.title.romaji} | GSGA`}
   description={entry.body.substring(0, 150) + '...'}
   image={anilist.coverImage.extraLarge}
+  schema={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": anilist.format === 'MOVIE' ? 'Movie' : 'TVSeries',
+    "name": anilist.title.romaji,
+    "alternateName": anilist.title.native,
+    "description": entry.body.substring(0, 150) + '...',
+    "image": anilist.coverImage.extraLarge,
+    "url": Astro.url.href,
+    "genre": anilist.genres && anilist.genres.length > 0 ? anilist.genres : undefined,
+    "director": director ? { "@type": "Person", "name": director } : undefined,
+    "productionCompany": studio ? { "@type": "Organization", "name": studio } : undefined,
+    "datePublished": anilist.seasonYear ? `${anilist.seasonYear}-01-01` : undefined,
+    "numberOfEpisodes": anilist.episodes || undefined
+  })}
 >
   <div class="max-w-5xl mx-auto">
     <!-- 1. BANNER -->
     {anilist.bannerImage && (
-      <div class="w-full aspect-[21/9] rounded-lg overflow-hidden shadow-lg mb-8">
+      <div class="w-full aspect-[21/6] rounded-lg overflow-hidden shadow-lg mb-8">
         <img src={anilist.bannerImage} alt={`Banner for ${anilist.title.romaji}`} class="w-full h-full object-cover" />
       </div>
     )}
@@ -110,42 +152,58 @@ const statusColors = {
       {title_vietnamese && <h3 class="text-2xl text-cyan-400 mt-2">{title_vietnamese}</h3>}
     </div>
 
+    <!-- Combined Status and Download Links -->
+    <div class="flex justify-center my-12">
+      <div class="flex flex-wrap gap-4">
+        {status && (
+          <div class={`group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-${statusColors[status]}-500`}>
+            <span class={`flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-${statusColors[status]}-400 transition-colors duration-300`}>
+              <span>{status}</span>
+            </span>
+          </div>
+        )}
+        {downloads.map(link => {
+          let href = link.url;
+          if (status === 'Dự kiến' || status === 'Đang làm' || status === 'Tạm ngưng') {
+            href = `/status/${slugify(status)}`;
+          }
+          return (
+            <a href={href} target="_blank" class="group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-blue-500">
+              <span class="flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-blue-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>{link.type}</span>
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+    
     <!-- 3. THÔNG TIN CƠ BẢN & NHÂN LỰC -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
       <div class="bg-gray-800/50 p-6 rounded-lg">
         <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3">Thông tin cơ bản</h3>
         <div class="space-y-2 text-base">
-          <p><strong class="mr-2 text-gray-400">Năm:</strong> {anilist.seasonYear}</p>
-          {studio && <p><strong class="mr-2 text-gray-400">Studio:</strong> {studio}</p>}
-          {director && <p><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director}</p>}
-          {anilist.format && <p><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
-          {anilist.episodes && <p><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
+          <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {anilist.seasonYear}</p>
+          {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio}</p>}
+          {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director}</p>}
+          {anilist.format && <p class="break-words"><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
+          {anilist.episodes && <p class="break-words"><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
+          {anilist.duration && <p class="break-words"><strong class="mr-2 text-gray-400">Thời lượng:</strong> {anilist.duration} phút</p>}
+          {anilist.source && <p class="break-words"><strong class="mr-2 text-gray-400">Nguồn gốc:</strong> {anilist.source.replace('_', ' ')}</p>}
+          {anilist.genres && anilist.genres.length > 0 && <p class="break-words"><strong class="mr-2 text-gray-400">Thể loại:</strong> {anilist.genres.join(', ')}</p>}
         </div>
       </div>
       <div class="bg-gray-800/50 p-6 rounded-lg">
         <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3">Nhân lực</h3>
         <ul class="space-y-2 text-base text-gray-300">
           {staffs.map(staff => (
-            <li><strong class="text-white mr-2">{staff.role}:</strong> {staff.name}</li>
+            <li class="break-words"><strong class="text-white mr-2">{staff.role}:</strong> {staff.name}</li>
           ))}
         </ul>
       </div>
     </div>
 
-    <!-- 4. LINK TẢI VỀ -->
-    <div class="flex justify-center my-12">
-      <div class="flex flex-wrap gap-4">
-        {downloads.map(link => (
-          <a href={link.url} target="_blank" class="group relative inline-block p-[2px] rounded-lg font-bold text-cyan-400 text-lg bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-300 transform hover:-translate-y-1 active:scale-95">
-            <span class="flex items-center gap-3 bg-gray-900 rounded-[7px] px-8 py-4 transition-colors duration-300 group-hover:bg-transparent group-hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-              <span>{link.type}</span>
-            </span>
-          </a>
-        ))}
-      </div>
-    </div>
-    
     <!-- 5. VÙNG GỢI Ý (SLIDER) -->
     {relatedProjectsData.length > 0 && (
       <div class="mb-16">
@@ -154,7 +212,7 @@ const statusColors = {
           <div class="swiper-wrapper">
             {relatedProjectsData.map(p => (
               <div class="swiper-slide">
-                <ProjectCard project={p} colorName={statusColors[p.data.status]} />
+                <ProjectCard project={p} colorName={statusColors[p.data.status as Status] ?? 'gray'} />
               </div>
             ))}
           </div>
@@ -173,13 +231,44 @@ const statusColors = {
   import Swiper from 'swiper';
 
   const swiper = new Swiper('.related-slider', {
-    spaceBetween: 12,
+    spaceBetween: 4,
     slidesPerView: 'auto',
     breakpoints: {
       768: {
-        slidesPerView: 4,
-        spaceBetween: 16,
+        slidesPerView: 5,
+        spaceBetween: 8,
       },
     }
   });
+</script>
+
+<script is:inline>
+  const projectStatus = "{status}"; // Lấy trạng thái từ Astro props
+  const downloadLinkRegex = /\.(mp4|mkv|zip|rar|7z|torrent|pdf)$/i; // Regex để nhận diện link download
+
+  // Hàm slugify (lặp lại ở đây để đảm bảo script inline hoạt động độc lập)
+  function slugify(text) {
+    return text
+      .toString()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
+      .replace(/--+/g, '-');
+  }
+
+  if (projectStatus === 'Dự kiến' || projectStatus === 'Đang làm' || projectStatus === 'Tạm ngưng') {
+    const proseArticle = document.querySelector('article.prose');
+    if (proseArticle) {
+      const links = proseArticle.querySelectorAll('a');
+      links.forEach(link => {
+        // Chỉ xử lý các liên kết có vẻ là liên kết download
+        if (downloadLinkRegex.test(link.href)) {
+          link.href = `/status/${slugify(projectStatus)}`;
+        }
+      });
+    }
+  }
 </script>

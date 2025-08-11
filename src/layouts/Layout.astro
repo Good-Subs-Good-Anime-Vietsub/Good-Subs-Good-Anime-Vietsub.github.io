@@ -3,12 +3,14 @@ interface Props {
 	title: string;
   description?: string;
   image?: string;
+  schema?: string; // New prop for JSON-LD schema
 }
 
 const { 
   title, 
   description = 'GSGA Fansub - Anime hay, Phụ đề cũng phải tốt',
-  image = new URL('/social-card.png', Astro.site).href
+  image = new URL('/social-card.png', Astro.site).href,
+  schema // Destructure new prop
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -24,6 +26,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- SEO & Social Sharing Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content="anime, vietsub, fansub, phụ đề, phim hoạt hình, xem anime, GSGA Fansub" />
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Open Graph (Facebook, Discord, Zalo...) -->
@@ -42,6 +45,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:image" content={image} />
     <meta name="twitter:image:alt" content={`Ảnh đại diện cho ${title}`} />
 
+    <!-- Schema Markup (JSON-LD) for WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GSGA Fansub - Good Subs Good Anime",
+      "url": "{Astro.site}",
+      "description": "GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{Astro.site}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- Dynamic Schema Markup for specific pages -->
+    {schema && <script type="application/ld+json" set:html={schema} />}
 	</head>
 	<body class="bg-gray-900 text-white font-sans selection:bg-cyan-500 selection:text-white">
 		<header class="bg-gray-800/60 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50">

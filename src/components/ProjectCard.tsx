@@ -1,16 +1,30 @@
 // src/components/ProjectCard.tsx
 import type { FunctionalComponent } from 'preact';
+import type { Status } from './InteractiveHome'; // Import Status
 
 // Định nghĩa kiểu dữ liệu cho một dự án, có thể tái sử dụng
 export interface Project {
   slug: string;
   data: {
-    status: string;
+    status: Status; // Thay đổi từ string thành Status
+    title_vietnamese?: string;
+    publishDate: Date;
+    featured?: boolean;
   };
   anilist: {
-    title: { romaji: string };
+    id: number;
+    title: { romaji: string; native?: string; english?: string; };
     coverImage: { extraLarge: string };
-    seasonYear: number;
+    bannerImage?: string;
+    seasonYear?: number;
+    format?: string;
+    episodes?: number;
+    duration?: number;
+    averageScore?: number;
+    source?: string;
+    genres?: string[];
+    studios?: { nodes: { name: string }[] };
+    staff?: { edges: { role: string; node: { name: { full: string } } }[] };
   };
 }
 

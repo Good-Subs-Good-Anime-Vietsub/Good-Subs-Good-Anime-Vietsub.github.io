@@ -4,19 +4,21 @@ const title = project.anilist.title.romaji;
 const image = project.anilist.bannerImage || project.anilist.coverImage.extraLarge;
 const url = `/projects/${project.slug}`;
 ---
-<a href={url} class="group relative block w-full aspect-[21/6] rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-[1.03]">
-  <div class="absolute inset-0 w-full h-full rounded-lg overflow-hidden">
-    <img 
-      src={image} 
-      alt={`Banner for ${title}`} 
-      loading="lazy" 
-      class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
-    />
-  </div>
+<a href={url} class="group relative block w-full aspect-[21/6] rounded-lg shadow-lg overflow-hidden">
+  <div class="w-full h-full transform transition-transform duration-300 group-hover:scale-[1.03]">
+    <div class="absolute inset-0 w-full h-full">
+      <img 
+        src={image} 
+        alt={`Banner for ${title}`} 
+        loading="lazy" 
+        class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+      />
+    </div>
   <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end text-center p-4">
     <div>
       <h3 class="text-lg font-bold text-white drop-shadow-lg">{title}</h3>
       <p class="text-sm text-cyan-300">{project.data.status}</p>
     </div>
   </div>
+</div>
 </a>

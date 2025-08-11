@@ -3,13 +3,22 @@ import { h } from 'preact';
 import { useState, useMemo } from 'preact/hooks';
 import ProjectCard, { type Project } from './ProjectCard';
 
+// Hàm tiện ích để loại bỏ dấu tiếng Việt
+function removeDiacritics(str: string): string {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'D');
+}
+
 interface InteractiveHomeProps {
   projects: Project[];
 }
 
 // === BƯỚC 1: ĐỊNH NGHĨA TYPE RÕ RÀNG ===
 // Định nghĩa một kiểu dữ liệu cho các trạng thái có thể có
-type Status = 'Tất cả' | 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
+export type Status = 'Tất cả' | 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
 
 // Định nghĩa mảng các bộ lọc với kiểu dữ liệu mới
 const statusFilters: Status[] = ['Tất cả', 'Đang làm', 'Hoàn thành', 'Dự kiến', 'Tạm ngưng'];
@@ -34,7 +43,14 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
     return projects.filter(project => {
       if (!project.anilist) return false;
       
-      const matchesSearch = project.anilist.title.romaji.toLowerCase().includes(searchTerm.toLowerCase());
+      const lowerSearchTerm = removeDiacritics(searchTerm).toLowerCase(); // Áp dụng cho từ khóa tìm kiếm
+      const matchesSearch = 
+        project.anilist.title.romaji.toLowerCase().includes(lowerSearchTerm) ||
+        (project.anilist.title.native && project.anilist.title.native.toLowerCase().includes(lowerSearchTerm)) ||
+        (project.anilist.title.english && project.anilist.title.english.toLowerCase().includes(lowerSearchTerm)) ||
+        (project.data.title_vietnamese && removeDiacritics(project.data.title_vietnamese).toLowerCase().includes(lowerSearchTerm)) || // Áp dụng cho tên tiếng Việt
+        (project.anilist.studios && project.anilist.studios.nodes[0]?.name.toLowerCase().includes(lowerSearchTerm)) ||
+        (project.anilist.staff && project.anilist.staff.edges.some(edge => edge.role === 'Director' && edge.node.name.full.toLowerCase().includes(lowerSearchTerm)));
       const matchesFilter = activeFilter === 'Tất cả' || project.data.status === activeFilter;
       return matchesSearch && matchesFilter;
     });
@@ -46,7 +62,7 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
       <div class="mb-6">
         <input
           type="text"
-          placeholder="Tìm kiếm anime..."
+          placeholder="Tìm kiếm..."
           value={searchTerm}
           onInput={(e) => setSearchTerm((e.target as HTMLInputElement).value)}
           class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all"

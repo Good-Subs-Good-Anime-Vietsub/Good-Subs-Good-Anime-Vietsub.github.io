@@ -1,0 +1,2253 @@
+{
+  "43": {
+    "id": 43,
+    "title": {
+      "romaji": "GHOST IN THE SHELL: Koukaku Kidoutai",
+      "native": "GHOST IN THE SHELL / 攻殻機動隊",
+      "english": "Ghost in the Shell"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/43-uDbk1jrG9yod.jpg",
+    "seasonYear": 1995,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 83,
+    "averageScore": 80,
+    "source": "MANGA",
+    "genres": [
+      "Action",
+      "Psychological",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Production I.G"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Masamune Shirow"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Oshii"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Hiroyuki Okiura"
+            }
+          }
+        },
+        {
+          "role": "Mechanical Design",
+          "node": {
+            "name": {
+              "full": "Atsushi Takeuchi"
+            }
+          }
+        },
+        {
+          "role": "Mechanical Design",
+          "node": {
+            "name": {
+              "full": "Shouji Kawamori"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "47": {
+    "id": 47,
+    "title": {
+      "romaji": "AKIRA",
+      "native": "AKIRA",
+      "english": "Akira"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/47-fof8HqtNDtvx.jpg",
+    "seasonYear": 1988,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 125,
+    "averageScore": 79,
+    "source": "MANGA",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Horror",
+      "Psychological",
+      "Sci-Fi",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Tokyo Movie Shinsha"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Katsuhiro Ootomo"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Katsuhiro Ootomo"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Hiroaki Satou"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Yoshio Takeuchi"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Takashi Nakamura"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "164": {
+    "id": 164,
+    "title": {
+      "romaji": "Mononoke-hime",
+      "native": "もののけ姫",
+      "english": "Princess Mononoke"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164-ySuGzCWVw2cL.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/164-Aj6MINy7VTfs.jpg",
+    "seasonYear": 1997,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 134,
+    "averageScore": 85,
+    "source": "ORIGINAL",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Hiroyuki Itou"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Kaoru Mano"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Yukari Yoshida"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "199": {
+    "id": 199,
+    "title": {
+      "romaji": "Sen to Chihiro no Kamikakushi",
+      "native": "千と千尋の神隠し",
+      "english": "Spirited Away"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199-Sm2RU5PSqw7T.jpg",
+    "seasonYear": 2001,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 125,
+    "averageScore": 86,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Masayuki Miyaji"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Atsushi Takahashi"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Kaoru Mano"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "437": {
+    "id": 437,
+    "title": {
+      "romaji": "PERFECT BLUE",
+      "native": "PERFECT BLUE",
+      "english": "Perfect Blue"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/437-3yMVTyN7gl2A.jpg",
+    "seasonYear": 1998,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 82,
+    "averageScore": 85,
+    "source": "OTHER",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Psychological",
+      "Thriller"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Yoshikazu Takeuchi "
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Hisashi Eguchi"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Hideki Hamasu"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "468": {
+    "id": 468,
+    "title": {
+      "romaji": "Innocence",
+      "native": "イノセンス",
+      "english": "Ghost in the Shell 2: Innocence"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx468-rfiX1uY8bsPp.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/468-V8L7r2QZaNeS.jpg",
+    "seasonYear": 2004,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 100,
+    "averageScore": 75,
+    "source": "MANGA",
+    "genres": [
+      "Action",
+      "Psychological",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Production I.G"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Masamune Shirow"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Oshii"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Hiroyuki Okiura"
+            }
+          }
+        },
+        {
+          "role": "Sub Character Design",
+          "node": {
+            "name": {
+              "full": "Tetsuya Nishio"
+            }
+          }
+        },
+        {
+          "role": "Layout Design",
+          "node": {
+            "name": {
+              "full": "Atsushi Takeuchi"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "512": {
+    "id": 512,
+    "title": {
+      "romaji": "Majo no Takkyuubin",
+      "native": "魔女の宅急便",
+      "english": "Kiki's Delivery Service"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-UwP8X4BR8YoM.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/512-Ssp3EE2NdeoA.jpg",
+    "seasonYear": 1989,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 105,
+    "averageScore": 81,
+    "source": "OTHER",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Eiko Kadono"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Katsuya Kondou"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Akira Michikawa"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Kaoru Mano"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "513": {
+    "id": 513,
+    "title": {
+      "romaji": "Tenkuu no Shiro Laputa",
+      "native": "天空の城ラピュタ",
+      "english": "Castle in the Sky"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx513-yM7Dlt65N4Rl.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/513-3zMLMyA0qH5n.jpg",
+    "seasonYear": 1986,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 125,
+    "averageScore": 80,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hayao Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Main Animator",
+          "node": {
+            "name": {
+              "full": "Yoshinori Kanada"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Nizou Yamamoto"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Toshirou Nozaki"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "578": {
+    "id": 578,
+    "title": {
+      "romaji": "Hotaru no Haka",
+      "native": "火垂るの墓",
+      "english": "Grave of the Fireflies"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/578.jpg",
+    "seasonYear": 1988,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 88,
+    "averageScore": 83,
+    "source": "OTHER",
+    "genres": [
+      "Drama"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Akiyuki Nosaka"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Isao Takahata"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yoshifumi Kondou"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Hideo Takagu"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Yoshiko Tagami"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "585": {
+    "id": 585,
+    "title": {
+      "romaji": "Mimi wo Sumaseba",
+      "native": "耳をすませば",
+      "english": "Whisper of the Heart"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx585-5uq7j2xNNVmN.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/585-GowCYxa1c8WR.jpg",
+    "seasonYear": 1995,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 111,
+    "averageScore": 81,
+    "source": "MANGA",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aoi Hiiragi"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Yoshifumi Kondou"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Masahiko Ootsuka"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Hiroyuki Itou"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Akira Michikawa"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "759": {
+    "id": 759,
+    "title": {
+      "romaji": "Tokyo Godfathers",
+      "native": "東京ゴッドファーザーズ",
+      "english": "Tokyo Godfathers"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx759-XSKBju6xutdR.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/759-WE1Y5uCZ3Vv7.jpg",
+    "seasonYear": 2003,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 92,
+    "averageScore": 81,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Kenichi Konishi"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Kyouko Yamashita"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "1033": {
+    "id": 1033,
+    "title": {
+      "romaji": "Sennen Joyuu",
+      "native": "千年女優",
+      "english": "Millennium Actress"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1033-d5p1pbd5qa4L.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1033-npnaGITec3EV.jpg",
+    "seasonYear": 2002,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 87,
+    "averageScore": 81,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Plan",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Takeshi Honda"
+            }
+          }
+        },
+        {
+          "role": "Title Logo Design",
+          "node": {
+            "name": {
+              "full": "Kyouko Yamashita"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "1943": {
+    "id": 1943,
+    "title": {
+      "romaji": "Paprika",
+      "native": "パプリカ",
+      "english": "Paprika"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-jMCEYL1Ixmgc.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1943.jpg",
+    "seasonYear": 2006,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 90,
+    "averageScore": 78,
+    "source": "OTHER",
+    "genres": [
+      "Fantasy",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Story",
+          "node": {
+            "name": {
+              "full": "Yasutaka Tsutsui"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Satoshi Kon"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Masashi Andou"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Nobutaka Ike"
+            }
+          }
+        },
+        {
+          "role": "Assistant Art Director",
+          "node": {
+            "name": {
+              "full": "Kazuki Higashiji"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "2236": {
+    "id": 2236,
+    "title": {
+      "romaji": "Toki wo Kakeru Shoujo",
+      "native": "時をかける少女",
+      "english": "The Girl Who Leapt Through Time"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2236-tH5fWFkHyVGg.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2236-rY0fvv53JIOB.jpg",
+    "seasonYear": 2006,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 97,
+    "averageScore": 78,
+    "source": "OTHER",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Yasutaka Tsutsui"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Tomohiko Itou"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yoshiyuki Sadamoto"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Nizou Yamamoto"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "5081": {
+    "id": 5081,
+    "title": {
+      "romaji": "Bakemonogatari",
+      "native": "化物語",
+      "english": "Bakemonogatari"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n5081-0Zcn5GOFYHMc.jpg",
+    "seasonYear": 2009,
+    "format": "TV",
+    "episodes": 15,
+    "duration": 24,
+    "averageScore": 82,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Psychological",
+      "Romance",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            }
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Tatsuya Oishi"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            }
+          }
+        },
+        {
+          "role": "Supervisor",
+          "node": {
+            "name": {
+              "full": "Katsushi Oota"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "5681": {
+    "id": 5681,
+    "title": {
+      "romaji": "Summer Wars",
+      "native": "サマーウォーズ",
+      "english": "Summer Wars"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5681-3DmxUVn3grD0.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/5681-gANFEmT8uIFF.jpg",
+    "seasonYear": 2009,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 114,
+    "averageScore": 77,
+    "source": "ORIGINAL",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Tomohiko Itou"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yoshiyuki Sadamoto"
+            }
+          }
+        },
+        {
+          "role": "OZ Character Design",
+          "node": {
+            "name": {
+              "full": "Takashi Okazaki"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "7711": {
+    "id": 7711,
+    "title": {
+      "romaji": "Karigurashi no Arrietty",
+      "native": "借りぐらしのアリエッティ",
+      "english": "The Secret World of Arrietty"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n7711-sxtXcjmMKfaF.jpg",
+    "seasonYear": 2010,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 94,
+    "averageScore": 77,
+    "source": "OTHER",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mary Norton"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hiromasa Yonebayashi"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Noboru Yoshida"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Youji Takeshige"
+            }
+          }
+        },
+        {
+          "role": "Editing",
+          "node": {
+            "name": {
+              "full": "Takeshi Seyama"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "10029": {
+    "id": 10029,
+    "title": {
+      "romaji": "Coquelicot-zaka kara",
+      "native": "コクリコ坂から",
+      "english": "From Up on Poppy Hill"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10029-R7iZdjWuzeYq.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10029-U4tY2KezjAc5.jpg",
+    "seasonYear": 2011,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 95,
+    "averageScore": 75,
+    "source": "MANGA",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Tetsurou Sayama"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Chizuru Takahashi"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Gorou Miyazaki"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Emi Gunji"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Katsuya Kondou"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "11597": {
+    "id": 11597,
+    "title": {
+      "romaji": "Nisemonogatari",
+      "native": "偽物語",
+      "english": "Nisemonogatari"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-x2vd4KSHcI1S.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11597-GAiesUhFN9U9.jpg",
+    "seasonYear": 2012,
+    "format": "TV",
+    "episodes": 11,
+    "duration": 24,
+    "averageScore": 79,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            }
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Tomoyuki Itamura"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            }
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "12355": {
+    "id": 12355,
+    "title": {
+      "romaji": "Ookami Kodomo no Ame to Yuki",
+      "native": "おおかみこどもの雨と雪",
+      "english": "Wolf Children"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12355-wNsvhEsXEgrH.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12355.jpg",
+    "seasonYear": 2012,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 117,
+    "averageScore": 83,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE"
+        },
+        {
+          "name": "Studio Chizu"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Koutarou Tamura"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yoshiyuki Sadamoto"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Hiroshi Oono"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "12477": {
+    "id": 12477,
+    "title": {
+      "romaji": "Sakasama no Patema",
+      "native": "サカサマのパテマ",
+      "english": "Patema Inverted"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12477-RngQKNBGkEhp.jpg",
+    "seasonYear": 2013,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 99,
+    "averageScore": 76,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Purple Cow Studio Japan"
+        },
+        {
+          "name": "Studio Rikka"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Yoshiura"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Ryuusuke Chayama"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Yoshiura"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Daisuke Mataga"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Yuuji Kaneko"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "16782": {
+    "id": 16782,
+    "title": {
+      "romaji": "Kotonoha no Niwa",
+      "native": "言の葉の庭",
+      "english": "The Garden of Words"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16782-qpFGk18UqaHn.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16782.jpg",
+    "seasonYear": 2013,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 46,
+    "averageScore": 75,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "CoMix Wave"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Kenichi Tsuchiya"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Hiroshi Takiguchi"
+            }
+          }
+        },
+        {
+          "role": "Color Design",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "20555": {
+    "id": 20555,
+    "title": {
+      "romaji": "Omoide no Marnie",
+      "native": "思い出のマーニー",
+      "english": "When Marnie Was There"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20555-QGbWQC3Kfpok.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20555-pJTKZKw8vDe8.jpg",
+    "seasonYear": 2014,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 103,
+    "averageScore": 78,
+    "source": "OTHER",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Psychological"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Ghibli"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Joan Robinson"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Hiromasa Yonebayashi"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Youhei Taneda"
+            }
+          }
+        },
+        {
+          "role": "Art Design",
+          "node": {
+            "name": {
+              "full": "Aiko Funaki"
+            }
+          }
+        },
+        {
+          "role": "Director of Photography",
+          "node": {
+            "name": {
+              "full": "Atsushi Okui"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "20954": {
+    "id": 20954,
+    "title": {
+      "romaji": "Koe no Katachi",
+      "native": "聲の形",
+      "english": "A Silent Voice"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20954-f30bHMXa5Qoe.jpg",
+    "seasonYear": 2016,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 130,
+    "averageScore": 88,
+    "source": "MANGA",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Kyoto Animation"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Yoshitoki Ooima"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Naoko Yamada"
+            }
+          }
+        },
+        {
+          "role": "Script Composition",
+          "node": {
+            "name": {
+              "full": "Reiko Yoshida"
+            }
+          }
+        },
+        {
+          "role": "Literary Arts",
+          "node": {
+            "name": {
+              "full": "Haruna Matsuda"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Futoshi Nishiya"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "20981": {
+    "id": 20981,
+    "title": {
+      "romaji": "Bakemono no Ko",
+      "native": "バケモノの子",
+      "english": "The Boy and The Beast"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20981-ut1mNXG4fp0H.jpg",
+    "seasonYear": 2015,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 118,
+    "averageScore": 79,
+    "source": "ORIGINAL",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Chizu"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Takaaki Yamashita"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Takashi Oomori"
+            }
+          }
+        },
+        {
+          "role": "Music",
+          "node": {
+            "name": {
+              "full": "Masakatsu Takagi"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "100749": {
+    "id": 100749,
+    "title": {
+      "romaji": "Mirai no Mirai",
+      "native": "未来のミライ",
+      "english": "Mirai"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100749-7Tptl7EAMAWH.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100749-rKmJwrHQj6dC.jpg",
+    "seasonYear": 2018,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 103,
+    "averageScore": 71,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Chizu"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Toshimasa Ishii"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Takashi Oomori"
+            }
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Youhei Takamatsu"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "109928": {
+    "id": 109928,
+    "title": {
+      "romaji": "Inu-ou",
+      "native": "犬王",
+      "english": "Inu-Oh"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109928-DWUN0zrDJfuv.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109928-ur9brKAUiDdi.jpg",
+    "seasonYear": 2022,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 97,
+    "averageScore": 79,
+    "source": "OTHER",
+    "genres": [
+      "Adventure",
+      "Music",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Science SARU"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Hideo Furukawa"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Taiyou Matsumoto"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Masaaki Yuasa"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Fuuga Yamashiro"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Nobutake Itou"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "112135": {
+    "id": 112135,
+    "title": {
+      "romaji": "Kono Sekai no (Sara ni Ikutsumono) Katasumi ni",
+      "native": "この世界の（さらにいくつもの）片隅に",
+      "english": "In This Corner (and Other Corners) of the World"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112135-SZwCaYm8WwR0.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112135-VtUn87kDAadW.jpg",
+    "seasonYear": 2019,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 168,
+    "averageScore": 79,
+    "source": "MANGA",
+    "genres": [
+      "Drama",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MAPPA"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Fumiyo Kouno"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Sunao Katabuchi"
+            }
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Chie Uratani"
+            }
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Hidenori Matsubara"
+            }
+          }
+        },
+        {
+          "role": "Music",
+          "node": {
+            "name": {
+              "full": "Kotringo"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "127271": {
+    "id": 127271,
+    "title": {
+      "romaji": "Ryuu to Sobakasu no Hime",
+      "native": "竜とそばかすの姫",
+      "english": "BELLE"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127271-juJIu4WFTM8q.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127271-PYK1XpL5Ha90.jpg",
+    "seasonYear": 2021,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 122,
+    "averageScore": 73,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Music",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio Chizu"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Mamoru Hosoda"
+            }
+          }
+        },
+        {
+          "role": "CG Director",
+          "node": {
+            "name": {
+              "full": "Ryou Horibe"
+            }
+          }
+        },
+        {
+          "role": "CG Director",
+          "node": {
+            "name": {
+              "full": "Youhei Shimozawa"
+            }
+          }
+        },
+        {
+          "role": "Music",
+          "node": {
+            "name": {
+              "full": "Taisei Iwasaki"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "181970": {
+    "id": 181970,
+    "title": {
+      "romaji": "Kizumonogatari: Koyomi Vamp",
+      "native": "傷物語 -こよみヴァンプ-",
+      "english": "KIZUMONOGATARI -Koyomi Vamp-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181970-dqNqPsJcBk5I.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/181970-T02XjDjycYZb.jpg",
+    "seasonYear": 2024,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 144,
+    "averageScore": 78,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Action",
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            }
+          }
+        },
+        {
+          "role": "Original Work Assistance",
+          "node": {
+            "name": {
+              "full": "Aiko Maruoka"
+            }
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            }
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            }
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Tatsuya Oishi"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

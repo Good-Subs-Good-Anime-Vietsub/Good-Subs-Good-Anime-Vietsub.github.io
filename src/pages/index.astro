@@ -4,6 +4,9 @@ import simpleGit from 'simple-git';
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
 import InteractiveHome from '../components/InteractiveHome.tsx';
+import anilistCache from '../data/anilist-cache.json';
+import type { AnilistCache } from '../types/anilist-cache'; // Import kiểu dữ liệu cache
+import type { Project } from '../components/ProjectCard'; // Import Project
 
 // --- Code lấy dữ liệu (giữ nguyên) ---
 const git = simpleGit();
@@ -26,39 +29,8 @@ const projectsWithDatePromises = localProjects.map(async (project) => {
 });
 const projectsWithDate = await Promise.all(projectsWithDatePromises);
 
-const allAniListIds = projectsWithDate
-  .map(p => p.data.anilistId)
-  .filter(id => typeof id === 'number' && !isNaN(id)); 
-
-let anilistDataMap = new Map();
-
-if (allAniListIds.length > 0) {
-  const query = `
-    query ($ids: [Int]) {
-      Page(page: 1, perPage: 100) { # Tăng perPage để lấy hết
-        media(id_in: $ids, type: ANIME, sort: SEARCH_MATCH) {
-          id
-          title { romaji }
-          coverImage { extraLarge }
-          bannerImage
-          seasonYear
-        }
-      }
-    }
-  `;
-  const response = await fetch('https://graphql.anilist.co', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({ query, variables: { ids: allAniListIds } })
-  });
-  const anilistResult = await response.json();
-
-  if (anilistResult.errors || !anilistResult.data) {
-    console.error("Lỗi từ API AniList:", anilistResult.errors);
-  } else {
-    anilistDataMap = new Map(anilistResult.data.Page.media.map(item => [item.id, item]));
-  }
-}
+// Sử dụng dữ liệu từ cache thay vì gọi API
+const anilistDataMap = new Map(Object.entries(anilistCache as AnilistCache).map(([id, data]) => [parseInt(id), data]));
 
 const allCombinedData = projectsWithDate
   .map(p => ({
@@ -66,7 +38,9 @@ const allCombinedData = projectsWithDate
     data: p.data,
     anilist: anilistDataMap.get(p.data.anilistId)
   }))
-  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+  .filter(p => p.anilist) as Project[]; // Ép kiểu thành Project[]
+  
+allCombinedData.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
 const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilist);
 ---
@@ -86,7 +60,10 @@ const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilis
   }
 </style>
 
-<Layout title="Trang chủ | GSGA Fansub">
+<Layout 
+  title="Trang chủ | GSGA Fansub"
+  description="GSGA Fansub là nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất."
+>
   <!-- Slider Featured vẫn là của Astro -->
   {featuredProjects.length > 0 && (
     <section class="mb-16 relative">

@@ -1,0 +1,91 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  // Hàm slugify để chuyển đổi chuỗi tiếng Việt có dấu thành slug không dấu
+  function slugify(text: string) {
+    return text
+      .toString()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
+      .replace(/--+/g, '-');
+  }
+
+  const rawStatuses = ['Dự kiến', 'Đang làm', 'Tạm ngưng'];
+  const statuses = rawStatuses.map(s => slugify(s));
+  return statuses.map(status => ({
+    params: { status },
+  }));
+}
+
+const { status } = Astro.params;
+
+let title = '';
+let message = '';
+let imageSrc = '';
+let altText = '';
+
+switch (status) {
+  case 'du-kien':
+    title = 'Còn đang ấp ủ nha!';
+    message = 'Một tương lai tươi sáng đang chờ đón chúng ta.';
+    imageSrc = '/src/assets/background.svg'; // Thay bằng hình ảnh cute/hài hước phù hợp
+    altText = 'Dự án đang ấp ủ';
+    break;
+  case 'dang-lam':
+    title = 'Đang làm mà đừng có giục!';
+    message = 'Chờ đợi là hạnh phúc.';
+    imageSrc = '/src/assets/astro.svg'; // Thay bằng hình ảnh cute/hài hước phù hợp
+    altText = 'Dự án đang làm';
+    break;
+  case 'tam-ngung':
+    title = 'Tạm ngưng rồi nha!';
+    message = 'Đèn đỏ đến tháng rồi cậu à, chịu thôi.';
+    imageSrc = '/favicon.svg'; // Thay bằng hình ảnh cute/hài hước phù hợp
+    altText = 'Dự án tạm ngưng';
+    break;
+  default:
+    title = 'Trạng thái không xác định';
+    message = 'Có vẻ có gì đó không đúng. Vui lòng thử lại sau.';
+    imageSrc = '/favicon.svg';
+    altText = 'Lỗi';
+}
+---
+
+<Layout title={title}>
+  <div class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <h1 class="text-5xl font-extrabold text-white mb-4">{title}</h1>
+    <p class="text-2xl text-gray-400 mb-6">
+      {message}
+    </p>
+    <p class="text-xl text-cyan-400 mb-8">
+      {status === 'du-kien' && 'Trang chủ đang chờ bạn khám phá trong '}
+      {status === 'dang-lam' && 'Đừng lo, sẽ được đưa về trang chủ sau '}
+      {status === 'tam-ngung' && 'Quay lại trang chủ sau '}
+      <span id="countdown" class="font-bold">9</span> giây nữa!
+    </p>
+    {imageSrc && <img src={imageSrc} alt={altText} class="w-48 h-48 mb-8 animate-pulse" />}
+    <a href="/" class="text-blue-500 hover:underline">Hoặc bấm vào đây để về ngay</a>
+  </div>
+
+  <script is:inline>
+    let countdown = 9;
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+      countdown--;
+      if (countdownElement) {
+        countdownElement.textContent = String(countdown);
+      }
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+  </script>
+</Layout>
