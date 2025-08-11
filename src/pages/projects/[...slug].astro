@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import ProjectCard, { type Project } from '../../components/ProjectCard.tsx'; // Import Project
 import anilistCache from '../../data/anilist-cache.json';
 import type { AnilistCache } from '../../types/anilist-cache'; // Import kiểu dữ liệu cache
-import simpleGit from 'simple-git'; // Import simple-git
+import { getFirstCommitDate } from '../../utils/git'; // Import getFirstCommitDate
 
 // Định nghĩa kiểu Status trực tiếp tại đây
 type Status = 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
@@ -22,19 +22,6 @@ function slugify(text: string) {
     .replace(/--+/g, '-');
 }
 
-// Hàm lấy ngày commit đầu tiên (từ index.astro)
-async function getFirstCommitDate(filePath: string): Promise<Date> {
-  try {
-    const git = simpleGit();
-    const logs = await git.log({ file: filePath, '--no-pager': null });
-    const firstCommit = logs.latest;
-    return firstCommit ? new Date(firstCommit.date) : new Date();
-  } catch (error) {
-    console.warn(`[Thông tin] File "${filePath}" chưa được commit. Sử dụng ngày hiện tại để hiển thị tạm thời.`);
-    return new Date();
-  }
-}
-
 // --- ĐỊNH NGHĨA PROPS ---
 interface Props {
   entry: CollectionEntry<'projects'>;
@@ -43,9 +30,13 @@ interface Props {
 // --- LOGIC LẤY TẤT CẢ CÁC ĐƯỜNG DẪN ---
 export async function getStaticPaths() {
   const allProjects = await getCollection('projects');
-  const paths = allProjects.map(entry => ({
-    params: { slug: entry.slug },
-    props: { entry },
+  const paths = await Promise.all(allProjects.map(async (entry) => {
+    const filePath = `src/content/projects/${entry.id}`;
+    const publishDate = await getFirstCommitDate(filePath);
+    return {
+      params: { slug: entry.slug },
+      props: { entry: { ...entry, data: { ...entry.data, publishDate } } },
+    };
   }));
   return paths;
 }
@@ -133,7 +124,7 @@ const statusColors: { [key in Status]: string } = {
     "genre": anilist.genres && anilist.genres.length > 0 ? anilist.genres : undefined,
     "director": director ? { "@type": "Person", "name": director } : undefined,
     "productionCompany": studio ? { "@type": "Organization", "name": studio } : undefined,
-    "datePublished": anilist.seasonYear ? `${anilist.seasonYear}-01-01` : undefined,
+    "datePublished": entry.data.publishDate ? entry.data.publishDate.toISOString().split('T')[0] : undefined,
     "numberOfEpisodes": anilist.episodes || undefined
   })}
 >
@@ -150,6 +141,7 @@ const statusColors: { [key in Status]: string } = {
       <h1 class="text-5xl font-extrabold text-white">{anilist.title.romaji}</h1>
       <h2 class="text-2xl text-gray-400 mt-2">{anilist.title.native}</h2>
       {title_vietnamese && <h3 class="text-2xl text-cyan-400 mt-2">{title_vietnamese}</h3>}
+      {entry.data.publishDate && <p class="text-sm text-gray-500 mt-1">Ngày đăng: {entry.data.publishDate.toISOString().split('T')[0]}</p>}
     </div>
 
     <!-- Combined Status and Download Links -->

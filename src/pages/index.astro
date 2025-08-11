@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import simpleGit from 'simple-git';
+import { getFirstCommitDate } from '../utils/git'; // Import getFirstCommitDate
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
 import InteractiveHome from '../components/InteractiveHome.tsx';
@@ -9,17 +9,7 @@ import type { AnilistCache } from '../types/anilist-cache'; // Import kiểu d�
 import type { Project } from '../components/ProjectCard'; // Import Project
 
 // --- Code lấy dữ liệu (giữ nguyên) ---
-const git = simpleGit();
-async function getFirstCommitDate(filePath: string): Promise<Date> {
-  try {
-    const logs = await git.log({ file: filePath, '--no-pager': null });
-    const firstCommit = logs.latest;
-    return firstCommit ? new Date(firstCommit.date) : new Date();
-  } catch (error) {
-    console.warn(`[Thông tin] File "${filePath}" chưa được commit. Sử dụng ngày hiện tại để hiển thị tạm thời.`);
-    return new Date();
-  }
-}
+// Hàm getFirstCommitDate đã được di chuyển sang src/utils/git.ts
 
 const localProjects = await getCollection('projects');
 const projectsWithDatePromises = localProjects.map(async (project) => {
@@ -61,8 +51,8 @@ const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilis
 </style>
 
 <Layout 
-  title="Trang chủ | GSGA Fansub"
-  description="GSGA Fansub là nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất."
+  title="GSGA Fansub - Good Subs Good Anime | Anime hay, Phụ đề cũng phải tốt"
+  description="GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất."
 >
   <!-- Slider Featured vẫn là của Astro -->
   {featuredProjects.length > 0 && (
