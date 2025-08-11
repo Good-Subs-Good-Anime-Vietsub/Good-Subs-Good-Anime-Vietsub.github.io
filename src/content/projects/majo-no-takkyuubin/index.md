@@ -1,22 +1,22 @@
 ---
-anilistId: 759
+anilistId: 512
 featured: false
-title_vietnamese: ''
+title_vietnamese: Dịch vụ giao hàng của phù thủy Kiki
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: KiOZ (Chỉnh sửa từ Netflix)
   - role: Timing
-    name: 'KiOZ, Commie(https://nyaa.si/user/Commie)'
+    name: KiOZ
   - role: Typesetting
     name: KiOZ
   - role: Encode
-    name: 'Commie(https://nyaa.si/user/Commie)'
+    name: 'GOA(https://nyaa.si/view/1392874)'
   - role: QC
     name: KiOZ
 downloads:
   - type: Download
-    url: 'https://nyaa.si/view/1470848'
+    url: 'https://nyaa.si/view/2003822'
 ---
 ## Chú thích dịch
 

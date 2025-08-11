@@ -1,7 +1,7 @@
 ---
-anilistId: 5681
+anilistId: 20981
 featured: false
-title_vietnamese: Cuộc chiến mùa hè
+title_vietnamese: Cậu bé và Quái thú
 status: Dự kiến
 staffs: []
 downloads:

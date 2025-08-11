@@ -1,6 +1,7 @@
 // src/components/ProjectCard.tsx
-import type { FunctionalComponent } from 'preact';
-import type { Status } from './InteractiveHome'; // Import Status
+import { h, type FunctionComponent } from 'preact';
+import type { Status } from '../utils/project'; // Import Status
+import StatusIcon from './StatusIcon';
 
 // Định nghĩa kiểu dữ liệu cho một dự án, có thể tái sử dụng
 export interface Project {
@@ -33,9 +34,10 @@ interface ProjectCardProps {
   colorName: string;
 }
 
-const ProjectCard: FunctionalComponent<ProjectCardProps> = ({ project, colorName }) => {
+const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project, colorName }) => {
   const { title, coverImage, seasonYear } = project.anilist;
   const tagBgClass = `bg-${colorName}-500`;
+  const currentStatus = project.data.status;
 
   return (
     <div class="w-full max-w-[200px] mx-auto">
@@ -44,7 +46,10 @@ const ProjectCard: FunctionalComponent<ProjectCardProps> = ({ project, colorName
           <img src={coverImage.extraLarge} alt={`Cover for ${title.romaji}`} loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
           <div class="absolute top-2 right-2">
-            <span class={`text-xs font-bold text-white px-2 py-1 rounded-md shadow-lg ${tagBgClass}`}>{project.data.status}</span>
+            <span class={`text-xs font-bold text-white px-2 py-1 rounded-md shadow-lg flex items-center ${tagBgClass} bg-opacity-90 backdrop-blur-sm`}>
+              <StatusIcon status={currentStatus} class="w-3 h-3 mr-1" />
+              {currentStatus}
+            </span>
           </div>
           <div class="absolute bottom-0 left-0 p-3 w-full">
             <h3 class="font-semibold text-base text-white leading-tight drop-shadow-lg">{title.romaji}</h3>

@@ -1,0 +1,45 @@
+---
+import { type Status, slugify, statusColors } from '../utils/project';
+
+interface Download {
+  type: string;
+  url: string;
+}
+
+interface Props {
+  status?: Status;
+  downloads: Download[];
+}
+
+const { status, downloads } = Astro.props;
+---
+
+<div class="flex justify-center my-12">
+  <div class="flex flex-wrap gap-4">
+    {status && (
+      <div class={`group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-${statusColors[status]}-500`}>
+        <span class={`flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-${statusColors[status]}-400 transition-colors duration-300`}>
+          {status === 'Hoàn thành' && <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>}
+          {status === 'Dự kiến' && <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>}
+          {status === 'Đang làm' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[22px] h-[22px]"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clip-rule="evenodd" /></svg>}
+          {status === 'Tạm ngưng' && <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause-circle"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg>}
+          <span>{status}</span>
+        </span>
+      </div>
+    )}
+    {downloads.map(link => {
+      let href = link.url;
+      if (status === 'Dự kiến' || status === 'Đang làm' || status === 'Tạm ngưng') {
+        href = `/status/${slugify(status)}`;
+      }
+      return (
+        <a href={href} target="_blank" class="group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-blue-500">
+          <span class="flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-blue-400 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>{link.type}</span>
+          </span>
+        </a>
+      );
+    })}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+---
+interface Props {
+  bannerImage?: string;
+  title: string;
+}
+
+const { bannerImage, title } = Astro.props;
+---
+
+{bannerImage && (
+  <div class="w-full aspect-[21/6] rounded-lg overflow-hidden shadow-lg mb-8">
+    <img src={bannerImage} alt={`Banner for ${title}`} class="w-full h-full object-cover" />
+  </div>
+)}

@@ -34,4 +34,12 @@ const projectsCollection = defineCollection({
 
 export const collections = {
   'projects': projectsCollection,
+  'members': defineCollection({
+    type: 'data', // Using 'data' type for JSON-like content
+    schema: z.object({
+      name: z.string(),
+      githubUrl: z.string().url().optional(),
+      role: z.string(), // Role is now required based on user's input
+    }),
+  }),
 };

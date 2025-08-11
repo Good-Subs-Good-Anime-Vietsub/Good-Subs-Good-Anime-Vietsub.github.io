@@ -1,0 +1,79 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Staff {
+  role: string;
+  name: string;
+}
+
+interface AnilistData {
+  seasonYear?: number;
+  studios?: { nodes: { name: string }[] };
+  staff?: { edges: { role: string; node: { name: { full: string } } }[] };
+  format?: string;
+  episodes?: number;
+  duration?: number;
+  source?: string;
+  genres?: string[];
+}
+
+interface Props {
+  anilist: AnilistData;
+  staffs: Staff[];
+  allMembers: CollectionEntry<'members'>[];
+}
+
+const { anilist, staffs, allMembers } = Astro.props;
+const director = anilist.staff?.edges.find(e => e.role === 'Director')?.node.name.full;
+const studio = anilist.studios?.nodes[0]?.name;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+  <div class="bg-gray-800/50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      Thông tin cơ bản
+    </h3>
+    <div class="space-y-2 text-base">
+      <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {anilist.seasonYear}</p>
+      {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio}</p>}
+      {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director}</p>}
+      {anilist.format && <p class="break-words"><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
+      {anilist.episodes && <p class="break-words"><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
+      {anilist.duration && <p class="break-words"><strong class="mr-2 text-gray-400">Thời lượng:</strong> {anilist.duration} phút</p>}
+      {anilist.source && <p class="break-words"><strong class="mr-2 text-gray-400">Nguồn gốc:</strong> {anilist.source.replace('_', ' ')}</p>}
+      {anilist.genres && anilist.genres.length > 0 && <p class="break-words"><strong class="mr-2 text-gray-400">Thể loại:</strong> {anilist.genres.join(', ')}</p>}
+    </div>
+  </div>
+  <div class="bg-gray-800/50 p-6 rounded-lg">
+    <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      Nhân lực
+    </h3>
+    <ul class="space-y-2 text-base text-gray-300">
+      {staffs.map(staff => {
+        const names = staff.name.split(',').map(name => name.replace(/\s*\(.*\)\s*/g, '').trim());
+        return (
+          <li class="break-words">
+            <strong class="text-gray-200 mr-2">{staff.role}:</strong>
+            {names.map((name, index) => {
+              const member = allMembers.find(m => m.data.name === name || m.data.name === `[${name}]`);
+              return (
+                <>
+                  {member?.data.githubUrl ? (
+                    <a href={member.data.githubUrl} target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
+                      {name}
+                    </a>
+                  ) : (
+                    name
+                  )}
+                  {index < names.length - 1 && ', '}
+                </>
+              );
+            })}
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</div>

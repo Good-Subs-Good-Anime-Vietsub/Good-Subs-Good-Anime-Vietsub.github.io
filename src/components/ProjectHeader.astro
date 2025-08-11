@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  titleVietnamese?: string;
+  nativeTitle?: string;
+  publishDate?: Date;
+}
+
+const { title, titleVietnamese, nativeTitle, publishDate } = Astro.props;
+---
+
+<div class="text-center mb-12">
+  <h1 class="text-4xl font-bold text-cyan-400">{title}</h1>
+  {titleVietnamese && <h2 class="text-2xl font-bold text-gray-300 mt-2">{titleVietnamese}</h2>}
+  <h3 class="text-1xl text-gray-400 mt-2">{nativeTitle}</h3>
+  {publishDate && <p class="text-sm text-gray-500 mt-2">Ngày đăng: {publishDate.toISOString().split('T')[0]}</p>}
+</div>

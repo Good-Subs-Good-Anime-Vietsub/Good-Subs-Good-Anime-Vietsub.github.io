@@ -7,13 +7,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch-anilist": "node scripts/fetchAnilistData.mjs"
+    "fetch-anilist": "node scripts/fetchAnilistData.mjs",
+    "rename-projects": "node scripts/renameProjectFolders.mjs"
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
     "@astrojs/sitemap": "^3.4.2",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.9",
+    "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "preact": "^10.27.0",
     "simple-git": "^3.28.0",

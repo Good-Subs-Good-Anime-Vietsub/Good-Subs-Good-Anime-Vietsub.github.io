@@ -1,22 +1,22 @@
 ---
-anilistId: 759
+anilistId: 7711
 featured: false
-title_vietnamese: ''
+title_vietnamese: Thế giới bí mật của Arrietty
 status: Hoàn thành
 staffs:
   - role: Dịch
     name: KiOZ
   - role: Timing
-    name: 'KiOZ, Commie(https://nyaa.si/user/Commie)'
+    name: 'KiOZ, Mavi'
   - role: Typesetting
     name: KiOZ
   - role: Encode
-    name: 'Commie(https://nyaa.si/user/Commie)'
+    name: 'GOA(https://nyaa.si/view/1392874)'
   - role: QC
     name: KiOZ
 downloads:
   - type: Download
-    url: 'https://nyaa.si/view/1470848'
+    url: 'https://nyaa.si/view/2003827'
 ---
 ## Chú thích dịch
 

@@ -1,26 +1,15 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import ProjectCard, { type Project } from '../../components/ProjectCard.tsx'; // Import Project
+import ProjectBanner from '../../components/ProjectBanner.astro';
+import ProjectHeader from '../../components/ProjectHeader.astro';
+import ProjectActions from '../../components/ProjectActions.astro';
+import ProjectDetails from '../../components/ProjectDetails.astro';
+import RelatedProjects from '../../components/RelatedProjects.astro';
 import anilistCache from '../../data/anilist-cache.json';
-import type { AnilistCache } from '../../types/anilist-cache'; // Import kiểu dữ liệu cache
-import { getFirstCommitDate } from '../../utils/git'; // Import getFirstCommitDate
-
-// Định nghĩa kiểu Status trực tiếp tại đây
-type Status = 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
-
-// Hàm slugify để chuyển đổi chuỗi tiếng Việt có dấu thành slug không dấu
-function slugify(text: string) {
-  return text
-    .toString()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w-]+/g, '')
-    .replace(/--+/g, '-');
-}
+import type { AnilistCache } from '../../types/anilist-cache';
+import { getFirstCommitDate } from '../../utils/git';
+import { type Project } from '../../components/ProjectCard.tsx';
 
 // --- ĐỊNH NGHĨA PROPS ---
 interface Props {
@@ -44,6 +33,9 @@ export async function getStaticPaths() {
 // --- LOGIC LẤY DỮ LIỆU CHO TRANG HIỆN TẠI ---
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+// Lấy tất cả thành viên từ collection 'members'
+const allMembers = await getCollection('members');
 
 // Sử dụng dữ liệu từ cache thay vì gọi API
 const anilist = (anilistCache as AnilistCache)[String(entry.data.anilistId)] || {
@@ -90,11 +82,7 @@ const relatedProjectsDataPromises = relatedProjects.map(async (p) => {
     }
   };
 });
-const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).filter(p => p.anilist) as Project[]; // Ép kiểu thành Project[]
-
-const statusColors: { [key in Status]: string } = {
-  'Đang làm': 'green', 'Hoàn thành': 'cyan', 'Dự kiến': 'yellow', 'Tạm ngưng': 'red'
-};
+const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).filter(p => p.anilist) as Project[];
 ---
 <style is:global>
   @import 'swiper/css';
@@ -110,7 +98,7 @@ const statusColors: { [key in Status]: string } = {
 </style>
 
 <Layout 
-  title={`${anilist.title.romaji} | GSGA`}
+  title={`${anilist.title.romaji} | GSGA Fansub - Good Subs Good Anime`}
   description={entry.body.substring(0, 150) + '...'}
   image={anilist.coverImage.extraLarge}
   schema={JSON.stringify({
@@ -129,91 +117,19 @@ const statusColors: { [key in Status]: string } = {
   })}
 >
   <div class="max-w-5xl mx-auto">
-    <!-- 1. BANNER -->
-    {anilist.bannerImage && (
-      <div class="w-full aspect-[21/6] rounded-lg overflow-hidden shadow-lg mb-8">
-        <img src={anilist.bannerImage} alt={`Banner for ${anilist.title.romaji}`} class="w-full h-full object-cover" />
-      </div>
-    )}
-
-    <!-- 2. TÊN DỰ ÁN -->
-    <div class="text-center mb-12">
-      <h1 class="text-5xl font-extrabold text-white">{anilist.title.romaji}</h1>
-      <h2 class="text-2xl text-gray-400 mt-2">{anilist.title.native}</h2>
-      {title_vietnamese && <h3 class="text-2xl text-cyan-400 mt-2">{title_vietnamese}</h3>}
-      {entry.data.publishDate && <p class="text-sm text-gray-500 mt-1">Ngày đăng: {entry.data.publishDate.toISOString().split('T')[0]}</p>}
-    </div>
-
-    <!-- Combined Status and Download Links -->
-    <div class="flex justify-center my-12">
-      <div class="flex flex-wrap gap-4">
-        {status && (
-          <div class={`group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-${statusColors[status]}-500`}>
-            <span class={`flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-${statusColors[status]}-400 transition-colors duration-300`}>
-              <span>{status}</span>
-            </span>
-          </div>
-        )}
-        {downloads.map(link => {
-          let href = link.url;
-          if (status === 'Dự kiến' || status === 'Đang làm' || status === 'Tạm ngưng') {
-            href = `/status/${slugify(status)}`;
-          }
-          return (
-            <a href={href} target="_blank" class="group relative inline-block rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 border-2 border-blue-500">
-              <span class="flex items-center gap-3 bg-transparent rounded-[7px] px-8 py-4 text-blue-400 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span>{link.type}</span>
-              </span>
-            </a>
-          );
-        })}
-      </div>
-    </div>
-    
-    <!-- 3. THÔNG TIN CƠ BẢN & NHÂN LỰC -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-      <div class="bg-gray-800/50 p-6 rounded-lg">
-        <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3">Thông tin cơ bản</h3>
-        <div class="space-y-2 text-base">
-          <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {anilist.seasonYear}</p>
-          {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio}</p>}
-          {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director}</p>}
-          {anilist.format && <p class="break-words"><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
-          {anilist.episodes && <p class="break-words"><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
-          {anilist.duration && <p class="break-words"><strong class="mr-2 text-gray-400">Thời lượng:</strong> {anilist.duration} phút</p>}
-          {anilist.source && <p class="break-words"><strong class="mr-2 text-gray-400">Nguồn gốc:</strong> {anilist.source.replace('_', ' ')}</p>}
-          {anilist.genres && anilist.genres.length > 0 && <p class="break-words"><strong class="mr-2 text-gray-400">Thể loại:</strong> {anilist.genres.join(', ')}</p>}
-        </div>
-      </div>
-      <div class="bg-gray-800/50 p-6 rounded-lg">
-        <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3">Nhân lực</h3>
-        <ul class="space-y-2 text-base text-gray-300">
-          {staffs.map(staff => (
-            <li class="break-words"><strong class="text-white mr-2">{staff.role}:</strong> {staff.name}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
-
-    <!-- 5. VÙNG GỢI Ý (SLIDER) -->
-    {relatedProjectsData.length > 0 && (
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-6 border-l-4 border-cyan-400 pl-4">Các dự án khác</h2>
-        <div class="swiper related-slider -mx-6 px-6">
-          <div class="swiper-wrapper">
-            {relatedProjectsData.map(p => (
-              <div class="swiper-slide">
-                <ProjectCard project={p} colorName={statusColors[p.data.status as Status] ?? 'gray'} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    )}
+    <ProjectBanner bannerImage={anilist.bannerImage} title={anilist.title.romaji} />
+    <ProjectHeader 
+      title={anilist.title.romaji} 
+      titleVietnamese={title_vietnamese} 
+      nativeTitle={anilist.title.native} 
+      publishDate={entry.data.publishDate} 
+    />
+    <ProjectActions status={status} downloads={downloads} />
+    <ProjectDetails anilist={anilist} staffs={staffs} allMembers={allMembers} />
+    <RelatedProjects relatedProjects={relatedProjectsData} />
 
     <!-- 6. NỘI DUNG MARKDOWN -->
-    <article class="prose prose-invert max-w-none prose-h2:text-3xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
+    <article class="prose prose-invert max-w-none prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
       <Content />
     </article>
   </div>

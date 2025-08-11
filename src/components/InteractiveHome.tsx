@@ -1,7 +1,9 @@
 // src/components/InteractiveHome.tsx
-import { h } from 'preact';
+import { h, type FunctionComponent } from 'preact';
 import { useState, useMemo } from 'preact/hooks';
 import ProjectCard, { type Project } from './ProjectCard';
+import StatusIcon from './StatusIcon';
+import { type Status, statusColors } from '../utils/project';
 
 // Hàm tiện ích để loại bỏ dấu tiếng Việt
 function removeDiacritics(str: string): string {
@@ -17,20 +19,9 @@ interface InteractiveHomeProps {
 }
 
 // === BƯỚC 1: ĐỊNH NGHĨA TYPE RÕ RÀNG ===
-// Định nghĩa một kiểu dữ liệu cho các trạng thái có thể có
-export type Status = 'Tất cả' | 'Đang làm' | 'Hoàn thành' | 'Dự kiến' | 'Tạm ngưng';
-
 // Định nghĩa mảng các bộ lọc với kiểu dữ liệu mới
 const statusFilters: Status[] = ['Tất cả', 'Đang làm', 'Hoàn thành', 'Dự kiến', 'Tạm ngưng'];
 
-// Định nghĩa object màu sắc, với key là kiểu Status
-const statusColors: { [key in Status]: string } = {
-  'Đang làm': 'green',
-  'Hoàn thành': 'cyan',
-  'Dự kiến': 'yellow',
-  'Tạm ngưng': 'red',
-  'Tất cả': 'gray'
-};
 // === KẾT THÚC BƯỚC 1 ===
 
 
@@ -80,12 +71,13 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              class={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 ${
+              class={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 flex items-center ${
                 isActive
                   ? `bg-${colorName}-500 text-white shadow-lg`
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
+              <StatusIcon status={filter} class="w-4 h-4 mr-1" />
               {filter}
             </button>
           )

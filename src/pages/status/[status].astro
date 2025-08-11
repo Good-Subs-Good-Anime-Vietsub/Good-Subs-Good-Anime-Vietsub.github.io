@@ -1,21 +1,9 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { slugify } from '../../utils/project';
 
 export async function getStaticPaths() {
-  // Hàm slugify để chuyển đổi chuỗi tiếng Việt có dấu thành slug không dấu
-  function slugify(text: string) {
-    return text
-      .toString()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '')
-      .replace(/--+/g, '-');
-  }
-
   const rawStatuses = ['Dự kiến', 'Đang làm', 'Tạm ngưng'];
   const statuses = rawStatuses.map(s => slugify(s));
   return statuses.map(status => ({
@@ -29,6 +17,7 @@ let title = '';
 let message = '';
 let imageSrc = '';
 let altText = '';
+
 
 switch (status) {
   case 'du-kien':
