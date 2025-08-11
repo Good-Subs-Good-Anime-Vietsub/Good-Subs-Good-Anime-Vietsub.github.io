@@ -1,0 +1,185 @@
+{
+  "data": {
+    "mal_id": 28805,
+    "url": "https://myanimelist.net/anime/28805/Bakemono_no_Ko",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/11/73540.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/11/73540t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/11/73540l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/11/73540.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/11/73540t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/11/73540l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "PkNtujKPZtE",
+      "url": "https://www.youtube.com/watch?v=PkNtujKPZtE",
+      "embed_url": "https://www.youtube.com/embed/PkNtujKPZtE?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/PkNtujKPZtE/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/PkNtujKPZtE/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/PkNtujKPZtE/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/PkNtujKPZtE/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/PkNtujKPZtE/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Bakemono no Ko"
+      },
+      {
+        "type": "Synonym",
+        "title": "Child of a Beast"
+      },
+      {
+        "type": "Japanese",
+        "title": "バケモノの子"
+      },
+      {
+        "type": "English",
+        "title": "The Boy and the Beast"
+      },
+      {
+        "type": "German",
+        "title": "Der Junge und das Biest"
+      },
+      {
+        "type": "Spanish",
+        "title": "El Niño y la Bestia"
+      },
+      {
+        "type": "French",
+        "title": "Le Garçon et La Bête"
+      }
+    ],
+    "title": "Bakemono no Ko",
+    "title_english": "The Boy and the Beast",
+    "title_japanese": "バケモノの子",
+    "title_synonyms": [
+      "Child of a Beast"
+    ],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2015-07-11T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 11,
+          "month": 7,
+          "year": 2015
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Jul 11, 2015"
+    },
+    "duration": "1 hr 59 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 8.23,
+    "scored_by": 235520,
+    "rank": 368,
+    "popularity": 566,
+    "members": 445531,
+    "favorites": 3249,
+    "synopsis": "Two souls, living very different lives, wander alone and isolated in their respective worlds. For nine-year-old Ren, the last person who treated him with any form of kindness has been killed, and he is shunned by what is left of his family. With no parents, no real family, and no place to go, Ren escapes into the confusing streets and alleyways of Shibuya. Through the twists and turns of the alleys, Ren stumbles into the intimidating Kumatetsu, who leads him to the beast realm of Shibuten.\n\nFor Kumatetsu, the boy represents a chance for him to become a candidate to replace the lord of the realm once he retires. While nearly unmatched in combat, Kumatetsu's chilly persona leaves him with no disciples to teach and no way to prove he is worthy of becoming the lord's successor. \n\nWhile the two share different goals, they agree to help each other in order to reach them. Kumatetsu searches for recognition; Ren, now known as Kyuuta, searches for the home he never had. As the years pass by, it starts to become apparent that the two are helping each other in more ways than they had originally thought. Perhaps there has always been less of a difference between them, a boy and a beast, than either of the two ever realized.\n\n[Written by MAL Rewrite]",
+    "background": "With over ¥5.8 billion in total, Bakemono no Ko was Japan's second highest-grossing domestic film of 2015. It won the Japan Academy Prize for Best Animated Feature, and was also nominated for an Annie Award in its independent category.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 53,
+        "type": "anime",
+        "name": "Dentsu",
+        "url": "https://myanimelist.net/anime/producer/53/Dentsu"
+      },
+      {
+        "mal_id": 76,
+        "type": "anime",
+        "name": "Yomiuri Telecasting",
+        "url": "https://myanimelist.net/anime/producer/76/Yomiuri_Telecasting"
+      },
+      {
+        "mal_id": 113,
+        "type": "anime",
+        "name": "Kadokawa Shoten",
+        "url": "https://myanimelist.net/anime/producer/113/Kadokawa_Shoten"
+      },
+      {
+        "mal_id": 245,
+        "type": "anime",
+        "name": "TOHO",
+        "url": "https://myanimelist.net/anime/producer/245/TOHO"
+      },
+      {
+        "mal_id": 1003,
+        "type": "anime",
+        "name": "Nippon Television Network",
+        "url": "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network"
+      },
+      {
+        "mal_id": 1912,
+        "type": "anime",
+        "name": "Arquebuse",
+        "url": "https://myanimelist.net/anime/producer/1912/Arquebuse"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 102,
+        "type": "anime",
+        "name": "Funimation",
+        "url": "https://myanimelist.net/anime/producer/102/Funimation"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 555,
+        "type": "anime",
+        "name": "Studio Chizu",
+        "url": "https://myanimelist.net/anime/producer/555/Studio_Chizu"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 10,
+        "type": "anime",
+        "name": "Fantasy",
+        "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 51,
+        "type": "anime",
+        "name": "Anthropomorphic",
+        "url": "https://myanimelist.net/anime/genre/51/Anthropomorphic"
+      },
+      {
+        "mal_id": 62,
+        "type": "anime",
+        "name": "Isekai",
+        "url": "https://myanimelist.net/anime/genre/62/Isekai"
+      }
+    ],
+    "demographics": []
+  }
+}

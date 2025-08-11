@@ -1,0 +1,121 @@
+---
+// File: src/components/CategorySlider.astro (Bản Hoàn chỉnh - Tương thích Dữ liệu Tĩnh)
+import AnimeCard from './AnimeCard.astro';
+
+import type { Anime } from '../types';
+
+interface Props {
+  title: string;
+  animes: Anime[];
+  borderColor: string;
+}
+
+const { title, animes, borderColor } = Astro.props;
+---
+
+<section class="mb-12">
+  <h2 class:list={["text-2xl font-bold border-l-4 pl-4 mb-6", borderColor]}>{title}</h2>
+  
+  <div class="swiper category-slider h-[calc(3*var(--card-height)+1.5rem*2)]">
+    <div class="swiper-wrapper">
+      {animes.map(anime => (
+        <div class="swiper-slide !h-[var(--card-height)]">
+          <AnimeCard
+            title={anime.title}
+            imageUrl={anime.smallImageUrl}
+            href={anime.href}
+            status={anime.status}
+            score={anime.score}
+            year={anime.year}
+          />
+        </div>
+      ))}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<script>
+  import Swiper from 'swiper';
+  import { Navigation, Grid } from 'swiper/modules';
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/grid';
+
+  // Dùng document.querySelectorAll để khởi tạo cho TẤT CẢ các slider có class 'category-slider'
+  const categorySliders = document.querySelectorAll('.category-slider');
+  
+  categorySliders.forEach((slider, index) => {
+    // Tạo ra các class độc nhất cho mỗi slider danh mục
+    const nextElClass = `category-button-next-${index}`;
+    const prevElClass = `category-button-prev-${index}`;
+    
+    const nextEl = slider.querySelector('.swiper-button-next');
+    const prevEl = slider.querySelector('.swiper-button-prev');
+
+    // Gán các class độc nhất này vào các nút của slider hiện tại
+    if (nextEl) nextEl.classList.add(nextElClass);
+    if (prevEl) prevEl.classList.add(prevElClass);
+
+    new Swiper(slider as HTMLElement, {
+      modules: [Navigation, Grid],
+      slidesPerView: 3,
+      spaceBetween: 16,
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+      navigation: {
+        // Sử dụng các class độc nhất
+        nextEl: `.${nextElClass}`,
+        prevEl: `.${prevElClass}`,
+      },
+      breakpoints: {
+        640: { slidesPerView: 4, spaceBetween: 16, grid: { rows: 3, fill: 'row' } },
+        768: { slidesPerView: 5, spaceBetween: 24, grid: { rows: 3, fill: 'row' } },
+        1024: { slidesPerView: 6, spaceBetween: 24, grid: { rows: 3, fill: 'row' } },
+      },
+    });
+  });
+</script>
+
+<style is:global>
+  /* ... phần CSS định nghĩa --card-height và style cho nút bấm giữ nguyên như cũ ... */
+  :root {
+    --card-height: calc((100% / 6) / (2 / 3) + 2.5rem);
+  }
+  @media (max-width: 1024px) { :root { --card-height: calc((100% / 5) / (2 / 3) + 2.5rem); } }
+  @media (max-width: 768px) { :root { --card-height: calc((100% / 4) / (2 / 3) + 2.5rem); } }
+  @media (max-width: 640px) { :root { --card-height: calc((100% / 3) / (2 / 3) + 2.5rem); } }
+
+  .category-slider { position: relative; padding-bottom: 1rem; }
+  .category-slider .swiper-wrapper { display: flex; flex-wrap: wrap; }
+  .category-slider .swiper-slide { display: flex; align-items: center; justify-content: center; }
+  
+  .category-slider .swiper-button-next,
+  .category-slider .swiper-button-prev {
+    color: #9ca3af;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .category-slider:hover .swiper-button-next,
+  .category-slider:hover .swiper-button-prev {
+    opacity: 1;
+  }
+  .category-slider .swiper-button-next:hover,
+  .category-slider .swiper-button-prev:hover {
+    color: white;
+    background-color: rgba(17, 24, 39, 0.5);
+    border-radius: 50%;
+  }
+  .category-slider .swiper-button-next::after,
+  .category-slider .swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>

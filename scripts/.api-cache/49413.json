@@ -1,0 +1,165 @@
+{
+  "data": {
+    "mal_id": 49413,
+    "url": "https://myanimelist.net/anime/49413/Shiguang_Dailiren_II",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1897/137108.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1897/137108t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1897/137108l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1897/137108.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1897/137108t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1897/137108l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "vE0tnwk-jVE",
+      "url": "https://www.youtube.com/watch?v=vE0tnwk-jVE",
+      "embed_url": "https://www.youtube.com/embed/vE0tnwk-jVE?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/vE0tnwk-jVE/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/vE0tnwk-jVE/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/vE0tnwk-jVE/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/vE0tnwk-jVE/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/vE0tnwk-jVE/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Shiguang Dailiren II"
+      },
+      {
+        "type": "Synonym",
+        "title": "Link Click 2nd Season"
+      },
+      {
+        "type": "Synonym",
+        "title": "時光代理人 -LINK CLICK- II"
+      },
+      {
+        "type": "Japanese",
+        "title": "时光代理人 第二季"
+      },
+      {
+        "type": "English",
+        "title": "Link Click Season 2"
+      }
+    ],
+    "title": "Shiguang Dailiren II",
+    "title_english": "Link Click Season 2",
+    "title_japanese": "时光代理人 第二季",
+    "title_synonyms": [
+      "Link Click 2nd Season",
+      "時光代理人 -LINK CLICK- II"
+    ],
+    "type": "ONA",
+    "source": "Original",
+    "episodes": 12,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2023-07-14T00:00:00+00:00",
+      "to": "2023-09-22T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 14,
+          "month": 7,
+          "year": 2023
+        },
+        "to": {
+          "day": 22,
+          "month": 9,
+          "year": 2023
+        }
+      },
+      "string": "Jul 14, 2023 to Sep 22, 2023"
+    },
+    "duration": "24 min per ep",
+    "rating": "R - 17+ (violence & profanity)",
+    "score": 8.65,
+    "scored_by": 70052,
+    "rank": 79,
+    "popularity": 1658,
+    "members": 154472,
+    "favorites": 2044,
+    "synopsis": "The attempt to capture the mysterious perpetrator who possesses people ends tragically: Lu Guang is rushed to the hospital in a critical state, while Cheng Xiaoshi is arrested for the alleged crime. In light of recent events, the father of Liu Min unleashes his skilled, ruthless lawyer—Qian Jin—after Police Chief Li Xiao, who is spearheading the investigation related to the photo studio owned by Qiao Ling.\n\nIt appears that no one is safe from the unpredictable and fatal attacks of the adversary who painstakingly hides their identity. As he tries to learn from his past mistakes, Cheng Xiaoshi must act swiftly and decisively to put an end to this devastating trail of death.\n\n[Written by MAL Rewrite]",
+    "background": "",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 1414,
+        "type": "anime",
+        "name": "bilibili",
+        "url": "https://myanimelist.net/anime/producer/1414/bilibili"
+      },
+      {
+        "mal_id": 2357,
+        "type": "anime",
+        "name": "BeDream",
+        "url": "https://myanimelist.net/anime/producer/2357/BeDream"
+      }
+    ],
+    "licensors": [],
+    "studios": [
+      {
+        "mal_id": 1774,
+        "type": "anime",
+        "name": "LAN Studio",
+        "url": "https://myanimelist.net/anime/producer/1774/LAN_Studio"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      },
+      {
+        "mal_id": 7,
+        "type": "anime",
+        "name": "Mystery",
+        "url": "https://myanimelist.net/anime/genre/7/Mystery"
+      },
+      {
+        "mal_id": 41,
+        "type": "anime",
+        "name": "Suspense",
+        "url": "https://myanimelist.net/anime/genre/41/Suspense"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 31,
+        "type": "anime",
+        "name": "Super Power",
+        "url": "https://myanimelist.net/anime/genre/31/Super_Power"
+      },
+      {
+        "mal_id": 78,
+        "type": "anime",
+        "name": "Time Travel",
+        "url": "https://myanimelist.net/anime/genre/78/Time_Travel"
+      }
+    ],
+    "demographics": []
+  }
+}

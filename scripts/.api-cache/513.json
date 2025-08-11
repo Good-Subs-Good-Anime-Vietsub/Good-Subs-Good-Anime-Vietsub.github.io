@@ -1,0 +1,172 @@
+{
+  "data": {
+    "mal_id": 513,
+    "url": "https://myanimelist.net/anime/513/Tenkuu_no_Shiro_Laputa",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/5/37799.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/5/37799t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/5/37799l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/5/37799.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/5/37799t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/5/37799l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "8ykEy-yPBFc",
+      "url": "https://www.youtube.com/watch?v=8ykEy-yPBFc",
+      "embed_url": "https://www.youtube.com/embed/8ykEy-yPBFc?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/8ykEy-yPBFc/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/8ykEy-yPBFc/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/8ykEy-yPBFc/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/8ykEy-yPBFc/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/8ykEy-yPBFc/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Tenkuu no Shiro Laputa"
+      },
+      {
+        "type": "Synonym",
+        "title": "Tenkuu no Shiro Rapyuta"
+      },
+      {
+        "type": "Japanese",
+        "title": "天空の城ラピュタ"
+      },
+      {
+        "type": "English",
+        "title": "Castle in the Sky"
+      },
+      {
+        "type": "German",
+        "title": "Das Schloss im Himmel"
+      },
+      {
+        "type": "Spanish",
+        "title": "El Castillo en el Cielo"
+      },
+      {
+        "type": "French",
+        "title": "Castle in the Sky"
+      }
+    ],
+    "title": "Tenkuu no Shiro Laputa",
+    "title_english": "Castle in the Sky",
+    "title_japanese": "天空の城ラピュタ",
+    "title_synonyms": [
+      "Tenkuu no Shiro Rapyuta"
+    ],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1986-08-02T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 2,
+          "month": 8,
+          "year": 1986
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Aug 2, 1986"
+    },
+    "duration": "2 hr 4 min",
+    "rating": "PG - Children",
+    "score": 8.26,
+    "scored_by": 325872,
+    "rank": 338,
+    "popularity": 462,
+    "members": 521661,
+    "favorites": 4649,
+    "synopsis": "In a world filled with planes and airships, Sheeta is a young girl who has been kidnapped by government agents who seek her mysterious crystal amulet. While trapped aboard an airship, she finds herself without hope—that is, until the ship is raided by pirates. Taking advantage of the ensuing confusion, Sheeta manages to flee from her captors. Upon her escape, she meets Pazu, a boy who dreams of reaching the fabled flying castle, Laputa. The two decide to embark on a journey together to discover this castle in the sky. However, they soon find the government agents back on their trail, as they too are trying to reach Laputa for their own greedy purposes.\n\nTenkuu no Shiro Laputa follows the soaring adventures of Sheeta and Pazu, all while they learn how dreams and dire circumstances can bring two people closer together.\n\n[Written by MAL Rewrite]",
+    "background": "Tenkuu no Shiro Laputa was the first film to be produced and released by Studio Ghibli. It won the Animage Anime Grand Prix in 1986.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 382,
+        "type": "anime",
+        "name": "Tokuma Shoten",
+        "url": "https://myanimelist.net/anime/producer/382/Tokuma_Shoten"
+      },
+      {
+        "mal_id": 2518,
+        "type": "anime",
+        "name": "Streamline Pictures",
+        "url": "https://myanimelist.net/anime/producer/2518/Streamline_Pictures"
+      },
+      {
+        "mal_id": 2981,
+        "type": "anime",
+        "name": "Omnibus Promotion",
+        "url": "https://myanimelist.net/anime/producer/2981/Omnibus_Promotion"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 417,
+        "type": "anime",
+        "name": "Disney Platform Distribution",
+        "url": "https://myanimelist.net/anime/producer/417/Disney_Platform_Distribution"
+      },
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 21,
+        "type": "anime",
+        "name": "Studio Ghibli",
+        "url": "https://myanimelist.net/anime/producer/21/Studio_Ghibli"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 2,
+        "type": "anime",
+        "name": "Adventure",
+        "url": "https://myanimelist.net/anime/genre/2/Adventure"
+      },
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 10,
+        "type": "anime",
+        "name": "Fantasy",
+        "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [],
+    "demographics": []
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "data": {
+    "mal_id": 759,
+    "url": "https://myanimelist.net/anime/759/Tokyo_Godfathers",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1480/132791.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1480/132791t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1480/132791l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1480/132791.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1480/132791t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1480/132791l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "_5nfwQ9OWXY",
+      "url": "https://www.youtube.com/watch?v=_5nfwQ9OWXY",
+      "embed_url": "https://www.youtube.com/embed/_5nfwQ9OWXY?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/_5nfwQ9OWXY/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/_5nfwQ9OWXY/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/_5nfwQ9OWXY/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/_5nfwQ9OWXY/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/_5nfwQ9OWXY/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Tokyo Godfathers"
+      },
+      {
+        "type": "Japanese",
+        "title": "東京ゴッドファーザーズ"
+      },
+      {
+        "type": "English",
+        "title": "Tokyo Godfathers"
+      }
+    ],
+    "title": "Tokyo Godfathers",
+    "title_english": "Tokyo Godfathers",
+    "title_japanese": "東京ゴッドファーザーズ",
+    "title_synonyms": [],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2003-11-08T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 8,
+          "month": 11,
+          "year": 2003
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Nov 8, 2003"
+    },
+    "duration": "1 hr 32 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 8.28,
+    "scored_by": 158347,
+    "rank": 314,
+    "popularity": 846,
+    "members": 317196,
+    "favorites": 2860,
+    "synopsis": "One Christmas Eve, Hana, Gin, and Miyuki are rummaging for presents through heaps of garbage when they chance upon an abandoned baby in the cold winter night. Appalled at the pitiful sight, Hana's maternal instincts kick in and she insists on finding the baby's biological mother to demand an explanation. Naming the baby Kiyoko—meaning pure child—they begin their search using the possible clues left alongside her: a mysterious key and a single note. However, their plans are soon thrown into disarray as they get caught up in a series of unprecedented events.\n\nTokyo Godfathers follows the journey of the trio as they stick together through thick and thin, hoping to deliver Kiyoko to her true home, and find their very own Christmas miracle.\n\n[Written by MAL Rewrite]",
+    "background": "Tokyo Godfathers received an Excellence Prize at the 2003 Japan Media Arts Festival. It also won Best Animation Film at the 58th Mainichi Film Awards.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 53,
+        "type": "anime",
+        "name": "Dentsu",
+        "url": "https://myanimelist.net/anime/producer/53/Dentsu"
+      },
+      {
+        "mal_id": 79,
+        "type": "anime",
+        "name": "Genco",
+        "url": "https://myanimelist.net/anime/producer/79/Genco"
+      },
+      {
+        "mal_id": 577,
+        "type": "anime",
+        "name": "Tohokushinsha Film Corporation",
+        "url": "https://myanimelist.net/anime/producer/577/Tohokushinsha_Film_Corporation"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 15,
+        "type": "anime",
+        "name": "Sony Pictures Entertainment",
+        "url": "https://myanimelist.net/anime/producer/15/Sony_Pictures_Entertainment"
+      },
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 11,
+        "type": "anime",
+        "name": "Madhouse",
+        "url": "https://myanimelist.net/anime/producer/11/Madhouse"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 4,
+        "type": "anime",
+        "name": "Comedy",
+        "url": "https://myanimelist.net/anime/genre/4/Comedy"
+      },
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 53,
+        "type": "anime",
+        "name": "Childcare",
+        "url": "https://myanimelist.net/anime/genre/53/Childcare"
+      }
+    ],
+    "demographics": []
+  }
+}

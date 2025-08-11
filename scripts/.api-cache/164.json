@@ -1,0 +1,172 @@
+{
+  "data": {
+    "mal_id": 164,
+    "url": "https://myanimelist.net/anime/164/Mononoke_Hime",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1355/147277.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1355/147277t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1355/147277l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1355/147277.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1355/147277t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1355/147277l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "4OiMOHRDs14",
+      "url": "https://www.youtube.com/watch?v=4OiMOHRDs14",
+      "embed_url": "https://www.youtube.com/embed/4OiMOHRDs14?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/4OiMOHRDs14/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/4OiMOHRDs14/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/4OiMOHRDs14/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/4OiMOHRDs14/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/4OiMOHRDs14/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Mononoke Hime"
+      },
+      {
+        "type": "Synonym",
+        "title": "Mononoke Hime"
+      },
+      {
+        "type": "Japanese",
+        "title": "もののけ姫"
+      },
+      {
+        "type": "English",
+        "title": "Princess Mononoke"
+      },
+      {
+        "type": "German",
+        "title": "Prinzessin Mononoke"
+      },
+      {
+        "type": "Spanish",
+        "title": "La Princesa Mononoke"
+      },
+      {
+        "type": "French",
+        "title": "Princesse Mononoké"
+      }
+    ],
+    "title": "Mononoke Hime",
+    "title_english": "Princess Mononoke",
+    "title_japanese": "もののけ姫",
+    "title_synonyms": [
+      "Mononoke Hime"
+    ],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1997-07-12T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 12,
+          "month": 7,
+          "year": 1997
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Jul 12, 1997"
+    },
+    "duration": "2 hr 13 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 8.67,
+    "scored_by": 861709,
+    "rank": 75,
+    "popularity": 106,
+    "members": 1337781,
+    "favorites": 23459,
+    "synopsis": "When an Emishi village is attacked by a fierce demon boar, the young prince Ashitaka puts his life at stake to defend his tribe. With its dying breath, the beast curses the prince's arm, granting him demonic powers while gradually siphoning his life away. Instructed by the village elders to travel westward for a cure, Ashitaka arrives at Tatara, the Iron Town, where he finds himself embroiled in a fierce conflict: Lady Eboshi of Tatara, promoting constant deforestation, stands against Princess San and the sacred spirits of the forest, who are furious at the destruction brought by the humans. As the opposing forces of nature and mankind begin to clash in a desperate struggle for survival, Ashitaka attempts to seek harmony between the two, all the while battling the latent demon inside of him. Princess Mononoke is a tale depicting the connection of technology and nature, while showing the path to harmony that could be achieved by mutual acceptance.\n\n[Written by MAL Rewrite]",
+    "background": "In 1997, the film won Best Japanese Movie, Best Animation, and Japanese Movie Fans' Choice awards during the 52nd Mainichi Film Awards. In 1998, the film won the Best Picture award during the 21st Japan Academy Awards.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 382,
+        "type": "anime",
+        "name": "Tokuma Shoten",
+        "url": "https://myanimelist.net/anime/producer/382/Tokuma_Shoten"
+      },
+      {
+        "mal_id": 1003,
+        "type": "anime",
+        "name": "Nippon Television Network",
+        "url": "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network"
+      },
+      {
+        "mal_id": 2981,
+        "type": "anime",
+        "name": "Omnibus Promotion",
+        "url": "https://myanimelist.net/anime/producer/2981/Omnibus_Promotion"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 21,
+        "type": "anime",
+        "name": "Studio Ghibli",
+        "url": "https://myanimelist.net/anime/producer/21/Studio_Ghibli"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 1,
+        "type": "anime",
+        "name": "Action",
+        "url": "https://myanimelist.net/anime/genre/1/Action"
+      },
+      {
+        "mal_id": 2,
+        "type": "anime",
+        "name": "Adventure",
+        "url": "https://myanimelist.net/anime/genre/2/Adventure"
+      },
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 10,
+        "type": "anime",
+        "name": "Fantasy",
+        "url": "https://myanimelist.net/anime/genre/10/Fantasy"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [],
+    "demographics": []
+  }
+}

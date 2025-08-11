@@ -1,0 +1,159 @@
+{
+  "data": {
+    "mal_id": 9260,
+    "url": "https://myanimelist.net/anime/9260/Kizumonogatari_I__Tekketsu-hen",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1783/112810.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1783/112810t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1783/112810l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1783/112810.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1783/112810t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1783/112810l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "4lt0rT_nmvg",
+      "url": "https://www.youtube.com/watch?v=4lt0rT_nmvg",
+      "embed_url": "https://www.youtube.com/embed/4lt0rT_nmvg?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/4lt0rT_nmvg/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/4lt0rT_nmvg/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/4lt0rT_nmvg/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/4lt0rT_nmvg/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/4lt0rT_nmvg/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Kizumonogatari I: Tekketsu-hen"
+      },
+      {
+        "type": "Synonym",
+        "title": "Koyomi Vamp"
+      },
+      {
+        "type": "Japanese",
+        "title": "傷物語〈Ⅰ鉄血篇〉"
+      },
+      {
+        "type": "English",
+        "title": "Kizumonogatari Part 1: Iron-Blooded"
+      },
+      {
+        "type": "German",
+        "title": "Kizumonogatari I: Blut und Eisen"
+      }
+    ],
+    "title": "Kizumonogatari I: Tekketsu-hen",
+    "title_english": "Kizumonogatari Part 1: Iron-Blooded",
+    "title_japanese": "傷物語〈Ⅰ鉄血篇〉",
+    "title_synonyms": [
+      "Koyomi Vamp"
+    ],
+    "type": "Movie",
+    "source": "Light novel",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2016-01-08T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 8,
+          "month": 1,
+          "year": 2016
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Jan 8, 2016"
+    },
+    "duration": "1 hr 4 min",
+    "rating": "R - 17+ (violence & profanity)",
+    "score": 8.36,
+    "scored_by": 303091,
+    "rank": 240,
+    "popularity": 431,
+    "members": 563466,
+    "favorites": 3850,
+    "synopsis": "During Koyomi Araragi's second year at Naoetsu Private High School, he has a chance encounter with Tsubasa Hanekawa, the top honor student in his class. When they strike up a conversation, Hanekawa mentions a shocking rumor: a vampire with beautiful blonde hair and freezing cold eyes has been seen lurking around town.\n\nHappy to have made a new friend, Araragi writes off the rumor and goes about the rest of his evening in a carefree manner. However, on his way home, he stumbles across splatters of blood leading down the stairs to the subway. His curiosity pushes him to investigate further, so he follows the gruesome pools into the depths of the station. \n\nWhen he arrives at the source of the blood, he is terrified by what he sees—the rumored blonde vampire herself, completely dismembered. After she calls for his help, Araragi must make a decision, one which carries the potential to change his life forever.\n\n[Written by MAL Rewrite]",
+    "background": "The Kizumonogatari movie trilogy adapts the third volume of NisiOisiN's Monogatari Series: First Season.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 17,
+        "type": "anime",
+        "name": "Aniplex",
+        "url": "https://myanimelist.net/anime/producer/17/Aniplex"
+      },
+      {
+        "mal_id": 159,
+        "type": "anime",
+        "name": "Kodansha",
+        "url": "https://myanimelist.net/anime/producer/159/Kodansha"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 493,
+        "type": "anime",
+        "name": "Aniplex of America",
+        "url": "https://myanimelist.net/anime/producer/493/Aniplex_of_America"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 44,
+        "type": "anime",
+        "name": "Shaft",
+        "url": "https://myanimelist.net/anime/producer/44/Shaft"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 1,
+        "type": "anime",
+        "name": "Action",
+        "url": "https://myanimelist.net/anime/genre/1/Action"
+      },
+      {
+        "mal_id": 7,
+        "type": "anime",
+        "name": "Mystery",
+        "url": "https://myanimelist.net/anime/genre/7/Mystery"
+      },
+      {
+        "mal_id": 37,
+        "type": "anime",
+        "name": "Supernatural",
+        "url": "https://myanimelist.net/anime/genre/37/Supernatural"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 32,
+        "type": "anime",
+        "name": "Vampire",
+        "url": "https://myanimelist.net/anime/genre/32/Vampire"
+      }
+    ],
+    "demographics": []
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "data": {
+    "mal_id": 578,
+    "url": "https://myanimelist.net/anime/578/Hotaru_no_Haka",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1485/141208.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1485/141208t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1485/141208l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1485/141208.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1485/141208t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1485/141208l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "4vPeTSRd580",
+      "url": "https://www.youtube.com/watch?v=4vPeTSRd580",
+      "embed_url": "https://www.youtube.com/embed/4vPeTSRd580?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/4vPeTSRd580/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/4vPeTSRd580/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/4vPeTSRd580/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/4vPeTSRd580/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/4vPeTSRd580/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Hotaru no Haka"
+      },
+      {
+        "type": "Synonym",
+        "title": "Tombstone for Fireflies"
+      },
+      {
+        "type": "Japanese",
+        "title": "火垂るの墓"
+      },
+      {
+        "type": "English",
+        "title": "Grave of the Fireflies"
+      },
+      {
+        "type": "German",
+        "title": "Die letzten Glühwürmchen"
+      },
+      {
+        "type": "Spanish",
+        "title": "La Tumba de las Luciérnagas"
+      },
+      {
+        "type": "French",
+        "title": "Le Tombeau des Lucioles"
+      }
+    ],
+    "title": "Hotaru no Haka",
+    "title_english": "Grave of the Fireflies",
+    "title_japanese": "火垂るの墓",
+    "title_synonyms": [
+      "Tombstone for Fireflies"
+    ],
+    "type": "Movie",
+    "source": "Novel",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1988-04-16T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 16,
+          "month": 4,
+          "year": 1988
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Apr 16, 1988"
+    },
+    "duration": "1 hr 28 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 8.53,
+    "scored_by": 438823,
+    "rank": 135,
+    "popularity": 298,
+    "members": 734227,
+    "favorites": 8811,
+    "synopsis": "As World War II reaches its conclusion in 1945, Japan faces widespread destruction in the form of American bombings, devastating city after city. Hotaru no Haka, also known as Grave of the Fireflies, is the story of Seita and his sister Setsuko, two Japanese children whose lives are ravaged by the brutal war. They have lost their mother, their father, their home, and the prospect of a bright future—all tragic consequences of the war.\n\nNow orphaned and homeless, Seita and Setsuko have no choice but to drift across the countryside, beset by starvation and disease. Met with the apathy of adults along the way, they find that desperate circumstances can turn even the kindest of people cruel yet their youthful hope shines brightly in the face of unrelenting hardship, preventing the siblings from swiftly succumbing to an inevitable fate.\n\n[Written by MAL Rewrite]",
+    "background": "Hotaru no Haka is based on the 1967 semi-autobiographical short story of the same name by Akiyuki Nosaka, which is centered on his experiences during and after the American firebombing of Kobe in 1945, and was released as a double feature with My Neighbor Totoro. The movie has won several awards including the Japan Catholic Film Award in 1988, the Special Award in the 31st Blue Ribbon Awards in 1989, the Animation Jury and Rights of the Child Awards in the Chicago International Children's Film Festival in 1994, and the 1st Moscow International Children's and Youth's Film Festival Grand Prix in 1998.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [],
+    "licensors": [
+      {
+        "mal_id": 97,
+        "type": "anime",
+        "name": "ADV Films",
+        "url": "https://myanimelist.net/anime/producer/97/ADV_Films"
+      },
+      {
+        "mal_id": 284,
+        "type": "anime",
+        "name": "Central Park Media",
+        "url": "https://myanimelist.net/anime/producer/284/Central_Park_Media"
+      },
+      {
+        "mal_id": 376,
+        "type": "anime",
+        "name": "Sentai Filmworks",
+        "url": "https://myanimelist.net/anime/producer/376/Sentai_Filmworks"
+      },
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 21,
+        "type": "anime",
+        "name": "Studio Ghibli",
+        "url": "https://myanimelist.net/anime/producer/21/Studio_Ghibli"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 13,
+        "type": "anime",
+        "name": "Historical",
+        "url": "https://myanimelist.net/anime/genre/13/Historical"
+      }
+    ],
+    "demographics": []
+  }
+}

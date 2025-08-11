@@ -1,0 +1,166 @@
+{
+  "data": {
+    "mal_id": 49200,
+    "url": "https://myanimelist.net/anime/49200/Shiguang_Dailiren_Fanwai_Pian__Biwu_Zhaoqin",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1008/118860.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1008/118860t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1008/118860l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1008/118860.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1008/118860t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1008/118860l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": null,
+      "url": null,
+      "embed_url": null,
+      "images": {
+        "image_url": null,
+        "small_image_url": null,
+        "medium_image_url": null,
+        "large_image_url": null,
+        "maximum_image_url": null
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Shiguang Dailiren Fanwai Pian: Biwu Zhaoqin"
+      },
+      {
+        "type": "Synonym",
+        "title": "Shiguang Dailiren Episode 5.5"
+      },
+      {
+        "type": "Japanese",
+        "title": "时光代理人 番外篇 比武招亲"
+      },
+      {
+        "type": "English",
+        "title": "Link Click Episode 5.5"
+      }
+    ],
+    "title": "Shiguang Dailiren Fanwai Pian: Biwu Zhaoqin",
+    "title_english": "Link Click Episode 5.5",
+    "title_japanese": "时光代理人 番外篇 比武招亲",
+    "title_synonyms": [
+      "Shiguang Dailiren Episode 5.5"
+    ],
+    "type": "ONA",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2021-05-28T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 28,
+          "month": 5,
+          "year": 2021
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "May 28, 2021"
+    },
+    "duration": "22 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 7.81,
+    "scored_by": 29260,
+    "rank": 1057,
+    "popularity": 3377,
+    "members": 51567,
+    "favorites": 138,
+    "synopsis": "At the Time Photo Studio, partners Lu Guang and Cheng Xiaoshi accept jobs of a peculiar nature. With the aid of their complementary abilities, they are able to leap into photographs—thereby entering the past. One such case involves Liu Siwen, whose only wish is to marry his one true love, Ou Yang. However, her martial arts master father is apprehensive of a suitor who is an outsider and refuses to give his permission unless Liu Siwen defeats him in an honest duel.\n\nAfter years of trying and failing miserably because of his less-than-impressive skills, Liu Siwen finds himself seeking the help of Lu Guang and Cheng Xiaoshi. The two hatch a plan to outwit Ou Yang's father, but what seems simple in theory is rarely as easy to execute in reality…\n\n[Written by MAL Rewrite]",
+    "background": "",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 1325,
+        "type": "anime",
+        "name": "Haoliners Animation League",
+        "url": "https://myanimelist.net/anime/producer/1325/Haoliners_Animation_League"
+      },
+      {
+        "mal_id": 1414,
+        "type": "anime",
+        "name": "bilibili",
+        "url": "https://myanimelist.net/anime/producer/1414/bilibili"
+      },
+      {
+        "mal_id": 2357,
+        "type": "anime",
+        "name": "BeDream",
+        "url": "https://myanimelist.net/anime/producer/2357/BeDream"
+      }
+    ],
+    "licensors": [],
+    "studios": [
+      {
+        "mal_id": 1774,
+        "type": "anime",
+        "name": "LAN Studio",
+        "url": "https://myanimelist.net/anime/producer/1774/LAN_Studio"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      },
+      {
+        "mal_id": 7,
+        "type": "anime",
+        "name": "Mystery",
+        "url": "https://myanimelist.net/anime/genre/7/Mystery"
+      },
+      {
+        "mal_id": 41,
+        "type": "anime",
+        "name": "Suspense",
+        "url": "https://myanimelist.net/anime/genre/41/Suspense"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 31,
+        "type": "anime",
+        "name": "Super Power",
+        "url": "https://myanimelist.net/anime/genre/31/Super_Power"
+      },
+      {
+        "mal_id": 78,
+        "type": "anime",
+        "name": "Time Travel",
+        "url": "https://myanimelist.net/anime/genre/78/Time_Travel"
+      }
+    ],
+    "demographics": []
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "data": {
+    "mal_id": 16782,
+    "url": "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1597/112995.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1597/112995t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1597/112995l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1597/112995.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1597/112995t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1597/112995l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "udDIkl6z8X0",
+      "url": "https://www.youtube.com/watch?v=udDIkl6z8X0",
+      "embed_url": "https://www.youtube.com/embed/udDIkl6z8X0?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/udDIkl6z8X0/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/udDIkl6z8X0/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/udDIkl6z8X0/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/udDIkl6z8X0/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/udDIkl6z8X0/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Kotonoha no Niwa"
+      },
+      {
+        "type": "Synonym",
+        "title": "Koto no Ha no Niwa"
+      },
+      {
+        "type": "Synonym",
+        "title": "The Garden of Kotonoha"
+      },
+      {
+        "type": "Japanese",
+        "title": "言の葉の庭"
+      },
+      {
+        "type": "English",
+        "title": "The Garden of Words"
+      },
+      {
+        "type": "German",
+        "title": "The Garden of Words"
+      },
+      {
+        "type": "Spanish",
+        "title": "El Jardín de las Palabras"
+      },
+      {
+        "type": "French",
+        "title": "The Garden of Words"
+      }
+    ],
+    "title": "Kotonoha no Niwa",
+    "title_english": "The Garden of Words",
+    "title_japanese": "言の葉の庭",
+    "title_synonyms": [
+      "Koto no Ha no Niwa",
+      "The Garden of Kotonoha"
+    ],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2013-05-31T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 31,
+          "month": 5,
+          "year": 2013
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "May 31, 2013"
+    },
+    "duration": "46 min",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 7.86,
+    "scored_by": 543893,
+    "rank": 936,
+    "popularity": 211,
+    "members": 909925,
+    "favorites": 7184,
+    "synopsis": "On a rainy morning in Tokyo, Takao Akizuki, an aspiring shoemaker, decides to skip class to sketch designs in a beautiful garden. This is where he meets Yukari Yukino, a beautiful yet mysterious woman, for the very first time. Offering to make her new shoes, Takao continues to meet with Yukari throughout the rainy season, and without even realizing it, the two are able to alleviate the worries hidden in their hearts just by being with each other. However, their personal struggles have not disappeared completely, and as the end of the rainy season approaches, their relationship will be put to the test.\n\n[Written by MAL Rewrite]",
+    "background": "Kotonoha no Niwa won the Feature Film Award in the 18th Animation Kobe Awards in 2013 and shared the Satoshi Kon Award for Achievement in Animation with Berserk: Ougon Jidaihen III - Kourin. In 2014, the movie won the AniMovie Award for best feature film.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 229,
+        "type": "anime",
+        "name": "The Answer Studio",
+        "url": "https://myanimelist.net/anime/producer/229/The_Answer_Studio"
+      },
+      {
+        "mal_id": 1143,
+        "type": "anime",
+        "name": "TOHO animation",
+        "url": "https://myanimelist.net/anime/producer/1143/TOHO_animation"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 376,
+        "type": "anime",
+        "name": "Sentai Filmworks",
+        "url": "https://myanimelist.net/anime/producer/376/Sentai_Filmworks"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 291,
+        "type": "anime",
+        "name": "CoMix Wave Films",
+        "url": "https://myanimelist.net/anime/producer/291/CoMix_Wave_Films"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      },
+      {
+        "mal_id": 22,
+        "type": "anime",
+        "name": "Romance",
+        "url": "https://myanimelist.net/anime/genre/22/Romance"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 80,
+        "type": "anime",
+        "name": "Visual Arts",
+        "url": "https://myanimelist.net/anime/genre/80/Visual_Arts"
+      }
+    ],
+    "demographics": []
+  }
+}

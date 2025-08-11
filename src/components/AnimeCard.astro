@@ -1,0 +1,54 @@
+---
+// File: src/components/AnimeCard.astro (Bản cập nhật kích thước thẻ)
+interface Props {
+  title: string;
+  imageUrl: string;
+  href: string;
+  status: string;
+  score: number | null;
+  year: number | null;
+}
+
+const { title, imageUrl, href, status, score, year } = Astro.props;
+
+const statusColor = 
+  status === 'Hoàn thành' ? 'bg-green-600' : 
+  status === 'Đang tiến hành' ? 'bg-blue-600' : 
+  status === 'Tạm ngưng' ? 'bg-orange-500' :
+  status === 'Dự kiến' ? 'bg-sky-500' :
+  'bg-gray-600';
+---
+<a href={href} class="group block bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform hover:-translate-y-1">
+  <div class="relative">
+    <img src={imageUrl} alt={title} width="225" height="318" loading="lazy" class="w-full h-auto aspect-[2/3] object-cover" />
+    
+    <!-- SỬA Ở ĐÂY: Giảm padding và cỡ chữ của các huy hiệu trên cùng -->
+    <div class="absolute top-0 left-0 w-full p-1.5 flex justify-between items-center bg-gradient-to-b from-black/60 to-transparent">
+      {score && (
+        <div class="flex items-center gap-1 bg-black/50 text-yellow-400 text-[11px] font-bold px-1.5 py-0.5 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>{score.toFixed(2)}</span>
+        </div>
+      )}
+      {year && (
+        <div class="bg-black/50 text-white text-[11px] font-bold px-1.5 py-0.5 rounded">
+          {year}
+        </div>
+      )}
+    </div>
+    
+    <!-- SỬA Ở ĐÂY: Giảm padding và cỡ chữ của huy hiệu trạng thái -->
+    <div class:list={[
+      "absolute bottom-0 right-0 m-1.5 text-[11px] text-white font-bold px-1.5 py-0.5 rounded",
+      statusColor
+    ]}>
+      {status}
+    </div>
+  </div>
+  <!-- SỬA Ở ĐÂY: Giảm padding và cỡ chữ của tiêu đề -->
+  <div class="p-2">
+    <h3 class="font-bold text-white text-sm truncate" title={title}>
+      {title}
+    </h3>
+  </div>
+</a>

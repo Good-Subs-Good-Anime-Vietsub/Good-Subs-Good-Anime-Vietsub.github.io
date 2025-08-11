@@ -1,0 +1,188 @@
+{
+  "data": {
+    "mal_id": 10029,
+    "url": "https://myanimelist.net/anime/10029/Coquelicot-zaka_kara",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/8/32547.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/8/32547t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/8/32547l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/8/32547.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/8/32547t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/8/32547l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "9nzpk_Br6yo",
+      "url": "https://www.youtube.com/watch?v=9nzpk_Br6yo",
+      "embed_url": "https://www.youtube.com/embed/9nzpk_Br6yo?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/9nzpk_Br6yo/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/9nzpk_Br6yo/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/9nzpk_Br6yo/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/9nzpk_Br6yo/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/9nzpk_Br6yo/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Coquelicot-zaka kara"
+      },
+      {
+        "type": "Synonym",
+        "title": "Coquelicot-zaka kara"
+      },
+      {
+        "type": "Synonym",
+        "title": "Kokuriko-saka kara"
+      },
+      {
+        "type": "Synonym",
+        "title": "Kokuriko-zaka kara"
+      },
+      {
+        "type": "Synonym",
+        "title": "Coquelicot Saka kara"
+      },
+      {
+        "type": "Synonym",
+        "title": "Kokurikozaka kara"
+      },
+      {
+        "type": "Japanese",
+        "title": "コクリコ坂から"
+      },
+      {
+        "type": "English",
+        "title": "From Up on Poppy Hill"
+      },
+      {
+        "type": "German",
+        "title": "From Up on Poppy Hill"
+      },
+      {
+        "type": "Spanish",
+        "title": "La Colina de las Amapolas"
+      },
+      {
+        "type": "French",
+        "title": "From Up on Poppy Hill"
+      }
+    ],
+    "title": "Coquelicot-zaka kara",
+    "title_english": "From Up on Poppy Hill",
+    "title_japanese": "コクリコ坂から",
+    "title_synonyms": [
+      "Coquelicot-zaka kara",
+      "Kokuriko-saka kara",
+      "Kokuriko-zaka kara",
+      "Coquelicot Saka kara",
+      "Kokurikozaka kara"
+    ],
+    "type": "Movie",
+    "source": "Manga",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2011-07-16T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 16,
+          "month": 7,
+          "year": 2011
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Jul 16, 2011"
+    },
+    "duration": "1 hr 35 min",
+    "rating": "G - All Ages",
+    "score": 7.78,
+    "scored_by": 130117,
+    "rank": 1127,
+    "popularity": 1206,
+    "members": 221714,
+    "favorites": 1279,
+    "synopsis": "Atop a hill overlooking a seaside port sits a boarding house named Coquelicot Manor. Since the building is run by her family, Umi Matsuzaki carries out many of the duties involved in managing the small establishment, such as preparing meals for her fellow boarders. When she isn't at home, she is a student at the local high school—one that is currently dealing with a small crisis.\n\nIn anticipation of the upcoming Olympic Games, a beloved old clubhouse is set to be demolished to make way for a modern building. As a result, a large part of the student body has banded together, working tirelessly to prevent this from happening. Umi finds herself helping the newspaper club to spread information about this cause where she befriends Shun Kazama, whom she gradually begins to fall in love with. But Shun is an orphan who doesn't know much about his origins, and when the two begin searching for clues to the boy's past, they discover that they may have a lot more in common than either of them could have thought.\n\n[Writtten by MAL Rewrite]",
+    "background": "In 2012 the film won the Animation of the Year award in the 35th Japan Academy Prize and in the 11th Tokyo Anime Award. In 2013 it won the Best Foreign Animation/Family Trailer during the 14th Golden Trailer Awards and tied with The Wind Rises (Kaze Tachinu) film for the Best Animated Feature in the 12th Utah Film Critics Association.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 1003,
+        "type": "anime",
+        "name": "Nippon Television Network",
+        "url": "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 21,
+        "type": "anime",
+        "name": "Studio Ghibli",
+        "url": "https://myanimelist.net/anime/producer/21/Studio_Ghibli"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 22,
+        "type": "anime",
+        "name": "Romance",
+        "url": "https://myanimelist.net/anime/genre/22/Romance"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 13,
+        "type": "anime",
+        "name": "Historical",
+        "url": "https://myanimelist.net/anime/genre/13/Historical"
+      },
+      {
+        "mal_id": 23,
+        "type": "anime",
+        "name": "School",
+        "url": "https://myanimelist.net/anime/genre/23/School"
+      }
+    ],
+    "demographics": [
+      {
+        "mal_id": 25,
+        "type": "anime",
+        "name": "Shoujo",
+        "url": "https://myanimelist.net/anime/genre/25/Shoujo"
+      }
+    ]
+  }
+}

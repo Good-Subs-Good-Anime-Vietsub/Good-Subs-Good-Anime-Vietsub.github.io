@@ -1,0 +1,246 @@
+{
+  "data": {
+    "mal_id": 468,
+    "url": "https://myanimelist.net/anime/468/Innocence",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/10/75628.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/10/75628t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/10/75628l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/10/75628.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/10/75628t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/10/75628l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "4ahhON7bATQ",
+      "url": "https://www.youtube.com/watch?v=4ahhON7bATQ",
+      "embed_url": "https://www.youtube.com/embed/4ahhON7bATQ?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/4ahhON7bATQ/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/4ahhON7bATQ/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/4ahhON7bATQ/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/4ahhON7bATQ/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/4ahhON7bATQ/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Innocence"
+      },
+      {
+        "type": "Synonym",
+        "title": "Koukaku Kidoutai 2: Innocence"
+      },
+      {
+        "type": "Japanese",
+        "title": "イノセンス"
+      },
+      {
+        "type": "English",
+        "title": "Ghost in the Shell 2: Innocence"
+      },
+      {
+        "type": "German",
+        "title": "Ghost in the Shell 2: Innocence"
+      },
+      {
+        "type": "Spanish",
+        "title": "Ghost in the Shell 2: Innocence"
+      },
+      {
+        "type": "French",
+        "title": "Ghost in The Shell 2: Innocence"
+      }
+    ],
+    "title": "Innocence",
+    "title_english": "Ghost in the Shell 2: Innocence",
+    "title_japanese": "イノセンス",
+    "title_synonyms": [
+      "Koukaku Kidoutai 2: Innocence"
+    ],
+    "type": "Movie",
+    "source": "Manga",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2004-03-06T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 6,
+          "month": 3,
+          "year": 2004
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Mar 6, 2004"
+    },
+    "duration": "1 hr 39 min",
+    "rating": "R - 17+ (violence & profanity)",
+    "score": 7.78,
+    "scored_by": 91776,
+    "rank": 1117,
+    "popularity": 1522,
+    "members": 172581,
+    "favorites": 1119,
+    "synopsis": "With Major Motoko Kusanagi missing, Section 9's Batou is assigned to investigate a string of gruesome murders—seemingly at the hands of faulty gynoids, or sex robots. But when a faulty gynoid leaves Batou a cryptic message, he begins to question the cause of their malfunctions. Suspicions of politically motivated murder and an illegal \"ghost\" quickly crop up, drawing Batou and his partner Togusa into a perilous web of conspiracy.\n\nAs their investigation goes on, the line between man and machine continues to blur, and reality and perception become indistinguishable. Confronting strange and dangerous foes, Batou and Togusa explore a futuristic world filled with machines and living dolls but utterly devoid of humanity.\n\n[Written by MAL Rewrite]",
+    "background": "Rather than directly adapting the source material like the previous film, Ghost in The Shell 2: Innocence instead is based on an idea present in one of the subplots from the original manga. Alongside the movie, there was a book published that served as a prequel to Innocence called After the Long Goodbye. Ghost in the Shell 2: Innocence was nominated for the Palme d'Or at the Cannes Film Festival in 2004, and is so far the only anime to have been nominated for this prestigious award. It won the Feature Film Award in the 9th Animation Kobe Awards in 2004.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 23,
+        "type": "anime",
+        "name": "Bandai Visual",
+        "url": "https://myanimelist.net/anime/producer/23/Bandai_Visual"
+      },
+      {
+        "mal_id": 53,
+        "type": "anime",
+        "name": "Dentsu",
+        "url": "https://myanimelist.net/anime/producer/53/Dentsu"
+      },
+      {
+        "mal_id": 159,
+        "type": "anime",
+        "name": "Kodansha",
+        "url": "https://myanimelist.net/anime/producer/159/Kodansha"
+      },
+      {
+        "mal_id": 164,
+        "type": "anime",
+        "name": "d-rights",
+        "url": "https://myanimelist.net/anime/producer/164/d-rights"
+      },
+      {
+        "mal_id": 382,
+        "type": "anime",
+        "name": "Tokuma Shoten",
+        "url": "https://myanimelist.net/anime/producer/382/Tokuma_Shoten"
+      },
+      {
+        "mal_id": 1003,
+        "type": "anime",
+        "name": "Nippon Television Network",
+        "url": "https://myanimelist.net/anime/producer/1003/Nippon_Television_Network"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 102,
+        "type": "anime",
+        "name": "Funimation",
+        "url": "https://myanimelist.net/anime/producer/102/Funimation"
+      },
+      {
+        "mal_id": 233,
+        "type": "anime",
+        "name": "Bandai Entertainment",
+        "url": "https://myanimelist.net/anime/producer/233/Bandai_Entertainment"
+      },
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 10,
+        "type": "anime",
+        "name": "Production I.G",
+        "url": "https://myanimelist.net/anime/producer/10/Production_IG"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 1,
+        "type": "anime",
+        "name": "Action",
+        "url": "https://myanimelist.net/anime/genre/1/Action"
+      },
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 7,
+        "type": "anime",
+        "name": "Mystery",
+        "url": "https://myanimelist.net/anime/genre/7/Mystery"
+      },
+      {
+        "mal_id": 24,
+        "type": "anime",
+        "name": "Sci-Fi",
+        "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+      },
+      {
+        "mal_id": 41,
+        "type": "anime",
+        "name": "Suspense",
+        "url": "https://myanimelist.net/anime/genre/41/Suspense"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 39,
+        "type": "anime",
+        "name": "Detective",
+        "url": "https://myanimelist.net/anime/genre/39/Detective"
+      },
+      {
+        "mal_id": 18,
+        "type": "anime",
+        "name": "Mecha",
+        "url": "https://myanimelist.net/anime/genre/18/Mecha"
+      },
+      {
+        "mal_id": 38,
+        "type": "anime",
+        "name": "Military",
+        "url": "https://myanimelist.net/anime/genre/38/Military"
+      },
+      {
+        "mal_id": 40,
+        "type": "anime",
+        "name": "Psychological",
+        "url": "https://myanimelist.net/anime/genre/40/Psychological"
+      }
+    ],
+    "demographics": [
+      {
+        "mal_id": 42,
+        "type": "anime",
+        "name": "Seinen",
+        "url": "https://myanimelist.net/anime/genre/42/Seinen"
+      }
+    ]
+  }
+}

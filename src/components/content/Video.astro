@@ -1,0 +1,37 @@
+---
+interface Props {
+  src: string;
+  [key: string]: any; // Cho phép các props khác
+}
+
+const { src, ...props } = Astro.props;
+
+// Lấy slug của bài viết hiện tại từ URL
+const currentSlug = Astro.url.pathname.split('/anime/')[1]?.split('/')[0];
+
+// Tìm tất cả các video trong thư mục content/anime
+const allContentVideos = import.meta.glob('/src/content/anime/**/*.{mp4,webm,ogg}');
+
+let videoPath: string | undefined;
+for (const [key, value] of Object.entries(allContentVideos)) {
+  const expectedPath = `/src/content/anime/${currentSlug}/${src}`;
+  if (key === expectedPath) {
+    const videoModule = await value() as { default: string }; // Ép kiểu thành string
+    videoPath = videoModule.default;
+    break;
+  }
+}
+
+if (!videoPath) {
+  console.warn(`Video not found for slug "${currentSlug}" and src "${src}"`);
+}
+---
+
+{videoPath ? (
+  <video controls class="w-full h-auto rounded-lg shadow-lg object-cover my-4" {...props}>
+    <source src={videoPath} type={`video/${src.split('.').pop()}`} />
+    Your browser does not support the video tag.
+  </video>
+) : (
+  <p class="text-red-500">Error: Video "{src}" not found.</p>
+)}

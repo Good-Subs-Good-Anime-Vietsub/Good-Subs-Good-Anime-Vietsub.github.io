@@ -1,0 +1,204 @@
+{
+  "data": {
+    "mal_id": 43,
+    "url": "https://myanimelist.net/anime/43/Koukaku_Kidoutai",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/10/82594.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/10/82594t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/10/82594l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/10/82594.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/10/82594t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/10/82594l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "5GjS0Vvs8KA",
+      "url": "https://www.youtube.com/watch?v=5GjS0Vvs8KA",
+      "embed_url": "https://www.youtube.com/embed/5GjS0Vvs8KA?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/5GjS0Vvs8KA/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/5GjS0Vvs8KA/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/5GjS0Vvs8KA/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/5GjS0Vvs8KA/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/5GjS0Vvs8KA/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Koukaku Kidoutai"
+      },
+      {
+        "type": "Synonym",
+        "title": "Ghost in the Shell"
+      },
+      {
+        "type": "Japanese",
+        "title": "GHOST IN THE SHELL（攻殻機動隊）"
+      },
+      {
+        "type": "English",
+        "title": "Ghost in the Shell"
+      },
+      {
+        "type": "German",
+        "title": "Ghost in the Shell"
+      },
+      {
+        "type": "Spanish",
+        "title": "Ghost in the Shell"
+      },
+      {
+        "type": "French",
+        "title": "Ghost in the Shell"
+      }
+    ],
+    "title": "Koukaku Kidoutai",
+    "title_english": "Ghost in the Shell",
+    "title_japanese": "GHOST IN THE SHELL（攻殻機動隊）",
+    "title_synonyms": [
+      "Ghost in the Shell"
+    ],
+    "type": "Movie",
+    "source": "Manga",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1995-11-18T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 18,
+          "month": 11,
+          "year": 1995
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Nov 18, 1995"
+    },
+    "duration": "1 hr 22 min",
+    "rating": "R+ - Mild Nudity",
+    "score": 8.27,
+    "scored_by": 350722,
+    "rank": 331,
+    "popularity": 342,
+    "members": 679548,
+    "favorites": 13824,
+    "synopsis": "In the year 2029, Niihama City has become a technologically advanced metropolis. Due to great improvements in cybernetics, its citizens are able to replace their limbs with robotic parts. The world is now more interconnected than ever before, and the city's Public Security Section 9 is responsible for combating corruption, terrorism, and other dangerous threats following this shift toward globalization.\n\nThe strong-willed Major Motoko Kusanagi of Section 9 spearheads a case involving a mysterious hacker known only as the \"Puppet Master,\" who leaves a trail of victims stripped of their memories. Like many in this futuristic world, the Puppet Master's body is almost entirely robotic, giving them incredible power.\n\nAs Motoko and her subordinates follow the enigmatic criminal's trail, other parties—including Section 6—start to get involved, forcing her to confront the extremely complicated nature of the case. Pondering about various philosophical questions, such as her own life's meaning, Motoko soon realizes that the one who will provide these answers is none other than the Puppet Master themself.\n\n[Written by MAL Rewrite]",
+    "background": "Mamoru Oshii's Ghost in the Shell was the first film to adapt Masamune Shirow's manga of the same name. It heavily condenses the original storyline, reducing the original material's comic relief and sexual content in favor of a more serious tone and changing the setting from Japan to a city modelled after Hong Kong. The artwork within the animated film was produced using an innovative mix of cel animation and digital effects. Ghost in the Shell is one of the world's most famous Japanese animated films, being the first to reach #1 on Billboard magazine's video best-seller list, and also served as a major inspiration for the Wachowskis in their creation of the Matrix movies. A special edition titled Ghost in the Shell: 2.0 was released in 2008, which features scenes reanimated with additional CGI to match the style of the 2004's sequel, Ghost in the Shell: Innocence.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 23,
+        "type": "anime",
+        "name": "Bandai Visual",
+        "url": "https://myanimelist.net/anime/producer/23/Bandai_Visual"
+      },
+      {
+        "mal_id": 159,
+        "type": "anime",
+        "name": "Kodansha",
+        "url": "https://myanimelist.net/anime/producer/159/Kodansha"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 947,
+        "type": "anime",
+        "name": "Manga Entertainment",
+        "url": "https://myanimelist.net/anime/producer/947/Manga_Entertainment"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 10,
+        "type": "anime",
+        "name": "Production I.G",
+        "url": "https://myanimelist.net/anime/producer/10/Production_IG"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 1,
+        "type": "anime",
+        "name": "Action",
+        "url": "https://myanimelist.net/anime/genre/1/Action"
+      },
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 7,
+        "type": "anime",
+        "name": "Mystery",
+        "url": "https://myanimelist.net/anime/genre/7/Mystery"
+      },
+      {
+        "mal_id": 24,
+        "type": "anime",
+        "name": "Sci-Fi",
+        "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+      },
+      {
+        "mal_id": 41,
+        "type": "anime",
+        "name": "Suspense",
+        "url": "https://myanimelist.net/anime/genre/41/Suspense"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 39,
+        "type": "anime",
+        "name": "Detective",
+        "url": "https://myanimelist.net/anime/genre/39/Detective"
+      },
+      {
+        "mal_id": 18,
+        "type": "anime",
+        "name": "Mecha",
+        "url": "https://myanimelist.net/anime/genre/18/Mecha"
+      },
+      {
+        "mal_id": 40,
+        "type": "anime",
+        "name": "Psychological",
+        "url": "https://myanimelist.net/anime/genre/40/Psychological"
+      }
+    ],
+    "demographics": [
+      {
+        "mal_id": 42,
+        "type": "anime",
+        "name": "Seinen",
+        "url": "https://myanimelist.net/anime/genre/42/Seinen"
+      }
+    ]
+  }
+}

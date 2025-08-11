@@ -1,0 +1,129 @@
+---
+// File: src/pages/search.astro (Bản Hoàn thiện Cuối cùng)
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="Tìm kiếm - GSGA Fansub">
+  <div class="max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center my-8">Tìm kiếm Anime</h1>
+
+    <div class="mb-10 sticky top-20 z-10">
+      <div class="relative">
+        <input 
+          type="search" 
+          id="search-box" 
+          placeholder="Tìm theo tên, studio, thể loại, năm..." 
+          autofocus
+          class="w-full px-4 py-3 pl-12 bg-gray-800 border-2 border-gray-700 rounded-lg text-white text-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition shadow-lg"
+        />
+        <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="search-status" class="text-center text-gray-400 mb-8 min-h-[24px]"></div>
+    
+    <div id="search-results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+      <!-- Kết quả tìm kiếm sẽ được chèn vào đây -->
+    </div>
+  </div>
+</MainLayout>
+
+<script>
+  import Fuse, { type IFuseOptions } from 'fuse.js';
+  import type { Anime } from '../types'; // Import kiểu Anime
+ 
+
+  const searchBox = document.getElementById('search-box') as HTMLInputElement;
+  const resultsContainer = document.getElementById('search-results');
+  const statusContainer = document.getElementById('search-status');
+
+  let fuse: Fuse<Anime>;
+
+  function createAnimeCardHTML(anime: Anime): string { // Sử dụng kiểu Anime
+    const statusColor = anime.status === 'Hoàn thành' ? 'bg-green-600' :
+                        anime.status === 'Đang tiến hành' ? 'bg-blue-600' :
+                        anime.status === 'Tạm ngưng' ? 'bg-orange-500' :
+                        anime.status === 'Dự kiến' ? 'bg-sky-500' :
+                        'bg-gray-600';
+    
+    return `
+      <a href="${anime.href}" class="group block bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 transform hover:-translate-y-1">
+        <div class="relative">
+          <img src="${anime.smallImageUrl}" alt="${anime.title}" width="225" height="318" loading="lazy" class="w-full h-auto aspect-[2/3] object-cover" />
+          <div class="absolute top-0 left-0 w-full p-1.5 flex justify-between items-center bg-gradient-to-b from-black/60 to-transparent">
+            ${anime.score ? `<div class="flex items-center gap-1 bg-black/50 text-yellow-400 text-[11px] font-bold px-1.5 py-0.5 rounded"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>${anime.score.toFixed(2)}</span></div>` : ''}
+            ${anime.year ? `<div class="bg-black/50 text-white text-[11px] font-bold px-1.5 py-0.5 rounded">${anime.year}</div>` : ''}
+          </div>
+          <div class="absolute bottom-0 right-0 m-1.5 text-[11px] text-white font-bold px-1.5 py-0.5 rounded ${statusColor}">${anime.status}</div>
+        </div>
+        <div class="p-2">
+          <h3 class="font-bold text-white text-sm truncate" title="${anime.title}">${anime.title}</h3>
+        </div>
+      </a>
+    `;
+  }
+
+  function performSearch(query: string) {
+    if (!fuse || !resultsContainer || !statusContainer) return;
+    const trimmedQuery = query.trim();
+    
+    if (!trimmedQuery) {
+      statusContainer.textContent = 'Gõ vào ô tìm kiếm để bắt đầu.';
+      resultsContainer.innerHTML = '';
+      return;
+    }
+
+    const results = fuse.search(trimmedQuery);
+    
+    if (results.length === 0) {
+      statusContainer.textContent = `Không tìm thấy kết quả nào cho "${trimmedQuery}"`;
+      resultsContainer.innerHTML = '';
+    } else {
+      statusContainer.textContent = `Tìm thấy ${results.length} kết quả:`;
+      resultsContainer.innerHTML = results.map(result => createAnimeCardHTML(result.item)).join('');
+    }
+  }
+
+  async function initializeSearch() {
+    if (!statusContainer) return;
+    statusContainer.textContent = 'Đang tải dữ liệu tìm kiếm...';
+    try {
+      const response = await fetch('/data/search-data.json');
+      if (!response.ok) throw new Error('Network response was not ok');
+      const animeList: Anime[] = await response.json(); // Sử dụng kiểu Anime
+
+      const options: IFuseOptions<Anime> = { // Sử dụng kiểu Anime
+        includeScore: true,
+        threshold: 0.4,
+        keys: [
+          { name: 'title', weight: 1.0 },
+          { name: 'viet_title', weight: 0.9 },
+          { name: 'studios', weight: 0.7 },
+          { name: 'genres', weight: 0.5 },
+          { name: 'year', weight: 0.3 }
+        ]
+      };
+
+      fuse = new Fuse(animeList, options);
+      
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryFromUrl = urlParams.get('q');
+      
+      if (queryFromUrl) {
+        searchBox.value = queryFromUrl;
+        performSearch(queryFromUrl);
+      } else {
+        statusContainer.textContent = 'Gõ vào ô tìm kiếm để bắt đầu.';
+      }
+      searchBox.addEventListener('input', () => {
+        performSearch(searchBox.value);
+      });
+    } catch (error) {
+      statusContainer.textContent = 'Lỗi: Không thể tải dữ liệu tìm kiếm.';
+      console.error('Failed to load or initialize search:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initializeSearch);
+</script>

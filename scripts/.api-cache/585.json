@@ -1,0 +1,166 @@
+{
+  "data": {
+    "mal_id": 585,
+    "url": "https://myanimelist.net/anime/585/Mimi_wo_Sumaseba",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1764/138714.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1764/138714t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1764/138714l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1764/138714.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1764/138714t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1764/138714l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "0pVkiod6V0U",
+      "url": "https://www.youtube.com/watch?v=0pVkiod6V0U",
+      "embed_url": "https://www.youtube.com/embed/0pVkiod6V0U?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/0pVkiod6V0U/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/0pVkiod6V0U/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/0pVkiod6V0U/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/0pVkiod6V0U/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/0pVkiod6V0U/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Mimi wo Sumaseba"
+      },
+      {
+        "type": "Synonym",
+        "title": "If You Listen Carefully"
+      },
+      {
+        "type": "Synonym",
+        "title": "Ghibli Movie 10"
+      },
+      {
+        "type": "Japanese",
+        "title": "耳をすませば"
+      },
+      {
+        "type": "English",
+        "title": "Whisper of the Heart"
+      },
+      {
+        "type": "German",
+        "title": "Stimme des Herzens - Whisper of the Heart"
+      },
+      {
+        "type": "Spanish",
+        "title": "Susurros del Corazón"
+      },
+      {
+        "type": "French",
+        "title": "Whisper of The Heart"
+      }
+    ],
+    "title": "Mimi wo Sumaseba",
+    "title_english": "Whisper of the Heart",
+    "title_japanese": "耳をすませば",
+    "title_synonyms": [
+      "If You Listen Carefully",
+      "Ghibli Movie 10"
+    ],
+    "type": "Movie",
+    "source": "Manga",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1995-07-15T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 15,
+          "month": 7,
+          "year": 1995
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Jul 15, 1995"
+    },
+    "duration": "1 hr 51 min",
+    "rating": "G - All Ages",
+    "score": 8.22,
+    "scored_by": 221992,
+    "rank": 384,
+    "popularity": 656,
+    "members": 393189,
+    "favorites": 5550,
+    "synopsis": "Shizuku Tsukishima is an energetic 14-year-old girl who enjoys reading and writing poetry in her free time. Glancing at the checkout cards of her books one evening, she notices that her library books are frequently checked out by a boy named Seiji Amasawa. Curiosity strikes Shizuku, and she decides to search for the boy who shares her love for literature.\n\nMeeting a peculiar cat on the train, Shizuku follows the animal and is eventually led to a quaint antique shop, where she learns about a cat statuette known as \"The Baron.\" Taking an interest in the shop, she surprisingly finds Seiji, and the two quickly befriend one another. Shizuku learns while acquainting herself with Seiji that he has a dream that he would like to fulfill, causing her dismay as she remains uncertain of her future and has yet to recognize her talents.\n\nHowever, as her relationship with Seiji grows, Shizuku becomes determined to work toward a goal. Guided by the whispers of her heart and inspiration from The Baron, she resolves to carve out her own potential and dreams.\n\n[Written by MAL Rewrite]",
+    "background": "Mimi wo Sumaseba is the highest-grossing Japanese film of 1995 and the first Japanese film that used the Dolby Digital sound format.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 382,
+        "type": "anime",
+        "name": "Tokuma Shoten",
+        "url": "https://myanimelist.net/anime/producer/382/Tokuma_Shoten"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 417,
+        "type": "anime",
+        "name": "Disney Platform Distribution",
+        "url": "https://myanimelist.net/anime/producer/417/Disney_Platform_Distribution"
+      },
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 21,
+        "type": "anime",
+        "name": "Studio Ghibli",
+        "url": "https://myanimelist.net/anime/producer/21/Studio_Ghibli"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      },
+      {
+        "mal_id": 22,
+        "type": "anime",
+        "name": "Romance",
+        "url": "https://myanimelist.net/anime/genre/22/Romance"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [],
+    "demographics": [
+      {
+        "mal_id": 25,
+        "type": "anime",
+        "name": "Shoujo",
+        "url": "https://myanimelist.net/anime/genre/25/Shoujo"
+      }
+    ]
+  }
+}

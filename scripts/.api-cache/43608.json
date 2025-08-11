@@ -1,0 +1,179 @@
+{
+  "data": {
+    "mal_id": 43608,
+    "url": "https://myanimelist.net/anime/43608/Kaguya-sama_wa_Kokurasetai__Ultra_Romantic",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1160/122627.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1160/122627t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1160/122627l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1160/122627.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1160/122627t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1160/122627l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "vFN5K-iAyV0",
+      "url": "https://www.youtube.com/watch?v=vFN5K-iAyV0",
+      "embed_url": "https://www.youtube.com/embed/vFN5K-iAyV0?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/vFN5K-iAyV0/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/vFN5K-iAyV0/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/vFN5K-iAyV0/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/vFN5K-iAyV0/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/vFN5K-iAyV0/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic"
+      },
+      {
+        "type": "Synonym",
+        "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 3rd Season"
+      },
+      {
+        "type": "Synonym",
+        "title": "Kaguya-sama: Love is War Season 3rd Season"
+      },
+      {
+        "type": "Japanese",
+        "title": "かぐや様は告らせたい-ウルトラロマンティック-"
+      },
+      {
+        "type": "English",
+        "title": "Kaguya-sama: Love is War -Ultra Romantic-"
+      }
+    ],
+    "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+    "title_english": "Kaguya-sama: Love is War -Ultra Romantic-",
+    "title_japanese": "かぐや様は告らせたい-ウルトラロマンティック-",
+    "title_synonyms": [
+      "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 3rd Season",
+      "Kaguya-sama: Love is War Season 3rd Season"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 13,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "2022-04-09T00:00:00+00:00",
+      "to": "2022-06-25T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 9,
+          "month": 4,
+          "year": 2022
+        },
+        "to": {
+          "day": 25,
+          "month": 6,
+          "year": 2022
+        }
+      },
+      "string": "Apr 9, 2022 to Jun 25, 2022"
+    },
+    "duration": "23 min per ep",
+    "rating": "PG-13 - Teens 13 or older",
+    "score": 8.97,
+    "scored_by": 596312,
+    "rank": 14,
+    "popularity": 167,
+    "members": 1049376,
+    "favorites": 32567,
+    "synopsis": "The elite members of Shuchiin Academy's student council continue their competitive day-to-day antics. Council president Miyuki Shirogane clashes daily against vice-president Kaguya Shinomiya, each fighting tooth and nail to trick the other into confessing their romantic love. Kaguya struggles within the strict confines of her wealthy, uptight family, rebelling against her cold default demeanor as she warms to Shirogane and the rest of her friends.\n\nMeanwhile, council treasurer Yuu Ishigami suffers under the weight of his hopeless crush on Tsubame Koyasu, a popular upperclassman who helps to instill a new confidence in him. Miko Iino, the newest student council member, grows closer to the rule-breaking Ishigami while striving to overcome her own authoritarian moral code.\n\nAs love further blooms at Shuchiin Academy, the student council officers drag their outsider friends into increasingly comedic conflicts.\n\n[Written by MAL Rewrite]",
+    "background": "",
+    "season": "spring",
+    "year": 2022,
+    "broadcast": {
+      "day": "Saturdays",
+      "time": "00:00",
+      "timezone": "Asia/Tokyo",
+      "string": "Saturdays at 00:00 (JST)"
+    },
+    "producers": [
+      {
+        "mal_id": 17,
+        "type": "anime",
+        "name": "Aniplex",
+        "url": "https://myanimelist.net/anime/producer/17/Aniplex"
+      },
+      {
+        "mal_id": 143,
+        "type": "anime",
+        "name": "Mainichi Broadcasting System",
+        "url": "https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System"
+      },
+      {
+        "mal_id": 306,
+        "type": "anime",
+        "name": "Magic Capsule",
+        "url": "https://myanimelist.net/anime/producer/306/Magic_Capsule"
+      },
+      {
+        "mal_id": 1365,
+        "type": "anime",
+        "name": "Shueisha",
+        "url": "https://myanimelist.net/anime/producer/1365/Shueisha"
+      },
+      {
+        "mal_id": 1501,
+        "type": "anime",
+        "name": "JR East Marketing & Communications",
+        "url": "https://myanimelist.net/anime/producer/1501/JR_East_Marketing___Communications"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 493,
+        "type": "anime",
+        "name": "Aniplex of America",
+        "url": "https://myanimelist.net/anime/producer/493/Aniplex_of_America"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 56,
+        "type": "anime",
+        "name": "A-1 Pictures",
+        "url": "https://myanimelist.net/anime/producer/56/A-1_Pictures"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 4,
+        "type": "anime",
+        "name": "Comedy",
+        "url": "https://myanimelist.net/anime/genre/4/Comedy"
+      },
+      {
+        "mal_id": 22,
+        "type": "anime",
+        "name": "Romance",
+        "url": "https://myanimelist.net/anime/genre/22/Romance"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 23,
+        "type": "anime",
+        "name": "School",
+        "url": "https://myanimelist.net/anime/genre/23/School"
+      }
+    ],
+    "demographics": [
+      {
+        "mal_id": 42,
+        "type": "anime",
+        "name": "Seinen",
+        "url": "https://myanimelist.net/anime/genre/42/Seinen"
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "data": {
+    "mal_id": 437,
+    "url": "https://myanimelist.net/anime/437/Perfect_Blue",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1254/134212.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1254/134212t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1254/134212l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/1254/134212.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1254/134212t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1254/134212l.webp"
+      }
+    },
+    "trailer": {
+      "youtube_id": "kkP4h-gUWfo",
+      "url": "https://www.youtube.com/watch?v=kkP4h-gUWfo",
+      "embed_url": "https://www.youtube.com/embed/kkP4h-gUWfo?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "image_url": "https://img.youtube.com/vi/kkP4h-gUWfo/default.jpg",
+        "small_image_url": "https://img.youtube.com/vi/kkP4h-gUWfo/sddefault.jpg",
+        "medium_image_url": "https://img.youtube.com/vi/kkP4h-gUWfo/mqdefault.jpg",
+        "large_image_url": "https://img.youtube.com/vi/kkP4h-gUWfo/hqdefault.jpg",
+        "maximum_image_url": "https://img.youtube.com/vi/kkP4h-gUWfo/maxresdefault.jpg"
+      }
+    },
+    "approved": true,
+    "titles": [
+      {
+        "type": "Default",
+        "title": "Perfect Blue"
+      },
+      {
+        "type": "Japanese",
+        "title": "パーフェクトブルー"
+      },
+      {
+        "type": "English",
+        "title": "Perfect Blue"
+      }
+    ],
+    "title": "Perfect Blue",
+    "title_english": "Perfect Blue",
+    "title_japanese": "パーフェクトブルー",
+    "title_synonyms": [],
+    "type": "Movie",
+    "source": "Novel",
+    "episodes": 1,
+    "status": "Finished Airing",
+    "airing": false,
+    "aired": {
+      "from": "1998-02-28T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 28,
+          "month": 2,
+          "year": 1998
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "Feb 28, 1998"
+    },
+    "duration": "1 hr 21 min",
+    "rating": "R+ - Mild Nudity",
+    "score": 8.55,
+    "scored_by": 418125,
+    "rank": 123,
+    "popularity": 282,
+    "members": 778909,
+    "favorites": 20904,
+    "synopsis": "J-pop idol group CHAM! has spent the last two years entertaining its fans. Sadly, all good things must come to an end, and CHAM! must see one of its members, Mima Kirigoe, leave the group to pursue her acting career. While Mima's choice is met with a mixed response, she hopes her fans will continue to support her.\n\nHowever, Mima's life begins to change drastically after her departure from the group. Wanting to shed her pop-idol image, she takes on a role in a crime drama series, and her career as an actress gradually becomes more demanding and taxing for both Mima and her manager, Rumi Hidaka. To add to Mima's growing unease, an obsessed fan who is incapable of accepting that Mima has quit being an innocent idol, begins stalking her; a new anonymous website begins to impersonate her life with intricate detail; and CHAM! also appears to be doing better without her. One by one, each disturbing development drives Mima to become increasingly unhinged and unable to distinguish reality from fantasy.\n\n[Written by MAL Rewrite]",
+    "background": "Perfect Blue is the directorial debut of animator Satoshi Kon and is an adaptation of the 1991 novel Perfect Blue: Kanzen Hentai (released in English by Seven Seas Entertainment as Perfect Blue: Complete Metamorphosis) written by Yoshikazu Takeuchi. The film made its world premiere at the 1997 edition of the Fant-Asia film festival in Montreal, where it received awards for Best Asian Film and Best Animation Film. It went on to earn additional awards and critical praise at film festivals worldwide before opening in Japanese theaters in 1998.",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": null,
+      "string": null
+    },
+    "producers": [
+      {
+        "mal_id": 1850,
+        "type": "anime",
+        "name": "Rex Entertainment",
+        "url": "https://myanimelist.net/anime/producer/1850/Rex_Entertainment"
+      },
+      {
+        "mal_id": 2550,
+        "type": "anime",
+        "name": "ONIRO",
+        "url": "https://myanimelist.net/anime/producer/2550/ONIRO"
+      }
+    ],
+    "licensors": [
+      {
+        "mal_id": 783,
+        "type": "anime",
+        "name": "GKIDS",
+        "url": "https://myanimelist.net/anime/producer/783/GKIDS"
+      }
+    ],
+    "studios": [
+      {
+        "mal_id": 11,
+        "type": "anime",
+        "name": "Madhouse",
+        "url": "https://myanimelist.net/anime/producer/11/Madhouse"
+      }
+    ],
+    "genres": [
+      {
+        "mal_id": 5,
+        "type": "anime",
+        "name": "Avant Garde",
+        "url": "https://myanimelist.net/anime/genre/5/Avant_Garde"
+      },
+      {
+        "mal_id": 46,
+        "type": "anime",
+        "name": "Award Winning",
+        "url": "https://myanimelist.net/anime/genre/46/Award_Winning"
+      },
+      {
+        "mal_id": 8,
+        "type": "anime",
+        "name": "Drama",
+        "url": "https://myanimelist.net/anime/genre/8/Drama"
+      },
+      {
+        "mal_id": 14,
+        "type": "anime",
+        "name": "Horror",
+        "url": "https://myanimelist.net/anime/genre/14/Horror"
+      },
+      {
+        "mal_id": 41,
+        "type": "anime",
+        "name": "Suspense",
+        "url": "https://myanimelist.net/anime/genre/41/Suspense"
+      }
+    ],
+    "explicit_genres": [],
+    "themes": [
+      {
+        "mal_id": 50,
+        "type": "anime",
+        "name": "Adult Cast",
+        "url": "https://myanimelist.net/anime/genre/50/Adult_Cast"
+      },
+      {
+        "mal_id": 40,
+        "type": "anime",
+        "name": "Psychological",
+        "url": "https://myanimelist.net/anime/genre/40/Psychological"
+      },
+      {
+        "mal_id": 75,
+        "type": "anime",
+        "name": "Showbiz",
+        "url": "https://myanimelist.net/anime/genre/75/Showbiz"
+      }
+    ],
+    "demographics": []
+  }
+}

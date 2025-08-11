@@ -1,0 +1,44 @@
+---
+// File: src/layouts/MainLayout.astro (Bản cập nhật Menu)
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+}
+const { title = 'GSGA Fansub' } = Astro.props;
+---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Trang tải anime của GSGA Fansub" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-900 text-gray-200 antialiased">
+    <header class="bg-gray-800/70 backdrop-blur-lg sticky top-0 z-50">
+      <nav class="container mx-auto flex items-center justify-between p-4">
+        <a href="/" class="text-2xl font-bold text-white hover:text-cyan-400 transition-colors">
+          GSGA Fansub
+        </a>
+        <!-- SỬA Ở ĐÂY: Thêm link "Đội ngũ" -->
+        <div class="flex items-center gap-6 text-lg">
+          <a href="/" class="hover:text-cyan-400 transition-colors">Trang chủ</a>
+          <a href="/search" class="hover:text-cyan-400 transition-colors">Tìm kiếm</a>
+          <a href="/staff" class="hover:text-cyan-400 transition-colors">Đội ngũ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto p-4 mt-8">
+      <slot />
+    </main>
+
+    <footer class="mt-16 py-8 bg-gray-800">
+      <div class="container mx-auto text-center text-gray-400">
+        &copy; {new Date().getFullYear()} GSGA Fansub. Xây dựng với Astro.
+      </div>
+    </footer>
+  </body>
+</html>
