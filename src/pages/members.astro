@@ -4,7 +4,16 @@ import allMembers from '../data/members.json';
 import SocialIcon from '../components/SocialIcon.astro';
 
 const coreMembers = allMembers.filter(member => member.type === 'core');
-const externalMembers = allMembers.filter(member => member.type === 'external');
+const externalMembers = allMembers
+  .filter(member => member.type === 'external')
+  .sort((a, b) => {
+    // Prioritize highlighted members
+    if (a.highlight && !b.highlight) return -1;
+    if (!a.highlight && b.highlight) return 1;
+
+    // Then, sort alphabetically by name
+    return a.name.localeCompare(b.name);
+  });
 ---
 
 <Layout title="Thành viên | GSGA Fansub">
@@ -17,7 +26,10 @@ const externalMembers = allMembers.filter(member => member.type === 'external');
     </h1>
 
     <!-- Core Members Section -->
-    <h2 class="text-3xl font-bold text-cyan-400 mb-6 border-b border-cyan-400/30 pb-3">Thành viên chính thức</h2>
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6 border-b border-cyan-400/30 pb-3 flex items-center gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+      Thành viên chính thức
+    </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
       {coreMembers.map(member => (
         <div class="bg-slate-800/70 rounded-xl shadow-lg flex overflow-hidden">
@@ -56,11 +68,25 @@ const externalMembers = allMembers.filter(member => member.type === 'external');
     <!-- External Members Section -->
     {externalMembers.length > 0 && (
       <>
-        <h2 class="text-3xl font-bold text-cyan-400 mb-6 border-b border-cyan-400/30 pb-3">Thành viên/nhóm bên ngoài</h2>
+        <h2 class="text-3xl font-bold text-cyan-400 mb-6 border-b border-cyan-400/30 pb-3 flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          Thành viên/nhóm bên ngoài
+        </h2>
         <div class="flex flex-wrap gap-3 justify-center">
           {externalMembers.map(member => (
-            <a href={member.memberUrl} target="_blank" rel="noopener noreferrer" class="bg-gray-700/50 text-blue-300 hover:bg-gray-700 px-4 py-2 rounded-full text-lg transition-colors">
+            <a
+              href={member.memberUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class:list={[
+                "px-4 py-2 rounded-full text-lg transition-colors flex items-center gap-2",
+                member.highlight
+                  ? "bg-sky-400/20 text-sky-300 hover:bg-sky-400/30 border border-sky-400/50"
+                  : "bg-gray-700/50 text-blue-300 hover:bg-gray-700"
+              ]}
+            >
               {member.name}
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6v2h5.59L4 19.59L5.41 21L17 9.41V15h2V6z"/></svg>
             </a>
           ))}
         </div>

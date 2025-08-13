@@ -21,7 +21,7 @@ function useDebounce<T>(value: T, delay: number): T {
 }
 
 // --- HÀM SẮP XẾP TẬP TRUNG ---
-type SortOption = 'Ngày đăng (mới nhất)' | 'Tên (A-Z)' | 'Tên (Z-A)' | 'Năm (mới nhất)' | 'Năm (cũ nhất)';
+type SortOption = 'Ngày đăng (mới nhất)' | 'Ngày đăng (cũ nhất)' | 'Tên (A-Z)' | 'Tên (Z-A)' | 'Năm (mới nhất)' | 'Năm (cũ nhất)';
 
 function sortProjects(projects: Project[], sortOption: SortOption): Project[] {
   const sorted = [...projects].sort((a, b) => {
@@ -38,10 +38,14 @@ function sortProjects(projects: Project[], sortOption: SortOption): Project[] {
         const yearA2 = a.anilist.startDate?.year ?? a.anilist.seasonYear ?? 0;
         const yearB2 = b.anilist.startDate?.year ?? b.anilist.seasonYear ?? 0;
         return yearA2 - yearB2;
+      case 'Ngày đăng (cũ nhất)':
+        const dateComparisonAsc = a.data.publishDate.getTime() - b.data.publishDate.getTime();
+        if (dateComparisonAsc !== 0) return dateComparisonAsc;
+        return a.anilist.title.romaji.localeCompare(b.anilist.title.romaji);
       case 'Ngày đăng (mới nhất)':
       default:
-        const dateComparison = b.data.publishDate.getTime() - a.data.publishDate.getTime();
-        if (dateComparison !== 0) return dateComparison;
+        const dateComparisonDesc = b.data.publishDate.getTime() - a.data.publishDate.getTime();
+        if (dateComparisonDesc !== 0) return dateComparisonDesc;
         return a.anilist.title.romaji.localeCompare(b.anilist.title.romaji);
     }
   });
@@ -57,18 +61,63 @@ const statusFilters: Status[] = ['Tất cả', 'Đang làm', 'Hoàn thành', 'D�
 const formatFilters = ['Tất cả', 'TV', 'Movie', 'OVA', 'ONA'];
 const sortOptions: SortOption[] = [
   'Ngày đăng (mới nhất)',
+  'Ngày đăng (cũ nhất)',
   'Tên (A-Z)',
   'Tên (Z-A)',
   'Năm (mới nhất)',
   'Năm (cũ nhất)',
 ];
 
+// --- URL STATE MANAGEMENT ---
+const sortOptionMap: Record<SortOption, string> = {
+  'Ngày đăng (mới nhất)': 'date_desc',
+  'Ngày đăng (cũ nhất)': 'date_asc',
+  'Tên (A-Z)': 'name_asc',
+  'Tên (Z-A)': 'name_desc',
+  'Năm (mới nhất)': 'year_desc',
+  'Năm (cũ nhất)': 'year_asc',
+};
+const sortSlugMap = Object.fromEntries(Object.entries(sortOptionMap).map(([k, v]) => [v, k]));
+
 export default function InteractiveHome({ projects }: InteractiveHomeProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const debouncedSearchTerm = useDebounce(searchTerm, 300);
   const [activeStatusFilter, setActiveStatusFilter] = useState<Status>('Tất cả');
   const [activeFormatFilter, setActiveFormatFilter] = useState('Tất cả');
-  const [activeSortOption, setActiveSortOption] = useState<SortOption>(sortOptions[0]);
+  const [activeSortOption, setActiveSortOption] = useState<SortOption>('Ngày đăng (mới nhất)');
+
+  // Effect để đồng bộ state từ URL khi tải trang lần đầu
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q') || '';
+    const status = (params.get('status') as Status) || 'Tất cả';
+    const format = params.get('format') || 'Tất cả';
+    const sortSlug = params.get('sort');
+    const sort = sortSlug && sortSlugMap[sortSlug] ? (sortSlugMap[sortSlug] as SortOption) : 'Ngày đăng (mới nhất)';
+
+    setSearchTerm(q);
+    if (statusFilters.includes(status)) setActiveStatusFilter(status);
+    if (formatFilters.includes(format)) setActiveFormatFilter(format);
+    setActiveSortOption(sort);
+  }, []);
+
+  // Effect để cập nhật URL khi state thay đổi
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (debouncedSearchTerm) params.set('q', debouncedSearchTerm);
+    if (activeStatusFilter !== 'Tất cả') params.set('status', activeStatusFilter);
+    if (activeFormatFilter !== 'Tất cả') params.set('format', activeFormatFilter);
+    
+    const sortSlug = sortOptionMap[activeSortOption];
+    if (sortSlug !== 'date_desc') { // Don't add default sort to URL
+      params.set('sort', sortSlug);
+    }
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+    window.history.replaceState({ path: newUrl }, '', newUrl);
+  }, [debouncedSearchTerm, activeStatusFilter, activeFormatFilter, activeSortOption]);
 
   const processedProjects = useMemo(() => {
     // 1. Sắp xếp mặc định ban đầu
@@ -109,7 +158,7 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
           </div>
           <input
             type="text"
-            placeholder="Tìm kiếm theo tên, studio, đạo diễn..."
+            placeholder="Tìm kiếm theo tên, studio, đạo diễn, tựa việt..."
             value={searchTerm}
             onInput={(e) => setSearchTerm((e.target as HTMLInputElement).value)}
             class="w-full h-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all"

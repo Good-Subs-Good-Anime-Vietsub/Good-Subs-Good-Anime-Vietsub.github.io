@@ -28,7 +28,8 @@ const projectsCollection = defineCollection({
       url: z.string(), // Cho phép chuỗi bất kỳ, không kiểm tra định dạng URL
     })),
     // Thêm publishDate vào schema để TypeScript nhận diện
-    publishDate: z.instanceof(Date).optional(), 
+    publishDate: z.instanceof(Date).optional(),
+    lastUpdated: z.instanceof(Date).optional(),
   }),
 });
 

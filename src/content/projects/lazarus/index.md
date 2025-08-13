@@ -9,7 +9,7 @@ staffs:
   - role: Timing
     name: '[KiOZ]'
   - role: Typesetting
-    name: '[KiOZ]'
+    name: '[KiOZ], [Hunn]'
   - role: Encode
     name: 'WEB-DL'
   - role: QC

@@ -10,7 +10,7 @@ import anilistCache from '../../data/anilist-cache.json';
 import allMembersData from '../../data/members.json'; // Import all members from the new JSON file
 import type { AnilistCache, StaffEdge } from '../../types/anilist-cache';
 import type { Member } from '../../types/member'; // Import the new Member type
-import { getFirstCommitDate } from '../../utils/git';
+import { getCommitDates } from '../../utils/git';
 import { slugify, getRelatedProjects } from '../../utils/project';
 import { type Project } from '../../components/ProjectCard.tsx';
 
@@ -26,10 +26,10 @@ export async function getStaticPaths() {
   const allProjects = await getCollection('projects');
   const paths = await Promise.all(allProjects.map(async (entry) => {
     const filePath = `src/content/projects/${entry.id}`;
-    const publishDate = await getFirstCommitDate(filePath);
+    const { created, updated } = await getCommitDates(filePath);
     return {
       params: { slug: entry.slug },
-      props: { entry: { ...entry, data: { ...entry.data, publishDate } } },
+      props: { entry: { ...entry, data: { ...entry.data, publishDate: created, lastUpdated: updated } } },
     };
   }));
   return paths;
@@ -68,10 +68,10 @@ const relatedProjects = getRelatedProjects(entry, allProjects, (anilistCache as 
 
 const relatedProjectsDataPromises = relatedProjects.map(async (p) => {
   const filePath = `src/content/projects/${p.id}`; // Sử dụng p.id để lấy đường dẫn
-  const publishDate = await getFirstCommitDate(filePath);
+  const { created } = await getCommitDates(filePath);
   return {
     slug: p.slug,
-    data: { ...p.data, publishDate }, // Thêm publishDate vào data
+    data: { ...p.data, publishDate: created }, // Thêm publishDate vào data
     anilist: ((anilistCache as unknown) as AnilistCache)[String(p.data.anilistId)] || {
       title: { romaji: 'Không tìm thấy', native: '', english: '' },
       coverImage: { extraLarge: '' },
@@ -110,6 +110,7 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
     "director": director ? { "@type": "Person", "name": director } : undefined,
     "productionCompany": studio ? { "@type": "Organization", "name": studio } : undefined,
     "datePublished": entry.data.publishDate ? entry.data.publishDate.toISOString().split('T')[0] : undefined,
+    "dateModified": entry.data.lastUpdated ? entry.data.lastUpdated.toISOString().split('T')[0] : undefined,
     "numberOfEpisodes": anilist.episodes || undefined
   })}
 >
@@ -119,7 +120,8 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
       title={anilist.title.romaji} 
       titleVietnamese={title_vietnamese} 
       nativeTitle={anilist.title.native} 
-      publishDate={entry.data.publishDate} 
+      publishDate={entry.data.publishDate}
+      lastUpdated={entry.data.lastUpdated}
     />
     <ProjectActions status={status} downloads={downloads} />
     <ProjectDetails anilist={anilist} staffs={staffs} allMembers={allMembers} />

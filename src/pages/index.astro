@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { getFirstCommitDate } from '../utils/git'; // Import getFirstCommitDate
+import { getCommitDates } from '../utils/git';
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
 import InteractiveHome from '../components/InteractiveHome.tsx';
@@ -17,8 +17,8 @@ localProjects.sort((a, b) => a.slug.localeCompare(b.slug));
 
 const projectsWithDatePromises = localProjects.map(async (project) => {
   const filePath = `src/content/projects/${project.id}`;
-  const publishDate = await getFirstCommitDate(filePath);
-  return { ...project, data: { ...project.data, publishDate } };
+  const { created } = await getCommitDates(filePath);
+  return { ...project, data: { ...project.data, publishDate: created } };
 });
 const projectsWithDate = await Promise.all(projectsWithDatePromises);
 
