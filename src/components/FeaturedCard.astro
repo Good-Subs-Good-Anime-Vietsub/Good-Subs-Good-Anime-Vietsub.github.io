@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import StatusIcon from './StatusIcon.tsx';
 import { statusColors, type Status } from '../utils/project';
 const { project } = Astro.props;
@@ -7,13 +8,15 @@ const image = project.anilist.bannerImage || project.anilist.coverImage.extraLar
 const url = `/projects/${project.slug}`;
 const colorName = statusColors[project.data.status as Status];
 ---
-<a href={url} class="group relative block w-full aspect-[21/6] rounded-lg shadow-lg overflow-hidden">
+<a href={url} class="group relative block w-full aspect-[21/6] rounded-lg shadow-lg overflow-hidden bg-gray-800">
   <div class="w-full h-full transform transition-transform duration-300 group-hover:scale-[1.03]">
     <div class="absolute inset-0 w-full h-full">
-      <img 
+      <Image 
         src={image} 
         alt={`Banner for ${title}`} 
-        loading="lazy" 
+        width={1260}
+        height={360}
+        format="webp"
         class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
       />
     </div>

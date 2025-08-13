@@ -1,0 +1,36 @@
+name: Update AniList Cache
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    # Runs at 00:00 on Sunday (UTC)
+    - cron: '0 0 * * 0'
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Fetch AniList Data
+        run: npm run fetch-anilist
+        env:
+          ANILIST_USER_ID: ${{ secrets.ANILIST_USER_ID }} # Add this secret to your repository settings
+
+      - name: Commit and Push if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: Update AniList cache'
+          file_pattern: 'src/data/anilist-cache.json'
+          commit_user_name: 'GitHub Actions Bot'
+          commit_user_email: 'actions@github.com'
+          commit_author: 'GitHub Actions Bot <actions@github.com>'

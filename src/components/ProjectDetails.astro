@@ -7,8 +7,8 @@ interface Staff {
 interface AnilistData {
   seasonYear?: number;
   startDate?: { year: number };
-  studios?: { nodes: { name: string; siteUrl: string }[] };
-  staff?: { edges: { role: string; node: { name: { full: string }; siteUrl: string } }[] };
+  studios?: { nodes: { name: string; siteUrl?: string }[] }; // siteUrl is now optional
+  staff?: { edges: { role: string; node: { name: { full: string }; siteUrl?: string } }[] }; // siteUrl is now optional
   format?: string;
   episodes?: number;
   duration?: number;
@@ -77,8 +77,8 @@ function processStaffNames(nameString: string, members: Member[]): string {
     </h3>
     <div class="space-y-2 text-base">
       {year && <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {year}</p>}
-      {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> <a href={studio.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{studio.name}</a></p>}
-      {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> <a href={director.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{director.name.full}</a></p>}
+{studio && (studio.siteUrl ? <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> <a href={studio.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{studio.name}</a></p> : <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio.name}</p>)}
+{director && (director.siteUrl ? <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> <a href={director.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{director.name.full}</a></p> : <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director.name.full}</p>)}
       {anilist.format && <p class="break-words"><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
       {anilist.episodes && <p class="break-words"><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
       {anilist.duration && <p class="break-words"><strong class="mr-2 text-gray-400">Thời lượng:</strong> {anilist.duration} phút</p>}

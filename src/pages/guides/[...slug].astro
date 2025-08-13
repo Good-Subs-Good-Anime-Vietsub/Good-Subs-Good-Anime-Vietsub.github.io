@@ -1,0 +1,33 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ id }) => {
+    // Lọc ra file index vì nó đã có trang riêng
+    return id !== 'index.md';
+  });
+  return guides.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+type Props = {
+  entry: CollectionEntry<'guides'>;
+};
+
+const { entry } = Astro.props;
+const { Content, headings } = await entry.render();
+
+// Lấy tiêu đề từ heading H1 đầu tiên trong file markdown
+const pageTitle = headings.find(h => h.depth === 1)?.text || entry.data.title;
+---
+
+<Layout title={pageTitle} description={entry.data.description}>
+  <div class="max-w-5xl mx-auto">
+    <article class="prose prose-invert max-w-none prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
+      <Content />
+    </article>
+  </div>
+</Layout>

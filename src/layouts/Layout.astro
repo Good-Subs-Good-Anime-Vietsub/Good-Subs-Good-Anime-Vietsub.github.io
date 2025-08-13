@@ -1,4 +1,7 @@
 ---
+import SocialIcon from '../components/SocialIcon.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
 interface Props {
 	title: string;
   description?: string;
@@ -9,7 +12,7 @@ interface Props {
 const { 
   title, 
   description = 'GSGA Fansub - Anime hay, Phụ đề cũng phải tốt',
-  image = new URL('/social-card.png', Astro.site).href,
+  image = new URL('/GSGA-logo.png', Astro.site).href,
   schema // Destructure new prop
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -20,7 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/GSGA-logo.png" />
 		<meta name="generator" content={Astro.generator} />
 
     <!-- SEO & Social Sharing Tags -->
@@ -65,20 +68,95 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 	</head>
 	<body class="bg-gray-900 text-white font-sans selection:bg-cyan-500 selection:text-white">
 		<header class="bg-gray-800/60 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700/50">
-			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="group">
-          <h1 class="text-2xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-200 ease-in-out">
-            GSGA Fansub - Good Subs Good Anime
-          </h1>
-          <!-- TAGLINE ĐÃ ĐƯỢC CẬP NHẬT -->
-          <p class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-200 ease-in-out">Anime hay, Phụ đề cũng phải tốt</p>
-        </a>
-        <div>
-          <a href="/members" class="text-cyan-400 hover:text-white transition-colors duration-200 ease-in-out text-lg font-bold">Thành viên</a>
+			<div class="container mx-auto px-6">
+        <nav class="flex items-center py-3">
+          <a href="/" class="group flex items-center gap-4 flex-shrink-0 mr-8">
+            <img src="/GSGA-logo.png" alt="GSGA Fansub Logo" class="h-12 w-auto rounded-md" />
+            <div>
+              <h1 class="text-2xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-200 ease-in-out whitespace-nowrap">
+                GSGA Fansub
+              </h1>
+              <p class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-200 ease-in-out hidden md:block whitespace-nowrap">Anime hay, Phụ đề cũng phải tốt</p>
+            </div>
+          </a>
+          
+          <!-- Spacer -->
+          <div class="flex-grow"></div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center gap-6 flex-shrink-0">
+            <a href="/about" class="text-gray-300 hover:text-white transition-colors font-medium">Giới thiệu</a>
+            <a href="/members" class="text-gray-300 hover:text-white transition-colors font-medium">Thành viên</a>
+            
+            <!-- Guides Dropdown -->
+            <div class="relative" id="guides-dropdown-container">
+              <button id="guides-dropdown-button" class="flex items-center gap-2 px-3 py-2 bg-cyan-500/20 text-cyan-300 rounded-lg hover:bg-cyan-500/30 hover:text-white transition-colors font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 011.085.12L10 11.85l3.66-3.679a.999.999 0 011.085-.12L17.5 6.92a1 1 0 000-1.84l-7-3zM10 13.35l-3.66-3.679a.999.999 0 00-1.085-.12L2.5 11.08a1 1 0 000 1.84l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.84l-2.75-1.17a.999.999 0 00-1.085.12L10 13.35z" /></svg>
+                <span>Hướng dẫn</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-200" id="guides-dropdown-arrow" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="guides-dropdown-menu" class="hidden absolute top-full right-0 mt-2 w-auto bg-gray-800/90 backdrop-blur-lg border border-gray-700/50 rounded-lg shadow-xl z-50">
+                <div class="p-2 flex flex-col items-end">
+                  <a href="/guides" class="whitespace-nowrap px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 text-right">Hướng dẫn xem</a>
+                  <div class="my-1 border-t border-gray-700/50 w-full"></div>
+                  <a href="/guides/mpv-windows" class="whitespace-nowrap px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 text-right">Cài đặt mpv (Windows)</a>
+                  <a href="/guides/mpv-config" class="whitespace-nowrap px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 text-right">Cài đặt config mpv Windows</a>
+                  <a href="/guides/mpv-mac" class="whitespace-nowrap px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 text-right">Cài đặt mpv (MacOS)</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-px h-6 bg-gray-700"></div>
+            <a href="https://discord.gg/AjcEKFCWNk" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <SocialIcon name="discord" className="w-6 h-6" />
+              <span class="hidden lg:inline text-sm font-medium">Discord</span>
+            </a>
+            <a href="https://github.com/Good-Subs-Good-Anime-Vietsub" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <SocialIcon name="github" className="w-6 h-6" />
+              <span class="hidden lg:inline text-sm font-medium">Github</span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center gap-4 ml-auto">
+            <button id="mobile-menu-button" class="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700" aria-label="Open Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full right-0 w-full bg-gray-800/90 backdrop-blur-lg border-b border-gray-700/50 z-40">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-end">
+            <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Giới thiệu</a>
+            <a href="/members" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Thành viên</a>
+            <div class="border-t border-gray-700 w-full my-2"></div>
+            <div class="w-full">
+              <p class="px-3 py-2 text-m font-semibold text-cyan-300 text-right">Hướng dẫn</p>
+              <div class="flex flex-col items-end">
+                <a href="/guides" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Hướng dẫn xem</a>
+                <a href="/guides/mpv-windows" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Cài đặt mpv (Windows)</a>
+                <a href="/guides/mpv-config" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Cài đặt config mpv Windows</a>
+                <a href="/guides/mpv-mac" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Cài đặt mpv (MacOS)</a>
+              </div>
+            </div>
+            <div class="border-t border-gray-700 w-full my-2"></div>
+            <a href="https://discord.gg/AjcEKFCWNk" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+              <SocialIcon name="discord" className="w-5 h-5" />
+              <span>Discord</span>
+            </a>
+            <a href="https://github.com/Good-Subs-Good-Anime-Vietsub" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">
+              <SocialIcon name="github" className="w-5 h-5" />
+              <span>Github</span>
+            </a>
+          </div>
         </div>
-			</nav>
+      </div>
 		</header>
 		<main class="container mx-auto p-6 min-h-screen">
+			<Breadcrumbs title={title} />
 			<slot />
 		</main>
 		<footer class="text-center py-8 mt-12 border-t border-gray-800">
@@ -88,5 +166,37 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 				& <a href="https://anilist.co" target="_blank" class="text-cyan-400 hover:underline">AniList</a>.
 			</p>
 		</footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuButton && mobileMenu) {
+          menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+
+        // Guides dropdown toggle
+        const guidesButton = document.getElementById('guides-dropdown-button');
+        const guidesMenu = document.getElementById('guides-dropdown-menu');
+        const guidesArrow = document.getElementById('guides-dropdown-arrow');
+
+        if (guidesButton && guidesMenu && guidesArrow) {
+          guidesButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isHidden = guidesMenu.classList.toggle('hidden');
+            guidesArrow.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+          });
+
+          document.addEventListener('click', (event) => {
+            if (!guidesMenu.contains(event.target as Node) && !guidesButton.contains(event.target as Node)) {
+              guidesMenu.classList.add('hidden');
+              guidesArrow.style.transform = 'rotate(0deg)';
+            }
+          });
+        }
+      });
+    </script>
 	</body>
 </html>

@@ -86,8 +86,9 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
   const [activeFormatFilter, setActiveFormatFilter] = useState('Tất cả');
   const [activeSortOption, setActiveSortOption] = useState<SortOption>('Ngày đăng (mới nhất)');
 
-  // Effect để đồng bộ state từ URL khi tải trang lần đầu
-  useEffect(() => {
+  // --- STATE SYNC LOGIC ---
+  // Encapsulated logic to sync state from URL parameters
+  const syncStateFromURL = () => {
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q') || '';
     const status = (params.get('status') as Status) || 'Tất cả';
@@ -99,6 +100,27 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
     if (statusFilters.includes(status)) setActiveStatusFilter(status);
     if (formatFilters.includes(format)) setActiveFormatFilter(format);
     setActiveSortOption(sort);
+  };
+
+  // Effect to sync state from URL on initial load and on back/forward navigation
+  useEffect(() => {
+    // Run on initial load
+    syncStateFromURL();
+
+    // Add listener for pageshow event (handles bfcache restores)
+    const handlePageShow = (event: PageTransitionEvent) => {
+      // The page is being restored from the back-forward cache.
+      if (event.persisted) {
+        syncStateFromURL();
+      }
+    };
+
+    window.addEventListener('pageshow', handlePageShow);
+
+    // Cleanup listener
+    return () => {
+      window.removeEventListener('pageshow', handlePageShow);
+    };
   }, []);
 
   // Effect để cập nhật URL khi state thay đổi

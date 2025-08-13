@@ -55,14 +55,14 @@ export default function CustomSelect({ options, selectedValue, onSelect, label }
       </button>
       
       <div
-        class={`absolute z-10 mt-1 w-full bg-gray-800 shadow-lg rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm transition-all duration-200 ease-out
+        class={`absolute z-10 mt-2 w-full bg-gray-800/90 backdrop-blur-lg border border-gray-700/50 rounded-lg shadow-xl transition-all duration-200 ease-out
           ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
       >
-        <ul class="max-h-60 overflow-y-auto">
+        <ul class="max-h-60 overflow-y-auto p-2">
           {options.map((option) => (
             <li
               key={option}
-              class={`cursor-pointer select-none relative py-2 pl-4 pr-4 text-white hover:bg-cyan-600 ${selectedValue === option ? 'bg-cyan-700' : ''}`}
+              class={`cursor-pointer select-none relative p-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 ${selectedValue === option ? 'bg-cyan-500/20 text-white' : ''}`}
               onClick={() => handleSelect(option)}
             >
               <span class={`block truncate ${selectedValue === option ? 'font-semibold' : 'font-normal'}`}>

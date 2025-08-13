@@ -33,6 +33,24 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const pagesCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+  }),
+});
+
+const guidesCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+  }),
+});
+
 export const collections = {
   'projects': projectsCollection,
+  'pages': pagesCollection,
+  'guides': guidesCollection,
 };

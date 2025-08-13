@@ -8,5 +8,8 @@ import sitemap from "@astrojs/sitemap"; // Import sitemap
 export default defineConfig({
   site: 'https://gsga.moe',
   base: '/',
+  image: {
+    remotePatterns: [{ protocol: 'https', hostname: 's4.anilist.co' }]
+  },
   integrations: [tailwind(), preact(), sitemap()] // Thêm sitemap()
 });

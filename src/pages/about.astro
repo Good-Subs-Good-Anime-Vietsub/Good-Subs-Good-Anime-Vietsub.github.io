@@ -1,0 +1,23 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const entry = await getEntry('pages', 'about');
+
+if (entry === undefined) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not Found'
+  });
+}
+
+const { Content } = await entry.render();
+---
+
+<Layout title={`${entry.data.title} - GSGA Fansub`} description={entry.data.description}>
+  <div class="max-w-5xl mx-auto">
+    <article class="prose prose-invert max-w-none prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
+      <Content />
+    </article>
+  </div>
+</Layout>

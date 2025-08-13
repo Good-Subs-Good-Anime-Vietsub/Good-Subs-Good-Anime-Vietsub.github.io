@@ -1,0 +1,38 @@
+---
+const { url } = Astro;
+const pathnames = url.pathname.split('/').filter(p => p);
+
+const breadcrumbs = pathnames.map((pathname, index) => {
+  const href = '/' + pathnames.slice(0, index + 1).join('/');
+  let name = pathname.replace(/-/g, ' ');
+  
+  // Capitalize first letter of each word
+  name = name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  if (name === 'Guides') {
+    name = 'Hướng dẫn xem';
+  }
+
+  return { name, href };
+});
+
+const pageTitle = Astro.props.title || '';
+---
+
+<nav aria-label="Breadcrumb" class="mb-6">
+  <ol class="flex items-center gap-2 text-sm text-gray-400">
+    <li>
+      <a href="/" class="hover:text-white transition-colors">Trang chủ</a>
+    </li>
+    {breadcrumbs.map((crumb, index) => (
+      <li class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        {index === breadcrumbs.length - 1 ? (
+          <span class="font-semibold text-white">{pageTitle}</span>
+        ) : (
+          <a href={crumb.href} class="hover:text-white transition-colors">{crumb.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
