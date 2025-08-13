@@ -1,23 +1,22 @@
 ---
 anilistId: 112135
 featured: false
-title_vietnamese: Ở Một -Nhiều- Góc Nhân Gian
+title_vietnamese: 'Ở Một -Nhiều- Góc Nhân Gian'
 status: Đang làm
 staffs:
   - role: Dịch
-    name: KiOZ (Có tham khảo từ bản dịch manga của NXB Hồng Đức)
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, nedragrevev'
+    name: '[KiOZ], [nedragrevev]'
   - role: Typesetting
-    name: 'KiOZ, nedragrevev'
+    name: '[KiOZ], [nedragrevev]'
   - role: Encode
-    name: 'Beatrice-Raws(https://nyaa.si/view/1498268)'
+    name: '[Beatrice-Raws]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
-    url: >-
-      https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-in-progress.gif
+    url: ''
 ---
 ## Chú thích dịch
 

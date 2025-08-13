@@ -17,6 +17,7 @@ export interface Project {
     title: { romaji: string; native?: string; english?: string; };
     coverImage: { extraLarge: string };
     bannerImage?: string;
+    startDate?: { year: number };
     seasonYear?: number;
     format?: string;
     episodes?: number;
@@ -35,7 +36,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project, colorName }) => {
-  const { title, coverImage, seasonYear } = project.anilist;
+  const { title, coverImage, startDate, seasonYear } = project.anilist;
+  const year = startDate?.year ?? seasonYear;
   const tagBgClass = `bg-${colorName}-500`;
   const currentStatus = project.data.status;
 
@@ -53,7 +55,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project, colorName }
           </div>
           <div class="absolute bottom-0 left-0 p-3 w-full">
             <h3 class="font-semibold text-base text-white leading-tight drop-shadow-lg">{title.romaji}</h3>
-            {seasonYear && <p class="text-xs text-gray-300 mt-1">{seasonYear}</p>}
+            {year && <p class="text-xs text-gray-300 mt-1">{year}</p>}
           </div>
         </a>
       </div>

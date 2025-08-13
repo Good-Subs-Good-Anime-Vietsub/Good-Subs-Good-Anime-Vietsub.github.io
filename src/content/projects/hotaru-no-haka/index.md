@@ -1,23 +1,22 @@
 ---
 anilistId: 578
 featured: false
-title_vietnamese: Mộ đom đóm
+title_vietnamese: 'Mộ đom đóm'
 status: Dự kiến
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'GOA(https://nyaa.si/view/1457761)'
+    name: '[GOA]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
-    url: >-
-      https://raw.githubusercontent.com/Good-Subs-Good-Anime-Vietsub/Good-Subs-Good-Anime-Vietsub.github.io/main/src/error/error-not-yet-started.png
+    url: ''
 ---
 ## Chú thích dịch
 

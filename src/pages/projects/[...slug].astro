@@ -7,9 +7,14 @@ import ProjectActions from '../../components/ProjectActions.astro';
 import ProjectDetails from '../../components/ProjectDetails.astro';
 import RelatedProjects from '../../components/RelatedProjects.astro';
 import anilistCache from '../../data/anilist-cache.json';
-import type { AnilistCache } from '../../types/anilist-cache';
+import allMembersData from '../../data/members.json'; // Import all members from the new JSON file
+import type { AnilistCache, StaffEdge } from '../../types/anilist-cache';
+import type { Member } from '../../types/member'; // Import the new Member type
 import { getFirstCommitDate } from '../../utils/git';
+import { slugify, getRelatedProjects } from '../../utils/project';
 import { type Project } from '../../components/ProjectCard.tsx';
+
+const allMembers: Member[] = allMembersData as Member[];
 
 // --- ĐỊNH NGHĨA PROPS ---
 interface Props {
@@ -34,11 +39,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-// Lấy tất cả thành viên từ collection 'members'
-const allMembers = await getCollection('members');
+// allMembers đã được import từ src/data/members.json
 
 // Sử dụng dữ liệu từ cache thay vì gọi API
-const anilist = (anilistCache as AnilistCache)[String(entry.data.anilistId)] || {
+const anilist = ((anilistCache as unknown) as AnilistCache)[String(entry.data.anilistId)] || {
   title: { romaji: 'Không tìm thấy', native: '', english: '' },
   bannerImage: '',
   coverImage: { extraLarge: '' },
@@ -52,22 +56,15 @@ const anilist = (anilistCache as AnilistCache)[String(entry.data.anilistId)] || 
   staff: { edges: [] }
 };
 
-interface StaffEdge {
-  role: string;
-  node: { name: { full: string } };
-}
 const director = anilist.staff?.edges.find((e: StaffEdge) => e.role === 'Director')?.node.name.full;
 const studio = anilist.studios?.nodes[0]?.name;
 const { title_vietnamese, staffs, downloads, status } = entry.data;
+const slugifiedStatus = slugify(status);
 
 
-// --- LOGIC TÌM CÁC DỰ ÁN LIÊN QUAN ---
+// --- LOGIC TÌM CÁC DỰ ÁN LIÊN QUAN (ĐÃ ĐƯỢC TÁI CẤU TRÚC) ---
 const allProjects = await getCollection('projects');
-const relatedProjects = allProjects
-  // Lấy các dự án có status là 'Đang làm' HOẶC 'Hoàn thành'
-  .filter(p => (p.data.status === 'Đang làm' || p.data.status === 'Hoàn thành') && p.slug !== entry.slug)
-  .sort(() => 0.5 - Math.random()) 
-  .slice(0, 8);  
+const relatedProjects = getRelatedProjects(entry, allProjects, (anilistCache as unknown) as AnilistCache);
 
 const relatedProjectsDataPromises = relatedProjects.map(async (p) => {
   const filePath = `src/content/projects/${p.id}`; // Sử dụng p.id để lấy đường dẫn
@@ -75,7 +72,7 @@ const relatedProjectsDataPromises = relatedProjects.map(async (p) => {
   return {
     slug: p.slug,
     data: { ...p.data, publishDate }, // Thêm publishDate vào data
-    anilist: (anilistCache as AnilistCache)[String(p.data.anilistId)] || {
+    anilist: ((anilistCache as unknown) as AnilistCache)[String(p.data.anilistId)] || {
       title: { romaji: 'Không tìm thấy', native: '', english: '' },
       coverImage: { extraLarge: '' },
       seasonYear: null,
@@ -150,31 +147,17 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
   });
 </script>
 
-<script is:inline>
-  const projectStatus = "{status}"; // Lấy trạng thái từ Astro props
+<script is:inline define:vars={{ status, slugifiedStatus }}>
   const downloadLinkRegex = /\.(mp4|mkv|zip|rar|7z|torrent|pdf)$/i; // Regex để nhận diện link download
 
-  // Hàm slugify (lặp lại ở đây để đảm bảo script inline hoạt động độc lập)
-  function slugify(text) {
-    return text
-      .toString()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]+/g, '')
-      .replace(/--+/g, '-');
-  }
-
-  if (projectStatus === 'Dự kiến' || projectStatus === 'Đang làm' || projectStatus === 'Tạm ngưng') {
+  if (status === 'Dự kiến' || status === 'Đang làm' || status === 'Tạm ngưng') {
     const proseArticle = document.querySelector('article.prose');
     if (proseArticle) {
       const links = proseArticle.querySelectorAll('a');
       links.forEach(link => {
         // Chỉ xử lý các liên kết có vẻ là liên kết download
         if (downloadLinkRegex.test(link.href)) {
-          link.href = `/status/${slugify(projectStatus)}`;
+          link.href = `/status/${slugifiedStatus}`;
         }
       });
     }

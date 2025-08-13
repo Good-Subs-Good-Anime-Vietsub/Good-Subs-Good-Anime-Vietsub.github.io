@@ -1,9 +1,20 @@
+export type StaffEdge = {
+  role: string;
+  node: {
+    name: {
+      full: string;
+    };
+    siteUrl: string;
+  };
+};
+
 export type AnilistCache = {
-  [id: string]: {
+  [id:string]: {
     id: number;
     title: { romaji: string; native?: string; english?: string; };
     coverImage: { extraLarge: string };
     bannerImage?: string;
+    startDate?: { year: number };
     seasonYear?: number;
     format?: string;
     episodes?: number;
@@ -11,8 +22,8 @@ export type AnilistCache = {
     averageScore?: number;
     source?: string;
     genres?: string[];
-    studios?: { nodes: { name: string }[] };
-    staff?: { edges: { role: string; node: { name: { full: string } } }[] };
+    studios?: { nodes: { name: string; siteUrl: string }[] };
+    staff?: { edges: StaffEdge[] };
   };
 };
 

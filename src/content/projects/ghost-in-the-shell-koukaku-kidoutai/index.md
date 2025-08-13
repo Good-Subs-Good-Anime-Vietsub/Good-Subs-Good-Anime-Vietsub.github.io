@@ -1,19 +1,19 @@
 ---
 anilistId: 43
 featured: true
-title_vietnamese: Vỏ bọc ma
+title_vietnamese: 'Vỏ bọc ma'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: "KiOZ (có vài lỗi timing cấn thoại\U0001F61E)"
+    name: '[KiOZ]'
   - role: Typesetting
     name: 'Không có TS, chỉ \an8'
   - role: Encode
-    name: 'Judgment(https://nyaa.si/view/1227680)'
+    name: '[Judgment]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003831'

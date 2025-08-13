@@ -10,6 +10,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/43-uDbk1jrG9yod.jpg",
+    "startDate": {
+      "year": 1995
+    },
     "seasonYear": 1995,
     "format": "MOVIE",
     "episodes": 1,
@@ -24,7 +27,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Production I.G"
+          "name": "Production I.G",
+          "siteUrl": "https://anilist.co/studio/10"
         }
       ]
     },
@@ -35,7 +39,8 @@
           "node": {
             "name": {
               "full": "Masamune Shirow"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97609"
           }
         },
         {
@@ -43,7 +48,8 @@
           "node": {
             "name": {
               "full": "Mamoru Oshii"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99097"
           }
         },
         {
@@ -51,7 +57,8 @@
           "node": {
             "name": {
               "full": "Hiroyuki Okiura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103502"
           }
         },
         {
@@ -59,7 +66,8 @@
           "node": {
             "name": {
               "full": "Atsushi Takeuchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/115627"
           }
         },
         {
@@ -67,7 +75,8 @@
           "node": {
             "name": {
               "full": "Shouji Kawamori"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97501"
           }
         }
       ]
@@ -84,6 +93,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/47-fof8HqtNDtvx.jpg",
+    "startDate": {
+      "year": 1988
+    },
     "seasonYear": 1988,
     "format": "MOVIE",
     "episodes": 1,
@@ -101,7 +113,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Tokyo Movie Shinsha"
+          "name": "Tokyo Movie Shinsha",
+          "siteUrl": "https://anilist.co/studio/65"
         }
       ]
     },
@@ -112,7 +125,8 @@
           "node": {
             "name": {
               "full": "Katsuhiro Ootomo"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96872"
           }
         },
         {
@@ -120,7 +134,8 @@
           "node": {
             "name": {
               "full": "Katsuhiro Ootomo"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96872"
           }
         },
         {
@@ -128,7 +143,8 @@
           "node": {
             "name": {
               "full": "Hiroaki Satou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/104922"
           }
         },
         {
@@ -136,7 +152,8 @@
           "node": {
             "name": {
               "full": "Yoshio Takeuchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/106812"
           }
         },
         {
@@ -144,7 +161,8 @@
           "node": {
             "name": {
               "full": "Takashi Nakamura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/102031"
           }
         }
       ]
@@ -161,6 +179,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164-ySuGzCWVw2cL.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/164-Aj6MINy7VTfs.jpg",
+    "startDate": {
+      "year": 1997
+    },
     "seasonYear": 1997,
     "format": "MOVIE",
     "episodes": 1,
@@ -176,7 +197,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -187,7 +209,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -195,7 +218,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -203,7 +227,8 @@
           "node": {
             "name": {
               "full": "Hiroyuki Itou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/171223"
           }
         },
         {
@@ -211,7 +236,8 @@
           "node": {
             "name": {
               "full": "Kaoru Mano"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/212695"
           }
         },
         {
@@ -219,7 +245,8 @@
           "node": {
             "name": {
               "full": "Yukari Yoshida"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/217659"
           }
         }
       ]
@@ -236,6 +263,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199-Sm2RU5PSqw7T.jpg",
+    "startDate": {
+      "year": 2001
+    },
     "seasonYear": 2001,
     "format": "MOVIE",
     "episodes": 1,
@@ -251,7 +281,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -262,7 +293,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -270,7 +302,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -278,7 +311,8 @@
           "node": {
             "name": {
               "full": "Masayuki Miyaji"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/102156"
           }
         },
         {
@@ -286,7 +320,8 @@
           "node": {
             "name": {
               "full": "Atsushi Takahashi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/110717"
           }
         },
         {
@@ -294,7 +329,8 @@
           "node": {
             "name": {
               "full": "Kaoru Mano"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/212695"
           }
         }
       ]
@@ -311,6 +347,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/437-3yMVTyN7gl2A.jpg",
+    "startDate": {
+      "year": 1998
+    },
     "seasonYear": 1998,
     "format": "MOVIE",
     "episodes": 1,
@@ -326,7 +365,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -337,7 +377,8 @@
           "node": {
             "name": {
               "full": "Yoshikazu Takeuchi "
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/136353"
           }
         },
         {
@@ -345,7 +386,8 @@
           "node": {
             "name": {
               "full": "Hisashi Eguchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/113237"
           }
         },
         {
@@ -353,7 +395,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -361,7 +404,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -369,7 +413,8 @@
           "node": {
             "name": {
               "full": "Hideki Hamasu"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/125820"
           }
         }
       ]
@@ -386,6 +431,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx468-rfiX1uY8bsPp.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/468-V8L7r2QZaNeS.jpg",
+    "startDate": {
+      "year": 2004
+    },
     "seasonYear": 2004,
     "format": "MOVIE",
     "episodes": 1,
@@ -400,7 +448,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Production I.G"
+          "name": "Production I.G",
+          "siteUrl": "https://anilist.co/studio/10"
         }
       ]
     },
@@ -411,7 +460,8 @@
           "node": {
             "name": {
               "full": "Masamune Shirow"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97609"
           }
         },
         {
@@ -419,7 +469,8 @@
           "node": {
             "name": {
               "full": "Mamoru Oshii"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99097"
           }
         },
         {
@@ -427,7 +478,8 @@
           "node": {
             "name": {
               "full": "Hiroyuki Okiura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103502"
           }
         },
         {
@@ -435,7 +487,8 @@
           "node": {
             "name": {
               "full": "Tetsuya Nishio"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103725"
           }
         },
         {
@@ -443,7 +496,8 @@
           "node": {
             "name": {
               "full": "Atsushi Takeuchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/115627"
           }
         }
       ]
@@ -460,6 +514,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-UwP8X4BR8YoM.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/512-Ssp3EE2NdeoA.jpg",
+    "startDate": {
+      "year": 1989
+    },
     "seasonYear": 1989,
     "format": "MOVIE",
     "episodes": 1,
@@ -475,7 +532,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -486,7 +544,8 @@
           "node": {
             "name": {
               "full": "Eiko Kadono"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/171283"
           }
         },
         {
@@ -494,7 +553,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -502,7 +562,8 @@
           "node": {
             "name": {
               "full": "Katsuya Kondou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101825"
           }
         },
         {
@@ -510,7 +571,8 @@
           "node": {
             "name": {
               "full": "Akira Michikawa"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/192653"
           }
         },
         {
@@ -518,7 +580,8 @@
           "node": {
             "name": {
               "full": "Kaoru Mano"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/212695"
           }
         }
       ]
@@ -535,6 +598,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx513-yM7Dlt65N4Rl.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/513-3zMLMyA0qH5n.jpg",
+    "startDate": {
+      "year": 1986
+    },
     "seasonYear": 1986,
     "format": "MOVIE",
     "episodes": 1,
@@ -549,7 +615,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -560,7 +627,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -568,7 +636,8 @@
           "node": {
             "name": {
               "full": "Hayao Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96870"
           }
         },
         {
@@ -576,7 +645,8 @@
           "node": {
             "name": {
               "full": "Yoshinori Kanada"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/106398"
           }
         },
         {
@@ -584,7 +654,8 @@
           "node": {
             "name": {
               "full": "Nizou Yamamoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105376"
           }
         },
         {
@@ -592,7 +663,8 @@
           "node": {
             "name": {
               "full": "Toshirou Nozaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/157048"
           }
         }
       ]
@@ -609,6 +681,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/578.jpg",
+    "startDate": {
+      "year": 1988
+    },
     "seasonYear": 1988,
     "format": "MOVIE",
     "episodes": 1,
@@ -621,7 +696,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -632,7 +708,8 @@
           "node": {
             "name": {
               "full": "Akiyuki Nosaka"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/218029"
           }
         },
         {
@@ -640,7 +717,8 @@
           "node": {
             "name": {
               "full": "Isao Takahata"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100579"
           }
         },
         {
@@ -648,7 +726,8 @@
           "node": {
             "name": {
               "full": "Yoshifumi Kondou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101820"
           }
         },
         {
@@ -656,7 +735,8 @@
           "node": {
             "name": {
               "full": "Hideo Takagu"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/221670"
           }
         },
         {
@@ -664,7 +744,8 @@
           "node": {
             "name": {
               "full": "Yoshiko Tagami"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/221677"
           }
         }
       ]
@@ -681,6 +762,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx585-5uq7j2xNNVmN.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/585-GowCYxa1c8WR.jpg",
+    "startDate": {
+      "year": 1995
+    },
     "seasonYear": 1995,
     "format": "MOVIE",
     "episodes": 1,
@@ -696,7 +780,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -707,7 +792,8 @@
           "node": {
             "name": {
               "full": "Aoi Hiiragi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97964"
           }
         },
         {
@@ -715,7 +801,8 @@
           "node": {
             "name": {
               "full": "Yoshifumi Kondou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101820"
           }
         },
         {
@@ -723,7 +810,8 @@
           "node": {
             "name": {
               "full": "Masahiko Ootsuka"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/108023"
           }
         },
         {
@@ -731,7 +819,8 @@
           "node": {
             "name": {
               "full": "Hiroyuki Itou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/171223"
           }
         },
         {
@@ -739,7 +828,8 @@
           "node": {
             "name": {
               "full": "Akira Michikawa"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/192653"
           }
         }
       ]
@@ -756,6 +846,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx759-XSKBju6xutdR.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/759-WE1Y5uCZ3Vv7.jpg",
+    "startDate": {
+      "year": 2003
+    },
     "seasonYear": 2003,
     "format": "MOVIE",
     "episodes": 1,
@@ -770,7 +863,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -781,7 +875,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -789,7 +884,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -797,7 +893,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -805,7 +902,8 @@
           "node": {
             "name": {
               "full": "Kenichi Konishi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/110645"
           }
         },
         {
@@ -813,7 +911,8 @@
           "node": {
             "name": {
               "full": "Kyouko Yamashita"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/197515"
           }
         }
       ]
@@ -830,6 +929,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1033-d5p1pbd5qa4L.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1033-npnaGITec3EV.jpg",
+    "startDate": {
+      "year": 2002
+    },
     "seasonYear": 2002,
     "format": "MOVIE",
     "episodes": 1,
@@ -844,7 +946,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -855,7 +958,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -863,7 +967,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -871,7 +976,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -879,7 +985,8 @@
           "node": {
             "name": {
               "full": "Takeshi Honda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103303"
           }
         },
         {
@@ -887,7 +994,8 @@
           "node": {
             "name": {
               "full": "Kyouko Yamashita"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/197515"
           }
         }
       ]
@@ -904,6 +1012,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-jMCEYL1Ixmgc.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1943.jpg",
+    "startDate": {
+      "year": 2006
+    },
     "seasonYear": 2006,
     "format": "MOVIE",
     "episodes": 1,
@@ -920,7 +1031,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -931,7 +1043,8 @@
           "node": {
             "name": {
               "full": "Yasutaka Tsutsui"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97488"
           }
         },
         {
@@ -939,7 +1052,8 @@
           "node": {
             "name": {
               "full": "Satoshi Kon"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/99580"
           }
         },
         {
@@ -947,7 +1061,8 @@
           "node": {
             "name": {
               "full": "Masashi Andou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/106978"
           }
         },
         {
@@ -955,7 +1070,8 @@
           "node": {
             "name": {
               "full": "Nobutaka Ike"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/120020"
           }
         },
         {
@@ -963,7 +1079,8 @@
           "node": {
             "name": {
               "full": "Kazuki Higashiji"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/112995"
           }
         }
       ]
@@ -980,6 +1097,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2236-tH5fWFkHyVGg.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2236-rY0fvv53JIOB.jpg",
+    "startDate": {
+      "year": 2006
+    },
     "seasonYear": 2006,
     "format": "MOVIE",
     "episodes": 1,
@@ -994,7 +1114,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -1005,7 +1126,8 @@
           "node": {
             "name": {
               "full": "Yasutaka Tsutsui"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97488"
           }
         },
         {
@@ -1013,7 +1135,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1021,7 +1144,8 @@
           "node": {
             "name": {
               "full": "Tomohiko Itou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105801"
           }
         },
         {
@@ -1029,7 +1153,8 @@
           "node": {
             "name": {
               "full": "Yoshiyuki Sadamoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/98158"
           }
         },
         {
@@ -1037,7 +1162,8 @@
           "node": {
             "name": {
               "full": "Nizou Yamamoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105376"
           }
         }
       ]
@@ -1054,6 +1180,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n5081-0Zcn5GOFYHMc.jpg",
+    "startDate": {
+      "year": 2009
+    },
     "seasonYear": 2009,
     "format": "TV",
     "episodes": 15,
@@ -1071,7 +1200,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Shaft"
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
         }
       ]
     },
@@ -1082,7 +1212,8 @@
           "node": {
             "name": {
               "full": "NISIOISIN"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
           }
         },
         {
@@ -1090,7 +1221,8 @@
           "node": {
             "name": {
               "full": "VOFAN"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
           }
         },
         {
@@ -1098,7 +1230,8 @@
           "node": {
             "name": {
               "full": "Tatsuya Oishi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103552"
           }
         },
         {
@@ -1106,7 +1239,8 @@
           "node": {
             "name": {
               "full": "Akiyuki Shinbou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
           }
         },
         {
@@ -1114,7 +1248,8 @@
           "node": {
             "name": {
               "full": "Katsushi Oota"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/155344"
           }
         }
       ]
@@ -1131,6 +1266,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5681-3DmxUVn3grD0.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/5681-gANFEmT8uIFF.jpg",
+    "startDate": {
+      "year": 2009
+    },
     "seasonYear": 2009,
     "format": "MOVIE",
     "episodes": 1,
@@ -1147,7 +1285,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         }
       ]
     },
@@ -1158,7 +1297,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1166,7 +1306,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1174,7 +1315,8 @@
           "node": {
             "name": {
               "full": "Tomohiko Itou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105801"
           }
         },
         {
@@ -1182,7 +1324,8 @@
           "node": {
             "name": {
               "full": "Yoshiyuki Sadamoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/98158"
           }
         },
         {
@@ -1190,7 +1333,8 @@
           "node": {
             "name": {
               "full": "Takashi Okazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101144"
           }
         }
       ]
@@ -1207,6 +1351,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n7711-sxtXcjmMKfaF.jpg",
+    "startDate": {
+      "year": 2010
+    },
     "seasonYear": 2010,
     "format": "MOVIE",
     "episodes": 1,
@@ -1221,7 +1368,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -1232,7 +1380,8 @@
           "node": {
             "name": {
               "full": "Mary Norton"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/171706"
           }
         },
         {
@@ -1240,7 +1389,8 @@
           "node": {
             "name": {
               "full": "Hiromasa Yonebayashi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/104595"
           }
         },
         {
@@ -1248,7 +1398,8 @@
           "node": {
             "name": {
               "full": "Noboru Yoshida"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/171319"
           }
         },
         {
@@ -1256,7 +1407,8 @@
           "node": {
             "name": {
               "full": "Youji Takeshige"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/127378"
           }
         },
         {
@@ -1264,7 +1416,94 @@
           "node": {
             "name": {
               "full": "Takeshi Seyama"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/129400"
+          }
+        }
+      ]
+    }
+  },
+  "9260": {
+    "id": 9260,
+    "title": {
+      "romaji": "Kizumonogatari I: Tekketsu-hen",
+      "native": "傷物語〈Ⅰ鉄血篇〉",
+      "english": "Kizumonogatari Part 1: Tekketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/9260-69LbBxcWN2tA.jpg",
+    "startDate": {
+      "year": 2016
+    },
+    "seasonYear": 2016,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 64,
+    "averageScore": 83,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Tatsuya Oishi"
+            },
+            "siteUrl": "https://anilist.co/staff/103552"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Akio Watanabe"
+            },
+            "siteUrl": "https://anilist.co/staff/100724"
           }
         }
       ]
@@ -1281,6 +1520,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10029-R7iZdjWuzeYq.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10029-U4tY2KezjAc5.jpg",
+    "startDate": {
+      "year": 2011
+    },
     "seasonYear": 2011,
     "format": "MOVIE",
     "episodes": 1,
@@ -1295,7 +1537,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -1306,7 +1549,8 @@
           "node": {
             "name": {
               "full": "Tetsurou Sayama"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/107476"
           }
         },
         {
@@ -1314,7 +1558,8 @@
           "node": {
             "name": {
               "full": "Chizuru Takahashi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/107475"
           }
         },
         {
@@ -1322,7 +1567,8 @@
           "node": {
             "name": {
               "full": "Gorou Miyazaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101002"
           }
         },
         {
@@ -1330,7 +1576,8 @@
           "node": {
             "name": {
               "full": "Emi Gunji"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/195290"
           }
         },
         {
@@ -1338,7 +1585,8 @@
           "node": {
             "name": {
               "full": "Katsuya Kondou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101825"
           }
         }
       ]
@@ -1355,6 +1603,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-x2vd4KSHcI1S.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11597-GAiesUhFN9U9.jpg",
+    "startDate": {
+      "year": 2012
+    },
     "seasonYear": 2012,
     "format": "TV",
     "episodes": 11,
@@ -1372,7 +1623,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Shaft"
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
         }
       ]
     },
@@ -1383,7 +1635,8 @@
           "node": {
             "name": {
               "full": "NISIOISIN"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
           }
         },
         {
@@ -1391,7 +1644,8 @@
           "node": {
             "name": {
               "full": "VOFAN"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
           }
         },
         {
@@ -1399,7 +1653,8 @@
           "node": {
             "name": {
               "full": "Tomoyuki Itamura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/110639"
           }
         },
         {
@@ -1407,7 +1662,8 @@
           "node": {
             "name": {
               "full": "Akiyuki Shinbou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
           }
         },
         {
@@ -1415,7 +1671,8 @@
           "node": {
             "name": {
               "full": "Akiyuki Shinbou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
           }
         }
       ]
@@ -1432,6 +1689,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12355-wNsvhEsXEgrH.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12355.jpg",
+    "startDate": {
+      "year": 2012
+    },
     "seasonYear": 2012,
     "format": "MOVIE",
     "episodes": 1,
@@ -1447,10 +1707,12 @@
     "studios": {
       "nodes": [
         {
-          "name": "MADHOUSE"
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
         },
         {
-          "name": "Studio Chizu"
+          "name": "Studio Chizu",
+          "siteUrl": "https://anilist.co/studio/555"
         }
       ]
     },
@@ -1461,7 +1723,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1469,7 +1732,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1477,7 +1741,8 @@
           "node": {
             "name": {
               "full": "Koutarou Tamura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/118942"
           }
         },
         {
@@ -1485,7 +1750,8 @@
           "node": {
             "name": {
               "full": "Yoshiyuki Sadamoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/98158"
           }
         },
         {
@@ -1493,7 +1759,8 @@
           "node": {
             "name": {
               "full": "Hiroshi Oono"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103079"
           }
         }
       ]
@@ -1510,6 +1777,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12477-RngQKNBGkEhp.jpg",
+    "startDate": {
+      "year": 2013
+    },
     "seasonYear": 2013,
     "format": "MOVIE",
     "episodes": 1,
@@ -1524,10 +1794,12 @@
     "studios": {
       "nodes": [
         {
-          "name": "Purple Cow Studio Japan"
+          "name": "Purple Cow Studio Japan",
+          "siteUrl": "https://anilist.co/studio/559"
         },
         {
-          "name": "Studio Rikka"
+          "name": "Studio Rikka",
+          "siteUrl": "https://anilist.co/studio/84"
         }
       ]
     },
@@ -1538,7 +1810,8 @@
           "node": {
             "name": {
               "full": "Yasuhiro Yoshiura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101072"
           }
         },
         {
@@ -1546,7 +1819,8 @@
           "node": {
             "name": {
               "full": "Ryuusuke Chayama"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/111455"
           }
         },
         {
@@ -1554,7 +1828,8 @@
           "node": {
             "name": {
               "full": "Yasuhiro Yoshiura"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/101072"
           }
         },
         {
@@ -1562,7 +1837,8 @@
           "node": {
             "name": {
               "full": "Daisuke Mataga"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/121345"
           }
         },
         {
@@ -1570,7 +1846,93 @@
           "node": {
             "name": {
               "full": "Yuuji Kaneko"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/111457"
+          }
+        }
+      ]
+    }
+  },
+  "15689": {
+    "id": 15689,
+    "title": {
+      "romaji": "Nekomonogatari (Kuro)",
+      "native": "猫物語（黒）",
+      "english": "Nekomonogatari Black"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-UtRUbaZhV7f9.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/15689-OkvbPqAXnJd5.jpg",
+    "startDate": {
+      "year": 2012
+    },
+    "seasonYear": 2012,
+    "format": "TV",
+    "episodes": 4,
+    "duration": 27,
+    "averageScore": 77,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Psychological",
+      "Romance",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Tomoyuki Itamura"
+            },
+            "siteUrl": "https://anilist.co/staff/110639"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
           }
         }
       ]
@@ -1587,6 +1949,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16782-qpFGk18UqaHn.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16782.jpg",
+    "startDate": {
+      "year": 2013
+    },
     "seasonYear": 2013,
     "format": "MOVIE",
     "episodes": 1,
@@ -1602,7 +1967,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "CoMix Wave"
+          "name": "CoMix Wave",
+          "siteUrl": "https://anilist.co/studio/291"
         }
       ]
     },
@@ -1613,7 +1979,8 @@
           "node": {
             "name": {
               "full": "Makoto Shinkai"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
           }
         },
         {
@@ -1621,7 +1988,8 @@
           "node": {
             "name": {
               "full": "Makoto Shinkai"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
           }
         },
         {
@@ -1629,7 +1997,8 @@
           "node": {
             "name": {
               "full": "Kenichi Tsuchiya"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/116309"
           }
         },
         {
@@ -1637,7 +2006,8 @@
           "node": {
             "name": {
               "full": "Hiroshi Takiguchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/124621"
           }
         },
         {
@@ -1645,7 +2015,8 @@
           "node": {
             "name": {
               "full": "Makoto Shinkai"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
           }
         }
       ]
@@ -1662,6 +2033,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20555-QGbWQC3Kfpok.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20555-pJTKZKw8vDe8.jpg",
+    "startDate": {
+      "year": 2014
+    },
     "seasonYear": 2014,
     "format": "MOVIE",
     "episodes": 1,
@@ -1676,7 +2050,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Ghibli"
+          "name": "Studio Ghibli",
+          "siteUrl": "https://anilist.co/studio/21"
         }
       ]
     },
@@ -1687,7 +2062,8 @@
           "node": {
             "name": {
               "full": "Joan Robinson"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/217942"
           }
         },
         {
@@ -1695,7 +2071,8 @@
           "node": {
             "name": {
               "full": "Hiromasa Yonebayashi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/104595"
           }
         },
         {
@@ -1703,7 +2080,8 @@
           "node": {
             "name": {
               "full": "Youhei Taneda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/240471"
           }
         },
         {
@@ -1711,7 +2089,8 @@
           "node": {
             "name": {
               "full": "Aiko Funaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/217943"
           }
         },
         {
@@ -1719,7 +2098,8 @@
           "node": {
             "name": {
               "full": "Atsushi Okui"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/193037"
           }
         }
       ]
@@ -1736,6 +2116,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20954-f30bHMXa5Qoe.jpg",
+    "startDate": {
+      "year": 2016
+    },
     "seasonYear": 2016,
     "format": "MOVIE",
     "episodes": 1,
@@ -1750,7 +2133,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Kyoto Animation"
+          "name": "Kyoto Animation",
+          "siteUrl": "https://anilist.co/studio/2"
         }
       ]
     },
@@ -1761,7 +2145,8 @@
           "node": {
             "name": {
               "full": "Yoshitoki Ooima"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105951"
           }
         },
         {
@@ -1769,7 +2154,8 @@
           "node": {
             "name": {
               "full": "Naoko Yamada"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/102498"
           }
         },
         {
@@ -1777,7 +2163,8 @@
           "node": {
             "name": {
               "full": "Reiko Yoshida"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97076"
           }
         },
         {
@@ -1785,7 +2172,8 @@
           "node": {
             "name": {
               "full": "Haruna Matsuda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/195164"
           }
         },
         {
@@ -1793,7 +2181,8 @@
           "node": {
             "name": {
               "full": "Futoshi Nishiya"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/102729"
           }
         }
       ]
@@ -1810,6 +2199,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20981-ut1mNXG4fp0H.jpg",
+    "startDate": {
+      "year": 2015
+    },
     "seasonYear": 2015,
     "format": "MOVIE",
     "episodes": 1,
@@ -1827,7 +2219,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Chizu"
+          "name": "Studio Chizu",
+          "siteUrl": "https://anilist.co/studio/555"
         }
       ]
     },
@@ -1838,7 +2231,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1846,7 +2240,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1854,7 +2249,8 @@
           "node": {
             "name": {
               "full": "Takaaki Yamashita"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/110187"
           }
         },
         {
@@ -1862,7 +2258,8 @@
           "node": {
             "name": {
               "full": "Takashi Oomori"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/124370"
           }
         },
         {
@@ -1870,7 +2267,180 @@
           "node": {
             "name": {
               "full": "Masakatsu Takagi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/112139"
+          }
+        }
+      ]
+    }
+  },
+  "21399": {
+    "id": 21399,
+    "title": {
+      "romaji": "Kizumonogatari II: Nekketsu-hen",
+      "native": "傷物語〈Ⅱ熱血篇〉",
+      "english": "Kizumonogatari Part 2: Nekketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21399-vCKFTNkrYLIz.jpg",
+    "startDate": {
+      "year": 2016
+    },
+    "seasonYear": 2016,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 68,
+    "averageScore": 85,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Tatsuya Oishi"
+            },
+            "siteUrl": "https://anilist.co/staff/103552"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Akio Watanabe"
+            },
+            "siteUrl": "https://anilist.co/staff/100724"
+          }
+        }
+      ]
+    }
+  },
+  "21400": {
+    "id": 21400,
+    "title": {
+      "romaji": "Kizumonogatari III: Reiketsu-hen",
+      "native": "傷物語〈Ⅲ冷血篇〉",
+      "english": "Kizumonogatari Part 3: Reiketsu"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21400-5zcYUeVBptdG.jpg",
+    "startDate": {
+      "year": 2017
+    },
+    "seasonYear": 2017,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 82,
+    "averageScore": 87,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Action",
+      "Drama",
+      "Ecchi",
+      "Mystery",
+      "Psychological",
+      "Supernatural"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Shaft",
+          "siteUrl": "https://anilist.co/studio/44"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "NISIOISIN"
+            },
+            "siteUrl": "https://anilist.co/staff/100254"
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "VOFAN"
+            },
+            "siteUrl": "https://anilist.co/staff/103594"
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Akiyuki Shinbou"
+            },
+            "siteUrl": "https://anilist.co/staff/100089"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Tatsuya Oishi"
+            },
+            "siteUrl": "https://anilist.co/staff/103552"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Hideyuki Morioka"
+            },
+            "siteUrl": "https://anilist.co/staff/101526"
           }
         }
       ]
@@ -1887,6 +2457,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100749-7Tptl7EAMAWH.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100749-rKmJwrHQj6dC.jpg",
+    "startDate": {
+      "year": 2018
+    },
     "seasonYear": 2018,
     "format": "MOVIE",
     "episodes": 1,
@@ -1903,7 +2476,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Chizu"
+          "name": "Studio Chizu",
+          "siteUrl": "https://anilist.co/studio/555"
         }
       ]
     },
@@ -1914,7 +2488,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1922,7 +2497,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -1930,7 +2506,8 @@
           "node": {
             "name": {
               "full": "Toshimasa Ishii"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/136625"
           }
         },
         {
@@ -1938,7 +2515,8 @@
           "node": {
             "name": {
               "full": "Takashi Oomori"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/124370"
           }
         },
         {
@@ -1946,7 +2524,92 @@
           "node": {
             "name": {
               "full": "Youhei Takamatsu"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/124371"
+          }
+        }
+      ]
+    }
+  },
+  "101921": {
+    "id": 101921,
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+      "native": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+      "english": "Kaguya-sama: Love is War"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
+    "startDate": {
+      "year": 2019
+    },
+    "seasonYear": 2019,
+    "format": "TV",
+    "episodes": 12,
+    "duration": 24,
+    "averageScore": 83,
+    "source": "MANGA",
+    "genres": [
+      "Comedy",
+      "Psychological",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "A-1 Pictures",
+          "siteUrl": "https://anilist.co/studio/561"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aka Akasaka"
+            },
+            "siteUrl": "https://anilist.co/staff/97139"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichi Omata"
+            },
+            "siteUrl": "https://anilist.co/staff/111583"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Nakanishi"
+            },
+            "siteUrl": "https://anilist.co/staff/100443"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yuuko Yahiro"
+            },
+            "siteUrl": "https://anilist.co/staff/127370"
+          }
+        },
+        {
+          "role": "Prop Design",
+          "node": {
+            "name": {
+              "full": "Takayuki Kidou"
+            },
+            "siteUrl": "https://anilist.co/staff/164830"
           }
         }
       ]
@@ -1963,6 +2626,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109928-DWUN0zrDJfuv.jpg"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109928-ur9brKAUiDdi.jpg",
+    "startDate": {
+      "year": 2022
+    },
     "seasonYear": 2022,
     "format": "MOVIE",
     "episodes": 1,
@@ -1977,7 +2643,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Science SARU"
+          "name": "Science SARU",
+          "siteUrl": "https://anilist.co/studio/6145"
         }
       ]
     },
@@ -1988,7 +2655,8 @@
           "node": {
             "name": {
               "full": "Hideo Furukawa"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/174579"
           }
         },
         {
@@ -1996,7 +2664,8 @@
           "node": {
             "name": {
               "full": "Taiyou Matsumoto"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/97409"
           }
         },
         {
@@ -2004,7 +2673,8 @@
           "node": {
             "name": {
               "full": "Masaaki Yuasa"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100068"
           }
         },
         {
@@ -2012,7 +2682,8 @@
           "node": {
             "name": {
               "full": "Fuuga Yamashiro"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/158697"
           }
         },
         {
@@ -2020,7 +2691,8 @@
           "node": {
             "name": {
               "full": "Nobutake Itou"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/105136"
           }
         }
       ]
@@ -2037,6 +2709,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112135-SZwCaYm8WwR0.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112135-VtUn87kDAadW.jpg",
+    "startDate": {
+      "year": 2019
+    },
     "seasonYear": 2019,
     "format": "MOVIE",
     "episodes": 1,
@@ -2050,7 +2725,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "MAPPA"
+          "name": "MAPPA",
+          "siteUrl": "https://anilist.co/studio/569"
         }
       ]
     },
@@ -2061,7 +2737,8 @@
           "node": {
             "name": {
               "full": "Fumiyo Kouno"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/98044"
           }
         },
         {
@@ -2069,7 +2746,8 @@
           "node": {
             "name": {
               "full": "Sunao Katabuchi"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/103947"
           }
         },
         {
@@ -2077,7 +2755,8 @@
           "node": {
             "name": {
               "full": "Chie Uratani"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/121177"
           }
         },
         {
@@ -2085,7 +2764,8 @@
           "node": {
             "name": {
               "full": "Hidenori Matsubara"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/107672"
           }
         },
         {
@@ -2093,7 +2773,344 @@
           "node": {
             "name": {
               "full": "Kotringo"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/134286"
+          }
+        }
+      ]
+    }
+  },
+  "112641": {
+    "id": 112641,
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai?: Tensaitachi no Renai Zunousen",
+      "native": "かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+      "english": "Kaguya-sama: Love is War?"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
+    "startDate": {
+      "year": 2020
+    },
+    "seasonYear": 2020,
+    "format": "TV",
+    "episodes": 12,
+    "duration": 25,
+    "averageScore": 86,
+    "source": "MANGA",
+    "genres": [
+      "Comedy",
+      "Psychological",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "A-1 Pictures",
+          "siteUrl": "https://anilist.co/studio/561"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aka Akasaka"
+            },
+            "siteUrl": "https://anilist.co/staff/97139"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichi Omata"
+            },
+            "siteUrl": "https://anilist.co/staff/111583"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Nakanishi"
+            },
+            "siteUrl": "https://anilist.co/staff/100443"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yuuko Yahiro"
+            },
+            "siteUrl": "https://anilist.co/staff/127370"
+          }
+        },
+        {
+          "role": "Prop Design",
+          "node": {
+            "name": {
+              "full": "Takayuki Kidou"
+            },
+            "siteUrl": "https://anilist.co/staff/164830"
+          }
+        }
+      ]
+    }
+  },
+  "125367": {
+    "id": 125367,
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+      "native": "かぐや様は告らせたい-ウルトラロマンティック-",
+      "english": "Kaguya-sama: Love is War -Ultra Romantic-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
+    "startDate": {
+      "year": 2022
+    },
+    "seasonYear": 2022,
+    "format": "TV",
+    "episodes": 13,
+    "duration": 24,
+    "averageScore": 89,
+    "source": "MANGA",
+    "genres": [
+      "Comedy",
+      "Psychological",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "A-1 Pictures",
+          "siteUrl": "https://anilist.co/studio/561"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aka Akasaka"
+            },
+            "siteUrl": "https://anilist.co/staff/97139"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichi Omata"
+            },
+            "siteUrl": "https://anilist.co/staff/111583"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Nakanishi"
+            },
+            "siteUrl": "https://anilist.co/staff/100443"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yuuko Yahiro"
+            },
+            "siteUrl": "https://anilist.co/staff/127370"
+          }
+        },
+        {
+          "role": "Original Work Assistance",
+          "node": {
+            "name": {
+              "full": "Yoshikazu Masuzawa"
+            },
+            "siteUrl": "https://anilist.co/staff/209336"
+          }
+        }
+      ]
+    }
+  },
+  "125368": {
+    "id": 125368,
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen OVA",
+      "native": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～OVA",
+      "english": null
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125368-QhcBkbNP0ZfU.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125368-zCY0WnSQl7RG.jpg",
+    "startDate": {
+      "year": 2021
+    },
+    "seasonYear": 2021,
+    "format": "OVA",
+    "episodes": 1,
+    "duration": 24,
+    "averageScore": 75,
+    "source": "MANGA",
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "A-1 Pictures",
+          "siteUrl": "https://anilist.co/studio/561"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aka Akasaka"
+            },
+            "siteUrl": "https://anilist.co/staff/97139"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichi Omata"
+            },
+            "siteUrl": "https://anilist.co/staff/111583"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yuuko Yahiro"
+            },
+            "siteUrl": "https://anilist.co/staff/127370"
+          }
+        },
+        {
+          "role": "Prop Design",
+          "node": {
+            "name": {
+              "full": "Takayuki Kidou"
+            },
+            "siteUrl": "https://anilist.co/staff/164830"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Risa Wakabayashi"
+            },
+            "siteUrl": "https://anilist.co/staff/137129"
+          }
+        }
+      ]
+    }
+  },
+  "126403": {
+    "id": 126403,
+    "title": {
+      "romaji": "Shiguang Dailiren",
+      "native": "时光代理人",
+      "english": "Link Click"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126403-BfVSRzWUtVFW.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/126403-Zs8HsM3YBoml.jpg",
+    "startDate": {
+      "year": 2021
+    },
+    "seasonYear": null,
+    "format": "ONA",
+    "episodes": 11,
+    "duration": 24,
+    "averageScore": 86,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Supernatural",
+      "Thriller"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio LAN",
+          "siteUrl": "https://anilist.co/studio/6391"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "INPLICK"
+            },
+            "siteUrl": "https://anilist.co/staff/218269"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Haoling Li"
+            },
+            "siteUrl": "https://anilist.co/staff/127382"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "LAN"
+            },
+            "siteUrl": "https://anilist.co/staff/218268"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Dan Xiong"
+            },
+            "siteUrl": "https://anilist.co/staff/251518"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Simeng Huang"
+            },
+            "siteUrl": "https://anilist.co/staff/251519"
           }
         }
       ]
@@ -2110,6 +3127,9 @@
       "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127271-juJIu4WFTM8q.png"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127271-PYK1XpL5Ha90.jpg",
+    "startDate": {
+      "year": 2021
+    },
     "seasonYear": 2021,
     "format": "MOVIE",
     "episodes": 1,
@@ -2125,7 +3145,8 @@
     "studios": {
       "nodes": [
         {
-          "name": "Studio Chizu"
+          "name": "Studio Chizu",
+          "siteUrl": "https://anilist.co/studio/555"
         }
       ]
     },
@@ -2136,7 +3157,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -2144,7 +3166,8 @@
           "node": {
             "name": {
               "full": "Mamoru Hosoda"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/100067"
           }
         },
         {
@@ -2152,7 +3175,8 @@
           "node": {
             "name": {
               "full": "Ryou Horibe"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/130918"
           }
         },
         {
@@ -2160,7 +3184,8 @@
           "node": {
             "name": {
               "full": "Youhei Shimozawa"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/222632"
           }
         },
         {
@@ -2168,40 +3193,134 @@
           "node": {
             "name": {
               "full": "Taisei Iwasaki"
-            }
+            },
+            "siteUrl": "https://anilist.co/staff/119402"
           }
         }
       ]
     }
   },
-  "181970": {
-    "id": 181970,
+  "136145": {
+    "id": 136145,
     "title": {
-      "romaji": "Kizumonogatari: Koyomi Vamp",
-      "native": "傷物語 -こよみヴァンプ-",
-      "english": "KIZUMONOGATARI -Koyomi Vamp-"
+      "romaji": "Shiguang Dailiren Special",
+      "native": "时光代理人 番外篇",
+      "english": "LINK CLICK Episode 5.5"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181970-dqNqPsJcBk5I.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136145-guWKltDngjIu.jpg"
     },
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/181970-T02XjDjycYZb.jpg",
-    "seasonYear": 2024,
-    "format": "MOVIE",
+    "bannerImage": null,
+    "startDate": {
+      "year": 2021
+    },
+    "seasonYear": null,
+    "format": "ONA",
     "episodes": 1,
-    "duration": 144,
+    "duration": 24,
     "averageScore": 78,
-    "source": "LIGHT_NOVEL",
+    "source": "ORIGINAL",
     "genres": [
-      "Action",
-      "Drama",
-      "Horror",
       "Mystery",
       "Supernatural"
     ],
     "studios": {
       "nodes": [
         {
-          "name": "Shaft"
+          "name": "Studio LAN",
+          "siteUrl": "https://anilist.co/studio/6391"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "INPLICK"
+            },
+            "siteUrl": "https://anilist.co/staff/218269"
+          }
+        },
+        {
+          "role": "Chief Director",
+          "node": {
+            "name": {
+              "full": "Haoling Li"
+            },
+            "siteUrl": "https://anilist.co/staff/127382"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "LAN"
+            },
+            "siteUrl": "https://anilist.co/staff/218268"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Dan Xiong"
+            },
+            "siteUrl": "https://anilist.co/staff/251518"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Simeng Huang"
+            },
+            "siteUrl": "https://anilist.co/staff/251519"
+          }
+        }
+      ]
+    }
+  },
+  "136484": {
+    "id": 136484,
+    "title": {
+      "romaji": "Shiguang Dailiren II",
+      "native": "时光代理人 第二季",
+      "english": "Link Click Season 2"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136484-QiHcF64PVWQi.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/136484-LuB1Iz3U2rx5.jpg",
+    "startDate": {
+      "year": 2023
+    },
+    "seasonYear": null,
+    "format": "ONA",
+    "episodes": 12,
+    "duration": 24,
+    "averageScore": 86,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Supernatural",
+      "Thriller"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Studio LAN",
+          "siteUrl": "https://anilist.co/studio/6391"
+        },
+        {
+          "name": "Pb Animation",
+          "siteUrl": "https://anilist.co/studio/6318"
+        },
+        {
+          "name": "CMC Media",
+          "siteUrl": "https://anilist.co/studio/7049"
         }
       ]
     },
@@ -2211,40 +3330,297 @@
           "role": "Original Creator",
           "node": {
             "name": {
-              "full": "NISIOISIN"
-            }
-          }
-        },
-        {
-          "role": "Original Work Assistance",
-          "node": {
-            "name": {
-              "full": "Aiko Maruoka"
-            }
+              "full": "Haoling Li"
+            },
+            "siteUrl": "https://anilist.co/staff/127382"
           }
         },
         {
           "role": "Original Character Design",
           "node": {
             "name": {
-              "full": "VOFAN"
-            }
-          }
-        },
-        {
-          "role": "Chief Director",
-          "node": {
-            "name": {
-              "full": "Akiyuki Shinbou"
-            }
+              "full": "INPLICK"
+            },
+            "siteUrl": "https://anilist.co/staff/218269"
           }
         },
         {
           "role": "Director",
           "node": {
             "name": {
-              "full": "Tatsuya Oishi"
-            }
+              "full": "Haoling Li"
+            },
+            "siteUrl": "https://anilist.co/staff/127382"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Tomoya Asami"
+            },
+            "siteUrl": "https://anilist.co/staff/183532"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Lipiao Zhu"
+            },
+            "siteUrl": "https://anilist.co/staff/218284"
+          }
+        }
+      ]
+    }
+  },
+  "151384": {
+    "id": 151384,
+    "title": {
+      "romaji": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+      "native": "かぐや様は告らせたい -ファーストキッスは終わらない-",
+      "english": "Kaguya-sama: Love is War -The First Kiss That Never Ends-"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-gv0q8wOE6D58.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151384-JybfIpHr2gx6.jpg",
+    "startDate": {
+      "year": 2023
+    },
+    "seasonYear": 2023,
+    "format": "TV",
+    "episodes": 4,
+    "duration": 25,
+    "averageScore": 87,
+    "source": "MANGA",
+    "genres": [
+      "Comedy",
+      "Psychological",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "A-1 Pictures",
+          "siteUrl": "https://anilist.co/studio/561"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Creator",
+          "node": {
+            "name": {
+              "full": "Aka Akasaka"
+            },
+            "siteUrl": "https://anilist.co/staff/97139"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichi Omata"
+            },
+            "siteUrl": "https://anilist.co/staff/111583"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Yasuhiro Nakanishi"
+            },
+            "siteUrl": "https://anilist.co/staff/100443"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Yuuko Yahiro"
+            },
+            "siteUrl": "https://anilist.co/staff/127370"
+          }
+        },
+        {
+          "role": "Prop Design",
+          "node": {
+            "name": {
+              "full": "Takayuki Kidou"
+            },
+            "siteUrl": "https://anilist.co/staff/164830"
+          }
+        }
+      ]
+    }
+  },
+  "161645": {
+    "id": 161645,
+    "title": {
+      "romaji": "Kusuriya no Hitorigoto",
+      "native": "薬屋のひとりごと",
+      "english": "The Apothecary Diaries"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161645-QLbzHXiYRgV2.jpg"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/161645-oqzTZYIvviWI.jpg",
+    "startDate": {
+      "year": 2023
+    },
+    "seasonYear": 2023,
+    "format": "TV",
+    "episodes": 24,
+    "duration": 23,
+    "averageScore": 88,
+    "source": "LIGHT_NOVEL",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "OLM",
+          "siteUrl": "https://anilist.co/studio/28"
+        },
+        {
+          "name": "TOHO animation STUDIO",
+          "siteUrl": "https://anilist.co/studio/7368"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Story",
+          "node": {
+            "name": {
+              "full": "Natsu Hyuuga"
+            },
+            "siteUrl": "https://anilist.co/staff/122058"
+          }
+        },
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Touko Shino"
+            },
+            "siteUrl": "https://anilist.co/staff/122066"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Norihiro Naganuma"
+            },
+            "siteUrl": "https://anilist.co/staff/118406"
+          }
+        },
+        {
+          "role": "Assistant Director",
+          "node": {
+            "name": {
+              "full": "Akinori Fudesaka"
+            },
+            "siteUrl": "https://anilist.co/staff/121911"
+          }
+        },
+        {
+          "role": "Series Composition",
+          "node": {
+            "name": {
+              "full": "Norihiro Naganuma"
+            },
+            "siteUrl": "https://anilist.co/staff/118406"
+          }
+        }
+      ]
+    }
+  },
+  "167336": {
+    "id": 167336,
+    "title": {
+      "romaji": "Lazarus",
+      "native": "ラザロ",
+      "english": "LAZARUS"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167336-KpGIIBie71OX.png"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/167336-tDasHGggSBcH.jpg",
+    "startDate": {
+      "year": 2025
+    },
+    "seasonYear": 2025,
+    "format": "TV",
+    "episodes": 13,
+    "duration": 24,
+    "averageScore": 70,
+    "source": "ORIGINAL",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MAPPA",
+          "siteUrl": "https://anilist.co/studio/569"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Shinichirou Watanabe"
+            },
+            "siteUrl": "https://anilist.co/staff/97009"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Akemi Hayashi"
+            },
+            "siteUrl": "https://anilist.co/staff/124000"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Miho Sugiura"
+            },
+            "siteUrl": "https://anilist.co/staff/146747"
+          }
+        },
+        {
+          "role": "Color Design",
+          "node": {
+            "name": {
+              "full": "Kana Tanabe"
+            },
+            "siteUrl": "https://anilist.co/staff/143236"
+          }
+        },
+        {
+          "role": "Director of Photography",
+          "node": {
+            "name": {
+              "full": "Mitsuhiro Satou"
+            },
+            "siteUrl": "https://anilist.co/staff/182352"
           }
         }
       ]

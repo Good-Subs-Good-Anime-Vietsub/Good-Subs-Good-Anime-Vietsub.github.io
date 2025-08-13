@@ -1,0 +1,23 @@
+---
+// This is a simplified Image component that does not use Astro's asset processing.
+// It renders a standard `<img>` tag.
+interface Props {
+  src: string;
+  alt: string;
+}
+
+const { src, alt } = Astro.props;
+const imageClass = "w-full h-full object-contain";
+---
+<figure class="my-6">
+    <div class="flex justify-center max-h-[60vh]">
+        <img 
+            src={src} 
+            alt={alt} 
+            class={imageClass} 
+            loading="lazy" 
+            onerror="this.onerror=null;this.src='/image-placeholder.svg';"
+        />
+    </div>
+    {alt && <figcaption class="text-center text-sm text-gray-400 mt-2">{alt}</figcaption>}
+</figure>

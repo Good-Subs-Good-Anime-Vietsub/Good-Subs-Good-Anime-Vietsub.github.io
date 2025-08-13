@@ -1,19 +1,19 @@
 ---
 anilistId: 20555
 featured: false
-title_vietnamese: Hồi ức về Marnie
+title_vietnamese: 'Hồi ức về Marnie'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ (Chỉnh sửa từ Netflix)
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'GOA(https://nyaa.si/view/1392874)'
+    name: '[GOA]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003829'

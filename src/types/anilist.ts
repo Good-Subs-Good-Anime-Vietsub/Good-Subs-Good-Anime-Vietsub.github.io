@@ -18,10 +18,11 @@ export interface Media {
     color: string;
   };
   genres: string[];
-  studios: {
+    studios: {
     nodes: {
       name: string;
       isAnimationStudio: boolean;
+      siteUrl: string;
     }[];
   };
 }

@@ -1,19 +1,19 @@
 ---
 anilistId: 20954
 featured: true
-title_vietnamese: Dáng hình thanh âm
+title_vietnamese: 'Dáng hình thanh âm'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, nedragrevev'
+    name: '[KiOZ], [nedragrevev]'
   - role: Typesetting
-    name: 'KiOZ, nedragrevev'
+    name: '[KiOZ], [nedragrevev]'
   - role: Encode
-    name: 'Kametsu(https://nyaa.si/view/983165)'
+    name: '[Kametsu]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003868'

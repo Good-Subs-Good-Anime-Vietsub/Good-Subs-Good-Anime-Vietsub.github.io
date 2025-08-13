@@ -1,0 +1,166 @@
+[
+  {
+    "name": "KiOZ",
+    "role": "Leader",
+    "type": "core",
+    "avatar": "",
+    "socials": {
+      "github": "https://github.com/realKiOZ",
+      "youtube": "https://www.youtube.com/@FurinCine",
+      "facebook": ""
+    }
+  },
+  {
+    "name": "Eagle",
+    "role": "Typesetter",
+    "type": "core",
+    "avatar": "",
+    "socials": {
+      "github": "https://github.com/MasterEagle2909",
+      "youtube": "",
+      "facebook": ""
+    }
+  },
+  {
+    "name": "moch1oka",
+    "role": "Quality Checker, Typesetter",
+    "type": "core",
+    "avatar": "",
+    "socials": {
+      "github": "https://github.com/moch1oka",
+      "youtube": "",
+      "facebook": ""
+    }
+  },
+  {
+    "name": "tuilakhanh",
+    "role": "Encoder, Technician",
+    "type": "core",
+    "avatar": "",
+    "socials": {
+      "github": "https://github.com/tuilakhanh",
+      "youtube": "",
+      "facebook": ""
+    }
+  },
+  {
+    "name": "nedragrevev",
+    "memberUrl": "https://github.com/nedragrevev",
+    "role": "Timer, Typesetter",
+    "type": "external"
+  },
+  {
+    "name": "Beatrice-Raws",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=Beatrice-Raws",
+    "role": "Raw Provider",
+    "type": "external"
+  },
+  {
+    "name": "Commie",
+    "memberUrl": "https://nyaa.si/user/Commie",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "UDF",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=%5BUDF%5D",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "TPN",
+    "memberUrl": "https://tpn-team.github.io/",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "MoeDesuDesu",
+    "memberUrl": "https://nyaa.si/user/MoeDesuDesu",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Good Job! Media",
+    "memberUrl": "https://www.goodjobmedia.com/",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Moozzi2",
+    "memberUrl": "https://nyaa.si/user/Moozzi2",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Anime Land",
+    "memberUrl": "https://nyaa.si/user/An-Land",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Yousei-raws",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=%5BYousei-raws%5D",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Kawaiika-Raws",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=%5BKawaiika-Raws%5D",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Dae-P9",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=%5BDae-P9%5D",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Zagzad",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=Zagzad",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Kametsu",
+    "memberUrl": "https://nyaa.si/user/Kametsu",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Judgment",
+    "memberUrl": "https://nyaa.si/user/der_richter",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "GOA",
+    "memberUrl": "https://nyaa.si/?f=0&c=0_0&q=goa+hevc",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "THORA",
+    "memberUrl": "https://thoranime.nyaarchive.moe/?p=2166",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Mavi",
+    "memberUrl": "",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "Tifa",
+    "memberUrl": "",
+    "role": "",
+    "type": "external"
+  },
+  {
+    "name": "MTBB",
+    "memberUrl": "https://nyaa.si/user/motbob",
+    "role": "",
+    "type": "external"
+  }
+]

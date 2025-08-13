@@ -1,19 +1,19 @@
 ---
 anilistId: 12355
 featured: false
-title_vietnamese: Hai đứa con của sói
+title_vietnamese: 'Hai đứa con của sói'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'Yousei-raws(https://nyaa.si/view/1290592)'
+    name: '[Yousei-raws]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download (Tor/BD)
     url: 'https://nyaa.si/view/2003856'
@@ -22,7 +22,9 @@ downloads:
 
 ### Omiyage mittsu tako mittsu
 
-    おみやげ三つ　たこ三つ　- Quà lưu niệm 3 món, bạch tuộc 3 con
+```
+おみやげ三つ　たこ三つ　- Quà lưu niệm 3 món, bạch tuộc 3 con
+```
 
 ![miitsu](mittsu-main.png)
 
@@ -32,7 +34,9 @@ Theo đạo diễn Hosoda Mamoru chia sẻ, thì "Omiyage mittsu tako mittsu" ma
 
 Đây cũng là 2 cụm từ trong [bài hát đồng dao](https://youtu.be/nOEjVY8rHE8), một bài hát chơi chữ, bởi "tako" mang nhiều nghĩa, một là "bạch tuộc", hai là "diều", và ba là "vết chai sạn". Ngay trong bài hát còn có câu: 
 
-    たこはたこでも　いたいたこ - Tako là Tako cơ mà Đau-Tako
+```
+たこはたこでも　いたいたこ - Tako là Tako cơ mà Đau-Tako
+```
 
 Tùy bạn hiểu, nhưng thực sự thì cái cảm giác bài hát mang lại không hẳn vui tươi như giai điệu, mà hơi kiểu đùa cợt.
 

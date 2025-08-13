@@ -1,6 +1,4 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-
 interface Staff {
   role: string;
   name: string;
@@ -8,8 +6,9 @@ interface Staff {
 
 interface AnilistData {
   seasonYear?: number;
-  studios?: { nodes: { name: string }[] };
-  staff?: { edges: { role: string; node: { name: { full: string } } }[] };
+  startDate?: { year: number };
+  studios?: { nodes: { name: string; siteUrl: string }[] };
+  staff?: { edges: { role: string; node: { name: { full: string }; siteUrl: string } }[] };
   format?: string;
   episodes?: number;
   duration?: number;
@@ -17,15 +16,57 @@ interface AnilistData {
   genres?: string[];
 }
 
+import type { Member } from '../types/member'; // Import the new Member type
+
 interface Props {
   anilist: AnilistData;
   staffs: Staff[];
-  allMembers: CollectionEntry<'members'>[];
+  allMembers: Member[]; // Use the new Member type
 }
 
 const { anilist, staffs, allMembers } = Astro.props;
-const director = anilist.staff?.edges.find(e => e.role === 'Director')?.node.name.full;
-const studio = anilist.studios?.nodes[0]?.name;
+const year = anilist.startDate?.year ?? anilist.seasonYear;
+const directorEdge = anilist.staff?.edges.find(e => e.role === 'Director');
+const director = directorEdge?.node;
+const studio = anilist.studios?.nodes[0];
+
+// Helper function to process staff names
+function processStaffNames(nameString: string, members: Member[]): string {
+  const memberLinks: Record<string, string> = {};
+  members.forEach(member => {
+    // Ưu tiên link github của core member trước
+    if (member.socials && member.socials.github) {
+      memberLinks[member.name] = member.socials.github;
+    } 
+    // Sau đó mới fallback về memberUrl cho external member
+    else if (member.memberUrl) {
+      memberLinks[member.name] = member.memberUrl;
+    }
+  });
+
+  // Tách chuỗi thành các phần có và không có dấu ngoặc vuông
+  const parts = nameString.split(/(\[[^\]]+\])/g);
+
+  const processedParts = parts.map(part => {
+    // Kiểm tra xem phần này có phải là một tên trong dấu ngoặc vuông không
+    if (part.startsWith('[') && part.endsWith(']')) {
+      const nameInsideBrackets = part.substring(1, part.length - 1).trim();
+      if (memberLinks[nameInsideBrackets]) {
+        // Nếu có link, trả về thẻ <a>
+        return `<a href="${memberLinks[nameInsideBrackets]}" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">${nameInsideBrackets}</a>`;
+      } else {
+        // Nếu không có link, trả về tên đã được thoát HTML
+        return nameInsideBrackets.replace(/</g, '<').replace(/>/g, '>');
+      }
+    } else {
+      // Nếu không phải là tên trong dấu ngoặc vuông, thoát HTML
+      return part.replace(/</g, '<').replace(/>/g, '>');
+    }
+  });
+
+  // Nối các phần lại với nhau
+  return processedParts.join('');
+}
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -35,9 +76,9 @@ const studio = anilist.studios?.nodes[0]?.name;
       Thông tin cơ bản
     </h3>
     <div class="space-y-2 text-base">
-      <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {anilist.seasonYear}</p>
-      {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio}</p>}
-      {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director}</p>}
+      {year && <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {year}</p>}
+      {studio && <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> <a href={studio.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{studio.name}</a></p>}
+      {director && <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> <a href={director.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{director.name.full}</a></p>}
       {anilist.format && <p class="break-words"><strong class="mr-2 text-gray-400">Định dạng:</strong> {anilist.format.replace('_', ' ')}</p>}
       {anilist.episodes && <p class="break-words"><strong class="mr-2 text-gray-400">Số tập:</strong> {anilist.episodes}</p>}
       {anilist.duration && <p class="break-words"><strong class="mr-2 text-gray-400">Thời lượng:</strong> {anilist.duration} phút</p>}
@@ -51,29 +92,12 @@ const studio = anilist.studios?.nodes[0]?.name;
       Nhân lực
     </h3>
     <ul class="space-y-2 text-base text-gray-300">
-      {staffs.map(staff => {
-        const names = staff.name.split(',').map(name => name.replace(/\s*\(.*\)\s*/g, '').trim());
-        return (
-          <li class="break-words">
-            <strong class="text-gray-200 mr-2">{staff.role}:</strong>
-            {names.map((name, index) => {
-              const member = allMembers.find(m => m.data.name === name || m.data.name === `[${name}]`);
-              return (
-                <>
-                  {member?.data.githubUrl ? (
-                    <a href={member.data.githubUrl} target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
-                      {name}
-                    </a>
-                  ) : (
-                    name
-                  )}
-                  {index < names.length - 1 && ', '}
-                </>
-              );
-            })}
-          </li>
-        );
-      })}
+      {staffs.map(staff => (
+        <li class="break-words">
+          <strong class="text-gray-200 mr-2">{staff.role}:</strong>
+          <span set:html={processStaffNames(staff.name, allMembers)} />
+        </li>
+      ))}
     </ul>
   </div>
 </div>

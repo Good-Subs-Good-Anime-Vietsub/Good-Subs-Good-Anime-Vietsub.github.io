@@ -1,19 +1,19 @@
 ---
-anilistId: 181970
+anilistId: 21400
 featured: false
-title_vietnamese: '2016'
+title_vietnamese: 'Tổn Thương Tích Truyện - Lãnh Huyết'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, MTBB'
+    name: '[KiOZ], [MTBB]'
   - role: Typesetting
-    name: 'KiOZ, moch1oka, Eagle, MTBB'
+    name: '[KiOZ], [moch1oka], [Eagle], [MTBB]'
   - role: Encode
-    name: 'Kawaiika-Raws(https://nyaa.si/view/1141748)'
+    name: '[Kawaiika-Raws]'
   - role: QC
-    name: 'KiOZ, moch1oka'
+    name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003883'

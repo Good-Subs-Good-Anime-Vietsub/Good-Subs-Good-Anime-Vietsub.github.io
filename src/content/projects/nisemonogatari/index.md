@@ -1,19 +1,19 @@
 ---
 anilistId: 11597
 featured: false
-title_vietnamese: '2012'
+title_vietnamese: 'Hàng Giả Tạo Truyện'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: 'KiOZ, tuilakhanh (phương ngữ)'
+    name: '[KiOZ], [tuilakhanh] (phương ngữ)'
   - role: Timing
-    name: 'KiOZ, MTBB'
+    name: '[KiOZ], [MTBB]'
   - role: Typesetting
-    name: 'KiOZ, moch1oka, Eagle, MTBB'
+    name: '[KiOZ], [moch1oka], [Eagle], [MTBB]'
   - role: Encode
-    name: 'Kawaiika-Raws (https://nyaa.si/view/1163419)'
+    name: '[Kawaiika-Raws]'
   - role: QC
-    name: 'KiOZ, moch1oka'
+    name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003887'
@@ -23,7 +23,5 @@ downloads:
 Khá nhiều, đã ghi trong phụ đề.
 
 ## Tham khảo thêm
-
-
 
 ## Notes

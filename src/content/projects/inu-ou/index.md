@@ -1,19 +1,19 @@
 ---
 anilistId: 109928
 featured: false
-title_vietnamese: Inu-Ou) (Khuyển Vương
+title_vietnamese: 'Khuyển Vương'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: 'KiOZ (ko nhiều TS, có kèm \an8)'
+    name: '[KiOZ]'
   - role: Encode
-    name: tuilakhanh
+    name: '[tuilakhanh]'
   - role: QC
-    name: 'KiOZ, moch1oka'
+    name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003869'

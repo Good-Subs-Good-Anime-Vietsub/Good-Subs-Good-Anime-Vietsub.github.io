@@ -5,25 +5,21 @@ title_vietnamese: ''
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, Commie(https://nyaa.si/user/Commie)'
+    name: '[KiOZ], [Commie]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'Commie(https://nyaa.si/user/Commie)'
+    name: '[Commie]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/1470848'
 ---
 ## Chú thích dịch
 
-
-
 ## Tham khảo thêm
-
-
 
 ## Notes

@@ -25,7 +25,7 @@ const projectsCollection = defineCollection({
     // Bắt buộc: Danh sách link tải
     downloads: z.array(z.object({
       type: z.string(),
-      url: z.string().url(), // Đảm bảo đây là một URL hợp lệ
+      url: z.string(), // Cho phép chuỗi bất kỳ, không kiểm tra định dạng URL
     })),
     // Thêm publishDate vào schema để TypeScript nhận diện
     publishDate: z.instanceof(Date).optional(), 
@@ -34,12 +34,4 @@ const projectsCollection = defineCollection({
 
 export const collections = {
   'projects': projectsCollection,
-  'members': defineCollection({
-    type: 'data', // Using 'data' type for JSON-like content
-    schema: z.object({
-      name: z.string(),
-      githubUrl: z.string().url().optional(),
-      role: z.string(), // Role is now required based on user's input
-    }),
-  }),
 };

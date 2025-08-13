@@ -11,7 +11,26 @@ module.exports = {
     'bg-gray-500', 'bg-gray-600', 'from-gray-600', 'to-gray-500',
   ],
   theme: {
-    extend: {}
+    extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            'code': {
+              backgroundColor: theme('colors.gray.800'),
+              color: theme('colors.gray.200'),
+              padding: '0.25rem 0.5rem',
+              borderRadius: '0.25rem',
+            },
+            'code::before': {
+              content: '""',
+            },
+            'code::after': {
+              content: '""',
+            },
+          },
+        },
+      }),
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),

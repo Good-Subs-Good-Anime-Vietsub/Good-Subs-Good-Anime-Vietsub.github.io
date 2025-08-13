@@ -5,15 +5,15 @@ title_vietnamese: 'Laputa: Lâu đài trên không'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ (Chỉnh sửa từ Netflix)
+    name: '[KiOZ] (Chỉnh sửa từ Netflix)'
   - role: Timing
-    name: 'KiOZ, nedragrevev(https://github.com/nedragrevev)'
+    name: '[KiOZ], [nedragrevev]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'GOA(https://nyaa.si/view/1392874)'
+    name: '[GOA]'
   - role: QC
-    name: 'KiOZ, moch1oka'
+    name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003820'
@@ -24,7 +24,9 @@ downloads:
 
 Tiếng Nhật:
 
-    今は最後の草刈りの季節だから　日の出は真東より ちょっと南へ動いています
+```
+今は最後の草刈りの季節だから　日の出は真東より ちょっと南へ動いています
+```
 
 ![](vu-lam-co-01.png)
 ![](vu-lam-co-02.png)*thời gian - 1:07:54*
@@ -39,7 +41,9 @@ Còn về hướng mặt trời mọc, bạn có thể tham khảo ở [đây](h
 
 Tiếng Nhật:
 
-    これはね　東洋の計算機だよ
+```
+これはね　東洋の計算機だよ
+```
 
 ![](ban-tinh.png)*thời gian - 1:08:24*
 
@@ -51,4 +55,4 @@ Có điều, khi đem so với "vụ làm cỏ cuối cùng" ở trên, thì tì
 
 ## Notes
 
-[^1]: <https://sooda.jp/qa/434116>.
+[^1]: [https://sooda.jp/qa/434116](https://sooda.jp/qa/434116).

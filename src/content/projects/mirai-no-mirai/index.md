@@ -5,15 +5,15 @@ title_vietnamese: 'Mirai: Em gái đến từ tương lai'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'Kawaiika-Raws(https://nyaa.si/view/1117106)'
+    name: '[Kawaiika-Raws]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/1536364'

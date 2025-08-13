@@ -11,7 +11,10 @@ import type { Project } from '../components/ProjectCard'; // Import Project
 // --- Code lấy dữ liệu (giữ nguyên) ---
 // Hàm getFirstCommitDate đã được di chuyển sang src/utils/git.ts
 
-const localProjects = await getCollection('projects');
+let localProjects = await getCollection('projects');
+// Sắp xếp ban đầu theo slug để đảm bảo thứ tự nhất quán
+localProjects.sort((a, b) => a.slug.localeCompare(b.slug));
+
 const projectsWithDatePromises = localProjects.map(async (project) => {
   const filePath = `src/content/projects/${project.id}`;
   const publishDate = await getFirstCommitDate(filePath);
@@ -20,7 +23,9 @@ const projectsWithDatePromises = localProjects.map(async (project) => {
 const projectsWithDate = await Promise.all(projectsWithDatePromises);
 
 // Sử dụng dữ liệu từ cache thay vì gọi API
-const anilistDataMap = new Map(Object.entries(anilistCache as AnilistCache).map(([id, data]) => [parseInt(id), data]));
+const anilistDataMap = new Map(
+  Object.entries(anilistCache as unknown as AnilistCache).map(([id, data]) => [parseInt(id), data])
+);
 
 const allCombinedData = projectsWithDate
   .map(p => ({
@@ -29,10 +34,21 @@ const allCombinedData = projectsWithDate
     anilist: anilistDataMap.get(p.data.anilistId)
   }))
   .filter(p => p.anilist) as Project[]; // Ép kiểu thành Project[]
-  
-allCombinedData.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
-const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilist);
+// Toàn bộ logic sắp xếp sẽ được xử lý trong InteractiveHome.tsx
+
+// Hàm xáo trộn mảng (Fisher-Yates shuffle)
+function shuffleArray<T>(array: T[]): T[] {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
+
+const featuredProjectsRaw = allCombinedData.filter(p => p.data.featured && p.anilist);
+const featuredProjects = shuffleArray(featuredProjectsRaw);
 ---
 <style is:global>
   @import 'swiper/css';
@@ -52,7 +68,7 @@ const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilis
 
 <Layout 
   title="GSGA Fansub - Good Subs Good Anime | Anime hay, Phụ đề cũng phải tốt"
-  description="GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất."
+  description="GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các bản vietsub anime, donghua, phim từ movie đến series, với trải nghiệm xem tốt nhất."
 >
   <!-- Slider Featured vẫn là của Astro -->
   {featuredProjects.length > 0 && (

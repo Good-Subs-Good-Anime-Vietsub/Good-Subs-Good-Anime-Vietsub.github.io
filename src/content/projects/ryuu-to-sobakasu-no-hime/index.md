@@ -1,19 +1,19 @@
 ---
 anilistId: 127271
 featured: false
-title_vietnamese: Belle
+title_vietnamese: 'Belle: Rồng và công chúa tàn nhang'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Typesetting
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Encode
-    name: 'Anime Land(https://nyaa.si/view/1506216)'
+    name: '[Anime Land]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/1509474'

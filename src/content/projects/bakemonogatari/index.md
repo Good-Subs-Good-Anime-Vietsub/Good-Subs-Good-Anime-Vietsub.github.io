@@ -1,19 +1,19 @@
 ---
 anilistId: 5081
 featured: false
-title_vietnamese: '2009'
+title_vietnamese: 'Yêu Ma Quái Truyện'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, MTBB'
+    name: '[KiOZ], [MTBB]'
   - role: Typesetting
-    name: 'KiOZ, moch1oka, Eagle, MTBB'
+    name: '[KiOZ], [moch1oka], [Eagle], [MTBB]'
   - role: Encode
-    name: 'Beatrice-Raws(https://nyaa.si/view/974497)'
+    name: '[Beatrice-Raws]'
   - role: QC
-    name: 'KiOZ, moch1oka'
+    name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003882'
@@ -23,7 +23,5 @@ downloads:
 Cực Nhiều... để từ từ tổng hợp lại sau... dù sao cũng đã ghi kha khá trong phụ đề.
 
 ## Tham khảo thêm
-
-
 
 ## Notes

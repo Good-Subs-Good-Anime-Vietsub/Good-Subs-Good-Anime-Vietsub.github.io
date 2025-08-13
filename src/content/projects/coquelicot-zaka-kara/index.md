@@ -1,19 +1,19 @@
 ---
 anilistId: 10029
 featured: false
-title_vietnamese: Ngọn đồi hoa hồng anh
+title_vietnamese: 'Ngọn đồi hoa hồng anh'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: KiOZ
+    name: '[KiOZ]'
   - role: Timing
-    name: 'KiOZ, THORA(https://thoranime.nyaarchive.moe/?p=2265)'
+    name: '[KiOZ], [THORA]'
   - role: Typesetting
-    name: 'KiOZ, Eagle'
+    name: '[KiOZ], [Eagle]'
   - role: Encode
-    name: 'THORA(https://thoranime.nyaarchive.moe/?p=2265)'
+    name: '[THORA]'
   - role: QC
-    name: KiOZ
+    name: '[KiOZ]'
 downloads:
   - type: Download
     url: 'https://nyaa.si/view/2003828'
@@ -34,7 +34,9 @@ Cũng vì thế, câu chuyện được kể trong phim khá phổ biến ở Nh
 
 Tiếng Nhật:
 
-    中身のないヒョウタン - 千成瓢箪 (sennaribyōtan)
+```
+中身のないヒョウタン - 千成瓢箪 (sennaribyōtan)
+```
 
 ![](kokurikozaka-baunam-01.png)*thời gian - 0:30:29*
 
@@ -46,7 +48,7 @@ Tiếng Nhật:
 
 Thực sự không có cách nào để dịch mớ văn hóa này sang Tiếng Việt mà giữ nguyên vẹn được ý nghĩa.
 
-![](kokurikozaka-maan.jfif)*Cây cột Sennaribyōtan tại Ga Hyōtan-yama, Higashiōsaka, Ōsaka*
+![](kokurikozaka-maan.jpg)*Cây cột Sennaribyōtan tại Ga Hyōtan-yama, Higashiōsaka, Ōsaka*
 
 ## Tham khảo thêm
 

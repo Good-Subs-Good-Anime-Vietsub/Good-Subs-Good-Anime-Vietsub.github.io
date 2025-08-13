@@ -17,6 +17,7 @@ const query = `
         title { romaji native english }
         coverImage { extraLarge }
         bannerImage
+        startDate { year }
         seasonYear
         format
         episodes
@@ -24,11 +25,11 @@ const query = `
         averageScore
         source
         genres
-        studios(isMain: true) { nodes { name } }
+        studios(isMain: true) { nodes { name siteUrl } }
         staff(sort: RELEVANCE, perPage: 5) {
           edges {
             role
-            node { name { full } }
+            node { name { full } siteUrl }
           }
         }
       }
@@ -47,7 +48,7 @@ async function fetchAnilistData() {
         const indexPath = path.join(PROJECTS_CONTENT_PATH, dirEntry.name, 'index.md');
         try {
           const fileContent = await fs.readFile(indexPath, 'utf-8');
-          const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---/);
+          const frontmatterMatch = fileContent.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---/);
           if (frontmatterMatch && frontmatterMatch[1]) {
             const frontmatter = yaml.load(frontmatterMatch[1]);
             if (frontmatter && typeof frontmatter.anilistId === 'number' && !isNaN(frontmatter.anilistId)) {
@@ -94,10 +95,10 @@ async function fetchAnilistData() {
     console.log(`AniList data cached successfully to ${ANILIST_CACHE_PATH}`);
   } catch (error) {
     console.error('Error fetching or caching AniList data:', error);
-    // Create an empty cache file on error to prevent build failures
-    await fs.mkdir(path.dirname(ANILIST_CACHE_PATH), { recursive: true });
-    await fs.writeFile(ANILIST_CACHE_PATH, JSON.stringify({}), 'utf-8');
-    console.log('Created an empty AniList cache file due to error.');
+    // Exit with a non-zero exit code to indicate failure, preventing the CI from proceeding with a bad build.
+    // Do not write an empty file, so the old cache can be used as a fallback.
+    console.error('Failed to fetch AniList data. The existing cache (if any) will be used. Aborting script.');
+    process.exit(1);
   }
 }
 
