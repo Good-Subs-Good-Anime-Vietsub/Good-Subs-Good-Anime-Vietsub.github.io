@@ -16,6 +16,22 @@ const {
   schema // Destructure new prop
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "GSGA Fansub - Good Subs Good Anime",
+  "url": Astro.site,
+  "description": "GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${Astro.site}search?q={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
 ---
 
 <!doctype html>
@@ -49,16 +65,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:image:alt" content={`Ảnh đại diện cho ${title}`} />
 
     <!-- Schema Markup (JSON-LD) for WebSite -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "GSGA Fansub - Good Subs Good Anime",
-      "url": "{Astro.site}",
-      "description": "GSGA Fansub - Anime hay, Phụ đề cũng phải tốt. Nơi tổng hợp các bộ anime hay với phụ đề tiếng Việt chất lượng cao. Khám phá các dự án anime vietsub mới nhất, từ phim điện ảnh đến series, với trải nghiệm xem tốt nhất.",
-      "potentialAction": undefined
-    }
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    
     <!-- Dynamic Schema Markup for specific pages -->
     {schema && <script type="application/ld+json" set:html={schema} />}
 	</head>
