@@ -5,7 +5,7 @@ title_vietnamese: 'Hắc Miêu Truyện'
 status: Hoàn thành
 staffs:
   - role: Dịch
-    name: '[KiOZ], [tuilakhanh] (phương ngữ)'
+    name: '[KiOZ]'
   - role: Timing
     name: '[KiOZ], [MTBB]'
   - role: Typesetting
@@ -16,7 +16,7 @@ staffs:
     name: '[KiOZ], [moch1oka]'
 downloads:
   - type: Download
-    url: 'https://nyaa.si/view/2003887'
+    url: 'https://nyaa.si/view/2003889'
 ---
 ## Chú thích dịch
 

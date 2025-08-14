@@ -1,6 +1,6 @@
 1. Tìm sẵn đến bộ đó trên [AniList](https://anilist.co/), để lấy id, ví dụ: `https://anilist.co/anime/1/Cowboy-Bebop/` thì id là `1`
 
-2. Tạo `project` mới trong `src\content`, tên nào cũng được, khuyến nghị romaji, không viết hoa, có dấu `-` ngăn cách.
+2. Tạo `project` mới trong `src\content\projects`, tên nào cũng được, khuyến nghị romaji, không viết hoa, có dấu `-` ngăn cách.
 
 3. Điền thông tin cơ bản theo mẫu ở file `GSGA-template-pages.md`, lưu ý có 4 `status` là `Hoàn thành`, `Đang làm`, `Dự kiến`, `Tạm ngưng`.
 

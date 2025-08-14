@@ -175,5 +175,12 @@
     "role": "Typesetter, Raw Provider",
     "type": "external",
     "highlight": true
+  },
+  {
+    "name": "MiraiAnime",
+    "memberUrl": "https://nyaa.si/user/ThatWaxEllo",
+    "role": "Typesetter",
+    "type": "external",
+    "highlight": true
   }
 ]

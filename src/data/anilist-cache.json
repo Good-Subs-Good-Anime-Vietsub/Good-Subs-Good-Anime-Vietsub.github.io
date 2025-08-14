@@ -3321,6 +3321,90 @@
       ]
     }
   },
+  "136302": {
+    "id": 136302,
+    "title": {
+      "romaji": "Goodbye, Don Glees!",
+      "native": "グッバイ、ドン・グリーズ！",
+      "english": "Goodbye, Don Glees!"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136302-4R03xBOGWrcq.jpg",
+      "color": "#d6861a"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/136302-bVY7pyrAH95A.jpg",
+    "startDate": {
+      "year": 2022
+    },
+    "seasonYear": 2022,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 94,
+    "averageScore": 73,
+    "source": "ORIGINAL",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "MADHOUSE",
+          "siteUrl": "https://anilist.co/studio/11"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Atsuko Ishizuka"
+            },
+            "siteUrl": "https://anilist.co/staff/105579"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Takahiro Yoshimatsu"
+            },
+            "siteUrl": "https://anilist.co/staff/101187"
+          }
+        },
+        {
+          "role": "Prop Design",
+          "node": {
+            "name": {
+              "full": "Masaki Hinata"
+            },
+            "siteUrl": "https://anilist.co/staff/123908"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Ayano Okamoto"
+            },
+            "siteUrl": "https://anilist.co/staff/156208"
+          }
+        },
+        {
+          "role": "Art Design",
+          "node": {
+            "name": {
+              "full": "Akihiro Hirasawa"
+            },
+            "siteUrl": "https://anilist.co/staff/142487"
+          }
+        }
+      ]
+    }
+  },
   "136484": {
     "id": 136484,
     "title": {
