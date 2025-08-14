@@ -3,7 +3,10 @@ const { url } = Astro;
 const pathnames = url.pathname.split('/').filter(p => p);
 
 const breadcrumbs = pathnames.map((pathname, index) => {
-  const href = '/' + pathnames.slice(0, index + 1).join('/');
+  let href = '/' + pathnames.slice(0, index + 1).join('/');
+  if (pathname === 'projects' || pathname === 'status') {
+    href = '/';
+  }
   let name = pathname.replace(/-/g, ' ');
   
   // Capitalize first letter of each word
@@ -16,11 +19,11 @@ const breadcrumbs = pathnames.map((pathname, index) => {
   return { name, href };
 });
 
-const pageTitle = Astro.props.title || '';
+const pageTitle = (Astro.props.title || '').split('|')[0].trim();
 ---
 
 <nav aria-label="Breadcrumb" class="mb-6">
-  <ol class="flex items-center gap-2 text-sm text-gray-400">
+  <ol class="flex items-center gap-2 text-xs md:text-sm text-gray-400">
     <li>
       <a href="/" class="hover:text-white transition-colors">Trang chủ</a>
     </li>

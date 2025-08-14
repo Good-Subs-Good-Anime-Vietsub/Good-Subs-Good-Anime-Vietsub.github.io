@@ -22,9 +22,9 @@ const colorName = statusColors[project.data.status as Status];
     </div>
   <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end text-center p-4">
     <div class="flex flex-col items-center gap-1">
-      <h3 class="text-2xl font-bold text-white drop-shadow-lg">{title}</h3>
-      {project.data.title_vietnamese && <p class="text-base text-gray-300 drop-shadow-lg">{project.data.title_vietnamese}</p>}
-      <span class={`text-xs font-bold text-white px-2 py-1 rounded-md shadow-lg flex items-center bg-${colorName}-500 bg-opacity-90 backdrop-blur-sm mt-1`}>
+      <h3 class="text-lg font-bold text-white drop-shadow-lg md:text-xl">{title}</h3>
+      {project.data.title_vietnamese && <p class="text-sm text-gray-300 drop-shadow-lg md:text-base">{project.data.title_vietnamese}</p>}
+      <span class={`text-xs font-bold text-white px-2 py-1 rounded-md shadow-lg items-center bg-${colorName}-500 bg-opacity-90 backdrop-blur-sm mt-1 hidden md:flex`}>
         <StatusIcon status={project.data.status} class="w-3 h-3 mr-1" />
         {project.data.status}
       </span>

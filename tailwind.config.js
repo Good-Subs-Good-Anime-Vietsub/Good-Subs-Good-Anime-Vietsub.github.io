@@ -15,6 +15,11 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            // Add word break properties to the base prose styles
+            'overflow-wrap': 'break-word',
+            'word-break': 'break-word',
+            'hyphens': 'auto',
+
             'code': {
               backgroundColor: theme('colors.gray.800'),
               color: theme('colors.gray.200'),
@@ -36,5 +41,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('tailwind-scrollbar'),
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
   ],
 }

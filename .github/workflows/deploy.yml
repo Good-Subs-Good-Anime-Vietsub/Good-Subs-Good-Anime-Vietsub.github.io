@@ -1,33 +1,57 @@
+# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
+  # Chạy khi có push đến nhánh main
   push:
-    branches:
-      - main
+    branches: [main]
 
+  # Cho phép bạn chạy workflow này thủ công từ tab Actions
+  workflow_dispatch:
+
+# Cấp quyền cho GITHUB_TOKEN để cho phép deploy lên GitHub Pages
 permissions:
-  contents: write # Grant write permissions for the GITHUB_TOKEN
+  contents: read
+  pages: write
+  id-token: write
+
+# Chỉ cho phép một lần deploy đồng thời, bỏ qua các lần chạy được xếp hàng đợi.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/checkout@v4
         with:
-          node-version: '18' # Use a version compatible with your project
-
-      - name: Install Dependencies
+          fetch-depth: 0 # Tải toàn bộ lịch sử để lấy thông tin git
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      - name: Install dependencies
         run: npm install
-
       - name: Build
         run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          # Tải lên thư mục dist
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

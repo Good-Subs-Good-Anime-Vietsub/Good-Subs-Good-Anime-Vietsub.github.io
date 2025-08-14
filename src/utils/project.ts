@@ -7,6 +7,7 @@ export function slugify(text: string) {
     .toString()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd').replace(/Đ/g, 'D') // Correctly handle 'đ'
     .toLowerCase()
     .trim()
     .replace(/\s+/g, '-')

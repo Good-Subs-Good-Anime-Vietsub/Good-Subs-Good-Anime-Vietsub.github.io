@@ -69,13 +69,13 @@ function processStaffNames(nameString: string, members: Member[]): string {
 }
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-  <div class="bg-gray-800/50 p-6 rounded-lg">
-    <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 md:mb-12">
+  <div class="bg-gray-800/50 p-4 md:p-6 rounded-lg">
+    <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
       Thông tin cơ bản
     </h3>
-    <div class="space-y-2 text-base">
+    <div class="space-y-2 text-sm md:text-base">
       {year && <p class="break-words"><strong class="mr-2 text-gray-400">Năm:</strong> {year}</p>}
 {studio && (studio.siteUrl ? <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> <a href={studio.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{studio.name}</a></p> : <p class="break-words"><strong class="mr-2 text-gray-400">Studio:</strong> {studio.name}</p>)}
 {director && (director.siteUrl ? <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> <a href={director.siteUrl} target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">{director.name.full}</a></p> : <p class="break-words"><strong class="mr-2 text-gray-400">Đạo diễn:</strong> {director.name.full}</p>)}
@@ -86,12 +86,12 @@ function processStaffNames(nameString: string, members: Member[]): string {
       {anilist.genres && anilist.genres.length > 0 && <p class="break-words"><strong class="mr-2 text-gray-400">Thể loại:</strong> {anilist.genres.join(', ')}</p>}
     </div>
   </div>
-  <div class="bg-gray-800/50 p-6 rounded-lg">
-    <h3 class="text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
+  <div class="bg-gray-800/50 p-4 md:p-6 rounded-lg">
+    <h3 class="text-lg md:text-xl font-bold text-cyan-400 mb-4 border-b border-gray-700 pb-3 flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
       Nhân lực
     </h3>
-    <ul class="space-y-2 text-base text-gray-300">
+    <ul class="space-y-2 text-sm md:text-base text-gray-300">
       {staffs.map(staff => (
         <li class="break-words">
           <strong class="text-gray-200 mr-2">{staff.role}:</strong>

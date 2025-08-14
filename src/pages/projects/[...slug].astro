@@ -128,7 +128,7 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
     <RelatedProjects relatedProjects={relatedProjectsData} />
 
     <!-- 6. NỘI DUNG MARKDOWN -->
-    <article class="prose prose-invert max-w-none prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
+    <article class="prose prose-sm md:prose-base prose-invert max-w-none prose-h2:text-lg md:prose-h2:text-xl prose-h2:font-bold prose-h2:mb-6 prose-h2:border-l-4 prose-h2:border-cyan-400 prose-h2:pl-4 prose-img:rounded-lg prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-cyan-400">
       <Content />
     </article>
   </div>
@@ -138,14 +138,20 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
   import Swiper from 'swiper';
 
   const swiper = new Swiper('.related-slider', {
-    spaceBetween: 4,
-    slidesPerView: 'auto',
+    spaceBetween: 16,
+    slidesPerView: 3,
+    freeMode: true,
     breakpoints: {
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 8,
+      640: {
+        slidesPerView: 3,
       },
-    }
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
   });
 </script>
 

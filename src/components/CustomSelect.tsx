@@ -33,7 +33,7 @@ export default function CustomSelect({ options, selectedValue, onSelect, label }
     <div class="relative w-full" ref={selectRef}>
       <button
         type="button"
-        class="relative w-full h-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all text-white text-left"
+        class="relative w-full h-full px-3 sm:px-4 py-2 sm:py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all text-white text-left text-sm sm:text-base"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span class="block truncate">{selectedValue === 'Tất cả' ? label : selectedValue}</span>

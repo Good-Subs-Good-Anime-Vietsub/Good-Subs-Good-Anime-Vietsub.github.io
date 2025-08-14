@@ -22,7 +22,7 @@ downloads:
 
 Lẽ ra cần nhiều chú thích hơn, nhưng hồi dịch bộ này mình không tìm hiểu mấy nên không note lại, có vài câu trong phim là trích từ danh ngôn, tác phẩm,... chủ yếu liên quan tới triết học.
 
-Tuy nhiên, phần 1 không nặng thoại như [phần 2](./innocence), hình ảnh vẫn vô cùng ẩn dụ. Nói không ngoa, phần 1 ẩn dụ trên từng khung hình, góc máy, và nó không hề ra vẻ hay cố lồng ghép gì cả, rất tự nhiên.
+Tuy nhiên, phần 1 không nặng thoại như [phần 2](/projects/innocence), hình ảnh vẫn vô cùng ẩn dụ. Nói không ngoa, phần 1 ẩn dụ trên từng khung hình, góc máy, và nó không hề ra vẻ hay cố lồng ghép gì cả, rất tự nhiên.
 
 ## Tham khảo thêm
 

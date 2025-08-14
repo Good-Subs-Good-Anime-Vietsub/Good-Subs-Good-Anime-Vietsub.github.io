@@ -23,8 +23,6 @@ jobs:
 
       - name: Fetch AniList Data
         run: npm run fetch-anilist
-        env:
-          ANILIST_USER_ID: ${{ secrets.ANILIST_USER_ID }} # Add this secret to your repository settings
 
       - name: Commit and Push if changed
         uses: stefanzweifel/git-auto-commit-action@v4

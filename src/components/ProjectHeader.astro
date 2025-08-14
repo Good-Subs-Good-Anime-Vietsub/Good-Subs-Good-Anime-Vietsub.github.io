@@ -14,11 +14,11 @@ const lastUpdatedStr = lastUpdated?.toISOString().split('T')[0];
 const showLastUpdated = publishDateStr && lastUpdatedStr && publishDateStr !== lastUpdatedStr;
 ---
 
-<div class="text-center mb-12">
-  <h1 class="text-4xl font-bold text-cyan-400">{title}</h1>
-  {titleVietnamese && <h2 class="text-2xl font-bold text-gray-300 mt-2">{titleVietnamese}</h2>}
-  <h3 class="text-1xl text-gray-400 mt-2">{nativeTitle}</h3>
-  <div class="text-sm text-gray-500 mt-2">
+<div class="text-center mb-8 md:mb-12">
+  <h1 class="text-2xl md:text-4xl font-bold text-cyan-400">{title}</h1>
+  {titleVietnamese && <h2 class="text-lg md:text-2xl font-bold text-gray-300 mt-2">{titleVietnamese}</h2>}
+  <h3 class="text-base md:text-xl text-gray-400 mt-2">{nativeTitle}</h3>
+  <div class="text-xs md:text-sm text-gray-500 mt-2">
     {publishDateStr && <span>Ngày đăng: {publishDateStr}</span>}
     {showLastUpdated && <span class="ml-4">Cập nhật: {lastUpdatedStr}</span>}
   </div>

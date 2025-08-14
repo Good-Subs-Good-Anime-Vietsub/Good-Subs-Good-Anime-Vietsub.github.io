@@ -183,7 +183,7 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
             placeholder="Tìm kiếm theo tên, studio, đạo diễn, tựa việt..."
             value={searchTerm}
             onInput={(e) => setSearchTerm((e.target as HTMLInputElement).value)}
-            class="w-full h-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all"
+            class="w-full h-full pl-9 sm:pl-10 pr-4 py-2 sm:py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-all text-sm sm:text-base"
           />
         </div>
         <div class="w-full md:w-64">
@@ -197,8 +197,8 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
       </div>
 
       {/* Hàng 2: Các bộ lọc */}
-      <div class="flex flex-col md:flex-row gap-4 mb-10">
-        <div class="flex flex-wrap gap-3">
+      <div class="flex flex-col md:flex-row gap-4 mb-6 sm:mb-10">
+        <div class="flex flex-wrap gap-2 sm:gap-3">
           {statusFilters.map(filter => {
             const colorName = statusColors[filter];
             const isActive = activeStatusFilter === filter;
@@ -207,18 +207,18 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
               <button
                 key={filter}
                 onClick={() => setActiveStatusFilter(filter)}
-                class={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 flex items-center ${
+                class={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-200 flex items-center ${
                   isActive
                     ? `bg-${colorName}-500 text-white shadow-lg`
                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                 }`}
               >
                 {isAllFilter ? (
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 ) : (
-                  <StatusIcon status={filter} class="w-4 h-4 mr-1" />
+                  <StatusIcon status={filter} class="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5" />
                 )}
                 {filter}
               </button>
@@ -237,7 +237,7 @@ export default function InteractiveHome({ projects }: InteractiveHomeProps) {
 
       {/* Lưới hiển thị kết quả */}
       {processedProjects.length > 0 ? (
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3 md:gap-4">
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3 md:gap-4">
           {processedProjects.map(project => (
             <ProjectCard 
               key={project.slug} 

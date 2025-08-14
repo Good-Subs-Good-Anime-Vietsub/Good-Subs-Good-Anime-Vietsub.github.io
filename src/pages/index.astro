@@ -57,6 +57,11 @@ const featuredProjects = shuffleArray(featuredProjectsRaw);
   .featured-slider .swiper-button-next, .featured-slider .swiper-button-prev {
     color: theme('colors.cyan.400'); width: 28px; height: 28px; background-color: rgba(18, 24, 39, 0.6);
     border-radius: 50%; backdrop-filter: blur(4px); transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  .featured-slider:hover .swiper-button-next,
+  .featured-slider:hover .swiper-button-prev {
+    opacity: 1;
   }
   .featured-slider .swiper-button-next:hover, .featured-slider .swiper-button-prev:hover {
     background-color: rgba(30, 41, 59, 0.8); color: theme('colors.white');
