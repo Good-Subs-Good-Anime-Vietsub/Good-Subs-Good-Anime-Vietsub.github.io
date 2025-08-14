@@ -48,11 +48,11 @@ switch (status) {
 
 <Layout title={title}>
   <div class="flex flex-col items-center justify-center min-h-screen text-center px-4">
-    <h1 class="text-5xl font-extrabold text-white mb-4">{title}</h1>
-    <p class="text-2xl text-gray-400 mb-6">
+    <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{title}</h1>
+    <p class="text-lg md:text-2xl text-gray-400 mb-6">
       {message}
     </p>
-    <p class="text-xl text-cyan-400 mb-8">
+    <p class="text-base md:text-xl text-cyan-400 mb-8">
       {status === 'du-kien' && 'Trang chủ đang chờ bạn khám phá trong '}
       {status === 'dang-lam' && 'Đừng lo, sẽ được đưa về trang chủ sau '}
       {status === 'tam-ngung' && 'Quay lại trang chủ sau '}
