@@ -41,6 +41,5 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('tailwind-scrollbar'),
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp'),
   ],
 }

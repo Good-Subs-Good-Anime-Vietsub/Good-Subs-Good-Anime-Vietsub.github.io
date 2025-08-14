@@ -20,20 +20,44 @@ const breadcrumbs = pathnames.map((pathname, index) => {
 });
 
 const pageTitle = (Astro.props.title || '').split('|')[0].trim();
+
+// --- LOGIC TẠO SCHEMA BREADCRUMB ---
+const itemListElement = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Trang chủ",
+    "item": new URL('/', Astro.site).href
+  },
+  ...breadcrumbs.map((crumb, index) => ({
+    "@type": "ListItem",
+    "position": index + 2,
+    "name": index === breadcrumbs.length - 1 ? pageTitle : crumb.name,
+    "item": new URL(crumb.href, Astro.site).href
+  }))
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": itemListElement
+};
 ---
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 <nav aria-label="Breadcrumb" class="mb-6">
   <ol class="flex items-center gap-2 text-xs md:text-sm text-gray-400">
     <li>
-      <a href="/" class="hover:text-white transition-colors">Trang chủ</a>
+      <a href="/" class="hover:text-white transition-colors whitespace-nowrap">Trang chủ</a>
     </li>
     {breadcrumbs.map((crumb, index) => (
-      <li class="flex items-center gap-2">
+      <li class="flex items-center gap-2 min-w-0">
         <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
         {index === breadcrumbs.length - 1 ? (
-          <span class="font-semibold text-white">{pageTitle}</span>
+          <span class="font-semibold text-white truncate">{pageTitle}</span>
         ) : (
-          <a href={crumb.href} class="hover:text-white transition-colors">{crumb.name}</a>
+          <a href={crumb.href} class="hover:text-white transition-colors whitespace-nowrap">{crumb.name}</a>
         )}
       </li>
     ))}

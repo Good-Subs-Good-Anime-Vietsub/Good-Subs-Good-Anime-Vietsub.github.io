@@ -2,7 +2,6 @@
 title: "Hướng dẫn xem anime/phim vietsub"
 description: "Tổng hợp các hướng dẫn cài đặt và tinh chỉnh trình phát video để có trải nghiệm xem anime tốt nhất với phụ đề của GSGA."
 ---
-# Hướng dẫn xem
 
 ## Trình phát
 Phụ đề của nhóm được làm và test dựa trên [libass](https://github.com/libass/libass), cho nên cực kỳ khuyến nghị xem bằng trình phát có sử dụng libass để render phụ đề giúp đảm bảo mọi người có được trải nghiệm xem chuẩn nhất. 

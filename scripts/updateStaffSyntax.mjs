@@ -28,7 +28,7 @@ async function updateProjectFiles() {
 
     for (const dirent of projectFolders) {
       if (dirent.isDirectory()) {
-        const mdxFilePath = path.join(projectsDirPath, dirent.name, 'index.mdx');
+        const mdxFilePath = path.join(projectsDirPath, dirent.name, 'index.md');
 
         try {
           const fileContent = await fs.readFile(mdxFilePath, 'utf8');

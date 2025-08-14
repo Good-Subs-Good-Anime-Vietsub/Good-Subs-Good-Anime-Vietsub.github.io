@@ -15,7 +15,7 @@ const query = `
       media(id_in: $ids, type: ANIME, sort: SEARCH_MATCH) {
         id
         title { romaji native english }
-        coverImage { extraLarge }
+        coverImage { extraLarge color }
         bannerImage
         startDate { year }
         seasonYear

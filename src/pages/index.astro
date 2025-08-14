@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { getCommitDates } from '../utils/git';
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
+import NotificationBanner from '../components/NotificationBanner.astro';
 import InteractiveHome from '../components/InteractiveHome.tsx';
 import anilistCache from '../data/anilist-cache.json';
 import type { AnilistCache } from '../types/anilist-cache'; // Import kiểu dữ liệu cache
@@ -37,18 +38,7 @@ const allCombinedData = projectsWithDate
 
 // Toàn bộ logic sắp xếp sẽ được xử lý trong InteractiveHome.tsx
 
-// Hàm xáo trộn mảng (Fisher-Yates shuffle)
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
-
-const featuredProjectsRaw = allCombinedData.filter(p => p.data.featured && p.anilist);
-const featuredProjects = shuffleArray(featuredProjectsRaw);
+const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilist);
 ---
 <style is:global>
   @import 'swiper/css';
@@ -77,7 +67,7 @@ const featuredProjects = shuffleArray(featuredProjectsRaw);
 >
   <!-- Slider Featured vẫn là của Astro -->
   {featuredProjects.length > 0 && (
-    <section class="mb-16 relative">
+    <section class="mb-8 relative">
       <div class="swiper featured-slider">
         <div class="swiper-wrapper">
           {featuredProjects.map(project => (
@@ -92,6 +82,9 @@ const featuredProjects = shuffleArray(featuredProjectsRaw);
     </section>
   )}
 
+  <!-- Dòng thông báo -->
+  <NotificationBanner />
+
   <!-- Gọi component Preact và truyền toàn bộ dữ liệu vào -->
   <InteractiveHome projects={allCombinedData} client:load />
 
@@ -100,9 +93,36 @@ const featuredProjects = shuffleArray(featuredProjectsRaw);
 <script>
   import Swiper from 'swiper';
   import { Navigation } from 'swiper/modules';
+
+  // Hàm xáo trộn các phần tử con của một element
+  function shuffleChildren(parent: Element) {
+    const children = Array.from(parent.children);
+    for (let i = children.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      // Hoán đổi vị trí trong mảng
+      [children[i], children[j]] = [children[j], children[i]];
+    }
+    // Nối lại các con theo thứ tự đã xáo trộn, appendChild sẽ di chuyển element
+    children.forEach(child => parent.appendChild(child));
+  }
+
+  const sliderWrapper = document.querySelector('.featured-slider .swiper-wrapper');
+  
+  // Chỉ xáo trộn nếu có nhiều hơn 1 slide
+  if (sliderWrapper && sliderWrapper.children.length > 1) {
+    shuffleChildren(sliderWrapper);
+  }
+
+  // Khởi tạo Swiper sau khi DOM đã được xáo trộn
   const swiper = new Swiper('.featured-slider', {
-    modules: [Navigation], loop: true, slidesPerView: 1, 
-    spaceBetween: 30, centeredSlides: true,
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 </script>

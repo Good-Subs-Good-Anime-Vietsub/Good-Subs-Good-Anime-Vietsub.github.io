@@ -7,7 +7,8 @@
       "english": "Ghost in the Shell"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png",
+      "color": null
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/43-uDbk1jrG9yod.jpg",
     "startDate": {
@@ -90,7 +91,8 @@
       "english": "Akira"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg",
+      "color": "#e45d50"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/47-fof8HqtNDtvx.jpg",
     "startDate": {
@@ -176,7 +178,8 @@
       "english": "Princess Mononoke"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164-ySuGzCWVw2cL.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164-ySuGzCWVw2cL.jpg",
+      "color": null
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/164-Aj6MINy7VTfs.jpg",
     "startDate": {
@@ -260,7 +263,8 @@
       "english": "Spirited Away"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg",
+      "color": "#e45d5d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199-Sm2RU5PSqw7T.jpg",
     "startDate": {
@@ -344,7 +348,8 @@
       "english": "Perfect Blue"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg",
+      "color": "#1a356b"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/437-3yMVTyN7gl2A.jpg",
     "startDate": {
@@ -428,7 +433,8 @@
       "english": "Ghost in the Shell 2: Innocence"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx468-rfiX1uY8bsPp.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx468-rfiX1uY8bsPp.jpg",
+      "color": null
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/468-V8L7r2QZaNeS.jpg",
     "startDate": {
@@ -511,7 +517,8 @@
       "english": "Kiki's Delivery Service"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-UwP8X4BR8YoM.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-UwP8X4BR8YoM.png",
+      "color": "#50a1c9"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/512-Ssp3EE2NdeoA.jpg",
     "startDate": {
@@ -595,7 +602,8 @@
       "english": "Castle in the Sky"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx513-yM7Dlt65N4Rl.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx513-yM7Dlt65N4Rl.jpg",
+      "color": "#e4c95d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/513-3zMLMyA0qH5n.jpg",
     "startDate": {
@@ -678,7 +686,8 @@
       "english": "Grave of the Fireflies"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx578-vU6XcOlb1XFU.jpg",
+      "color": "#e4bb5d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/578.jpg",
     "startDate": {
@@ -759,7 +768,8 @@
       "english": "Whisper of the Heart"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx585-5uq7j2xNNVmN.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx585-5uq7j2xNNVmN.jpg",
+      "color": "#f15d35"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/585-GowCYxa1c8WR.jpg",
     "startDate": {
@@ -843,7 +853,8 @@
       "english": "Tokyo Godfathers"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx759-XSKBju6xutdR.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx759-XSKBju6xutdR.jpg",
+      "color": "#e49350"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/759-WE1Y5uCZ3Vv7.jpg",
     "startDate": {
@@ -926,7 +937,8 @@
       "english": "Millennium Actress"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1033-d5p1pbd5qa4L.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1033-d5p1pbd5qa4L.png",
+      "color": "#e4d61a"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1033-npnaGITec3EV.jpg",
     "startDate": {
@@ -1009,7 +1021,8 @@
       "english": "Paprika"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-jMCEYL1Ixmgc.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1943-jMCEYL1Ixmgc.png",
+      "color": "#e49328"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1943.jpg",
     "startDate": {
@@ -1094,7 +1107,8 @@
       "english": "The Girl Who Leapt Through Time"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2236-tH5fWFkHyVGg.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2236-tH5fWFkHyVGg.png",
+      "color": "#93bbe4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2236-rY0fvv53JIOB.jpg",
     "startDate": {
@@ -1177,7 +1191,8 @@
       "english": "Bakemonogatari"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg",
+      "color": "#4393e4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n5081-0Zcn5GOFYHMc.jpg",
     "startDate": {
@@ -1263,7 +1278,8 @@
       "english": "Summer Wars"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5681-3DmxUVn3grD0.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5681-3DmxUVn3grD0.jpg",
+      "color": "#1a86d6"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/5681-gANFEmT8uIFF.jpg",
     "startDate": {
@@ -1348,7 +1364,8 @@
       "english": "The Secret World of Arrietty"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg",
+      "color": "#f1435d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n7711-sxtXcjmMKfaF.jpg",
     "startDate": {
@@ -1431,7 +1448,8 @@
       "english": "Kizumonogatari Part 1: Tekketsu"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png",
+      "color": "#e4a128"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/9260-69LbBxcWN2tA.jpg",
     "startDate": {
@@ -1517,7 +1535,8 @@
       "english": "From Up on Poppy Hill"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10029-R7iZdjWuzeYq.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10029-R7iZdjWuzeYq.png",
+      "color": "#006b93"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/10029-U4tY2KezjAc5.jpg",
     "startDate": {
@@ -1600,7 +1619,8 @@
       "english": "Nisemonogatari"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-x2vd4KSHcI1S.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-x2vd4KSHcI1S.jpg",
+      "color": "#f1d65d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11597-GAiesUhFN9U9.jpg",
     "startDate": {
@@ -1686,7 +1706,8 @@
       "english": "Wolf Children"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12355-wNsvhEsXEgrH.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12355-wNsvhEsXEgrH.png",
+      "color": "#e45d6b"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12355.jpg",
     "startDate": {
@@ -1774,7 +1795,8 @@
       "english": "Patema Inverted"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg",
+      "color": "#3586bb"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/12477-RngQKNBGkEhp.jpg",
     "startDate": {
@@ -1861,7 +1883,8 @@
       "english": "Nekomonogatari Black"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-UtRUbaZhV7f9.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15689-UtRUbaZhV7f9.jpg",
+      "color": null
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/15689-OkvbPqAXnJd5.jpg",
     "startDate": {
@@ -1946,7 +1969,8 @@
       "english": "The Garden of Words"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16782-qpFGk18UqaHn.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16782-qpFGk18UqaHn.jpg",
+      "color": "#93e450"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16782.jpg",
     "startDate": {
@@ -2030,7 +2054,8 @@
       "english": "When Marnie Was There"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20555-QGbWQC3Kfpok.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20555-QGbWQC3Kfpok.jpg",
+      "color": "#5daee4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20555-pJTKZKw8vDe8.jpg",
     "startDate": {
@@ -2113,7 +2138,8 @@
       "english": "A Silent Voice"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20954-sYRfE5jQRtSB.jpg",
+      "color": "#5dbbe4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20954-f30bHMXa5Qoe.jpg",
     "startDate": {
@@ -2196,7 +2222,8 @@
       "english": "The Boy and The Beast"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg",
+      "color": "#50c9e4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20981-ut1mNXG4fp0H.jpg",
     "startDate": {
@@ -2282,7 +2309,8 @@
       "english": "Kizumonogatari Part 2: Nekketsu"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21399-VTAdAqc8u5AE.png",
+      "color": "#28aee4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21399-vCKFTNkrYLIz.jpg",
     "startDate": {
@@ -2368,7 +2396,8 @@
       "english": "Kizumonogatari Part 3: Reiketsu"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21400-38ykNo3j4xXo.png",
+      "color": "#e4d628"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21400-5zcYUeVBptdG.jpg",
     "startDate": {
@@ -2454,7 +2483,8 @@
       "english": "Mirai"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100749-7Tptl7EAMAWH.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100749-7Tptl7EAMAWH.jpg",
+      "color": "#5dbbe4"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100749-rKmJwrHQj6dC.jpg",
     "startDate": {
@@ -2539,7 +2569,8 @@
       "english": "Kaguya-sama: Love is War"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101921-ufrjLzhSz7L1.jpg",
+      "color": "#e45086"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101921-GgvvFhlNhzlF.jpg",
     "startDate": {
@@ -2623,7 +2654,8 @@
       "english": "Inu-Oh"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109928-DWUN0zrDJfuv.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109928-DWUN0zrDJfuv.jpg",
+      "color": "#e44350"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109928-ur9brKAUiDdi.jpg",
     "startDate": {
@@ -2706,7 +2738,8 @@
       "english": "In This Corner (and Other Corners) of the World"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112135-SZwCaYm8WwR0.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112135-SZwCaYm8WwR0.png",
+      "color": "#e4d6a1"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112135-VtUn87kDAadW.jpg",
     "startDate": {
@@ -2788,7 +2821,8 @@
       "english": "Kaguya-sama: Love is War?"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112641-zoGC8d6FaPXU.jpg",
+      "color": "#DAD797"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112641-mKZe0zng0ndV.jpg",
     "startDate": {
@@ -2872,7 +2906,8 @@
       "english": "Kaguya-sama: Love is War -Ultra Romantic-"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
+      "color": "#d6f1a1"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125367-hGPJLSNfprO3.jpg",
     "startDate": {
@@ -2956,7 +2991,8 @@
       "english": null
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125368-QhcBkbNP0ZfU.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125368-QhcBkbNP0ZfU.png",
+      "color": "#c97843"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/125368-zCY0WnSQl7RG.jpg",
     "startDate": {
@@ -3040,7 +3076,8 @@
       "english": "Link Click"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126403-BfVSRzWUtVFW.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126403-BfVSRzWUtVFW.png",
+      "color": null
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/126403-Zs8HsM3YBoml.jpg",
     "startDate": {
@@ -3124,7 +3161,8 @@
       "english": "BELLE"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127271-juJIu4WFTM8q.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127271-juJIu4WFTM8q.png",
+      "color": "#e45086"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/127271-PYK1XpL5Ha90.jpg",
     "startDate": {
@@ -3208,7 +3246,8 @@
       "english": "LINK CLICK Episode 5.5"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136145-guWKltDngjIu.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136145-guWKltDngjIu.jpg",
+      "color": "#f1865d"
     },
     "bannerImage": null,
     "startDate": {
@@ -3290,7 +3329,8 @@
       "english": "Link Click Season 2"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136484-QiHcF64PVWQi.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136484-QiHcF64PVWQi.jpg",
+      "color": "#e45078"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/136484-LuB1Iz3U2rx5.jpg",
     "startDate": {
@@ -3382,7 +3422,8 @@
       "english": "Kaguya-sama: Love is War -The First Kiss That Never Ends-"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-gv0q8wOE6D58.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151384-gv0q8wOE6D58.jpg",
+      "color": "#e45d78"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151384-JybfIpHr2gx6.jpg",
     "startDate": {
@@ -3466,7 +3507,8 @@
       "english": "The Apothecary Diaries"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161645-QLbzHXiYRgV2.jpg"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161645-QLbzHXiYRgV2.jpg",
+      "color": "#f1865d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/161645-oqzTZYIvviWI.jpg",
     "startDate": {
@@ -3552,7 +3594,8 @@
       "english": "LAZARUS"
     },
     "coverImage": {
-      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167336-KpGIIBie71OX.png"
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167336-KpGIIBie71OX.png",
+      "color": "#e4ae5d"
     },
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/167336-tDasHGggSBcH.jpg",
     "startDate": {

@@ -9,7 +9,7 @@ async function formatStaffNames() {
 
     for (const folder of projectFolders) {
       if (folder.isDirectory()) {
-        const mdxFilePath = join(projectsDir, folder.name, 'index.mdx');
+        const mdxFilePath = join(projectsDir, folder.name, 'index.md');
         try {
           let content = await readFile(mdxFilePath, 'utf8');
           let modified = false;

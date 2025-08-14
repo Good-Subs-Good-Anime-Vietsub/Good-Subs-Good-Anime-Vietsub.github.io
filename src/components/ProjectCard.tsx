@@ -48,11 +48,11 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project, colorName }
           <img src={coverImage.extraLarge} alt={`Cover for ${title.romaji}`} loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 p-2 sm:p-3 bg-gradient-to-t from-black/90 to-transparent">
-            <h3 class="font-semibold text-sm sm:text-base text-white leading-tight drop-shadow-lg line-clamp-2">{title.romaji}</h3>
+            <h3 class="font-semibold text-xs sm:text-base text-white leading-tight drop-shadow-lg line-clamp-2">{title.romaji}</h3>
             <div class="flex justify-between items-center mt-1">
-              {year && <p class="text-[11px] sm:text-xs text-gray-300">{year}</p>}
-              <span class={`text-[9px] sm:text-[11px] font-bold text-white px-1 sm:px-1.5 py-px sm:py-0.5 rounded-md shadow-lg flex items-center ${tagBgClass} bg-opacity-70 backdrop-blur-sm`}>
-                <StatusIcon status={currentStatus} class="w-2 h-2 sm:w-2.5 sm:h-2.5 mr-1" />
+              {year && <p class="text-[10px] sm:text-xs text-gray-300">{year}</p>}
+              <span class={`text-[8px] sm:text-[11px] font-bold text-white px-1 sm:px-1.5 py-px sm:py-0.5 rounded-md shadow-lg flex items-center ${tagBgClass} bg-opacity-70 backdrop-blur-sm`}>
+                <StatusIcon status={currentStatus} class="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 mr-0.5 sm:mr-1" />
                 {currentStatus}
               </span>
             </div>

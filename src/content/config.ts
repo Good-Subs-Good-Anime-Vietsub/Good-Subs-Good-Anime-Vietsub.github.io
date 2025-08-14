@@ -49,8 +49,21 @@ const guidesCollection = defineCollection({
   }),
 });
 
+const notificationsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    // Dùng để bật/tắt thông báo mà không cần xóa file
+    enabled: z.boolean().optional().default(true),
+    // Tùy chọn: Thêm link cho thông báo
+    link: z.string().url().optional(),
+    // Tùy chọn: Đặt ngày hết hạn cho thông báo
+    expires: z.date().nullable().optional(),
+  }),
+});
+
 export const collections = {
   'projects': projectsCollection,
   'pages': pagesCollection,
   'guides': guidesCollection,
+  'notifications': notificationsCollection,
 };

@@ -62,6 +62,11 @@ const { title_vietnamese, staffs, downloads, status } = entry.data;
 const slugifiedStatus = slugify(status);
 
 
+// --- LOGIC TẠO MÔ TẢ SEO TỰ ĐỘNG ---
+const romajiTitle = anilist.title.romaji;
+const vietnameseTitle = entry.data.title_vietnamese ? ` (${entry.data.title_vietnamese})` : '';
+const seoDescription = `Tải và xem anime ${romajiTitle}${vietnameseTitle} Vietsub. Phụ đề tiếng Việt được thực hiện bởi GSGA Fansub.`;
+
 // --- LOGIC TÌM CÁC DỰ ÁN LIÊN QUAN (ĐÃ ĐƯỢC TÁI CẤU TRÚC) ---
 const allProjects = await getCollection('projects');
 const relatedProjects = getRelatedProjects(entry, allProjects, (anilistCache as unknown) as AnilistCache);
@@ -94,16 +99,16 @@ const relatedProjectsData = (await Promise.all(relatedProjectsDataPromises)).fil
   }
 </style>
 
-<Layout 
+<Layout
   title={`${anilist.title.romaji} | GSGA Fansub - Good Subs Good Anime`}
-  description={entry.body.substring(0, 150) + '...'}
-  image={anilist.coverImage.extraLarge}
+  description={seoDescription}
+  image={`/og/${entry.slug}.png`}
   schema={JSON.stringify({
     "@context": "https://schema.org",
     "@type": anilist.format === 'MOVIE' ? 'Movie' : 'TVSeries',
     "name": anilist.title.romaji,
     "alternateName": anilist.title.native,
-    "description": entry.body.substring(0, 150) + '...',
+    "description": seoDescription,
     "image": anilist.coverImage.extraLarge,
     "url": Astro.url.href,
     "genre": anilist.genres && anilist.genres.length > 0 ? anilist.genres : undefined,
