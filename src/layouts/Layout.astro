@@ -86,7 +86,7 @@ const websiteSchema = {
             <a href="/" class="group flex items-center gap-4 flex-shrink-0">
               <img src="/GSGA-logo.png" alt="GSGA Fansub Logo" class="h-12 w-auto rounded-md" />
               <div>
-                <h1 class="text-2xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-200 ease-in-out whitespace-nowrap">
+                <h1 class="text-xl sm:text-2xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-200 ease-in-out whitespace-nowrap">
                   GSGA Fansub
                 </h1>
                 <p class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-200 ease-in-out hidden lg:block whitespace-nowrap">Anime hay, Phụ đề cũng phải tốt</p>
@@ -94,7 +94,7 @@ const websiteSchema = {
             </a>
           </div>
           
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 sm:gap-4">
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-6 flex-shrink-0">
               <a href="/about" class="text-gray-300 hover:text-white transition-colors font-medium">Giới thiệu</a>
@@ -180,6 +180,13 @@ const websiteSchema = {
               mobileMenu.classList.add('hidden');
             }
           });
+
+          // Close mobile menu on scroll
+          window.addEventListener('scroll', () => {
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+          }, { passive: true });
         }
 
         // Guides dropdown toggle

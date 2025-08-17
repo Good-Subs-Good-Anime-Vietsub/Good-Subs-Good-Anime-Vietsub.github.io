@@ -24,14 +24,14 @@ const { Content } = notification ? await notification.render() : { Content: null
       <div class="flex justify-between items-start mb-4">
         <div class="flex items-center gap-3 w-full justify-center">
           <Icon name="mdi:sparkles" class="w-7 h-7 flex-shrink-0 text-yellow-400" />
-          <h2 class="text-2xl font-bold text-cyan-400">Thông báo</h2>
+          <h2 class="text-xl md:text-2xl font-bold text-cyan-400">Thông báo</h2>
           <Icon name="mdi:sparkles" class="w-7 h-7 flex-shrink-0 text-yellow-400" />
         </div>
         <button id="close-popup-button" class="text-gray-400 hover:text-white transition-colors absolute top-4 right-4" aria-label="Đóng thông báo">
           <Icon name="mdi:close" class="w-6 h-6" />
         </button>
       </div>
-      <div class="prose prose-invert max-w-none text-gray-300 prose-p:m-0 prose-a:text-cyan-400 prose-a:font-semibold hover:prose-a:text-cyan-300 prose-strong:text-white prose-a:no-underline">
+      <div class="prose prose-sm md:prose-base prose-invert max-w-none text-gray-300 prose-p:m-0 prose-a:text-cyan-400 prose-a:font-semibold hover:prose-a:text-cyan-300 prose-strong:text-white prose-a:no-underline">
         <Content />
       </div>
     </div>
