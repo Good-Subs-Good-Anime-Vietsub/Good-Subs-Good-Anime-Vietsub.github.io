@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import { getCommitDates } from '../utils/git';
 import Layout from '../layouts/Layout.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
-import NotificationBanner from '../components/NotificationBanner.astro';
 import InteractiveHome from '../components/InteractiveHome.tsx';
 import anilistCache from '../data/anilist-cache.json';
 import type { AnilistCache } from '../types/anilist-cache'; // Import kiểu dữ liệu cache
@@ -83,7 +82,6 @@ const featuredProjects = allCombinedData.filter(p => p.data.featured && p.anilis
   )}
 
   <!-- Dòng thông báo -->
-  <NotificationBanner />
 
   <!-- Gọi component Preact và truyền toàn bộ dữ liệu vào -->
   <InteractiveHome projects={allCombinedData} client:load />

@@ -3752,5 +3752,39 @@
         }
       ]
     }
+  },
+  "175646": {
+    "id": 175646,
+    "title": {
+      "romaji": "Chang'An ",
+      "native": "长安三万里",
+      "english": null
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx175646-8uZKzLkWU3vp.png",
+      "color": "#f1860d"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/175646-KsBhL3YFTALe.jpg",
+    "startDate": {
+      "year": 2023
+    },
+    "seasonYear": null,
+    "format": "MOVIE",
+    "episodes": 1,
+    "duration": 168,
+    "averageScore": null,
+    "source": "ORIGINAL",
+    "genres": [],
+    "studios": {
+      "nodes": [
+        {
+          "name": "Light Chaser Animation",
+          "siteUrl": "https://anilist.co/studio/6266"
+        }
+      ]
+    },
+    "staff": {
+      "edges": []
+    }
   }
 }

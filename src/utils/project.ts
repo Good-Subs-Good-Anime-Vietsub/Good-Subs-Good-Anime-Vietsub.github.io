@@ -40,6 +40,7 @@ export function getRelatedProjects(
   const currentDirector = currentAnilistData.staff?.edges.find((e: StaffEdge) => e.role === 'Director')?.node.name.full;
   const currentStudio = currentAnilistData.studios?.nodes[0]?.name;
   const currentGenres = currentAnilistData.genres || [];
+  const currentFormat = currentAnilistData.format;
 
   const relatedProjects = allProjects
     .filter(p => (p.data.status === 'Đang làm' || p.data.status === 'Hoàn thành') && p.slug !== currentEntry.slug)
@@ -51,6 +52,13 @@ export function getRelatedProjects(
       const otherDirector = otherAnilistData.staff?.edges.find((e: StaffEdge) => e.role === 'Director')?.node.name.full;
       const otherStudio = otherAnilistData.studios?.nodes[0]?.name;
       const otherGenres = otherAnilistData.genres || [];
+
+      const otherFormat = otherAnilistData.format;
+
+      // +3 điểm nếu cùng định dạng
+      if (currentFormat && otherFormat && currentFormat === otherFormat) {
+        score += 3;
+      }
 
       // +1 điểm cho mỗi thể loại chung
       score += otherGenres.filter(genre => currentGenres.includes(genre)).length;

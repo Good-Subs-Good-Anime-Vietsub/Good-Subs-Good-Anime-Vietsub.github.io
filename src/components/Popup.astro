@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+// Lấy thông báo có slug là 'homepage'
+const notifications = await getCollection('notifications', ({ id }) => id === 'homepage.md');
+const notification = notifications[0];
+
+let shouldRender = false;
+if (notification) {
+  const { enabled, expires } = notification.data;
+  const isExpired = expires ? new Date(expires) < new Date() : false;
+  if (enabled && !isExpired) {
+    shouldRender = true;
+  }
+}
+
+const { Content } = notification ? await notification.render() : { Content: null };
+---
+
+{shouldRender && Content && (
+  <div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-[100] flex justify-center items-center transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none">
+    <div id="popup-content" class="bg-gray-800/80 border border-cyan-500/30 rounded-lg shadow-xl p-6 max-w-2xl w-full mx-4 transform transition-transform duration-300 ease-in-out scale-95 text-center">
+      <div class="flex justify-between items-start mb-4">
+        <div class="flex items-center gap-3 w-full justify-center">
+          <Icon name="mdi:sparkles" class="w-7 h-7 flex-shrink-0 text-yellow-400" />
+          <h2 class="text-2xl font-bold text-cyan-400">Thông báo</h2>
+          <Icon name="mdi:sparkles" class="w-7 h-7 flex-shrink-0 text-yellow-400" />
+        </div>
+        <button id="close-popup-button" class="text-gray-400 hover:text-white transition-colors absolute top-4 right-4" aria-label="Đóng thông báo">
+          <Icon name="mdi:close" class="w-6 h-6" />
+        </button>
+      </div>
+      <div class="prose prose-invert max-w-none text-gray-300 prose-p:m-0 prose-a:text-cyan-400 prose-a:font-semibold hover:prose-a:text-cyan-300 prose-strong:text-white prose-a:no-underline">
+        <Content />
+      </div>
+    </div>
+  </div>
+)}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('popup-overlay');
+    if (!overlay) return;
+
+    const content = document.getElementById('popup-content');
+    const closeButton = document.getElementById('close-popup-button');
+    const POPUP_STORAGE_KEY = 'gsga-popup-seen-2025-08'; // Changed key to re-show for everyone
+
+    const showPopup = () => {
+      overlay.classList.add('opacity-100', 'pointer-events-auto');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      if (content) {
+        content.classList.add('scale-100');
+        content.classList.remove('scale-95');
+      }
+    };
+
+    const hidePopup = () => {
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      overlay.classList.remove('opacity-100', 'pointer-events-auto');
+      if (content) {
+        content.classList.add('scale-95');
+        content.classList.remove('scale-100');
+      }
+      // Use sessionStorage to show again on new tab/session
+      // Use localStorage to hide "forever" (until cache is cleared)
+      sessionStorage.setItem(POPUP_STORAGE_KEY, 'true');
+    };
+
+    // Check if the user has seen the popup before in this session
+    if (sessionStorage.getItem(POPUP_STORAGE_KEY) !== 'true') {
+      // Use setTimeout to allow page to render before showing popup
+      setTimeout(showPopup, 200);
+    }
+
+    if (closeButton) {
+      closeButton.addEventListener('click', hidePopup);
+    }
+    
+    // Close when clicking outside the popup content
+    overlay.addEventListener('click', (event) => {
+      if (event.target === overlay) {
+        hidePopup();
+      }
+    });
+
+    // Close with the Escape key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        hidePopup();
+      }
+    });
+  });
+</script>
