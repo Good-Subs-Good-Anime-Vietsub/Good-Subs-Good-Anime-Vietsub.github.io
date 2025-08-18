@@ -8,13 +8,15 @@ interface Props {
   description?: string;
   image?: string;
   schema?: string; // New prop for JSON-LD schema
+  showPopup?: boolean;
 }
 
-const { 
-  title, 
+const {
+  title,
   description = 'GSGA Fansub - Anime hay, Phụ đề cũng phải tốt',
   image = new URL('/GSGA-logo.png', Astro.site).href,
-  schema // Destructure new prop
+  schema, // Destructure new prop
+  showPopup = true,
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -109,7 +111,7 @@ const websiteSchema = {
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
                 </button>
-                <div id="guides-dropdown-menu" class="hidden absolute top-full right-0 mt-2 w-auto bg-gray-800/90 backdrop-blur-lg border border-gray-700/50 rounded-lg shadow-xl z-50">
+                <div id="guides-dropdown-menu" class="absolute top-full right-0 mt-2 w-auto bg-gray-800/90 backdrop-blur-lg border border-gray-700/50 rounded-lg shadow-xl z-50 transition-all duration-200 ease-out opacity-0 -translate-y-2 pointer-events-none">
                   <div class="p-2 flex flex-col items-end">
                     <a href="/guides" class="whitespace-nowrap px-4 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 text-right">Hướng dẫn xem</a>
                     <div class="my-1 border-t border-gray-700/50 w-full"></div>
@@ -135,14 +137,14 @@ const websiteSchema = {
         </nav>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-gray-800/90 backdrop-blur-lg border-b border-gray-700/50 z-40">
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-gray-800/90 backdrop-blur-lg border-b border-gray-700/50 z-40 transition-all duration-300 ease-out opacity-0 -translate-y-4 pointer-events-none">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-start">
             <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Giới thiệu</a>
             <a href="/members" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Thành viên</a>
             <div class="border-t border-gray-700 w-full my-2"></div>
             <div class="w-full">
               <p class="px-3 py-2 text-m font-semibold text-cyan-300 text-left">Hướng dẫn</p>
-              <div class="flex flex-col items-start">
+              <div class="flex flex-col items-start pl-4">
                 <a href="/guides" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Hướng dẫn xem</a>
                 <a href="/guides/mpv-windows" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Cài đặt mpv (Windows)</a>
                 <a href="/guides/mpv-config" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Cài đặt config mpv Windows</a>
@@ -172,19 +174,28 @@ const websiteSchema = {
         if (menuButton && mobileMenu) {
           menuButton.addEventListener('click', (event) => {
             event.stopPropagation();
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('opacity-0');
+            if (isHidden) {
+              mobileMenu.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+            } else {
+              mobileMenu.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+            }
           });
+
+          const closeMobileMenu = () => {
+            mobileMenu.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+          };
 
           document.addEventListener('click', (event) => {
             if (!mobileMenu.contains(event.target as Node) && !menuButton.contains(event.target as Node)) {
-              mobileMenu.classList.add('hidden');
+              closeMobileMenu();
             }
           });
 
           // Close mobile menu on scroll
           window.addEventListener('scroll', () => {
-            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-              mobileMenu.classList.add('hidden');
+            if (mobileMenu && !mobileMenu.classList.contains('opacity-0')) {
+              closeMobileMenu();
             }
           }, { passive: true });
         }
@@ -197,19 +208,25 @@ const websiteSchema = {
         if (guidesButton && guidesMenu && guidesArrow) {
           guidesButton.addEventListener('click', (event) => {
             event.stopPropagation();
-            const isHidden = guidesMenu.classList.toggle('hidden');
-            guidesArrow.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+            const isHidden = guidesMenu.classList.contains('opacity-0');
+            if (isHidden) {
+              guidesMenu.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+              guidesArrow.style.transform = 'rotate(180deg)';
+            } else {
+              guidesMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+              guidesArrow.style.transform = 'rotate(0deg)';
+            }
           });
 
           document.addEventListener('click', (event) => {
             if (!guidesMenu.contains(event.target as Node) && !guidesButton.contains(event.target as Node)) {
-              guidesMenu.classList.add('hidden');
+              guidesMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
               guidesArrow.style.transform = 'rotate(0deg)';
             }
           });
         }
       });
     </script>
-    <Popup />
+    {showPopup && <Popup />}
  </body>
 </html>

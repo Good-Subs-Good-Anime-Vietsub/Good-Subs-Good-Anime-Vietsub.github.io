@@ -8,6 +8,12 @@
     "dist"
   ],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
     "resolveJsonModule": true,
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
