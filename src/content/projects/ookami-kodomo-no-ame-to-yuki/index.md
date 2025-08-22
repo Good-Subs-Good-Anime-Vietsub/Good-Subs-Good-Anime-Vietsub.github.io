@@ -16,7 +16,7 @@ staffs:
     name: '[KiOZ]'
 downloads:
   - type: Download (Tor/BD)
-    url: 'https://nyaa.si/view/2003856'
+    url: 'https://nyaa.si/view/2009384'
 ---
 ## Chú thích dịch
 
