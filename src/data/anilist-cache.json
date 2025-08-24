@@ -1013,6 +1013,90 @@
       ]
     }
   },
+  "1689": {
+    "id": 1689,
+    "title": {
+      "romaji": "Byousoku 5 Centimeter",
+      "native": "秒速５センチメートル",
+      "english": "5 Centimeters per Second"
+    },
+    "coverImage": {
+      "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1689-rJKhjLEjQHSy.jpg",
+      "color": "#d6a178"
+    },
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1689.jpg",
+    "startDate": {
+      "year": 2007
+    },
+    "seasonYear": 2007,
+    "format": "MOVIE",
+    "episodes": 3,
+    "duration": 22,
+    "averageScore": 71,
+    "source": "ORIGINAL",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "studios": {
+      "nodes": [
+        {
+          "name": "CoMix Wave",
+          "siteUrl": "https://anilist.co/studio/291"
+        }
+      ]
+    },
+    "staff": {
+      "edges": [
+        {
+          "role": "Original Character Design",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
+          }
+        },
+        {
+          "role": "Director",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
+          }
+        },
+        {
+          "role": "Character Design",
+          "node": {
+            "name": {
+              "full": "Takayo Nishimura"
+            },
+            "siteUrl": "https://anilist.co/staff/106442"
+          }
+        },
+        {
+          "role": "Art Director",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
+          }
+        },
+        {
+          "role": "Color Design",
+          "node": {
+            "name": {
+              "full": "Makoto Shinkai"
+            },
+            "siteUrl": "https://anilist.co/staff/96117"
+          }
+        }
+      ]
+    }
+  },
   "1943": {
     "id": 1943,
     "title": {
